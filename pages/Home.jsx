@@ -66,20 +66,40 @@ export default function Home() {
 			{/* FOREGROUND CONTENT */}
 			<section className="-mt-32 sm:-mt-40 relative z-10 pb-32">
 				<div className="flex items-center justify-center">
-					<h1 className="text-center text-gray-400 text-3xl">
+					<h1 className="text-center text-gray-400 text-3xl mb-4">
 						QUEEN'S TECHNOLOGY AND MEDIA ASSOCIATION
 					</h1>
 				</div>
 				<Banner
-					title="hi"
-					message="hello"
+					title="Launch the next big thing."
+					message="Designers. Developers. Analysts. Building at Canada’s premier product incubation club."
 					linkBox={
 						<LinkBox
-							message="Apply Now"
+							message="VIEW OUR PRODUCTS"
 							link="https://forms.gle/3b1d7Z5x6f8a2g4i9"
 							hasIcon
 						/>
 					}
+					images={[
+						"/assets/2025/Home/curious-mahir.jpg",
+						"/assets/2025/Home/happy-alison.png",
+						"/assets/2025/Home/happy-nathan.jpg",
+					]}
+				/>
+				<Banner
+					title="Meet the next generation of leaders and innovators."
+					message="Teams consist of highly motivated and vision-oriented students across all faculties."
+					linkBox={
+						<LinkBox
+							message="MEETING OUR TEAM"
+							link="https://forms.gle/3b1d7Z5x6f8a2g4i9"
+							hasIcon
+						/>
+					}
+					images={[
+						"/assets/2025/Home/qtma-on-3.jpg",
+						"/assets/2025/Home/thinking.jpg",
+					]}
 				/>
 			</section>
 		</Layout>
