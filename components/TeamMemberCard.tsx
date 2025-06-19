@@ -17,7 +17,7 @@ export function TeamMemberCard({ name, image, subPosition, linkedIn }: Props) {
 				rel="noreferrer"
 				className="cursor-default"
 			>
-				<div className="relative w-[220px] h-[220px] flex items-center justify-center">
+				<div className="relative w-[190px] h-[190px] flex items-center justify-center">
 					{/* Outer ring */}
 					<div className="absolute inset-0 rounded-full bg-blue-600 z-0" />
 
@@ -34,8 +34,8 @@ export function TeamMemberCard({ name, image, subPosition, linkedIn }: Props) {
 					<Image
 						alt={`Photo of ${name}`}
 						src={image}
-						width={200}
-						height={200}
+						width={175}
+						height={175}
 						className="rounded-full object-cover aspect-square z-10 cursor-pointer hover:opacity-90 transition-opacity duration-300"
 					/>
 				</div>

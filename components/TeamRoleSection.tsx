@@ -18,7 +18,7 @@ export function TeamRoleSection({ role, members }: Props) {
 				{role + (role.endsWith("s") ? "" : "s")}
 			</h2>
 			{/* TODO: migrate this to grid rather than flex for better vertical spacing (no gap-x gap-y, yes grid-x grid-y) */}
-			<div className="flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-20 lg:gap-28 xl:gap-36 2xl:gap-54">
+			<div className="flex flex-wrap justify-center gap-8 sm:gap-12 md:gap-16 lg:gap-24 xl:gap-32 2xl:gap-44">
 				{members.map((member, i) => (
 					<TeamMemberCard key={i} {...member} />
 				))}
