@@ -20,6 +20,7 @@ type LinkBoxProps = {
 	icon?: React.ReactNode;
 	hasIcon?: boolean;
 	size?: Size;
+	className?: string;
 };
 
 export function LinkBox({
@@ -28,6 +29,7 @@ export function LinkBox({
 	icon,
 	hasIcon = false,
 	size = "medium",
+	className = "",
 }: LinkBoxProps) {
 	const twSize = paddingBySize[sizeMap[size]];
 	const defaultIcon = <SparkIcon />;
@@ -35,9 +37,7 @@ export function LinkBox({
 	return (
 		<a
 			href={link}
-			target="_blank"
-			rel="noopener noreferrer"
-			className={`text-qtmaPrimaryDark bg-white border-2 border-qtmaPrimaryDark rounded-full shadow-md inline-flex items-center gap-2 no-underline hover:bg-gray-100 hover:cursor-pointer transition ${twSize}`}
+			className={`text-qtmaPrimaryDark bg-white border-2 border-qtmaPrimaryDark rounded-full shadow-md inline-flex items-center gap-2 no-underline hover:bg-gray-100 hover:cursor-pointer transition ${twSize} ${className}`}
 		>
 			{hasIcon && <span className="shrink-0">{icon ?? defaultIcon}</span>}
 			<span>{message}</span>

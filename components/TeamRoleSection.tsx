@@ -10,8 +10,10 @@ type Props = {
 };
 
 export function TeamRoleSection({ role, members }: Props) {
+	const id = role.toLowerCase().replace(/\s+/g, "-");
+
 	return (
-		<div className="mb-40">
+		<div id={id} className="mb-40">
 			<h2 className="text-4xl text-qtmaPrimaryDark font-light text-center mb-12">
 				{role + (role.endsWith("s") ? "" : "s")}
 			</h2>

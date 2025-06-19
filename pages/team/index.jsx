@@ -23,10 +23,26 @@ const Team = () => {
 					Meet the Team
 				</h1>
 				<div className="flex justify-center gap-20 mb-20">
-					<LinkBox message="Product Managers" />
-					<LinkBox message="Developers" />
-					<LinkBox message="Business Analysts" />
-					<LinkBox message="UIUX Designers" />
+					<LinkBox
+						message="Product Managers"
+						className="hover:scale-105 transition-transform duration-300"
+						link="#product-manager"
+					/>
+					<LinkBox
+						message="Developers"
+						className="hover:scale-105 transition-transform duration-300"
+						link="#developer"
+					/>
+					<LinkBox
+						message="Business Analysts"
+						className="hover:scale-105 transition-transform duration-300"
+						link="#business-analyst"
+					/>
+					<LinkBox
+						message="UIUX Designers"
+						className="hover:scale-105 transition-transform duration-300"
+						link="#ui/ux-designer"
+					/>
 				</div>
 
 				{Positions.map((role) => {
