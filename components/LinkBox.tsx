@@ -1,4 +1,4 @@
-import { SparkIcon } from "../public/assets/icons/SparkIcon";
+import { SparkIcon } from "./icons/SparkIcon";
 
 const sizeMap = {
 	small: "sm",
