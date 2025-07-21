@@ -1,12 +1,6 @@
 "use client";
-
-import Image from "next/image";
-import qtmaLogo from "../public/assets/Club Data/QTMA_logo.png";
-import startup from "../public/assets/Visuals/Startup_SVG.png";
 import Layout from "../components/layout";
-import { Link as SLink } from "react-scroll";
 import React, { useEffect, useState } from "react";
-import { FancyAmpersand } from "../components/icons/FancyAmpersand";
 import { QtmaLogo } from "../components/icons/QtmaLogo";
 import FloatingBlobs from "../components/FloatingBlobs";
 import { Banner } from "../components/Banner";
@@ -80,10 +74,7 @@ export default function Home() {
 					scrollY={scrollY}
 				/>
 
-				{/* NAVBAR */}
-				<section>
-					<Nav />
-				</section>
+				<Nav />
 
 				<section
 					id="home"

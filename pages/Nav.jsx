@@ -39,148 +39,145 @@ export default function Nav() {
 	const [navOn, setNavOn] = useState(false);
 	const { width } = useWindowDimensions();
 	const [isTablet, setIsTablet] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 0);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	useEffect(() => {
 		setIsTablet(width <= 1100);
-		// Close mobile menu when window is resized to desktop
 		if (width > 1100) {
 			setNavOn(false);
 		}
 	}, [width]);
 
-	// Get current path for active link styling
 	const currentPath = router.pathname;
 
 	return (
 		<>
-			{/* Blue nav bar docked to the right */}
-			<div className="fixed top-0 right-0 z-[9999]">
-				{/* Desktop Navigation */}
-				<div className={`${isTablet ? 'hidden' : 'block'}`}>
-					<div className="px-6 py-4">
-						<div className="flex items-center gap-6 text-gray-800">
-							<Link
-								className={`nav-link hover:text-blue-600 transition-colors ${currentPath === "/" ? "text-blue-600 font-semibold" : ""}`}
-								href="/"
-							>
-								Home
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-600 transition-colors ${currentPath === "/products" ? "text-blue-600 font-semibold" : ""}`}
-								href="/products"
-							>
-								Products
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-600 transition-colors ${currentPath === "/history" ? "text-blue-600 font-semibold" : ""}`}
-								href="/history"
-							>
-								History
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-600 transition-colors ${currentPath === "/team" ? "text-blue-600 font-semibold" : ""}`}
-								href="/team"
-							>
-								Team
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-600 transition-colors ${currentPath === "/placements" ? "text-blue-600 font-semibold" : ""}`}
-								href="/placements"
-							>
-								Placements
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-600 transition-colors ${currentPath === "/contact" ? "text-blue-600 font-semibold" : ""}`}
-								href="/contact"
-							>
-								Contact
-							</Link>
+			{/* Sticky Header */}
+			<header
+				className={`sticky top-0 z-50 w-full bg-white/80 backdrop-blur-sm transition-shadow duration-300 ${
+					isScrolled ? "shadow-md" : ""
+				}`}
+			>
+				{/* Desktop Nav */}
+				<div className={`${isTablet ? "hidden" : "block"}`}>
+					<div className="max-w-screen-xl mx-auto px-6 py-4">
+						<div className="flex justify-end">
+							<div className="flex items-center gap-6 text-gray-800">
+								{[
+									"/",
+									"/products",
+									"/history",
+									"/team",
+									"/placements",
+									"/contact",
+								].map((path) => {
+									const name =
+										path === "/"
+											? "Home"
+											: path
+													.replace("/", "")
+													.charAt(0)
+													.toUpperCase() +
+											  path.slice(2);
+									return (
+										<Link
+											key={path}
+											href={path}
+											className={`nav-link hover:text-blue-600 transition-colors ${
+												currentPath === path
+													? "text-blue-600 font-semibold"
+													: ""
+											}`}
+										>
+											{name}
+										</Link>
+									);
+								})}
+							</div>
 						</div>
 					</div>
 				</div>
+			</header>
 
-				{/* Mobile Hamburger Button */}
-				<div className={`${isTablet ? 'block' : 'hidden'}`}>
-					<div
-						className="p-3 cursor-pointer hover:bg-gray-100 transition-colors"
-						onClick={() => setNavOn(!navOn)}
-					>
-						<AiOutlineMenu size={24} className="text-gray-800" />
-					</div>
-				</div>
-
-				{/* Mobile Navigation Menu */}
+			{/* Mobile Hamburger */}
+			<div className={`${isTablet && !navOn ? "block" : "hidden"}`}>
 				<div
-					className={`${isTablet ? 'block' : 'hidden'} fixed top-0 right-0 h-full w-80 bg-blue-600 shadow-2xl transition-transform duration-300 ease-in-out ${navOn ? "translate-x-0" : "translate-x-full"
-						}`}
+					className="p-3 cursor-pointer hover:bg-gray-100 transition-colors fixed top-0 right-0 z-50"
+					onClick={() => {
+						setNavOn(!navOn);
+					}}
 				>
-					<div className="p-6">
-						{/* Close button */}
-						<div className="flex justify-end mb-8">
-							<button
-								onClick={() => setNavOn(false)}
-								className="text-white hover:text-blue-200 text-2xl"
-							>
-								×
-							</button>
-						</div>
+					<AiOutlineMenu size={24} className="text-gray-800" />
+				</div>
+			</div>
 
-						{/* Mobile nav links */}
-						<div className="flex flex-col gap-6 text-white text-lg">
-							<Link
-								className={`nav-link hover:text-blue-200 transition-colors py-2 ${currentPath === "/" ? "text-blue-200 font-semibold border-l-4 border-blue-200 pl-4" : ""}`}
-								href="/"
-								onClick={() => setNavOn(false)}
-							>
-								Home
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-200 transition-colors py-2 ${currentPath === "/products" ? "text-blue-200 font-semibold border-l-4 border-blue-200 pl-4" : ""}`}
-								href="/products"
-								onClick={() => setNavOn(false)}
-							>
-								Products
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-200 transition-colors py-2 ${currentPath === "/history" ? "text-blue-200 font-semibold border-l-4 border-blue-200 pl-4" : ""}`}
-								href="/history"
-								onClick={() => setNavOn(false)}
-							>
-								History
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-200 transition-colors py-2 ${currentPath === "/team" ? "text-blue-200 font-semibold border-l-4 border-blue-200 pl-4" : ""}`}
-								href="/team"
-								onClick={() => setNavOn(false)}
-							>
-								Team
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-200 transition-colors py-2 ${currentPath === "/placements" ? "text-blue-200 font-semibold border-l-4 border-blue-200 pl-4" : ""}`}
-								href="/placements"
-								onClick={() => setNavOn(false)}
-							>
-								Placements
-							</Link>
-							<Link
-								className={`nav-link hover:text-blue-200 transition-colors py-2 ${currentPath === "/contact" ? "text-blue-200 font-semibold border-l-4 border-blue-200 pl-4" : ""}`}
-								href="/contact"
-								onClick={() => setNavOn(false)}
-							>
-								Contact
-							</Link>
-						</div>
+			{/* Mobile Navigation Menu */}
+			<div
+				className={`${
+					isTablet ? "block" : "hidden"
+				} fixed top-0 right-0 h-full w-80 bg-blue-600 shadow-2xl transition-transform duration-300 ease-in-out ${
+					navOn ? "translate-x-0" : "translate-x-full"
+				} z-40`}
+			>
+				<div className="p-6">
+					<div className="flex justify-end mb-8">
+						<button
+							onClick={() => setNavOn(false)}
+							className="text-white hover:text-blue-200 text-2xl"
+						>
+							×
+						</button>
+					</div>
+					<div className="flex flex-col gap-6 text-white text-lg">
+						{[
+							"/",
+							"/products",
+							"/history",
+							"/team",
+							"/placements",
+							"/contact",
+						].map((path) => {
+							const name =
+								path === "/"
+									? "Home"
+									: path
+											.replace("/", "")
+											.charAt(0)
+											.toUpperCase() + path.slice(2);
+							return (
+								<Link
+									key={path}
+									href={path}
+									onClick={() => setNavOn(false)}
+									className={`nav-link hover:text-blue-200 transition-colors py-2 ${
+										currentPath === path
+											? "text-blue-200 font-semibold border-l-4 border-blue-200 pl-4"
+											: ""
+									}`}
+								>
+									{name}
+								</Link>
+							);
+						})}
 					</div>
 				</div>
-
-				{/* Mobile overlay */}
-				{navOn && isTablet && (
-					<div
-						className="fixed inset-0 bg-black bg-opacity-50 z-[-1]"
-						onClick={() => setNavOn(false)}
-					/>
-				)}
 			</div>
+
+			{/* Mobile overlay */}
+			{navOn && isTablet && (
+				<div
+					className="fixed inset-0 bg-black bg-opacity-50 z-30"
+					onClick={() => setNavOn(false)}
+				/>
+			)}
 		</>
 	);
 }
