@@ -89,9 +89,10 @@ export default function Home() {
 							}) rotate(${scrollY * 0.02}deg)`,
 						}}
 					>
-						{/* wow this library is goated */}
 						<Parallax scale={[1, 0.5]}>
-							<QtmaLogo className="w-[200%] h-[200%] opacity-10 scale-150" />
+							<div className="w-[500px] h-auto flex justify-center items-center">
+								<QtmaLogo className="w-full opacity-90" />
+							</div>
 						</Parallax>
 					</div>
 				</section>

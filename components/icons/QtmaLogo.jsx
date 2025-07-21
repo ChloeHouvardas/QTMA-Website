@@ -1,11 +1,10 @@
-export function QtmaLogo() {
+export function QtmaLogo({ className = "" }) {
 	return (
 		<svg
-			width="540"
-			height="418"
 			viewBox="0 0 540 418"
-			fill="none"
+			fill="currentColor"
 			xmlns="http://www.w3.org/2000/svg"
+			className={`fill-current text-qtmaPrimaryBlue ${className}`}
 		>
 			<g filter="url(#filter0_f_57_4989)">
 				<path
@@ -19,8 +18,7 @@ export function QtmaLogo() {
 					fill="#DBE5F6"
 				/>
 			</g>
-			<g filter="url(#filter2_f_57_4989)">
-			</g>
+			<g filter="url(#filter2_f_57_4989)"></g>
 			<g filter="url(#filter3_f_57_4989)">
 				<path
 					d="M114.421 319.959C125.019 319.959 133.611 328.55 133.611 339.149C133.611 349.748 125.019 358.339 114.421 358.34C103.822 358.34 95.2305 349.748 95.2304 339.149C95.2304 328.55 103.822 319.959 114.421 319.959Z"
@@ -28,8 +26,7 @@ export function QtmaLogo() {
 					strokeWidth="0.688577"
 				/>
 			</g>
-			
-	
+
 			{/* this has the actual logo text */}
 			<rect
 				x="22.5851"

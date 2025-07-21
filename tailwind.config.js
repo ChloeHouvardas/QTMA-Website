@@ -9,6 +9,7 @@ module.exports = {
 		extend: {
 			colors: {
 				qtmaPrimaryDark: "#2C3357",
+				qtmaPrimaryBlue: "#3576d3",
 			},
 			fontFamily: {
 				sans: ["Inter", "sans-serif"],

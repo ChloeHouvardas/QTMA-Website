@@ -37,7 +37,7 @@ export function LinkBox({
 	return (
 		<a
 			href={link}
-			className={`text-gray-800 bg-transparent border-2 border-gray-800 rounded-full shadow-sm inline-flex items-center gap-3 no-underline hover:bg-gray-50 hover:cursor-pointer transition-all duration-300 ease-in-out ${twSize} ${className}`}
+			className={`text-gray-800 bg-transparent border-2 border-gray-800 rounded-full shadow-sm inline-flex items-center gap-3 no-underline hover:bg-gray-50 hover:cursor-pointer transition-colors duration-500 ease-in-out ${twSize} ${className}`}
 		>
 			{hasIcon && <span className="shrink-0">{icon ?? defaultIcon}</span>}
 			<span className="uppercase tracking-wide">{message}</span>
