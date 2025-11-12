@@ -82,12 +82,11 @@ export default function Home() {
 					className="relative h-screen w-full overflow-hidden"
 				>
 					<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-						<div className="w-[520px] h-[360px] flex items-center justify-center">
-							<DecorativePatches className="w-full h-full">
-								<QtmaLogo className="w-3/4 max-w-[360px] opacity-90 drop-shadow-lg" />
-							</DecorativePatches>
-						</div>
+						<DecorativePatches className="w-screen h-auto">
+							<QtmaLogo className="w-1/2 opacity-90 drop-shadow-lg" />
+						</DecorativePatches>
 					</div>
+
 				</section>
 
 				{/* FOREGROUND CONTENT */}

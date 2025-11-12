@@ -11,13 +11,13 @@ type Props = {
 
 export default function DecorativePatches({ children, className = "" }: Props) {
     return (
-        <div className={`relative overflow-visible w-[500px] h-[500px] ${className}`}>
+        <div className={`relative overflow-visible w-full aspect-[1172/448] ${className}`}>
             <Image
                 src="/assets/Visuals/QTMADecorativePatches.svg"
                 alt="Decorative Patches"
                 fill
                 style={{ objectFit: "contain" }}
-                sizes="(max-width: 640px) 320px, 500px"
+                sizes="100vw"
             />
 
             {children ? (
