@@ -7,6 +7,7 @@ import { Banner } from "../components/Banner";
 import { LinkBox } from "../components/LinkBox";
 import Nav from "./Nav.jsx";
 import { Parallax } from "react-scroll-parallax";
+import DecorativePatches from "../components/DecorativePatches";
 
 function getWindowDimensions() {
 	if (typeof window !== "undefined") {
@@ -83,17 +84,13 @@ export default function Home() {
 					{/* Parallax Ampersand */}
 					<div
 						className="absolute inset-0 flex items-center justify-center pointer-events-none"
-						style={{
-							transform: `translateY(${scrollY * 0.3}px) scale(${
-								1 + scrollY * 0.0003
-							}) rotate(${scrollY * 0.02}deg)`,
-						}}
 					>
-						<Parallax scale={[1, 0.5]}>
-							<div className="w-[500px] h-auto flex justify-center items-center">
+						{/* <Parallax scale={[1, 0.5]}> */}
+							<div className="w-[500px] h-auto flex flex-col justify-center items-center">
+								<DecorativePatches/>
 								<QtmaLogo className="w-full opacity-90" />
 							</div>
-						</Parallax>
+						{/* </Parallax> */}
 					</div>
 				</section>
 
@@ -112,6 +109,7 @@ export default function Home() {
 					</div>
 					<Parallax speed={10}>
 						<Banner
+							className="my-200"
 							title="Launch the next big thing."
 							message="Designers. Developers. Analysts. Building at Canada’s premier product incubation club."
 							linkBox={

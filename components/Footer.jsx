@@ -1,5 +1,5 @@
 import Layout from "./layout";
-import { QtmaLogo } from "../components/icons/QtmaLogo";
+import { QtmaLogo } from "./icons/QtmaLogoArchive";
 import Image from "next/image";
 
 export default function Footer() {
