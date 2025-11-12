@@ -21,8 +21,13 @@ export default function DecorativePatches({ children, className = "" }: Props) {
             />
 
             {children ? (
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-3/4 h-auto flex items-center justify-center translate-y-6">{children}</div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+                    <div className="w-3/4 h-auto flex flex-col items-center justify-center gap-0">
+                        {children}
+                        <h2 className="text-center text-gray-500 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-light leading-none -mt-1">
+                            QUEEN'S TECHNOLOGY AND MEDIA ASSOCIATION
+                        </h2>
+                    </div>
                 </div>
             ) : null}
         </div>

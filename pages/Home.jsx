@@ -8,6 +8,7 @@ import { LinkBox } from "../components/LinkBox";
 import Nav from "./Nav.jsx";
 import { Parallax } from "react-scroll-parallax";
 import DecorativePatches from "../components/DecorativePatches";
+import { LogoAndDecos } from "../components/icons/LogoAndDecos";
 
 function getWindowDimensions() {
 	if (typeof window !== "undefined") {
@@ -82,9 +83,10 @@ export default function Home() {
 					className="relative h-screen w-full overflow-hidden"
 				>
 					<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-						<DecorativePatches className="w-screen h-auto">
+						{/* <DecorativePatches className="w-screen h-auto">
 							<QtmaLogo className="w-1/2 opacity-90 drop-shadow-lg" />
-						</DecorativePatches>
+						</DecorativePatches> */}
+						<LogoAndDecos></LogoAndDecos>
 					</div>
 
 				</section>
@@ -98,9 +100,7 @@ export default function Home() {
 							transform: `translateY(${scrollY * -0.2}px)`,
 						}}
 					>
-						<h1 className="text-center text-blue-400 text-3xl mb-4 animate-fade-in">
-							QUEEN'S TECHNOLOGY AND MEDIA ASSOCIATION
-						</h1>
+						
 					</div>
 					<Parallax speed={10}>
 						<Banner
