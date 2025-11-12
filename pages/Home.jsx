@@ -82,12 +82,14 @@ export default function Home() {
 					id="home"
 					className="relative h-screen w-full overflow-hidden"
 				>
-					<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-						{/* <DecorativePatches className="w-screen h-auto">
-							<QtmaLogo className="w-1/2 opacity-90 drop-shadow-lg" />
-						</DecorativePatches> */}
-						<LogoAndDecos></LogoAndDecos>
+					<div className="flex flex-row">
+						{/* <div className="w-30 h-30"></div> */}
+						<div className="absolute top-0  left-0 w-full pr-[5%] flex items-start justify-center pointer-events-none">
+						{/* Logo and decorative artwork aligned to the top */}
+							<LogoAndDecos />
+						</div>
 					</div>
+					
 
 				</section>
 
