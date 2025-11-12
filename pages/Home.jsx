@@ -81,16 +81,12 @@ export default function Home() {
 					id="home"
 					className="relative h-screen w-full overflow-hidden"
 				>
-					{/* Parallax Ampersand */}
-					<div
-						className="absolute inset-0 flex items-center justify-center pointer-events-none"
-					>
-						{/* <Parallax scale={[1, 0.5]}> */}
-							<div className="w-[500px] h-auto flex flex-col justify-center items-center">
-								<DecorativePatches/>
-								<QtmaLogo className="w-full opacity-90" />
-							</div>
-						{/* </Parallax> */}
+					<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+						<div className="w-[520px] h-[360px] flex items-center justify-center">
+							<DecorativePatches className="w-full h-full">
+								<QtmaLogo className="w-3/4 max-w-[360px] opacity-90 drop-shadow-lg" />
+							</DecorativePatches>
+						</div>
 					</div>
 				</section>
 

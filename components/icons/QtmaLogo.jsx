@@ -6,8 +6,8 @@ export function QtmaLogo() {
 			<Image 
                 src="/assets/Visuals/QTMALogo.svg" 
                 alt="Decorative Patches" 
-                width={400} 
-                height={400}
+                width={175} 
+                height={175}
             />
 		</div>
 	);
