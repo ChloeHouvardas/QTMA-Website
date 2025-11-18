@@ -84,9 +84,13 @@ export default function Home() {
 				>
 					<div className="flex flex-row">
 						{/* <div className="w-30 h-30"></div> */}
-						<div className="absolute top-0  left-0 w-full pr-[5%] flex items-start justify-center pointer-events-none">
-						{/* Logo and decorative artwork aligned to the top */}
-							<LogoAndDecos />
+						<div className="absolute top-8 sm:top-12 md:top-16 left-0 w-full flex items-start justify-center pointer-events-none">
+							{/* Constrain artwork to the same content width as the page so it scales with other content */}
+							<div className="max-w-screen-xl w-full px-6 mx-auto">
+								{/* <LogoAndDecos className="w-full md:w-3/4 lg:w-2/3 mx-auto" /> */}
+								<QtmaLogo className="w-1/3 md:w-1/2 lg:w-1/3 mx-auto" />
+								<p className="text-center mx-auto text-[#A6A9BF] opacity-40 font-semibold">QUEEN’S TECHNOLOGY & MEDIA ASSOCIATION</p>
+							</div>
 						</div>
 					</div>
 					

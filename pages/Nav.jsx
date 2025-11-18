@@ -62,7 +62,7 @@ export default function Nav() {
 		<>
 			{/* Sticky Header */}
 			<header
-				className={`sticky top-0 z-50 w-full bg-white/80 backdrop-blur-sm transition-shadow duration-300 ${
+				className={`sticky top-0 z-50 w-full bg-white/0 backdrop-blur-sm transition-shadow duration-300 ${
 					isScrolled ? "shadow-md" : ""
 				}`}
 			>

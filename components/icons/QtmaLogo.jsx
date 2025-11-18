@@ -1,12 +1,8 @@
 import Image from "next/image";
 
-/**
- * @param {Object} props
- * @param {string} [props.className="w-[175px] h-[175px]"]
- */
-export function QtmaLogo({ className = "w-[175px] h-[175px]" } = {}) {
+export function QtmaLogo({ className = "" }) {
   return (
-    <div className={`relative aspect-square ${className}`}>
+    <div className={`relative overflow-visible ${className} aspect-[1172/448]`}>
       <Image
         src="/assets/Visuals/QTMALogo.svg"
         alt="QTMA Logo"
