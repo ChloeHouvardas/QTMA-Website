@@ -69,19 +69,20 @@ export default function Nav() {
 				{/* Desktop Nav */}
 				<div className={`${isTablet ? "hidden" : "block"}`}>
 					<div className="max-w-screen-xl mx-auto px-6 py-4">
-						<div className="flex justify-end">
-							<div className="flex items-center gap-6 text-gray-800">
+						<div className="flex justify-center">
+							{/* old text colour text-gray-800 */}
+							{/* [2C3357] */}
+							<div className="flex items-center gap-6  text-[#2C3357] opacity-40 font-weight-600">
 								{[
 									"/",
-									"/products",
-									"/history",
-									"/team",
-									"/placements",
-									"/contact",
+									"/PRODUCTS",
+									"/TEAM",
+									// "/placements",
+									// "/contact",
 								].map((path) => {
 									const name =
 										path === "/"
-											? "Home"
+											? "HOME"
 											: path
 													.replace("/", "")
 													.charAt(0)
@@ -115,7 +116,7 @@ export default function Nav() {
 						setNavOn(!navOn);
 					}}
 				>
-					<AiOutlineMenu size={24} className="text-gray-800" />
+					<AiOutlineMenu size={24} className="text-[#2C3357]" />
 				</div>
 			</div>
 
@@ -138,12 +139,12 @@ export default function Nav() {
 					</div>
 					<div className="flex flex-col gap-6 text-white text-lg">
 						{[
-							"/",
-							"/products",
-							"/history",
-							"/team",
-							"/placements",
-							"/contact",
+							"/HOME",
+							"/PRODUCTS",
+							// "/history",
+							"/TEAM",
+							// "/placements",
+							// "/contact",
 						].map((path) => {
 							const name =
 								path === "/"
