@@ -85,7 +85,6 @@ export default function Home() {
 					<div className="flex flex-row">
 						{/* <div className="w-30 h-30"></div> */}
 						<div className="absolute top-8 sm:top-12 md:top-16 left-0 w-full flex items-start justify-center pointer-events-none">
-							{/* Constrain artwork to the same content width as the page so it scales with other content */}
 							<div className="max-w-screen-xl w-full px-6 mx-auto">
 								{/* <LogoAndDecos className="w-full md:w-3/4 lg:w-2/3 mx-auto" /> */}
 								<QtmaLogo className="w-1/3 md:w-1/2 lg:w-1/3 mx-auto" />
@@ -98,7 +97,7 @@ export default function Home() {
 				</section>
 
 				{/* FOREGROUND CONTENT */}
-				<section className="-mt-32 sm:-mt-40 relative z-10">
+				<section className="-mt-48 sm:-mt-56 md:-mt-64 relative z-10">
 					{/* Main Title with Parallax */}
 					<div
 						className="flex items-center justify-center"
@@ -143,63 +142,6 @@ export default function Home() {
 							"/assets/2025/Home/thinking.jpg",
 						]}
 					/>
-					<Parallax speed={10}>
-						{/* Parallax Stats Section - Styled like Banner */}
-						<div
-							className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 mt-16 mb-12 overflow-hidden"
-							style={{
-								background:
-									"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
-								boxShadow:
-									"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
-							}}
-						>
-							{/* Soft blurred glows */}
-							<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
-							<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
-							{/* Stats Content */}
-							<div className="max-w-6xl mx-auto relative z-10">
-								<div className="text-center mb-8">
-									<h2 className="text-[#3576d3] text-3xl sm:text-4xl mb-4">
-										Innovation by the Numbers
-									</h2>
-									<p className="text-gray-400 text-lg sm:text-xl mb-6">
-										See the impact we're making at Queen's
-										University
-									</p>
-								</div>
-								<div className="grid md:grid-cols-4 gap-8">
-									{[
-										{
-											number: "150+",
-											label: "Active Members",
-										},
-										{
-											number: "50+",
-											label: "Products Built",
-										},
-										{
-											number: "25+",
-											label: "Industry Partners",
-										},
-										{ number: "5", label: "Years Strong" },
-									].map((stat, index) => (
-										<div
-											key={index}
-											className="text-center"
-										>
-											<div className="text-3xl md:text-4xl font-bold text-[#3576d3] mb-2">
-												{stat.number}
-											</div>
-											<div className="text-gray-400 text-lg">
-												{stat.label}
-											</div>
-										</div>
-									))}
-								</div>
-							</div>
-						</div>
-					</Parallax>
 
 					<Parallax speed={20}>
 						{/* Feature Cards Section - Styled like Banner */}
@@ -262,33 +204,6 @@ export default function Home() {
 							</div>
 						</div>
 					</Parallax>
-
-					{/* Additional Banner - Process Section */}
-					<div
-						style={{
-							transform: `translateY(${Math.max(
-								0,
-								(scrollY - height * 2.2) * 0.15
-							)}px)`,
-						}}
-					>
-						<Banner
-							title="From Concept to Creation"
-							message="Our structured approach takes your ideas from initial brainstorming to fully-launched products that make an impact."
-							linkBox={
-								<LinkBox
-									message="SEE OUR PROCESS"
-									link="/history"
-									hasIcon
-								/>
-							}
-							images={[
-								"/assets/2025/Home/curious-mahir.jpg",
-								"/assets/2025/Home/thinking.jpg",
-							]}
-						/>
-					</div>
-
 					{/* Final CTA Section - Styled like Banner */}
 					<div
 						className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 mt-32 mb-16 overflow-hidden"
