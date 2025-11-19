@@ -5,6 +5,7 @@ import Link from "next/link";
 import Head from "next/head";
 import productData from "../../data/ProductsData";
 import Footer from "../../components/Footer";
+import FloatingBlobsStill from "../../components/FloatingBlobsStill";
 
 const getLogo = (name, year) => `/assets/Products/${year}/${name}_Logo.png`;
 
@@ -48,14 +49,15 @@ export default function Products() {
 			</Head>
 			<Nav/>
 			<Layout
-				background="#EDF5FC"
+				background="linear-gradient(135deg, #e3edfa 0%, #f3f4fa 100%)"
 				metaInfo={
-					"This year, QTMA’s product teams are working on four exciting apps to tackle everyday student problems."
+					"Designers. Developers. Analysts. Building at Canada's premier product incubation club."
 				}
 			>
-				<div id="Products" className="product-container2 product-page2 container">
-					<h1 className="section-title">Products</h1>
-					<p className="product-subheading2">
+					<FloatingBlobsStill />
+				<div id="Products" className="product-container2 product-page2 container relative z-10">
+					<h1 className="section-title text-[#3576d3] text-3xl sm:text-4xl mb-4">Products</h1>
+					<p className="text-gray-400 text-lg sm:text-xl mb-8 leading-relaxed">
 						Over the past years, QTMA’s product teams worked on exciting apps to tackle everyday student
 						problems.
 					</p>
@@ -69,4 +71,11 @@ export default function Products() {
 			<Footer/>
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	return {
+		props: {},
+		revalidate: 60,
+	};
 }
