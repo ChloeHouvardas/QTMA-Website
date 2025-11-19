@@ -6,7 +6,6 @@ import FloatingBlobs from "../components/FloatingBlobs";
 import { Banner } from "../components/Banner";
 import { LinkBox } from "../components/LinkBox";
 import Nav from "./Nav.jsx";
-import { Parallax } from "react-scroll-parallax";
 import DecorativePatches from "../components/DecorativePatches";
 import { LogoAndDecos } from "../components/icons/LogoAndDecos";
 
@@ -80,12 +79,12 @@ export default function Home() {
 
 				<section
 					id="home"
-					className="relative h-screen w-full overflow-hidden"
+					className="relative h-96 sm:h-screen w-full overflow-hidden"
 				>
 					<div className="flex flex-row">
 						{/* <div className="w-30 h-30"></div> */}
 						<div className="absolute top-8 sm:top-12 md:top-16 left-0 w-full flex items-start justify-center pointer-events-none">
-							<div className="max-w-screen-xl w-full px-6 mx-auto">
+							<div className="max-w-screen-xl w-full px-6 md:pt-20 mx-auto">
 								{/* <LogoAndDecos className="w-full md:w-3/4 lg:w-2/3 mx-auto" /> */}
 								<QtmaLogo className="w-1/3 md:w-1/2 lg:w-1/3 mx-auto" />
 								<p className="text-center mx-auto text-[#A6A9BF] opacity-40 font-semibold">QUEEN’S TECHNOLOGY & MEDIA ASSOCIATION</p>
@@ -97,7 +96,7 @@ export default function Home() {
 				</section>
 
 				{/* FOREGROUND CONTENT */}
-				<section className="-mt-48 sm:-mt-56 md:-mt-64 relative z-10">
+				<section className="-mt-24 sm:-mt-56 md:-mt-64 relative z-10">
 					{/* Main Title with Parallax */}
 					<div
 						className="flex items-center justify-center"
@@ -107,28 +106,46 @@ export default function Home() {
 					>
 						
 					</div>
-					<Parallax speed={10}>
-						<Banner
-							className="my-200"
-							title="Launch the next big thing."
-							message="Designers. Developers. Analysts. Building at Canada’s premier product incubation club."
-							linkBox={
-								<LinkBox
-									message="VIEW OUR PRODUCTS"
-									link="https://forms.gle/3b1d7Z5x6f8a2g4i9"
-									hasIcon
-								/>
-							}
-							images={[
-								"/assets/2025/Home/curious-mahir.jpg",
-								"/assets/2025/Home/happy-alison.png",
-								"/assets/2025/Home/happy-nathan.jpg",
-							]}
-						/>
-					</Parallax>
-
+				{!isMobile ? (
 					<Banner
-						title="Meet the next generation of leaders and innovators."
+						className="my-200"
+						title="Launch the next big thing."
+						message="Designers. Developers. Analysts. Building at Canada's premier product incubation club."
+						linkBox={
+							<LinkBox
+								message="VIEW OUR PRODUCTS"
+								link="https://forms.gle/3b1d7Z5x6f8a2g4i9"
+								hasIcon
+							/>
+						}
+						images={[
+							"/assets/2025/Home/curious-mahir.jpg",
+							"/assets/2025/Home/happy-alison.png",
+							"/assets/2025/Home/happy-nathan.jpg",
+						]}
+					/>
+				) : (
+					<Banner
+						className="my-200"
+						title="Launch the next big thing."
+						message="Designers. Developers. Analysts. Building at Canada's premier product incubation club."
+						linkBox={
+							<LinkBox
+								message="VIEW OUR PRODUCTS"
+								link="https://forms.gle/3b1d7Z5x6f8a2g4i9"
+								hasIcon
+							/>
+						}
+						images={[
+							"/assets/2025/Home/curious-mahir.jpg",
+							"/assets/2025/Home/happy-alison.png",
+							"/assets/2025/Home/happy-nathan.jpg",
+						]}
+					/>
+				)}				<div className="mt-16 mb-16"></div>
+
+				<Banner
+					title="Meet the next generation of leaders and innovators."
 						message="Teams consist of highly motivated and vision-oriented students across all faculties."
 						linkBox={
 							<LinkBox
@@ -143,70 +160,131 @@ export default function Home() {
 						]}
 					/>
 
-					<Parallax speed={20}>
-						{/* Feature Cards Section - Styled like Banner */}
-						<div
-							className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 mt-12 mb-16 overflow-hidden"
-							style={{
-								background:
-									"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
-								boxShadow:
-									"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
-							}}
-						>
-							<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
-							<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
-							<div className="max-w-6xl mx-auto relative z-10">
-								<div className="text-left max-w-[600px] mb-8">
-									<h2 className="text-[#3576d3] text-3xl sm:text-4xl mb-4">
-										Why Choose QTMA?
-									</h2>
-									<p className="text-gray-400 text-lg sm:text-xl mb-6">
-										We're more than just a club - we're a
-										community of innovators, creators, and
-										future leaders.
-									</p>
-								</div>
-								<div className="grid md:grid-cols-3 gap-8">
-									{[
-										{
-											title: "Real-World Experience",
-											desc: "Work on actual products that solve real problems for real users.",
-											icon: "🚀",
-										},
-										{
-											title: "Industry Mentorship",
-											desc: "Learn from professionals currently working at top tech companies.",
-											icon: "👥",
-										},
-										{
-											title: "Cross-Functional Teams",
-											desc: "Collaborate with students from business, engineering, and design.",
-											icon: "🎯",
-										},
-									].map((feature, index) => (
-										<div
-											key={index}
-											className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-										>
-											<div className="text-3xl mb-3 text-[#3576d3]">
-												{feature.icon}
-											</div>
-											<h3 className="text-xl font-bold text-[#3576d3] mb-3">
-												{feature.title}
-											</h3>
-											<p className="text-gray-400">
-												{feature.desc}
-											</p>
+					<div className="mt-16 mb-16"></div>
+
+				{!isMobile ? (
+					<div
+						className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 overflow-hidden"
+						style={{
+							background:
+								"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
+							boxShadow:
+								"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
+						}}
+					>
+						<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
+						<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
+						<div className="max-w-6xl mx-auto relative z-10">
+							<div className="text-left max-w-[600px] mb-8">
+								<h2 className="text-[#3576d3] text-3xl sm:text-4xl mb-4">
+									Why Choose QTMA?
+								</h2>
+								<p className="text-gray-400 text-lg sm:text-xl mb-6">
+									We're more than just a club - we're a
+									community of innovators, creators, and
+									future leaders.
+								</p>
+							</div>
+							<div className="grid md:grid-cols-3 gap-8">
+								{[
+									{
+										title: "Real-World Experience",
+										desc: "Work on actual products that solve real problems for real users.",
+										icon: "🚀",
+									},
+									{
+										title: "Industry Mentorship",
+										desc: "Learn from professionals currently working at top tech companies.",
+										icon: "👥",
+									},
+									{
+										title: "Cross-Functional Teams",
+										desc: "Collaborate with students from business, engineering, and design.",
+										icon: "🎯",
+									},
+								].map((feature, index) => (
+									<div
+										key={index}
+										className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+									>
+										<div className="text-3xl mb-3 text-[#3576d3]">
+											{feature.icon}
 										</div>
-									))}
-								</div>
+										<h3 className="text-xl font-bold text-[#3576d3] mb-3">
+											{feature.title}
+										</h3>
+										<p className="text-gray-400">
+											{feature.desc}
+										</p>
+									</div>
+								))}
 							</div>
 						</div>
-					</Parallax>
+					</div>
+				) : (
+					<div
+						className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 overflow-hidden"
+						style={{
+							background:
+								"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
+							boxShadow:
+								"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
+						}}
+					>
+						<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
+						<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
+						<div className="max-w-6xl mx-auto relative z-10">
+							<div className="text-left max-w-[600px] mb-8">
+								<h2 className="text-[#3576d3] text-3xl sm:text-4xl mb-4">
+									Why Choose QTMA?
+								</h2>
+								<p className="text-gray-400 text-lg sm:text-xl mb-6">
+									We're more than just a club - we're a
+									community of innovators, creators, and
+									future leaders.
+								</p>
+							</div>
+							<div className="grid md:grid-cols-3 gap-8">
+								{[
+									{
+										title: "Real-World Experience",
+										desc: "Work on actual products that solve real problems for real users.",
+										icon: "🚀",
+									},
+									{
+										title: "Industry Mentorship",
+										desc: "Learn from professionals currently working at top tech companies.",
+										icon: "👥",
+									},
+									{
+										title: "Cross-Functional Teams",
+										desc: "Collaborate with students from business, engineering, and design.",
+										icon: "🎯",
+									},
+								].map((feature, index) => (
+									<div
+										key={index}
+										className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+									>
+										<div className="text-3xl mb-3 text-[#3576d3]">
+											{feature.icon}
+										</div>
+										<h3 className="text-xl font-bold text-[#3576d3] mb-3">
+											{feature.title}
+										</h3>
+										<p className="text-gray-400">
+											{feature.desc}
+										</p>
+									</div>
+								))}
+							</div>
+						</div>
+					</div>
+				)}					<div className="mt-16 mb-16"></div>
+
 					{/* Final CTA Section - Styled like Banner */}
 					<div
-						className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 mt-32 mb-16 overflow-hidden"
+						className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 mb-16 overflow-hidden"
 						style={{
 							background:
 								"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",

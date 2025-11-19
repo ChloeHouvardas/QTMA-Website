@@ -1,5 +1,5 @@
 import Layout from "./layout";
-import { QtmaLogo } from "./icons/QtmaLogoArchive";
+import { QtmaLogo } from "./icons/QtmaLogo";
 import Image from "next/image";
 
 export default function Footer() {
@@ -7,10 +7,6 @@ export default function Footer() {
 		<Layout>
 			<div className="flex flex-col justify-center items-center">
 				<QtmaLogo className="w-32 h-auto opacity-90" />
-
-				<span className="text-qtmaPrimaryBlue text-2xl">
-					Follow along.
-				</span>
 				<a
 					href="https://instagram.com/queenstechmedia"
 					target="_blank"
