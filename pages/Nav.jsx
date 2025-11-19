@@ -75,14 +75,14 @@ export default function Nav() {
 							<div className="flex items-center gap-6  text-[#2C3357] opacity-40 font-weight-600">
 								{[
 									"/",
-									"/PRODUCTS",
-									"/TEAM",
+									"/products",
+									"/team",
 									// "/placements",
 									// "/contact",
 								].map((path) => {
 									const name =
 										path === "/"
-											? "HOME"
+											? "Home"
 											: path
 													.replace("/", "")
 													.charAt(0)
@@ -139,10 +139,10 @@ export default function Nav() {
 			</div>
 			<div className="flex flex-col gap-6 text-[#2C3357] opacity-40 font-weight-600">
 						{[
-							"/HOME",
-							"/PRODUCTS",
+							"/",
+							"/products",
 							// "/history",
-							"/TEAM",
+							"/team",
 							// "/placements",
 							// "/contact",
 						].map((path) => {
