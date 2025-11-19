@@ -41,8 +41,6 @@ export default function Products() {
 			<Head>
 				<meta
 					name="description"
-					content="This year, QTMA’s product teams are working on four exciting apps to tackle everyday student
-            problems."
 				/>
 				<title>QTMA</title>
 				<meta name="og:title" content={"QTMA"}/>
@@ -55,13 +53,11 @@ export default function Products() {
 				}
 			>
 					<FloatingBlobsStill />
-				<div id="Products" className="product-container2 product-page2 container relative z-10">
+				<div id="Products" className="product-container2 product-page2 container relative z-10 sm:-mt-5">
 					<h1 className="section-title text-[#3576d3] text-3xl sm:text-4xl mb-4">Products</h1>
-					<p className="text-gray-400 text-lg sm:text-xl mb-8 leading-relaxed">
-						Over the past years, QTMA’s product teams worked on exciting apps to tackle everyday student
-						problems.
-					</p>
-
+					
+					{renderYear('2024-2025')}
+					{renderYear('2023-2024')}
 					{renderYear('2022-2023')}
 					{renderYear('2021-2022')}
 					{renderYear('2020-2021')}
