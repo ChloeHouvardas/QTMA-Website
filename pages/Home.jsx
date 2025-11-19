@@ -95,8 +95,8 @@ export default function Home() {
 
 				</section>
 
-				{/* FOREGROUND CONTENT */}
-				<section className="-mt-24 sm:-mt-56 md:-mt-64 relative z-10">
+		{/* FOREGROUND CONTENT */}
+		<section className="-mt-48 sm:-mt-56 md:-mt-64 relative z-10">
 					{/* Main Title with Parallax */}
 					<div
 						className="flex items-center justify-center"

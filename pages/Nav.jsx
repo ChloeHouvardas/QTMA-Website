@@ -108,36 +108,36 @@ export default function Nav() {
 				</div>
 			</header>
 
-			{/* Mobile Hamburger */}
-			<div className={`${isTablet && !navOn ? "block" : "hidden"}`}>
-				<div
-					className="p-3 cursor-pointer hover:bg-gray-100 transition-colors fixed top-0 right-0 z-50"
-					onClick={() => {
-						setNavOn(!navOn);
-					}}
-				>
-					<AiOutlineMenu size={24} className="text-[#2C3357]" />
-				</div>
-			</div>
+	{/* Mobile Hamburger */}
+	<div className={`${isTablet && !navOn ? "block" : "hidden"}`}>
+		<div
+			className="p-3 cursor-pointer hover:bg-white/10 transition-colors fixed top-4 right-6 z-50"
+			onClick={() => {
+				setNavOn(!navOn);
+			}}
+		>
+			<AiOutlineMenu size={24} className="text-[#2C3357] opacity-40" />
+		</div>
+	</div>
 
-			{/* Mobile Navigation Menu */}
-			<div
-				className={`${
-					isTablet ? "block" : "hidden"
-				} fixed top-0 right-0 h-full w-80 bg-blue-600 shadow-2xl transition-transform duration-300 ease-in-out ${
-					navOn ? "translate-x-0" : "translate-x-full"
-				} z-40`}
-			>
-				<div className="p-6">
-					<div className="flex justify-end mb-8">
-						<button
-							onClick={() => setNavOn(false)}
-							className="text-white hover:text-blue-200 text-2xl"
-						>
-							×
-						</button>
-					</div>
-					<div className="flex flex-col gap-6 text-white text-lg">
+	{/* Mobile Navigation Menu */}
+	<div
+		className={`${
+			isTablet ? "block" : "hidden"
+		} fixed top-0 right-0 h-full w-80 bg-white/70 backdrop-blur-md shadow-2xl transition-transform duration-300 ease-in-out ${
+			navOn ? "translate-x-0" : "translate-x-full"
+		} z-40`}
+	>
+		<div className="p-6">
+			<div className="flex justify-end mb-8">
+				<button
+					onClick={() => setNavOn(false)}
+					className="text-[#2C3357] opacity-40 hover:opacity-60 text-2xl"
+				>
+					×
+				</button>
+			</div>
+			<div className="flex flex-col gap-6 text-[#2C3357] opacity-40 font-weight-600">
 						{[
 							"/HOME",
 							"/PRODUCTS",
@@ -158,12 +158,12 @@ export default function Nav() {
 									key={path}
 									href={path}
 									onClick={() => setNavOn(false)}
-									className={`nav-link hover:text-blue-200 transition-colors py-2 ${
+									className={`nav-link hover:text-blue-600 transition-colors py-2 ${
 										currentPath === path
-											? "text-blue-200 font-semibold border-l-4 border-blue-200 pl-4"
+											? "text-blue-600 font-semibold"
 											: ""
 									}`}
-								>
+									>
 									{name}
 								</Link>
 							);
@@ -175,7 +175,7 @@ export default function Nav() {
 			{/* Mobile overlay */}
 			{navOn && isTablet && (
 				<div
-					className="fixed inset-0 bg-black bg-opacity-50 z-30"
+					className="fixed inset-0 bg-black bg-opacity-0 z-30"
 					onClick={() => setNavOn(false)}
 				/>
 			)}
