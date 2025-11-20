@@ -2,27 +2,36 @@
 import React from "react";
 import { Cloud } from "react-icon-cloud";
 
-// paths are relative to /public
+// Use logos from the `public/assets/Placement Logos` folder
 const logos = [
-  "/assets/Club Data/Placements/adaSupport.png",
-  "/assets/Club Data/Placements/amazon.png",
-  "/assets/Club Data/Placements/bain&co.png",
-  "/assets/Club Data/Placements/blend.png",
-  "/assets/Club Data/Placements/bostonConsultingGroup.png",
-  "/assets/Club Data/Placements/dropbox.png",
-  "/assets/Club Data/Placements/evercore.png",
-  "/assets/Club Data/Placements/google.png",
-  "/assets/Club Data/Placements/instagram.png",
-  "/assets/Club Data/Placements/jpmorgan.png",
-  "/assets/Club Data/Placements/mckinsey.png",
-  "/assets/Club Data/Placements/microsoft.png",
-  "/assets/Club Data/Placements/morganstanley.png",
-  "/assets/Club Data/Placements/next36.png",
-  "/assets/Club Data/Placements/shopify.png",
-  "/assets/Club Data/Placements/tenthousandcoffees.png",
-  "/assets/Club Data/Placements/tesla.png",
-  "/assets/Club Data/Placements/uber.png",
-  "/assets/Club Data/Placements/wealthsimple.png",
+  { src: "/assets/Placement Logos/amazon.png", alt: "Amazon" },
+  { src: "/assets/Placement Logos/aritzia.png", alt: "Aritzia" },
+  { src: "/assets/Placement Logos/barclays.png", alt: "Barclays" },
+  { src: "/assets/Placement Logos/bcg.png", alt: "BCG" },
+  { src: "/assets/Placement Logos/cohere.png", alt: "Cohere" },
+  { src: "/assets/Placement Logos/dior.png", alt: "Dior" },
+  { src: "/assets/Placement Logos/dropbox.png", alt: "Dropbox" },
+  { src: "/assets/Placement Logos/evercore.png", alt: "Evercore" },
+  { src: "/assets/Placement Logos/financialtimes.png", alt: "Financial Times" },
+  { src: "/assets/Placement Logos/google.png", alt: "Google" },
+  { src: "/assets/Placement Logos/harvard.png", alt: "Harvard" },
+  { src: "/assets/Placement Logos/jpmorgan.png", alt: "JPMorgan" },
+  { src: "/assets/Placement Logos/mckinsey.png", alt: "McKinsey" },
+  { src: "/assets/Placement Logos/meta.png", alt: "Meta" },
+  { src: "/assets/Placement Logos/microsoft.png", alt: "Microsoft" },
+  { src: "/assets/Placement Logos/moelis.png", alt: "Moelis" },
+  { src: "/assets/Placement Logos/morganstanley.png", alt: "Morgan Stanley" },
+  { src: "/assets/Placement Logos/next36.png", alt: "Next36" },
+  { src: "/assets/Placement Logos/ontarioteachers.png", alt: "Ontario Teachers" },
+  { src: "/assets/Placement Logos/palantir.png", alt: "Palantir" },
+  { src: "/assets/Placement Logos/paypal.png", alt: "PayPal" },
+  { src: "/assets/Placement Logos/shopify.png", alt: "Shopify" },
+  { src: "/assets/Placement Logos/stanford.png", alt: "Stanford" },
+  { src: "/assets/Placement Logos/tesla.png", alt: "Tesla" },
+  { src: "/assets/Placement Logos/uber.png", alt: "Uber" },
+  { src: "/assets/Placement Logos/wealthsimple.png", alt: "Wealthsimple" },
+  { src: "/assets/Placement Logos/wharton.png", alt: "Wharton" },
+  { src: "/assets/Placement Logos/youtube.png", alt: "YouTube" },
 ];
 
 const cloudOptions = {
@@ -47,15 +56,16 @@ export default function PlacementCloud() {
           style: { width: "100%", height: "100%" },
         }}
       >
-        {logos.map((src, i) => (
+        {logos.map(({ src, alt }, i) => (
           <a
             key={i}
             href="#"
+            title={alt}
             onClick={(e) => e.preventDefault()}
           >
             <img
               src={src}
-              alt=""
+              alt={alt}
               // Let images render at their natural resolution while keeping
               // a reasonable cap so the cloud layout stays tidy.
               style={{
