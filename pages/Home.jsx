@@ -8,14 +8,10 @@ import FloatingBlobs from "../components/FloatingBlobs";
 import { Banner } from "../components/Banner";
 import { LinkBox } from "../components/LinkBox";
 import Nav from "./Nav.jsx";
-import dynamic from "next/dynamic"; 
+
+import PlacementCloud from "../components/PlacementCloud";
 import DecorativePatches from "../components/DecorativePatches";
 import { LogoAndDecos } from "../components/icons/LogoAndDecos";
-
-const PlacementCloud = dynamic(
-  () => import("../components/PlacementCloud"),
-  { ssr: false }
-);
 
 
 function getWindowDimensions() {
