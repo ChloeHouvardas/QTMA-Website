@@ -51,7 +51,6 @@ export default function History() {
 	const { height, width } = useWindowDimensions();
 	const [isMobile, setIsMobile] = useState(false);
 	const [scrollY, setScrollY] = useState(0);
-	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 	
 	const heroRef = useRef(null);
 	const timelineRef = useRef(null);
@@ -71,17 +70,7 @@ export default function History() {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
-	// Mouse tracking for interactive effects
-	useEffect(() => {
-		const handleMouseMove = (e) => {
-			setMousePosition({
-				x: (e.clientX / window.innerWidth) * 100,
-				y: (e.clientY / window.innerHeight) * 100
-			});
-		};
-		window.addEventListener('mousemove', handleMouseMove);
-		return () => window.removeEventListener('mousemove', handleMouseMove);
-	}, []);
+	// mouse movement removed to avoid rerenders on cursor move
 
 	// Timeline events data
 	const timelineEvents = [
@@ -144,7 +133,7 @@ export default function History() {
 					<div 
 						className="absolute w-64 h-64 bg-blue-200 opacity-20 rounded-full blur-3xl animate-pulse"
 						style={{
-							transform: `translate(${mousePosition.x * 0.05}px, ${mousePosition.y * 0.05}px) translateY(${scrollY * 0.1}px)`,
+							transform: `translateY(${scrollY * 0.1}px)`,
 							top: '10%',
 							left: '10%'
 						}}
@@ -152,7 +141,7 @@ export default function History() {
 					<div 
 						className="absolute w-48 h-48 bg-purple-200 opacity-25 rounded-full blur-2xl animate-pulse"
 						style={{
-							transform: `translate(${mousePosition.x * -0.03}px, ${mousePosition.y * -0.03}px) translateY(${scrollY * 0.15}px)`,
+							transform: `translateY(${scrollY * 0.15}px)`,
 							top: '60%',
 							right: '15%',
 							animationDelay: '1s'
@@ -266,7 +255,7 @@ export default function History() {
 					<div 
 						className="absolute w-32 h-32 bg-blue-200 opacity-20 rounded-full blur-xl"
 						style={{
-							transform: `translateY(${scrollY * -0.1}px) translateX(${mousePosition.x * 0.02}px)`,
+							transform: `translateY(${scrollY * -0.1}px)`,
 							top: '20%',
 							left: '10%'
 						}}
@@ -274,7 +263,7 @@ export default function History() {
 					<div 
 						className="absolute w-24 h-24 bg-blue-200 opacity-25 rounded-full blur-lg"
 						style={{
-							transform: `translateY(${scrollY * -0.15}px) translateX(${mousePosition.x * -0.02}px)`,
+							transform: `translateY(${scrollY * -0.15}px)`,
 							top: '70%',
 							right: '20%'
 						}}

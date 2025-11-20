@@ -1,13 +1,22 @@
 "use client";
+
 import Layout from "../components/layout";
 import React, { useEffect, useState } from "react";
 import { QtmaLogo } from "../components/icons/QtmaLogo";
 import FloatingBlobs from "../components/FloatingBlobs";
+// import PlacementCloud from "../components/PlacementCloud";
 import { Banner } from "../components/Banner";
 import { LinkBox } from "../components/LinkBox";
 import Nav from "./Nav.jsx";
+import dynamic from "next/dynamic"; 
 import DecorativePatches from "../components/DecorativePatches";
 import { LogoAndDecos } from "../components/icons/LogoAndDecos";
+
+const PlacementCloud = dynamic(
+  () => import("../components/PlacementCloud"),
+  { ssr: false }
+);
+
 
 function getWindowDimensions() {
 	if (typeof window !== "undefined") {
@@ -45,7 +54,6 @@ export default function Home() {
 	const { height, width } = useWindowDimensions();
 	const [isMobile, setIsMobile] = useState(false);
 	const [scrollY, setScrollY] = useState(0);
-	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
 	useEffect(() => {
 		if (width <= 650) {
@@ -55,25 +63,12 @@ export default function Home() {
 		}
 	}, [width]);
 
-	// Mouse tracking for interactive effects
-	useEffect(() => {
-		const handleMouseMove = (e) => {
-			setMousePosition({
-				x: (e.clientX / window.innerWidth) * 100,
-				y: (e.clientY / window.innerHeight) * 100,
-			});
-		};
-		window.addEventListener("mousemove", handleMouseMove);
-		return () => window.removeEventListener("mousemove", handleMouseMove);
-	}, []);
+	// mouse movement removed to avoid re-renders on cursor move
 
 	return (
 		<Layout home={true}>
 			<div className="relative min-h-screen">
-				<FloatingBlobs
-					mousePosition={mousePosition}
-					scrollY={scrollY}
-				/>
+				<FloatingBlobs scrollY={scrollY} />
 
 				<Nav />
 
@@ -343,6 +338,9 @@ export default function Home() {
 					}
 				`}</style>
 			</div>
-		</Layout>
+				<div className="flex justify-center py-12">
+					<PlacementCloud />
+				</div>
+			</Layout>
 	);
 }
