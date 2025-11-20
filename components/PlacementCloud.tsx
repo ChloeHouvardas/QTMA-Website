@@ -56,10 +56,14 @@ export default function PlacementCloud() {
             <img
               src={src}
               alt=""
+              // Let images render at their natural resolution while keeping
+              // a reasonable cap so the cloud layout stays tidy.
               style={{
-                width: 96, // 👈 bigger logos
-                height: 96,
-                objectFit: "fill",
+                width: "auto",
+                height: "auto",
+                maxWidth: 160,
+                maxHeight: 160,
+                objectFit: "contain",
               }}
             />
           </a>
