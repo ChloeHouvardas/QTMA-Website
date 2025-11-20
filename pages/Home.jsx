@@ -334,7 +334,11 @@ export default function Home() {
 					}
 				`}</style>
 			</div>
-				<div className="flex justify-center py-12">
+				<div className="mt-16 mb-16 flex flex-col justify-center items-center">
+						<div className="flex justify-center text-[#3576d3] text-2xl sm:text-2xl mb-4">Alumni Placements</div>
+					<div className="flex justify-center">
+				</div>
+				
 					<PlacementCloud />
 				</div>
 			</Layout>
