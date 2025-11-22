@@ -14,30 +14,30 @@ import brandonNguyen from "../public/assets/Members/brandonNguyen.jpg";
 import brianYts from "../public/assets/Members/brianYts.jpg";
 import chloeHouvardas from "../public/assets/Members/chloeHouvardas.jpg";
 import claireHu from "../public/assets/Members/claireHu.jpg";
-// import connorLeung from "../public/assets/Members/connorLeung.jpg";
-// import cynthiaChoi from "../public/assets/Members/cynthiaChoi.jpg";
+import connorLeung from "../public/assets/Members/connorLeung.jpg";
+import cynthiaChoi from "../public/assets/Members/cynthiaChoi.jpg";
 import danielYeung from "../public/assets/Members/danielYeung.jpg";
-// import dylanAtwal from "../public/assets/Members/dylanAtwal.jpg";
+import dylanAtwal from "../public/assets/Members/dylanAtwal.jpg";
 import erinZhang from "../public/assets/Members/erinZhang.jpg";
 import hanaBrissenden from "../public/assets/Members/hanaBrissenden.jpg";
 import ilianaMoshkovich from "../public/assets/Members/ilanaMoshkovich.jpg";
 import isaacFung from "../public/assets/Members/isaacFung.jpg";
 import jacquelineHuang from "../public/assets/Members/jacquelineHuang.jpg";
-// import janevraPier from "../public/assets/Members/janevraPier.jpg";
-// import jasmineGao from "../public/assets/Members/jasmineGao.jpg";
+import janevraPier from "../public/assets/Members/janevraPier.jpg";
+import jasmineGao from "../public/assets/Members/jasmineGao.jpg";
 import jasonWu from "../public/assets/Members/jasonWu.jpg";
 import jeremyLin from "../public/assets/Members/jeremyLin.jpg";
 import jessicaHoang from "../public/assets/Members/jessicaHoang.jpg";
 import jessicaTan from "../public/assets/Members/jessicaTan.jpg";
 import jinaKim from "../public/assets/Members/jinaKim.jpg";
-// import joseKerketta from "../public/assets/Members/joseKerketta.jpg";
+import joseKerketta from "../public/assets/Members/joseKerketta.jpg";
 import juliaBartman from "../public/assets/Members/juliaBartman.jpg";
 import kabeloDike from "../public/assets/Members/kabeloDike.jpg";
 import karinaVerma from "../public/assets/Members/karinaVerma.jpg";
-// import kayneLee from "../public/assets/Members/kayneLee.jpg";
+import kayneLee from "../public/assets/Members/kayneLee.jpg";
 import keenanYang from "../public/assets/Members/keenanYang.jpg";
 import kelvinNguyen from "../public/assets/Members/kelvinNguyen.jpg";
-// import kevinValencia from "../public/assets/Members/kevinValencia.jpg";
+import kevinValencia from "../public/assets/Members/kevinValencia.jpg";
 import kevinYe from "../public/assets/Members/kevinYe.jpg";
 import lucasChow from "../public/assets/Members/lucasChow.jpg";
 import lukasCupsa from "../public/assets/Members/lukasCupsa.jpg";
@@ -45,13 +45,14 @@ import matthewKim from "../public/assets/Members/matthewKim.jpg";
 import michaelCurry from "../public/assets/Members/michaelCurry.jpg";
 import miguelPereira from "../public/assets/Members/miguelPereira.jpg";
 import moonLe from "../public/assets/Members/moonLe.jpg";
-// import nathanReynolds from "../public/assets/Members/nathanReynolds.jpg";
+import nathanReynolds from "../public/assets/Members/nathanReynolds.jpg";
+import nicoleSteiner from "../public/assets/Members/nicoleSteiner.jpg";
 import nickArchambault from "../public/assets/Members/nickArchambault.jpg";
-// import noahYu from "../public/assets/Members/noahYu.jpg";
-// import reneeKim from "../public/assets/Members/reneeKim.jpg";
+import noahYu from "../public/assets/Members/noahYu.jpg";
+import reneeKim from "../public/assets/Members/reneeKim.jpg";
 import richardGuo from "../public/assets/Members/richardGuo.jpg";
 import sagePearl from "../public/assets/Members/sagePearl.jpg";
-// import serenaSanchez from "../public/assets/Members/serenaSanchez.jpg";
+import serenaSanchez from "../public/assets/Members/serenaSanchez.jpg";
 import simonRisk from "../public/assets/Members/simonRisk.jpg";
 import sinduMunasinghe from "../public/assets/Members/sinduMunasinghe.jpg";
 import sophiaWang from "../public/assets/Members/sophiaWang.jpg";
@@ -132,7 +133,7 @@ const ClubMembers = [
     "chloe-houvardas"
   ),
   generateMemberData(claireHu, "Claire Hu", "Co-Chair", "claire-hu"),
-  // generateMemberData(janevraPier, "Janevra Pier", "Co-Chair", "janevra-pier"),
+  generateMemberData(janevraPier, "Janevra Pier", "Co-Chair", "janevra-pier"),
 
   // Exec / Club Operations
   generateMemberData(
@@ -149,13 +150,13 @@ const ClubMembers = [
     "aminah-rizwan",
     "Sponsorships"
   ),
-  // generateMemberData(
-  //   cynthiaChoi,
-  //   "Cynthia Choi",
-  //   "Club Operations",
-  //   "cynthia-choi",
-  //   "People & Culture"
-  // ),
+  generateMemberData(
+    cynthiaChoi,
+    "Cynthia Choi",
+    "Club Operations",
+    "cynthia-choi",
+    "People & Culture"
+  ),
 
   generateMemberData(
     michaelCurry,
@@ -164,20 +165,20 @@ const ClubMembers = [
     "michael-curry",
     "Director – PM"
   ),
-  // generateMemberData(
-  //   kayneLee,
-  //   "Kayne Lee",
-  //   "Club Operations",
-  //   "kayne-lee",
-  //   "Director – Dev"
-  // ),
-  // generateMemberData(
-  //   nathanReynolds,
-  //   "Nathan Reynolds",
-  //   "Club Operations",
-  //   "nathan-reynolds",
-  //   "Director – BA"
-  // ),
+  generateMemberData(
+    kayneLee,
+    "Kayne Lee",
+    "Club Operations",
+    "kayne-lee",
+    "Director – Dev"
+  ),
+  generateMemberData(
+    nathanReynolds,
+    "Nathan Reynolds",
+    "Club Operations",
+    "nathan-reynolds",
+    "Director – BA"
+  ),
 
   generateMemberData(
     nickArchambault,
@@ -186,27 +187,27 @@ const ClubMembers = [
     "nick-archambault",
     "Senior Advisor"
   ),
-  // generateMemberData(
-  //   jasmineGao,
-  //   "Jasmine Gao",
-  //   "Club Operations",
-  //   "jasmine-gao",
-  //   "Senior Advisor"
-  // ),
+  generateMemberData(
+    jasmineGao,
+    "Jasmine Gao",
+    "Club Operations",
+    "jasmine-gao",
+    "Senior Advisor"
+  ),
 
   // Product Managers
-  // generateMemberData(
-  //   connorLeung,
-  //   "Connor Leung",
-  //   "Product Manager",
-  //   "connor-leung"
-  // ),
-  // generateMemberData(
-  //   nicoleSteiner,
-  //   "nicole Steiner",
-  //   "Product Manager",
-  //   "nicole-steiner"
-  // ),
+  generateMemberData(
+    connorLeung,
+    "Connor Leung",
+    "Product Manager",
+    "connor-leung"
+  ),
+  generateMemberData(
+    nicoleSteiner,
+    "Nicole Steiner",
+    "Product Manager",
+    "nicole-steiner"
+  ),
   generateMemberData(
     karinaVerma,
     "Karina Verma",
@@ -235,20 +236,20 @@ const ClubMembers = [
     "matthew-kim",
     "Sr. UI/UX Designer"
   ),
-  // generateMemberData(
-  //   serenaSanchez,
-  //   "Serena Sanchez",
-  //   "UI/UX Designer",
-  //   "serena-sanchez",
-  //   "Sr. UI/UX Designer"
-  // ),
-  // generateMemberData(
-  //   noahYu,
-  //   "Noah Yu",
-  //   "UI/UX Designer",
-  //   "noah-yu",
-  //   "Sr. UI/UX Designer"
-  // ),
+  generateMemberData(
+    serenaSanchez,
+    "Serena Sanchez",
+    "UI/UX Designer",
+    "serena-sanchez",
+    "Sr. UI/UX Designer"
+  ),
+  generateMemberData(
+    noahYu,
+    "Noah Yu",
+    "UI/UX Designer",
+    "noah-yu",
+    "Sr. UI/UX Designer"
+  ),
 
   // UI/UX Designers
   generateMemberData(
@@ -271,7 +272,7 @@ const ClubMembers = [
     "amelia-halverson"
   ),
   generateMemberData(jinaKim, "Jina Kim", "UI/UX Designer", "jina-kim"),
-  // generateMemberData(reneeKim, "Renee Kim", "UI/UX Designer", "renee-kim"),
+  generateMemberData(reneeKim, "Renee Kim", "UI/UX Designer", "renee-kim"),
   generateMemberData(
     keenanYang,
     "Keenan Yang",
@@ -307,7 +308,7 @@ const ClubMembers = [
   generateMemberData(kabeloDike, "Kabelo Dike", "Developer", "kabelo-dike"),
   generateMemberData(isaacFung, "Isaac Fung", "Developer", "isaac-fung"),
   generateMemberData(richardGuo, "Richard Guo", "Developer", "richard-guo"),
-  // generateMemberData(joseKerketta, "Jose Kerketta", "Developer", "jose-kerketta"),
+  generateMemberData(joseKerketta, "Jose Kerketta", "Developer", "jose-kerketta"),
   generateMemberData(kelvinNguyen, "Kelvin Nguyen", "Developer", "kelvin-nguyen"),
   generateMemberData(
     miguelPereira,
@@ -315,12 +316,12 @@ const ClubMembers = [
     "Developer",
     "miguel-pereira"
   ),
-  // generateMemberData(
-  //   kevinValencia,
-  //   "Kevin Valencia",
-  //   "Developer",
-  //   "kevin-valencia"
-  // ),
+  generateMemberData(
+    kevinValencia,
+    "Kevin Valencia",
+    "Developer",
+    "kevin-valencia"
+  ),
   generateMemberData(sophiaWang, "Sophia Wang", "Developer", "sophia-wang"),
   generateMemberData(jasonWu, "Jason Wu", "Developer", "jason-wu"),
 
@@ -346,7 +347,7 @@ const ClubMembers = [
   ),
 
   // Business Analysts
-  // generateMemberData(dylanAtwal, "Dylan Atwal", "Business Analyst", "dylan-atwal"),
+  generateMemberData(dylanAtwal, "Dylan Atwal", "Business Analyst", "dylan-atwal"),
   generateMemberData(
     juliaBartman,
     "Julia Bartman",
