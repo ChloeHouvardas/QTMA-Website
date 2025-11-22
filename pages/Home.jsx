@@ -162,10 +162,10 @@ export default function Home() {
 								"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
 						}}
 					>
-					<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
-					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
-					<div className="max-w-6xl mx-auto relative z-10">
-						<div className="text-left max-w-[600px] mb-8">
+				<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
+				<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
+				<div className="max-w-6xl mx-auto relative z-10 px-4 sm:px-0">
+					<div className="text-left max-w-[600px] mb-8">
 							<h2 className="text-[#3576d3] text-3xl sm:text-4xl font-bold mb-4">
 								Why Choose QTMA?
 							</h2>

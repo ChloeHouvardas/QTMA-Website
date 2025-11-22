@@ -24,35 +24,33 @@ const Team = () => {
 				"Designers. Developers. Analysts. Building at Canada's premier product incubation club."
 			}
 		>
-			<FloatingBlobsStill />
-			<div className="mx-auto w-full max-w-[2400px] px-12 sm:px-16 lg:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)] relative z-10">
-				<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-bold mb-8">
-					Meet the Team
-				</h1>
-				<div className="flex justify-center gap-20 mb-20">
-					<LinkBox
-						message="Product Managers"
-						className="hover:scale-105 transition-transform duration-300"
-						link="#product-manager"
-					/>
-					<LinkBox
-						message="Developers"
-						className="hover:scale-105 transition-transform duration-300"
-						link="#developer"
-					/>
-					<LinkBox
-						message="Business Analysts"
-						className="hover:scale-105 transition-transform duration-300"
-						link="#business-analyst"
-					/>
-					<LinkBox
-						message="UIUX Designers"
-						className="hover:scale-105 transition-transform duration-300"
-						link="#ui/ux-designer"
-					/>
-				</div>
-
-				{Positions.map((role) => {
+		<FloatingBlobsStill />
+		<div className="mx-auto w-full max-w-[2400px] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)] relative z-10">
+			<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
+				Meet the Team
+			</h1>
+			<div className="flex flex-wrap justify-center gap-3 sm:gap-6 md:gap-12 lg:gap-20 mb-12 sm:mb-16 md:mb-20">
+				<LinkBox
+					message="Product Managers"
+					className="hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+					link="#product-manager"
+				/>
+				<LinkBox
+					message="Developers"
+					className="hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+					link="#developer"
+				/>
+				<LinkBox
+					message="Business Analysts"
+					className="hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+					link="#business-analyst"
+				/>
+				<LinkBox
+					message="UIUX Designers"
+					className="hover:scale-105 transition-transform duration-300 text-sm sm:text-base"
+					link="#ui/ux-designer"
+				/>
+			</div>				{Positions.map((role) => {
 					const members = ClubMembers.filter(
 						(m) => m.position === role
 					);
