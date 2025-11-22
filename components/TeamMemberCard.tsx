@@ -9,6 +9,9 @@ type Props = {
 };
 
 export function TeamMemberCard({ name, image, subPosition, linkedIn }: Props) {
+	const websiteContributors = ["Janevra Pier", "Kayne Lee", "Simon Risk", "Chloe Houvardas"];
+	const isContributor = websiteContributors.includes(name);
+
 	return (
 		<div className="flex flex-col items-center justify-center text-center">
 			<a
@@ -40,7 +43,14 @@ export function TeamMemberCard({ name, image, subPosition, linkedIn }: Props) {
 					/>
 				</div>
 			</a>
-			<p className="">{name}</p>
+			<p className={`${isContributor ? 'relative group' : ''}`}>
+				{name}
+				{isContributor && (
+					<span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-1.5 bg-blue-600 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none z-50">
+						Thank you for helping with the website!
+					</span>
+				)}
+			</p>
 		</div>
 	);
 }
