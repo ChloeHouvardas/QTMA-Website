@@ -162,17 +162,17 @@ export default function Home() {
 								"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
 						}}
 					>
-						<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
-						<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
-						<div className="max-w-6xl mx-auto relative z-10">
-							<div className="text-left max-w-[600px] mb-8">
-								<h2 className="text-[#3576d3] text-3xl sm:text-4xl mb-4">
-									Why Choose QTMA?
-								</h2>
-								<p className="text-gray-400 text-lg sm:text-xl mb-6">
-									We're more than just a club - we're a
-									community of innovators, creators, and
-									future leaders.
+					<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
+					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
+					<div className="max-w-6xl mx-auto relative z-10">
+						<div className="text-left max-w-[600px] mb-8">
+							<h2 className="text-[#3576d3] text-3xl sm:text-4xl font-bold mb-4">
+								Why Choose QTMA?
+							</h2>
+							<p className="text-gray-400 text-lg sm:text-xl mb-6">
+								We're more than just a club - we're a
+								community of innovators, creators, and
+								future leaders.
 								</p>
 							</div>
 							<div className="grid md:grid-cols-3 gap-8">
@@ -283,15 +283,15 @@ export default function Home() {
 					>
 						<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
 						<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
-						<div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
-							<div className="text-left max-w-[600px]">
-								<h2 className="text-[#3576d3] text-3xl sm:text-4xl mb-4">
-									Ready to Build the Future?
-								</h2>
-								<p className="text-gray-400 text-lg sm:text-xl mb-6">
-									Join QTMA today and be part of Queen's most
-									innovative student organization.
-								</p>
+					<div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+						<div className="text-left max-w-[600px]">
+							<h2 className="text-[#3576d3] text-3xl sm:text-4xl font-bold mb-4">
+								Ready to Build the Future?
+							</h2>
+							<p className="text-gray-400 text-lg sm:text-xl mb-6">
+								Join QTMA today and be part of Queen's most
+								innovative student organization.
+							</p>
 								<div className="flex flex-col sm:flex-row gap-4">
 									<LinkBox
 										message="JOIN OUR COMMUNITY"
@@ -335,7 +335,7 @@ export default function Home() {
 				`}</style>
 			</div>
 				<div className="mt-16 mb-16 flex flex-col justify-center items-center">
-						<div className="flex justify-center text-[#3576d3] text-2xl sm:text-2xl mb-4">Alumni Placements</div>
+						<div className="flex justify-center text-[#3576d3] text-2xl sm:text-2xl font-bold mb-4">Alumni Placements</div>
 					<div className="flex justify-center">
 				</div>
 				
