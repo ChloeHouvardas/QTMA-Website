@@ -637,7 +637,7 @@ const ProductData = [
 			"portfolio!")
 		.build(),
 	new ProductBuilder()
-		.setName("Lil Chef")
+		.setName("Lilchef")
 		.setYear("2024-2025")
 		.setSlogan("Find teammates to build your next side project")
 		.setStudentData([
@@ -660,7 +660,7 @@ const ProductData = [
 			"portfolio!")
 		.build(),
 	new ProductBuilder()
-		.setName("Fuji Plans")
+		.setName("Fujiplans")
 		.setYear("2024-2025")
 		.setSlogan("Find teammates to build your next side project")
 		.setStudentData([
