@@ -1,6 +1,8 @@
 import Nav from "../Nav";
 import Head from "next/head";
 import Footer from "../../components/Footer";
+import Layout from "../../components/layout";
+import FloatingBlobsStill from "../../components/FloatingBlobsStill";
 import { ClubMembers, Positions } from "../../data/TeamData.js";
 import { TeamRoleSection } from "../../components/TeamRoleSection";
 import { LinkBox } from "../../components/LinkBox";
@@ -16,10 +18,17 @@ const Team = () => {
 
 		<Nav />
 
-		<div className="mx-auto w-full max-w-[2400px] px-12 sm:px-16 lg:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)]">
-			<h1 className="text-qtmaPrimaryDark text-center text-4xl font-semibold mb-8">
-				Meet the Team
-			</h1>
+		<Layout
+			background="linear-gradient(135deg, #e3edfa 0%, #f3f4fa 100%)"
+			metaInfo={
+				"Designers. Developers. Analysts. Building at Canada's premier product incubation club."
+			}
+		>
+			<FloatingBlobsStill />
+			<div className="mx-auto w-full max-w-[2400px] px-12 sm:px-16 lg:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)] relative z-10">
+				<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-bold mb-8">
+					Meet the Team
+				</h1>
 				<div className="flex justify-center gap-20 mb-20">
 					<LinkBox
 						message="Product Managers"
@@ -58,7 +67,8 @@ const Team = () => {
 					);
 				})}
 			</div>
-			<Footer />
+		</Layout>
+		<Footer />
 		</>
 	);
 };

@@ -54,7 +54,7 @@ export default function Products() {
 			>
 					<FloatingBlobsStill />
 				<div id="Products" className="product-container2 product-page2 container relative z-10">
-					<h1 className="section-title text-[#3576d3] text-3xl sm:text-4xl mb-4">Products</h1>
+					<h1 className="section-title text-[#3576d3] text-center text-3xl sm:text-4xl font-bold mb-8">Products</h1>
 					
 					{renderYear('2024-2025')}
 					{renderYear('2023-2024')}

@@ -2,16 +2,17 @@
  * Data for all QTMA members – 2025/26 roster
  */
 
-// import amandaCao from "../public/assets/Members/amandaCao.jpg";
-// import amandaLi from "../public/assets/Members/amandaLi.jpg";
+// TODO replace with high quality
+import amandaCao from "../public/assets/Members/amandaCao.jpg";
+import amandaLi from "../public/assets/Members/amandaLi.jpg";
 import ameliaHalverson from "../public/assets/Members/ameliaHalverson.jpg";
-// import aminahRizwan from "../public/assets/Members/aminahRizwan.jpg";
+import aminahRizwan from "../public/assets/Members/aminahRizwan.jpg";
 import andreaCozbaru from "../public/assets/Members/andreaCobzaru.jpg";
 import anthonyQiu from "../public/assets/Members/anthonyQiu.jpg";
 import bethArmstrong from "../public/assets/Members/bethArmstrong.jpg";
 import brandonNguyen from "../public/assets/Members/brandonNguyen.jpg";
 import brianYts from "../public/assets/Members/brianYts.jpg";
-// import chloeHouvardas from "../public/assets/Members/chloeHouvardas.jpg";
+import chloeHouvardas from "../public/assets/Members/chloeHouvardas.jpg";
 import claireHu from "../public/assets/Members/claireHu.jpg";
 // import connorLeung from "../public/assets/Members/connorLeung.jpg";
 // import cynthiaChoi from "../public/assets/Members/cynthiaChoi.jpg";
@@ -51,7 +52,7 @@ import nickArchambault from "../public/assets/Members/nickArchambault.jpg";
 import richardGuo from "../public/assets/Members/richardGuo.jpg";
 import sagePearl from "../public/assets/Members/sagePearl.jpg";
 // import serenaSanchez from "../public/assets/Members/serenaSanchez.jpg";
-// import simonRisk from "../public/assets/Members/simonRisk.jpg";
+import simonRisk from "../public/assets/Members/simonRisk.jpg";
 import sinduMunasinghe from "../public/assets/Members/sinduMunasinghe.jpg";
 import sophiaWang from "../public/assets/Members/sophiaWang.jpg";
 import thomasHuo from "../public/assets/Members/thomasHuo.jpg";
@@ -124,30 +125,30 @@ const generateMemberData = (
 const ClubMembers = [
   // Co-Chairs
   generateMemberData(williamDu, "William Du", "Co-Chair", "william-du"),
-  // generateMemberData(
-  //   chloeHouvardas,
-  //   "Chloe Houvardas",
-  //   "Co-Chair",
-  //   "chloe-houvardas"
-  // ),
+  generateMemberData(
+    chloeHouvardas,
+    "Chloe Houvardas",
+    "Co-Chair",
+    "chloe-houvardas"
+  ),
   generateMemberData(claireHu, "Claire Hu", "Co-Chair", "claire-hu"),
   // generateMemberData(janevraPier, "Janevra Pier", "Co-Chair", "janevra-pier"),
 
   // Exec / Club Operations
-  // generateMemberData(
-  //   amandaLi,
-  //   "Amanda Li",
-  //   "Club Operations",
-  //   "amanda-li",
-  //   "Marketing"
-  // ),
-  // generateMemberData(
-  //   aminahRizwan,
-  //   "Aminah Rizwan",
-  //   "Club Operations",
-  //   "aminah-rizwan",
-  //   "Sponsorships"
-  // ),
+  generateMemberData(
+    amandaLi,
+    "Amanda Li",
+    "Club Operations",
+    "amanda-li",
+    "Marketing"
+  ),
+  generateMemberData(
+    aminahRizwan,
+    "Aminah Rizwan",
+    "Club Operations",
+    "aminah-rizwan",
+    "Sponsorships"
+  ),
   // generateMemberData(
   //   cynthiaChoi,
   //   "Cynthia Choi",
@@ -256,12 +257,13 @@ const ClubMembers = [
     "UI/UX Designer",
     "beth-armstrong"
   ),
-  // generateMemberData(
-  //   amandaCao,
-  //   "Amanda Cao",
-  //   "UI/UX Designer",
-  //   "amanda-cao"
-  // ),
+  // TODO replace with high quality
+  generateMemberData(
+    amandaCao,
+    "Amanda Cao",
+    "UI/UX Designer",
+    "amanda-cao"
+  ),
   generateMemberData(
     ameliaHalverson,
     "Amelia Halverson",
@@ -292,7 +294,7 @@ const ClubMembers = [
     "sindu-munasinghe"
   ),
   generateMemberData(anthonyQiu, "Anthony Qiu", "Senior Developer", "anthony-qiu"),
-  // generateMemberData(simonRisk, "Simon Risk", "Senior Developer", "simon-risk"),
+  generateMemberData(simonRisk, "Simon Risk", "Senior Developer", "simon-risk"),
 
   // Developers
   generateMemberData(
