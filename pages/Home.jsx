@@ -86,10 +86,10 @@ export default function Home() {
 				</section>
 
 		{/* FOREGROUND CONTENT */}
-		<section className="-mt-48 sm:-mt-56 md:-mt-40 relative z-10">
+		<section className="-mt-48 sm:-mt-56 md:-mt-40 relative z-10 w-full">
 					{/* Main Title with Parallax */}
 					<div
-						className="flex items-center justify-center"
+						className="flex items-center justify-center w-full"
 						style={{
 							transform: `translateY(${scrollY * -0.2}px)`,
 						}}
@@ -154,7 +154,7 @@ export default function Home() {
 
 				{!isMobile ? (
 					<div
-						className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 overflow-hidden"
+						className="relative rounded-none sm:rounded-3xl py-12 sm:py-16 px-4 sm:px-8 lg:px-16 overflow-hidden"
 						style={{
 							background:
 								"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
@@ -165,8 +165,8 @@ export default function Home() {
 					<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
 					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
 					<div className="max-w-6xl mx-auto relative z-10">
-						<div className="text-left max-w-[600px] mb-8">
-							<h2 className="text-[#3576d3] text-3xl sm:text-4xl font-bold mb-4">
+						<div className="text-left max-w-[600px] mb-6 sm:mb-8">
+							<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
 								Why Choose QTMA?
 							</h2>
 							<p className="text-gray-400 text-lg sm:text-xl mb-6">
@@ -213,7 +213,7 @@ export default function Home() {
 					</div>
 				) : (
 					<div
-						className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 overflow-hidden"
+						className="relative rounded-none sm:rounded-3xl py-12 sm:py-16 px-4 sm:px-8 lg:px-16 overflow-hidden"
 						style={{
 							background:
 								"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
@@ -221,11 +221,11 @@ export default function Home() {
 								"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
 						}}
 					>
-						<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
-						<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
-						<div className="max-w-6xl mx-auto relative z-10">
-							<div className="text-left max-w-[600px] mb-8">
-								<h2 className="text-[#3576d3] text-3xl sm:text-4xl mb-4">
+					<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
+					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
+					<div className="max-w-6xl mx-auto relative z-10">
+						<div className="text-left max-w-[600px] mb-6 sm:mb-8">
+							<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
 									Why Choose QTMA?
 								</h2>
 								<p className="text-gray-400 text-lg sm:text-xl mb-6">
@@ -270,29 +270,29 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-				)}					<div className="mt-16 mb-16"></div>
+				)}					<div className="mt-12 sm:mt-16 mb-12 sm:mb-16"></div>
 
-					{/* Final CTA Section - Styled like Banner */}
-					<div
-						className="relative rounded-3xl py-16 px-4 sm:px-8 lg:px-16 mb-16 overflow-hidden"
-						style={{
-							background:
-								"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
+				{/* Final CTA Section - Styled like Banner */}
+				<div
+					className="relative rounded-none sm:rounded-3xl py-12 sm:py-16 px-4 sm:px-8 lg:px-16 mb-0 sm:mb-16 overflow-hidden"
+					style={{
+						background:
+							"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
 							boxShadow: "0 8px 32px 0 rgba(53, 118, 211, 0.08)",
 						}}
 					>
-						<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
-						<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
-					<div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
-						<div className="text-left max-w-[600px]">
-							<h2 className="text-[#3576d3] text-3xl sm:text-4xl font-bold mb-4">
+					<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
+					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
+					<div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 relative z-10">
+						<div className="text-left max-w-[600px] w-full">
+							<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
 								Ready to Build the Future?
 							</h2>
-							<p className="text-gray-400 text-lg sm:text-xl mb-6">
+							<p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
 								Join QTMA today and be part of Queen's most
 								innovative student organization.
 							</p>
-								<div className="flex flex-col sm:flex-row gap-4">
+							<div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
 									<LinkBox
 										message="JOIN OUR COMMUNITY"
 										link="/contact"

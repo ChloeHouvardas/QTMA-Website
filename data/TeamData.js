@@ -7,7 +7,7 @@ import amandaCao from "../public/assets/Members/amandaCao.jpg";
 import amandaLi from "../public/assets/Members/amandaLi.jpg";
 import ameliaHalverson from "../public/assets/Members/ameliaHalverson.jpg";
 import aminahRizwan from "../public/assets/Members/aminahRizwan.jpg";
-import andreaCozbaru from "../public/assets/Members/andreaCobzaru.jpg";
+import andreaCobzaru from "../public/assets/Members/andreaCobzaru.jpg";
 import anthonyQiu from "../public/assets/Members/anthonyQiu.jpg";
 import bethArmstrong from "../public/assets/Members/bethArmstrong.jpg";
 import brandonNguyen from "../public/assets/Members/brandonNguyen.jpg";
@@ -283,8 +283,8 @@ const ClubMembers = [
 
   // Sr. Developers
   generateMemberData(
-    andreaCozbaru,
-    "Andrea Cozbaru",
+    andreaCobzaru,
+    "Andrea Cobzaru",
     "Senior Developer",
     "andrea-cobzaru"
   ),
