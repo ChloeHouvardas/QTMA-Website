@@ -1,12 +1,15 @@
 .product-page2 {
-	margin-top: $navHeightLg;
+	margin-top: 0;
+	padding-top: 1rem;
 	@media only screen and (max-width: 650px) {
 		margin-top: $navHeightSm;
+		padding-top: 0.5rem;
 	}
 }
 
 .product-container2 {
 	height: 100%;
+	background-color: transparent;
 	display: flex;
 	align-items: center;
 	flex-direction: column;

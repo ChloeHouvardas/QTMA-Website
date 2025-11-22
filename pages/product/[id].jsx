@@ -40,6 +40,18 @@ export const getStaticPaths = async () => {
 			{params: {id: "Kartt"}},
 			{params: {id: "Sift"}},
 			{params: {id: "Venato"}},
+
+			// 2023-2024
+			{params: {id: "Feastly"}},
+			{params: {id: "Kartt"}},
+			{params: {id: "Sift"}},
+			{params: {id: "Venato"}},
+
+			// 2024-2025
+			{params: {id: "Nucleus"}},
+			{params: {id: "Fujiplans"}},
+			{params: {id: "Inquiro"}},
+			{params: {id: "Lilchef"}},
 		],
 		fallback: false,
 	};

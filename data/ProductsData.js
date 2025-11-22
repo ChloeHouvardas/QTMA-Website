@@ -27,7 +27,7 @@ const ProductBuilder = function () {
 			return this;
 		},
 		setYear: function (year) {
-			if (year.match(/^20(19|20|21|22)-202[0-3]$/) == null || Number(year.substring(0, 4)) + 1 !== Number(year.substring(5, 9))) {
+			if (year.match(/^20(19|20|21|22|23|24|25)-202[0-5]$/) == null || Number(year.substring(0, 4)) + 1 !== Number(year.substring(5, 9))) {
 				throw new Error(`Year ${year} is invalid, see regex`);
 			}
 			this.year = year;
@@ -485,6 +485,204 @@ const ProductData = [
 			"organize your job application processes.")
 		.setLink("https://venatoapp.ca/")
 		.build(),
+
+	/*
+	 * 2023-2024
+	 */
+
+	new ProductBuilder()
+		.setName("Dilliad")
+		.setYear("2023-2024")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
+		])
+		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
+		.build(),
+		new ProductBuilder()
+		.setName("Pantree")
+		.setYear("2023-2024")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
+		])
+		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
+		.build(),
+		new ProductBuilder()
+		.setName("Orah")
+		.setYear("2023-2024")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
+		])
+		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
+		.build(),
+		new ProductBuilder()
+		.setName("Parki")
+		.setYear("2023-2024")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
+		])
+		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
+		.build(),
+
+
+
+
+	/*
+	 * 2024-2025
+	 */
+
+	new ProductBuilder()
+		.setName("Nucleus")
+		.setYear("2024-2025")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
+		])
+		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
+		.build(),
+	new ProductBuilder()
+		.setName("Inquiro")
+		.setYear("2024-2025")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
+		])
+		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
+		.build(),
+	new ProductBuilder()
+		.setName("Lilchef")
+		.setYear("2024-2025")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
+		])
+		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
+		.build(),
+	new ProductBuilder()
+		.setName("Fujiplans")
+		.setYear("2024-2025")
+		.setSlogan("Find teammates to build your next side project")
+		.setStudentData([
+			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
+			["Truman Be", "truman-be", "Senior Developer"],
+			["Jessica Li", "jessica-a-li", "Developer"],
+			["Kevin Subagaran", "#", "Developer"],
+			["Ronan Almeida", "#", "Developer"],
+			["Randy Shao", "randyshao", "UI/UX Designer"],
+			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Chris Power", "#", "Business Analyst"],
+			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Manush Patel", "manushpatel", "Frosh Rep"],
+		])
+		.setLogoDimensions({width: 220, height: 80})
+		.setOverview("Everyone loves thinking about and starting side projects, but we " +
+			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
+			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
+			"developers so you can focus & collaborate on making effective projects to beef up your " +
+			"portfolio!")
+		.build(),
+
 ]
 
 export default ProductData;

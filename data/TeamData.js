@@ -1,450 +1,420 @@
 /**
- * Data for all QTMA members
+ * Data for all QTMA members – 2025/26 roster
  */
 
-import MatthewMacEachern from "../public/assets/Members/Matthew_MacEachern.png";
-import AlisonXia from "../public/assets/Members/Alison_Xia.png";
-import EgorPetrov from "../public/assets/Members/Egor_Petrov.png";
-import BigGuy from "../public/assets/Members/Egor_Petrov.png";
-
-import KevinLiang from "../public/assets/Members/Kevin_Liang.png";
-import OliviaXu from "../public/assets/Members/Olivia_Xu.png";
-import HelenXu from "../public/assets/Members/Helen_Xu.png";
-import MahirHamid from "../public/assets/Members/Mahir_Hamid.png";
-import SriyaNarra from "../public/assets/Members/Sriya_Narra.png";
-import ArchitaSabhani from "../public/assets/Members/Archita_Sabhani.png";
-import MathhewKim from "../public/assets/Members/Mathhew_Kim.png";
-
-import ThomasHuang from "../public/assets/Members/Thomas_Huang.png";
-import GrahamCarkner from "../public/assets/Members/Graham_Carkner.png";
-import AlexLian from "../public/assets/Members/Alex_Lian.png";
-import ManushPatel from "../public/assets/Members/Manush_Patel.png";
-
-import JadeWei from "../public/assets/Members/Jade_Wei.png";
-import ReidMoffat from "../public/assets/Members/Reid_Moffat.png";
-import CainSusko from "../public/assets/Members/Cain_Susko.png";
-import YvesAlikalfic from "../public/assets/Members/Yves_Alikalfic.png";
-
-import JulianBrickman from "../public/assets/Members/Julian_Brickman.png";
-import SophieEllwood from "../public/assets/Members/Sophie_Ellwood.png";
-import MichaelHan from "../public/assets/Members/Michael_Han.png";
-import ConnorRewa from "../public/assets/Members/Connor_Rewa.png";
-import DharsanRavindran from "../public/assets/Members/Dharsan_Ravindran.png";
-import XimingYu from "../public/assets/Members/Ximing_Yu.png";
-import SavannahHan from "../public/assets/Members/Savannah_Han.png";
-import ConnorLeung from "../public/assets/Members/Connor_Leung.png";
-import DanielJoseph from "../public/assets/Members/Daniel_Joseph.png";
-import ShakibAbsar from "../public/assets/Members/Shakib_Absar.png";
-import AlBarrAjiboye from "../public/assets/Members/Al-Barr_Ajiboye.png";
-import MattDobaj from "../public/assets/Members/Matt_Dobaj.png";
-import KeelyMcSpurren from "../public/assets/Members/Keely_McSpurren.png";
-
-import ShabichaSureshkumar from "../public/assets/Members/Shabicha_Sureshkumar.png";
-import AmandaLi from "../public/assets/Members/Amanda_Li.png";
-import ErinZhang from "../public/assets/Members/Erin_Zhang.png";
-import MikeNguyen from "../public/assets/Members/Mike_Nguyen.png";
-import JasmineGao from "../public/assets/Members/Jasmine_Gao.png";
-
-import AidanBrown from "../public/assets/Members/Aidan_Brown.png";
-import BeatriceBeneciaSetiawan from "../public/assets/Members/Beatrice_Benecia_Setiawan.png";
-import StevenVuong from "../public/assets/Members/Steven_Vuong.png";
-import NickArchambault from "../public/assets/Members/Nick_Archambault.png";
-
-import VasiliPiliouras from "../public/assets/Members/Vasili_Piliouras.png";
-import JennieChoi from "../public/assets/Members/Jennie_Choi.png";
-import HannahHe from "../public/assets/Members/Hannah_He.png";
-import WilliamDu from "../public/assets/Members/William_Du.png";
-import AminahRizvan from "../public/assets/Members/Aminah_Rizvan.png";
-import MarcusHui from "../public/assets/Members/Marcus_Hui.png";
-import CynthiaChoi from "../public/assets/Members/Cynthia_Choi.png";
-import ClaireHu from "../public/assets/Members/Claire_Hu.png";
-import EmanuelPiccinini from "../public/assets/Members/Emanuel_Piccinini.png";
-
-import LukasCupsa from "../public/assets/Members/Lukas_Cupsa.png";
-import JanevraPier from "../public/assets/Members/Janevra_Pier.png";
-import SindusaraMunasinghe from "../public/assets/Members/Sindusara_Munasinghe.png";
-import NathanReynolds from "../public/assets/Members/Nathan_Reynolds.png";
-
-import KevinYu from "../public/assets/Members/Kevin_Yu.png";
+// TODO replace with high quality
+import amandaCao from "../public/assets/Members/amandaCao.jpg";
+import amandaLi from "../public/assets/Members/amandaLi.jpg";
+import ameliaHalverson from "../public/assets/Members/ameliaHalverson.jpg";
+import aminahRizwan from "../public/assets/Members/aminahRizwan.jpg";
+import andreaCobzaru from "../public/assets/Members/andreaCobzaru.jpg";
+import anthonyQiu from "../public/assets/Members/anthonyQiu.jpg";
+import bethArmstrong from "../public/assets/Members/bethArmstrong.jpg";
+import brandonNguyen from "../public/assets/Members/brandonNguyen.jpg";
+import brianYts from "../public/assets/Members/brianYts.jpg";
+import chloeHouvardas from "../public/assets/Members/chloeHouvardas.jpg";
+import claireHu from "../public/assets/Members/claireHu.jpg";
+import connorLeung from "../public/assets/Members/connorLeung.jpg";
+import cynthiaChoi from "../public/assets/Members/cynthiaChoi.jpg";
+import danielYeung from "../public/assets/Members/danielYeung.jpg";
+import dylanAtwal from "../public/assets/Members/dylanAtwal.jpg";
+import erinZhang from "../public/assets/Members/erinZhang.jpg";
+import hanaBrissenden from "../public/assets/Members/hanaBrissenden.jpg";
+import ilianaMoshkovich from "../public/assets/Members/ilanaMoshkovich.jpg";
+import isaacFung from "../public/assets/Members/isaacFung.jpg";
+import jacquelineHuang from "../public/assets/Members/jacquelineHuang.jpg";
+import janevraPier from "../public/assets/Members/janevraPier.jpg";
+import jasmineGao from "../public/assets/Members/jasmineGao.jpg";
+import jasonWu from "../public/assets/Members/jasonWu.jpg";
+import jeremyLin from "../public/assets/Members/jeremyLin.jpg";
+import jessicaHoang from "../public/assets/Members/jessicaHoang.jpg";
+import jessicaTan from "../public/assets/Members/jessicaTan.jpg";
+import jinaKim from "../public/assets/Members/jinaKim.jpg";
+import joseKerketta from "../public/assets/Members/joseKerketta.jpg";
+import juliaBartman from "../public/assets/Members/juliaBartman.jpg";
+import kabeloDike from "../public/assets/Members/kabeloDike.jpg";
+import karinaVerma from "../public/assets/Members/karinaVerma.jpg";
+import kayneLee from "../public/assets/Members/kayneLee.jpg";
+import keenanYang from "../public/assets/Members/keenanYang.jpg";
+import kelvinNguyen from "../public/assets/Members/kelvinNguyen.jpg";
+import kevinValencia from "../public/assets/Members/kevinValencia.jpg";
+import kevinYe from "../public/assets/Members/kevinYe.jpg";
+import lucasChow from "../public/assets/Members/lucasChow.jpg";
+import lukasCupsa from "../public/assets/Members/lukasCupsa.jpg";
+import matthewKim from "../public/assets/Members/matthewKim.jpg";
+import michaelCurry from "../public/assets/Members/michaelCurry.jpg";
+import miguelPereira from "../public/assets/Members/miguelPereira.jpg";
+import moonLe from "../public/assets/Members/moonLe.jpg";
+import nathanReynolds from "../public/assets/Members/nathanReynolds.jpg";
+import nicoleSteiner from "../public/assets/Members/nicoleSteiner.jpg";
+import nickArchambault from "../public/assets/Members/nickArchambault.jpg";
+import noahYu from "../public/assets/Members/noahYu.jpg";
+import reneeKim from "../public/assets/Members/reneeKim.jpg";
+import richardGuo from "../public/assets/Members/richardGuo.jpg";
+import sagePearl from "../public/assets/Members/sagePearl.jpg";
+import serenaSanchez from "../public/assets/Members/serenaSanchez.jpg";
+import simonRisk from "../public/assets/Members/simonRisk.jpg";
+import sinduMunasinghe from "../public/assets/Members/sinduMunasinghe.jpg";
+import sophiaWang from "../public/assets/Members/sophiaWang.jpg";
+import thomasHuo from "../public/assets/Members/thomasHuo.jpg";
+import udulaAbeykoon from "../public/assets/Members/udulaAbeykoon.jpg";
+import vivianLee from "../public/assets/Members/vivianLee.jpg";
+import williamDu from "../public/assets/Members/williamDu.jpg";
+import zaneAlhamwy from "../public/assets/Members/zaneAlhamwy.jpg";
 
 // All positions team members can have
 const Positions = [
-	"Co-Chair",
-	"Club Operations",
+  "Co-Chair",
+  "Club Operations",
 
-	"Product Manager",
-	"Senior Developer",
-	"Developer",
-	"UI/UX Designer",
-	"Senior Business Analyst",
-	"Business Analyst",
-	"Frosh Rep",
+  "Product Manager",
+  "Senior Developer",
+  "Developer",
+  "Senior UI/UX Designer",
+  "UI/UX Designer",
+  "Senior Business Analyst",
+  "Business Analyst",
+  "Frosh Rep",
 
-	"Website Developer",
+  "Website Developer",
 ];
 
 const generateMemberData = (
-	image,
-	name,
-	position,
-	linkedin = "",
-	subPosition = ""
+  image,
+  name,
+  position,
+  linkedin = "qtma",
+  subPosition = ""
 ) => {
-	// Param verification
-	if (typeof image !== "object") {
-		throw new Error(
-			`Team member's image must be an image object (import it). Image value: ${JSON.stringify(
-				image
-			)} Type: ${typeof image}`
-		);
-	}
-	if (typeof name !== "string" || name.match(/^([A-Za-z -])+?$/) == null) {
-		throw new Error(`Name: ${name} is invalid, see regex above`);
-	}
-	if (typeof position !== "string" || !Positions.includes(position)) {
-		throw new Error(`'${position}' is not a valid position`);
-	}
-	if (typeof linkedin !== "string" || !linkedin) {
-		throw new Error(
-			`Linkedin is invalid, must be a valid profile url or # for no profile. Parameter value: ${linkedin}`
-		);
-	}
-	if (typeof subPosition !== "string") {
-		throw new Error(
-			`Invalid Sub-Position, must be a string (can be empty). Value: ${subPosition}`
-		);
-	}
+  // Param verification
+  if (typeof image !== "object") {
+    throw new Error(
+      `Team member's image must be an image object (import it). Image value: ${JSON.stringify(
+        image
+      )} Type: ${typeof image}`
+    );
+  }
+  if (typeof name !== "string" || name.match(/^([A-Za-z -])+?$/) == null) {
+    throw new Error(`Name: ${name} is invalid, see regex above`);
+  }
+  if (typeof position !== "string" || !Positions.includes(position)) {
+    throw new Error(`'${position}' is not a valid position`);
+  }
+  if (typeof linkedin !== "string" || !linkedin) {
+    throw new Error(
+      `Linkedin is invalid, must be a valid profile url or # for no profile. Parameter value: ${linkedin}`
+    );
+  }
+  if (typeof subPosition !== "string") {
+    throw new Error(
+      `Invalid Sub-Position, must be a string (can be empty). Value: ${subPosition}`
+    );
+  }
 
-	// Construct & return new object
-	return {
-		image: image,
-		name: name,
-		position: position,
-		subPosition: subPosition,
-		linkedIn: linkedin.startsWith("https://")
-			? linkedin
-			: `https://www.linkedin.com/in/${linkedin}/`,
-	};
+  // Construct & return new object
+  return {
+    image: image,
+    name: name,
+    position: position,
+    subPosition: subPosition,
+    linkedIn: linkedin.startsWith("https://")
+      ? linkedin
+      : `https://www.linkedin.com/in/${linkedin}/`,
+  };
 };
 
 const ClubMembers = [
-	// Co-chairs
-	generateMemberData(
-		MatthewMacEachern,
-		"Matthew MacEachern",
-		"Co-Chair",
-		"matthew-maceachern"
-	),
-	generateMemberData(AlisonXia, "Alison Xia", "Co-Chair", "alison-xia"),
-	generateMemberData(
-		EgorPetrov,
-		"Jegor Petrov",
-		"Co-Chair",
-		"egorpetrov1402"
-	),
-	// LMFAOOOOO WHY DID IT ADD "BIG GUY HAHAHAHA"
-	generateMemberData(BigGuy, "temp", "Co-Chair", "biggie"),
+  // Co-Chairs
+  generateMemberData(williamDu, "William Du", "Co-Chair", "william-du"),
+  generateMemberData(
+    chloeHouvardas,
+    "Chloe Houvardas",
+    "Co-Chair",
+    "chloe-houvardas"
+  ),
+  generateMemberData(claireHu, "Claire Hu", "Co-Chair", "claire-hu"),
+  generateMemberData(janevraPier, "Janevra Pier", "Co-Chair", "janevra-pier"),
 
-	// Club operations
-	generateMemberData(
-		KevinLiang,
-		"Kevin Liang",
-		"Club Operations",
-		"keviniang",
-		"Director"
-	),
-	generateMemberData(
-		OliviaXu,
-		"Olivia Xu",
-		"Club Operations",
-		"olivia-chen-xu",
-		"Director"
-	),
-	generateMemberData(
-		HelenXu,
-		"Helen Xu",
-		"Club Operations",
-		"helencxu",
-		"Director"
-	),
-	generateMemberData(
-		MahirHamid,
-		"Mahir Hamid",
-		"Club Operations",
-		"mahirhamid",
-		"Senior Advisor"
-	),
-	generateMemberData(
-		SriyaNarra,
-		"Sriya Narra",
-		"Club Operations",
-		"sriya-narra",
-		"Operations"
-	),
-	generateMemberData(
-		ArchitaSabhani,
-		"Archita Sabhani",
-		"Club Operations",
-		"architasabhani",
-		"Operations"
-	),
-	generateMemberData(
-		MathhewKim,
-		"Mathhew Kim",
-		"Club Operations",
-		"geonho-mattkim",
-		"Operations"
-	),
+  // Exec / Club Operations
+  generateMemberData(
+    amandaLi,
+    "Amanda Li",
+    "Club Operations",
+    "amanda-li",
+    "Marketing"
+  ),
+  generateMemberData(
+    aminahRizwan,
+    "Aminah Rizwan",
+    "Club Operations",
+    "aminah-rizwan",
+    "Sponsorships"
+  ),
+  generateMemberData(
+    cynthiaChoi,
+    "Cynthia Choi",
+    "Club Operations",
+    "cynthia-choi",
+    "People & Culture"
+  ),
 
-	// PMs
-	generateMemberData(
-		ThomasHuang,
-		"Thomas Huang",
-		"Product Manager",
-		"thomas-huang-805958205"
-	),
-	generateMemberData(
-		GrahamCarkner,
-		"Graham Carkner",
-		"Product Manager",
-		"gcarkner"
-	),
-	generateMemberData(AlexLian, "Alex Lian", "Product Manager", "alex-lian"),
-	generateMemberData(
-		ManushPatel,
-		"Manush Patel",
-		"Product Manager",
-		"manushpatel"
-	),
+  generateMemberData(
+    michaelCurry,
+    "Michael Curry",
+    "Club Operations",
+    "michael-curry",
+    "Director – PM"
+  ),
+  generateMemberData(
+    kayneLee,
+    "Kayne Lee",
+    "Club Operations",
+    "kayne-lee",
+    "Director – Dev"
+  ),
+  generateMemberData(
+    nathanReynolds,
+    "Nathan Reynolds",
+    "Club Operations",
+    "nathan-reynolds",
+    "Director – BA"
+  ),
 
-	// Sr. devs
-	generateMemberData(JadeWei, "Jade Wei", "Senior Developer", "jade-wei"),
-	generateMemberData(
-		ReidMoffat,
-		"Reid Moffat",
-		"Senior Developer",
-		"reid-moffat"
-	),
-	generateMemberData(
-		CainSusko,
-		"Cain Susko",
-		"Senior Developer",
-		"cain-susko-688203202"
-	),
-	generateMemberData(
-		YvesAlikalfic,
-		"Yves Alikalfic",
-		"Senior Developer",
-		"yves-alikalfic"
-	),
+  generateMemberData(
+    nickArchambault,
+    "Nick Archambault",
+    "Club Operations",
+    "nick-archambault",
+    "Senior Advisor"
+  ),
+  generateMemberData(
+    jasmineGao,
+    "Jasmine Gao",
+    "Club Operations",
+    "jasmine-gao",
+    "Senior Advisor"
+  ),
 
-	// Devs
-	generateMemberData(
-		JulianBrickman,
-		"Julian Brickman",
-		"Developer",
-		"julian-brickman-962995255"
-	),
-	generateMemberData(
-		SophieEllwood,
-		"Sophie Ellwood",
-		"Developer",
-		"sophie-ellwood"
-	),
-	generateMemberData(MichaelHan, "Michael Han", "Developer", "michael-y-han"),
+  // Product Managers
+  generateMemberData(
+    connorLeung,
+    "Connor Leung",
+    "Product Manager",
+    "connor-leung"
+  ),
+  generateMemberData(
+    nicoleSteiner,
+    "Nicole Steiner",
+    "Product Manager",
+    "nicole-steiner"
+  ),
+  generateMemberData(
+    karinaVerma,
+    "Karina Verma",
+    "Product Manager",
+    "karina-verma"
+  ),
+  generateMemberData(
+    erinZhang,
+    "Erin Zhang",
+    "Product Manager",
+    "erin-zhang"
+  ),
 
-	generateMemberData(ConnorRewa, "Connor Rewa", "Developer", "connorrewa"),
-	generateMemberData(
-		DharsanRavindran,
-		"Dharsan Ravindran",
-		"Developer",
-		"dharsanravi"
-	),
-	generateMemberData(XimingYu, "Ximing Yu", "Developer", "yuximing"),
+  // Sr. UI/UX Designers
+  generateMemberData(
+    hanaBrissenden,
+    "Hana Brissenden",
+    "UI/UX Designer",
+    "hana-brissenden",
+    "Sr. UI/UX Designer"
+  ),
+  generateMemberData(
+    matthewKim,
+    "Matthew Kim",
+    "UI/UX Designer",
+    "matthew-kim",
+    "Sr. UI/UX Designer"
+  ),
+  generateMemberData(
+    serenaSanchez,
+    "Serena Sanchez",
+    "UI/UX Designer",
+    "serena-sanchez",
+    "Sr. UI/UX Designer"
+  ),
+  generateMemberData(
+    noahYu,
+    "Noah Yu",
+    "UI/UX Designer",
+    "noah-yu",
+    "Sr. UI/UX Designer"
+  ),
 
-	generateMemberData(
-		SavannahHan,
-		"Savannah Han",
-		"Developer",
-		"savannah-han"
-	),
-	generateMemberData(ConnorLeung, "Connor Leung", "Developer", "connorleung"),
-	generateMemberData(
-		DanielJoseph,
-		"Daniel Joseph",
-		"Developer",
-		"danieljoseph8"
-	),
-	generateMemberData(
-		ShakibAbsar,
-		"Shakib Absar",
-		"Developer",
-		"shakib-absar"
-	),
+  // UI/UX Designers
+  generateMemberData(
+    bethArmstrong,
+    "Beth Armstrong",
+    "UI/UX Designer",
+    "beth-armstrong"
+  ),
+  // TODO replace with high quality
+  generateMemberData(
+    amandaCao,
+    "Amanda Cao",
+    "UI/UX Designer",
+    "amanda-cao"
+  ),
+  generateMemberData(
+    ameliaHalverson,
+    "Amelia Halverson",
+    "UI/UX Designer",
+    "amelia-halverson"
+  ),
+  generateMemberData(jinaKim, "Jina Kim", "UI/UX Designer", "jina-kim"),
+  generateMemberData(reneeKim, "Renee Kim", "UI/UX Designer", "renee-kim"),
+  generateMemberData(
+    keenanYang,
+    "Keenan Yang",
+    "UI/UX Designer",
+    "keenan-yang"
+  ),
+  generateMemberData(kevinYe, "Kevin Ye", "UI/UX Designer", "kevin-ye"),
 
-	generateMemberData(
-		AlBarrAjiboye,
-		"Al-Barr Ajiboye",
-		"Developer",
-		"al-barr"
-	),
-	generateMemberData(MattDobaj, "Matt Dobaj", "Developer", "mattdobaj"),
-	generateMemberData(
-		KeelyMcSpurren,
-		"Keely McSpurren",
-		"Developer",
-		"keely-mcspurren"
-	),
+  // Sr. Developers
+  generateMemberData(
+    andreaCobzaru,
+    "Andrea Cobzaru",
+    "Senior Developer",
+    "andrea-cobzaru"
+  ),
+  generateMemberData(
+    sinduMunasinghe,
+    "Sindu Munasinghe",
+    "Senior Developer",
+    "sindu-munasinghe"
+  ),
+  generateMemberData(anthonyQiu, "Anthony Qiu", "Senior Developer", "anthony-qiu"),
+  generateMemberData(simonRisk, "Simon Risk", "Senior Developer", "simon-risk"),
 
-	// UI/UX
-	generateMemberData(
-		ShabichaSureshkumar,
-		"Shabicha Sureshkumar",
-		"UI/UX Designer",
-		"shabicha-sureshkumar-0b7372200",
-		"Senior Designer"
-	),
-	generateMemberData(
-		AmandaLi,
-		"Amanda Li",
-		"UI/UX Designer",
-		"amanda-li-1889a9252",
-		"Junior Designer"
-	),
-	generateMemberData(
-		ErinZhang,
-		"Erin Zhang",
-		"UI/UX Designer",
-		"erin-r-zhang",
-		"Senior Designer"
-	),
-	generateMemberData(
-		MikeNguyen,
-		"Mike Nguyen",
-		"UI/UX Designer",
-		"mike-ngn",
-		"Senior Designer"
-	),
-	generateMemberData(
-		JasmineGao,
-		"Jasmine Gao",
-		"UI/UX Designer",
-		"gao-jasmine",
-		"Senior Designer"
-	),
+  // Developers
+  generateMemberData(
+    zaneAlhamwy,
+    "Zane Al-Hamwy",
+    "Developer",
+    "zane-alhamwy"
+  ),
+  generateMemberData(lucasChow, "Lucas Chow", "Developer", "lucas-chow"),
+  generateMemberData(kabeloDike, "Kabelo Dike", "Developer", "kabelo-dike"),
+  generateMemberData(isaacFung, "Isaac Fung", "Developer", "isaac-fung"),
+  generateMemberData(richardGuo, "Richard Guo", "Developer", "richard-guo"),
+  generateMemberData(joseKerketta, "Jose Kerketta", "Developer", "jose-kerketta"),
+  generateMemberData(kelvinNguyen, "Kelvin Nguyen", "Developer", "kelvin-nguyen"),
+  generateMemberData(
+    miguelPereira,
+    "Miguel Pereira",
+    "Developer",
+    "miguel-pereira"
+  ),
+  generateMemberData(
+    kevinValencia,
+    "Kevin Valencia",
+    "Developer",
+    "kevin-valencia"
+  ),
+  generateMemberData(sophiaWang, "Sophia Wang", "Developer", "sophia-wang"),
+  generateMemberData(jasonWu, "Jason Wu", "Developer", "jason-wu"),
 
-	// Sr. BAs
-	generateMemberData(
-		AidanBrown,
-		"Aidan Brown",
-		"Senior Business Analyst",
-		"aidanbrownd"
-	),
-	generateMemberData(
-		BeatriceBeneciaSetiawan,
-		"Beatrice Benecia Setiawan",
-		"Senior Business Analyst",
-		"beatricebenecia"
-	),
-	generateMemberData(
-		StevenVuong,
-		"Steven Vuong",
-		"Senior Business Analyst",
-		"steven--vuong"
-	),
-	generateMemberData(
-		NickArchambault,
-		"Nick Archambault",
-		"Senior Business Analyst",
-		"nickarchambault"
-	),
+  // Sr. Business Analysts
+  generateMemberData(
+    thomasHuo,
+    "Thomas Huo",
+    "Senior Business Analyst",
+    "thomas-huo"
+  ),
+  generateMemberData(moonLe, "Moon Le", "Senior Business Analyst", "moon-le"),
+  generateMemberData(
+    sagePearl,
+    "Sage Pearl",
+    "Senior Business Analyst",
+    "sage-pearl"
+  ),
+  generateMemberData(
+    brianYts,
+    "Brian Yts",
+    "Senior Business Analyst",
+    "brian-yts"
+  ),
 
-	// BAs
-	generateMemberData(
-		VasiliPiliouras,
-		"Vasili Piliouras",
-		"Business Analyst",
-		"vasili-piliouras"
-	),
-	generateMemberData(
-		JennieChoi,
-		"Jennie Choi",
-		"Business Analyst",
-		"jennie-choi-994314254"
-	),
-	generateMemberData(HannahHe, "Hannah He", "Business Analyst", "hannah21"),
-	generateMemberData(
-		WilliamDu,
-		"William Du",
-		"Business Analyst",
-		"williamdu853"
-	),
-	generateMemberData(
-		AminahRizvan,
-		"Aminah Rizvan",
-		"Business Analyst",
-		"aminahrizwan"
-	),
-	generateMemberData(
-		MarcusHui,
-		"Marcus Hui",
-		"Business Analyst",
-		"marcuscameronhui"
-	),
-	generateMemberData(
-		CynthiaChoi,
-		"Cynthia Choi",
-		"Business Analyst",
-		"choicynthia"
-	),
-	generateMemberData(ClaireHu, "Claire Hu", "Business Analyst", "huclaire"),
-	generateMemberData(
-		EmanuelPiccinini,
-		"Emanuel Piccinini",
-		"Business Analyst",
-		"emanuel-piccininni"
-	),
+  // Business Analysts
+  generateMemberData(dylanAtwal, "Dylan Atwal", "Business Analyst", "dylan-atwal"),
+  generateMemberData(
+    juliaBartman,
+    "Julia Bartman",
+    "Business Analyst",
+    "julia-bartman"
+  ),
+  generateMemberData(
+    lukasCupsa,
+    "Lukas Cupsa",
+    "Business Analyst",
+    "lukas-cupsa"
+  ),
+  generateMemberData(
+    jessicaHoang,
+    "Jessica Hoang",
+    "Business Analyst",
+    "jessica-hoang"
+  ),
+  generateMemberData(
+    jacquelineHuang,
+    "Jacqueline Huang",
+    "Business Analyst",
+    "jacqueline-huang"
+  ),
+  generateMemberData(
+    vivianLee,
+    "Vivian Lee",
+    "Business Analyst",
+    "vivian-lee"
+  ),
+  generateMemberData(jeremyLin, "Jeremy Lin", "Business Analyst", "jeremy-lin"),
+  generateMemberData(
+    ilianaMoshkovich,
+    "Ilana Moshkovich",
+    "Business Analyst",
+    "ilana-moshkovich"
+  ),
 
-	// Frosh reps
-	generateMemberData(LukasCupsa, "Lukas Cupsa", "Frosh Rep", "lukas-cupsa"),
-	generateMemberData(
-		JanevraPier,
-		"Janevra Pier",
-		"Frosh Rep",
-		"janevra-pier-687562277"
-	),
-	generateMemberData(
-		SindusaraMunasinghe,
-		"Sindusara Munasinghe",
-		"Frosh Rep",
-		"sindusara-munasinghe"
-	),
-	generateMemberData(
-		NathanReynolds,
-		"Nathan Reynolds",
-		"Frosh Rep",
-		"nathan-reynolds-78a47b290"
-	),
-
-	// Web devs 🙂
-	generateMemberData(
-		ReidMoffat,
-		"Reid Moffat",
-		"Website Developer",
-		"reid-moffat"
-	),
-	generateMemberData(
-		KevinYu,
-		"Kevin Yu",
-		"Website Developer",
-		"https://kevinyu.ca/"
-	),
-	generateMemberData(
-		YvesAlikalfic,
-		"Yves Alikalfic",
-		"Website Developer",
-		"yves-alikalfic"
-	),
+  // First-Year Reps
+  generateMemberData(
+    jessicaTan,
+    "Jessica Tan",
+    "Frosh Rep",
+    "jessica-tan",
+    "Jr. UI/UX Designer"
+  ),
+  generateMemberData(
+    udulaAbeykoon,
+    "Udula Abeykoon",
+    "Frosh Rep",
+    "udula-abeykoon",
+    "Jr. Developer"
+  ),
+  generateMemberData(
+    brandonNguyen,
+    "Brandon Nguyen",
+    "Frosh Rep",
+    "brandon-nguyen",
+    "Jr. Business Analyst"
+  ),
+  generateMemberData(
+    danielYeung,
+    "Daniel Yeung",
+    "Frosh Rep",
+    "daniel-yeung",
+    "Jr. Business Analyst"
+  ),
 ];
 
 export { Positions, ClubMembers };
