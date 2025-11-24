@@ -54,7 +54,7 @@ export default function Products() {
 			>
 		<FloatingBlobsStill />
 		<div className="mx-auto w-full max-w-[2400px] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)] relative z-10">
-			<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
+			<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-medium mb-6 sm:mb-8">
 				Products
 			</h1>
 			<div id="Products" className="product-container2 product-page2 container">

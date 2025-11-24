@@ -4,15 +4,11 @@ import Layout from "../components/layout";
 import React, { useEffect, useState } from "react";
 import { QtmaLogo } from "../components/icons/QtmaLogo";
 import FloatingBlobs from "../components/FloatingBlobs";
-// import PlacementCloud from "../components/PlacementCloud";
 import { Banner } from "../components/Banner";
 import { LinkBox } from "../components/LinkBox";
 import Nav from "./Nav.jsx";
 
 import PlacementCloud from "../components/PlacementCloud";
-import DecorativePatches from "../components/DecorativePatches";
-import { LogoAndDecos } from "../components/icons/LogoAndDecos";
-
 
 function getWindowDimensions() {
 	if (typeof window !== "undefined") {
@@ -166,9 +162,9 @@ export default function Home() {
 					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
 					<div className="max-w-6xl mx-auto relative z-10">
 						<div className="text-left max-w-[600px] mb-6 sm:mb-8">
-							<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
-								Why Choose QTMA?
-							</h2>
+						<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-medium mb-3 sm:mb-4">
+							Why Choose QTMA?
+						</h2>
 							<p className="text-gray-400 text-lg sm:text-xl mb-6">
 								We're more than just a club - we're a
 								community of innovators, creators, and
@@ -200,9 +196,9 @@ export default function Home() {
 										<div className="text-3xl mb-3 text-[#3576d3]">
 											{feature.icon}
 										</div>
-										<h3 className="text-xl font-bold text-[#3576d3] mb-3">
-											{feature.title}
-										</h3>
+									<h3 className="text-xl font-medium text-[#3576d3] mb-3">
+										{feature.title}
+									</h3>
 										<p className="text-gray-400">
 											{feature.desc}
 										</p>
@@ -274,7 +270,7 @@ export default function Home() {
 
 				{/* Sponsors Section */}
 				<div className="max-w-6xl mx-auto px-4 sm:px-8 mb-12 sm:mb-16">
-					<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
+					<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-medium text-center mb-8">
 						Our Partners & Sponsors
 					</h2>
 					<p className="text-gray-400 text-lg text-center mb-10 max-w-2xl mx-auto">
@@ -334,9 +330,9 @@ export default function Home() {
 					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
 					<div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 relative z-10">
 						<div className="text-center md:text-left max-w-[600px] w-full">
-							<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
-								Ready to Build the Future?
-							</h2>
+						<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-medium mb-3 sm:mb-4">
+							Ready to Build the Future?
+						</h2>
 							<p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
 								Join QTMA today and be part of Queen's most
 								innovative student organization with Alumni in the World's most Impactful Companies.
@@ -348,8 +344,8 @@ export default function Home() {
 										hasIcon
 									/>
 									<LinkBox
-										message="VIEW ALUMNI PLACEMENTS"
-										link="/placements"
+										message="LEARN MORE ABOUT US"
+										link="/about"
 										hasIcon
 									/>
 								</div>

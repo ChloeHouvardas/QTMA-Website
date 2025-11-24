@@ -103,7 +103,7 @@ export function Banner({ title, message, linkBox, images = [] }: BannerProps) {
 		<div className="relative z-10 bg-transparent py-8 sm:py-12 md:py-16 w-full">
 		<div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 sm:gap-8 min-h-[280px] sm:min-h-[320px] w-full px-4 md:px-6 lg:px-8">
 			<div className="flex-1 text-center md:text-left max-w-full md:max-w-[540px] w-full">
-					<h1 className="text-[#3576d3] text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight">
+					<h1 className="text-[#3576d3] text-3xl sm:text-4xl md:text-5xl font-medium mb-4 sm:mb-6 leading-tight">
 						{title}
 					</h1>
 					<p className="text-gray-400 text-base sm:text-lg md:text-xl mb-6 sm:mb-8 leading-relaxed">

@@ -65,7 +65,7 @@ export default function About() {
 			>
 				<FloatingBlobsStill />
 				<div className="mx-auto w-full max-w-[2400px] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)] relative z-10">
-					<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
+					<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-medium mb-6 sm:mb-8">
 						About QTMA
 					</h1>
 
@@ -101,29 +101,29 @@ export default function About() {
 								market opportunities.
 							</p>
 							<div className="grid md:grid-cols-2 gap-6 my-6">
-								<div className="bg-white rounded-lg p-6 shadow-sm">
-									<h3 className="font-bold text-xl text-[#3576d3] mb-3">Product Development</h3>
+						<div className="bg-white rounded-lg p-6 shadow-sm">
+							<h3 className="font-medium text-xl text-[#3576d3] mb-3">Product Development</h3>
 									<p className="text-gray-600">
 										Our teams follow agile methodologies to design, develop, and launch full-featured 
 										applications, gaining real-world product management experience.
 									</p>
 								</div>
-								<div className="bg-white rounded-lg p-6 shadow-sm">
-									<h3 className="font-bold text-xl text-[#3576d3] mb-3">Skill Building</h3>
+						<div className="bg-white rounded-lg p-6 shadow-sm">
+							<h3 className="font-medium text-xl text-[#3576d3] mb-3">Skill Building</h3>
 									<p className="text-gray-600">
 										Members develop technical and professional skills through workshops, mentorship, 
 										and hands-on project work in design, development, and business analysis.
 									</p>
 								</div>
-								<div className="bg-white rounded-lg p-6 shadow-sm">
-									<h3 className="font-bold text-xl text-[#3576d3] mb-3">Networking</h3>
+						<div className="bg-white rounded-lg p-6 shadow-sm">
+							<h3 className="font-medium text-xl text-[#3576d3] mb-3">Networking</h3>
 									<p className="text-gray-600">
 										Connect with like-minded students, alumni, and industry professionals who share 
 										your passion for technology and innovation.
 									</p>
 								</div>
-								<div className="bg-white rounded-lg p-6 shadow-sm">
-									<h3 className="font-bold text-xl text-[#3576d3] mb-3">Portfolio Building</h3>
+						<div className="bg-white rounded-lg p-6 shadow-sm">
+							<h3 className="font-medium text-xl text-[#3576d3] mb-3">Portfolio Building</h3>
 									<p className="text-gray-600">
 										Work on tangible projects that you can showcase to future employers, 
 										demonstrating your ability to deliver real products.
@@ -133,39 +133,11 @@ export default function About() {
 						</div>
 					</section>
 
-					{/* History Section */}
-					<section className="mb-12 sm:mb-16">
-						<h2 className="text-2xl sm:text-3xl font-bold text-[#3576d3] mb-4 sm:mb-6">
-							Our History
-						</h2>
-						<div className="text-base sm:text-lg text-gray-700 space-y-4">
-							<p>
-								Since our founding, QTMA has grown from a small group of passionate students into 
-								one of the most sought-after clubs at Queen's University. Over the years, we've 
-								launched dozens of successful products and helped hundreds of students develop 
-								their skills in technology and product development.
-							</p>
-							<p>
-								Our alumni have gone on to work at leading tech companies and startups around the world, 
-								taking the skills and experiences they gained at QTMA to build remarkable careers. 
-								Many have also launched their own ventures, applying the entrepreneurial mindset 
-								fostered in our club.
-							</p>
-							<p>
-								Today, QTMA continues to push the boundaries of student innovation, maintaining our 
-								reputation as Canada's premier product incubation club while adapting to the 
-								ever-evolving landscape of technology and design.
-							</p>
-						</div>
-					</section>
-
 					{/* Team Structure Section */}
 					<section className="mb-12 sm:mb-16">
-						<h2 className="text-2xl sm:text-3xl font-bold text-[#3576d3] mb-6 sm:mb-8 text-center">
-							Our Team Structure
-						</h2>
-						
-						<div className="max-w-6xl mx-auto">
+					<h2 className="text-2xl sm:text-3xl font-medium text-[#3576d3] mb-6 sm:mb-8 text-center">
+						Our Team Structure
+					</h2>						<div className="max-w-6xl mx-auto">
 							{/* Team Hierarchy Visualization */}
 							<div className="flex flex-col items-center mb-12">
 								{/* Product Manager - Top Level */}
@@ -184,28 +156,28 @@ export default function About() {
 									<div className="bg-white border-2 border-[#3576d3] rounded-xl px-6 py-4 shadow-md hover:shadow-lg transition-shadow">
 										<div className="text-center">
 											<div className="text-[#3576d3] text-xs font-semibold mb-1">SENIOR</div>
-											<div className="flex items-center justify-center gap-2">
-												<span className="text-[#3576d3] text-xl">📊</span>
-												<div className="text-lg font-bold text-gray-800">Business Analyst</div>
-											</div>
+										<div className="flex items-center justify-center gap-2">
+											<span className="text-[#3576d3] text-xl">📊</span>
+											<div className="text-lg font-medium text-gray-800">Business Analyst</div>
+										</div>
 										</div>
 									</div>
 									<div className="bg-white border-2 border-[#3576d3] rounded-xl px-6 py-4 shadow-md hover:shadow-lg transition-shadow">
 										<div className="text-center">
                                             <div className="text-[#3576d3] text-xs font-semibold mb-1">SENIOR</div>
-											<div className="flex items-center justify-center gap-2">
-												<span className="text-[#3576d3] text-xl">&lt;/&gt;</span>
-												<div className="text-lg font-bold text-gray-800">Developer</div>
-											</div>
+										<div className="flex items-center justify-center gap-2">
+											<span className="text-[#3576d3] text-xl">&lt;/&gt;</span>
+											<div className="text-lg font-medium text-gray-800">Developer</div>
+										</div>
 										</div>
 									</div>
 									<div className="bg-white border-2 border-[#3576d3] rounded-xl px-6 py-4 shadow-md hover:shadow-lg transition-shadow">
 										<div className="text-center">
                                             <div className="text-[#3576d3] text-xs font-semibold mb-1">SENIOR</div>
-											<div className="flex items-center justify-center gap-2">
-												<span className="text-[#3576d3] text-xl">🎨</span>
-												<div className="text-lg font-bold text-gray-800">UI/UX Designer</div>
-											</div>
+										<div className="flex items-center justify-center gap-2">
+											<span className="text-[#3576d3] text-xl">🎨</span>
+											<div className="text-lg font-medium text-gray-800">UI/UX Designer</div>
+										</div>
 										</div>
 									</div>
 								</div>
@@ -283,35 +255,35 @@ export default function About() {
 
 							{/* Role Descriptions */}
 							<div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
-								<h3 className="text-xl font-bold text-[#3576d3] mb-6 text-center">Role Responsibilities</h3>
+								<h3 className="text-xl font-medium text-[#3576d3] mb-6 text-center">Role Responsibilities</h3>
 								<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 									<div className="space-y-2">
 										<div className="flex items-center gap-2">
-											<div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#3576d3] to-[#2563b8] flex items-center justify-center text-white text-sm font-bold">PM</div>
-											<h4 className="font-bold text-gray-800">Product Manager</h4>
-										</div>
-										<p className="text-sm text-gray-600 leading-relaxed">Team lead, product vision, product execution</p>
+									<div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#3576d3] to-[#2563b8] flex items-center justify-center text-white text-sm font-bold">PM</div>
+									<h4 className="font-medium text-gray-800">Product Manager</h4>
+								</div>
+								<p className="text-sm text-gray-600 leading-relaxed">Team lead, product vision, product execution</p>
 									</div>
 									<div className="space-y-2">
 										<div className="flex items-center gap-2">
-											<div className="w-8 h-8 rounded-full bg-[#3576d3] flex items-center justify-center text-white text-xs">📊</div>
-											<h4 className="font-bold text-gray-800">Business Analyst</h4>
-										</div>
-										<p className="text-sm text-gray-600 leading-relaxed">Marketing strategy, partnerships, financial model</p>
+									<div className="w-8 h-8 rounded-full bg-[#3576d3] flex items-center justify-center text-white text-xs">📊</div>
+									<h4 className="font-medium text-gray-800">Business Analyst</h4>
+								</div>
+								<p className="text-sm text-gray-600 leading-relaxed">Marketing strategy, partnerships, financial model</p>
 									</div>
 									<div className="space-y-2">
 										<div className="flex items-center gap-2">
-											<div className="w-8 h-8 rounded-full bg-[#3576d3] flex items-center justify-center text-white text-xs">&lt;/&gt;</div>
-											<h4 className="font-bold text-gray-800">Developer</h4>
-										</div>
-										<p className="text-sm text-gray-600 leading-relaxed">Architecting and building the product</p>
+									<div className="w-8 h-8 rounded-full bg-[#3576d3] flex items-center justify-center text-white text-xs">&lt;/&gt;</div>
+									<h4 className="font-medium text-gray-800">Developer</h4>
+								</div>
+								<p className="text-sm text-gray-600 leading-relaxed">Architecting and building the product</p>
 									</div>
 									<div className="space-y-2">
 										<div className="flex items-center gap-2">
-											<div className="w-8 h-8 rounded-full bg-[#3576d3] flex items-center justify-center text-white text-xs">🎨</div>
-											<h4 className="font-bold text-gray-800">UI/UX Designer</h4>
-										</div>
-										<p className="text-sm text-gray-600 leading-relaxed">Designing the product, user research</p>
+									<div className="w-8 h-8 rounded-full bg-[#3576d3] flex items-center justify-center text-white text-xs">🎨</div>
+									<h4 className="font-medium text-gray-800">UI/UX Designer</h4>
+								</div>
+								<p className="text-sm text-gray-600 leading-relaxed">Designing the product, user research</p>
 									</div>
 								</div>
 							</div>
@@ -320,11 +292,9 @@ export default function About() {
 
 					{/* Detailed History Timeline Section */}
 					<section className="mb-12 sm:mb-16">
-						<h2 className="text-2xl sm:text-3xl font-bold text-[#3576d3] mb-6 sm:mb-8 text-center">
-							Our Journey Through Time
-						</h2>
-						
-						{/* Carousel Container */}
+					<h2 className="text-2xl sm:text-3xl font-medium text-[#3576d3] mb-6 sm:mb-8 text-center">
+						Our History
+					</h2>						{/* Carousel Container */}
 						<div className="relative bg-white rounded-2xl shadow-lg overflow-hidden">
 							{/* Slides */}
 							<div className="relative h-[600px] sm:h-[650px] md:h-[700px]">
@@ -356,7 +326,7 @@ export default function About() {
 													<div className="inline-block px-6 py-2 bg-gradient-to-br from-[#3576d3] to-[#2563b8] text-white font-bold text-lg rounded-full mb-4 shadow-md">
 														{slide.year}
 													</div>
-													<h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3576d3] mb-4">
+													<h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#3576d3] mb-4">
 														{slide.title}
 													</h3>
 													<p className="text-gray-700 text-base sm:text-lg leading-relaxed">

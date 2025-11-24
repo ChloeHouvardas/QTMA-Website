@@ -606,7 +606,7 @@ const ProductData = [
 			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
-		.setLogoDimensions({width: 140, height: 130})
+		.setLogoDimensions({width: 130, height: 120})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
 			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
 			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
