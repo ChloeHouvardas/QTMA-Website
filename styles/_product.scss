@@ -39,6 +39,7 @@
 
 	.product-name {
 		font-size: 3.4rem;
+		font-weight: 500;
 		@media only screen and (max-width: 650px) {
 			font-size: 2.7rem;
 		}
@@ -128,6 +129,8 @@
 
 	.team-heading {
 		font-size: 2.6rem;
+		color: #3576d3;
+		font-weight: 500;
 	}
 
 	.team-names {
@@ -167,6 +170,8 @@
 	.overview-heading {
 		font-size: 2.6rem;
 		padding-bottom: 1rem;
+		color: #3576d3;
+		font-weight: 500;
 	}
 
 	.product-desc {
@@ -174,6 +179,7 @@
 		font-size: 1.3rem;
 		padding: 0.5rem 0 2rem 0;
 		width: 100%;
+		color: #374151;
 		@media only screen and (max-width: 650px) {
 			font-size: 1rem;
 		}
@@ -195,6 +201,8 @@
 	.pitch-heading {
 		font-size: 2.6rem;
 		padding-bottom: 1rem;
+		color: #3576d3;
+		font-weight: 500;
 	}
 
 	.product-pdf {
@@ -214,6 +222,8 @@
 	.demo-heading {
 		font-size: 2.6rem;
 		padding-bottom: 1rem;
+		color: #3576d3;
+		font-weight: 500;
 	}
 
 	.demo-video {
