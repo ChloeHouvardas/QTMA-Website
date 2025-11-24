@@ -63,7 +63,7 @@ export default function Home() {
 
 	return (
 		<Layout home={true}>
-			<div className="relative min-h-screen">
+			<div className="relative min-h-screen overflow-x-hidden w-full">
 				<FloatingBlobs scrollY={scrollY} />
 
 				<Nav />

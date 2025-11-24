@@ -45,9 +45,7 @@ const cloudOptions = {
 export default function PlacementCloud() {
   return (
     <div
-      className="flex items-center justify-center"
-      // bigger canvas → bigger sphere
-      style={{ width: 480, height: 480 }}
+      className="flex items-center justify-center w-full max-w-[320px] h-[320px] sm:max-w-[400px] sm:h-[400px] md:max-w-[480px] md:h-[480px] mx-auto"
     >
       <Cloud
         id="placement-cloud"
