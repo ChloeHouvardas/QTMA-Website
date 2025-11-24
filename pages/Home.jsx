@@ -272,6 +272,55 @@ export default function Home() {
 					</div>
 				)}					<div className="mt-12 sm:mt-16 mb-12 sm:mb-16"></div>
 
+				{/* Sponsors Section */}
+				<div className="max-w-6xl mx-auto px-4 sm:px-8 mb-12 sm:mb-16">
+					<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
+						Our Partners & Sponsors
+					</h2>
+					<p className="text-gray-400 text-lg text-center mb-10 max-w-2xl mx-auto">
+						We're proud to work with industry-leading organizations that support innovation and student development.
+					</p>
+					<div className="bg-white rounded-2xl shadow-lg p-8 sm:p-12">
+						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
+								<img
+									src="/assets/Club Data/Homepage/Sponsors/ComSoc.png"
+									alt="ComSoc"
+									className="max-w-full max-h-full object-contain"
+								/>
+							</div>
+							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
+								<img
+									src="/assets/Club Data/Homepage/Sponsors/McKinsey.png"
+									alt="McKinsey"
+									className="max-w-full max-h-full object-contain"
+								/>
+							</div>
+							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
+								<img
+									src="/assets/Club Data/Homepage/Sponsors/Queens_Artsci.png"
+									alt="Queen's Arts & Science"
+									className="max-w-full max-h-full object-contain"
+								/>
+							</div>
+							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
+								<img
+									src="/assets/Club Data/Homepage/Sponsors/Queens_Computing.png"
+									alt="Queen's Computing"
+									className="max-w-full max-h-full object-contain"
+								/>
+							</div>
+							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
+								<img
+									src="/assets/Club Data/Homepage/Sponsors/Trend_Micro.png"
+									alt="Trend Micro"
+									className="max-w-full max-h-full object-contain"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				{/* Final CTA Section - Styled like Banner */}
 				<div
 					className="relative rounded-none sm:rounded-3xl py-12 sm:py-16 px-4 sm:px-8 lg:px-16 mb-0 sm:mb-16 overflow-hidden"
