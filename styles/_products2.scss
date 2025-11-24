@@ -28,6 +28,13 @@
 		@media only screen and (max-width: 1300px) {
 			padding: 3rem;
 		}
+
+		&:first-of-type {
+			padding-top: 1rem;
+			@media only screen and (max-width: 1300px) {
+				padding-top: 0.5rem;
+			}
+		}
 	}
 }
 

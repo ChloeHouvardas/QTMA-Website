@@ -225,28 +225,28 @@ const ClubMembers = [
   generateMemberData(
     hanaBrissenden,
     "Hana Brissenden",
-    "UI/UX Designer",
+    "Senior UI/UX Designer",
     "hana-brissenden",
     "Sr. UI/UX Designer"
   ),
   generateMemberData(
     matthewKim,
     "Matthew Kim",
-    "UI/UX Designer",
+    "Senior UI/UX Designer",
     "matthew-kim",
     "Sr. UI/UX Designer"
   ),
   generateMemberData(
     serenaSanchez,
     "Serena Sanchez",
-    "UI/UX Designer",
+    "Senior UI/UX Designer",
     "serena-sanchez",
     "Sr. UI/UX Designer"
   ),
   generateMemberData(
     noahYu,
     "Noah Yu",
-    "UI/UX Designer",
+    "Senior UI/UX Designer",
     "noah-yu",
     "Sr. UI/UX Designer"
   ),
@@ -341,7 +341,7 @@ const ClubMembers = [
   ),
   generateMemberData(
     brianYts,
-    "Brian Yts",
+    "Brian YTS",
     "Senior Business Analyst",
     "brian-yts"
   ),

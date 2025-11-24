@@ -593,7 +593,7 @@ const ProductData = [
 	new ProductBuilder()
 		.setName("Nucleus")
 		.setYear("2024-2025")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Stop procrastinating and start working")
 		.setStudentData([
 			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
 			["Truman Be", "truman-be", "Senior Developer"],
@@ -616,7 +616,7 @@ const ProductData = [
 	new ProductBuilder()
 		.setName("Inquiro")
 		.setYear("2024-2025")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Data-driven investment tool for retail investors")
 		.setStudentData([
 			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
 			["Truman Be", "truman-be", "Senior Developer"],
@@ -639,7 +639,7 @@ const ProductData = [
 	new ProductBuilder()
 		.setName("Lilchef")
 		.setYear("2024-2025")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Your go-to kitchen companion")
 		.setStudentData([
 			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
 			["Truman Be", "truman-be", "Senior Developer"],
@@ -662,7 +662,7 @@ const ProductData = [
 	new ProductBuilder()
 		.setName("Fujiplans")
 		.setYear("2024-2025")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Giving educators their time back")
 		.setStudentData([
 			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
 			["Truman Be", "truman-be", "Senior Developer"],
