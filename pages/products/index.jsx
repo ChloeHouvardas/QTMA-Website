@@ -16,12 +16,26 @@ export default function Products() {
 		return <>
             <p className="product-subheading2"><i>{year}:</i></p>
             <div className="products-container2">
-                {products.map(product => {
-                    const name = product.productName;
+				{products.map(product => {
+					const name = product.productName;
+					const isWinterWinner = name === 'Nucleus' || name === 'Dilliad' || name === 'Kartt';
+					const isFallWinner = name === 'Pantree' || name === 'Fujiplans';
 
-                    return (
+					return (
                         <Link passHref href={`/product/${name}`} legacyBehavior>
-                            <div className="product2">
+                            <div className={`product2 ${isWinterWinner ? 'winner-product' : ''} ${isFallWinner ? 'fall-winner-product' : ''}`}>
+                                {isWinterWinner && (
+                                    <div className="winner-badge">
+                                        <span className="winner-icon">🏆</span>
+                                        <span className="winner-text">Winter Demo Day Winner</span>
+                                    </div>
+                                )}
+                                {isFallWinner && (
+                                    <div className="fall-winner-badge">
+                                        <span className="winner-icon">🏆</span>
+                                        <span className="winner-text">Fall Demo Day Winner</span>
+                                    </div>
+                                )}
                                 <div className="product-info2">
                                     <h3>{name}</h3>
                                     <p><i>'{product.slogan}'</i></p>
