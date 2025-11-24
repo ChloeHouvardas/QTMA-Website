@@ -333,33 +333,31 @@ export default function Home() {
 					<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
 					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
 					<div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 relative z-10">
-						<div className="text-left max-w-[600px] w-full">
+						<div className="text-center md:text-left max-w-[600px] w-full">
 							<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
 								Ready to Build the Future?
 							</h2>
 							<p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
 								Join QTMA today and be part of Queen's most
-								innovative student organization.
+								innovative student organization with Alumni in the World's most Impactful Companies.
 							</p>
-							<div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+							<div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
 									<LinkBox
 										message="JOIN OUR COMMUNITY"
 										link="/contact"
 										hasIcon
 									/>
 									<LinkBox
-										message="EXPLORE PLACEMENTS"
+										message="VIEW ALUMNI PLACEMENTS"
 										link="/placements"
 										hasIcon
 									/>
 								</div>
 							</div>
 
-							{/* Decorative Image */}
-							<div className="relative w-[280px] h-[280px] hidden md:block">
-								<div className="absolute top-0 right-10 w-40 h-40 bg-[#b3cfff] opacity-20 rounded-lg blur-2xl"></div>
-								<div className="absolute bottom-0 right-0 w-32 h-32 bg-[#d1cfff] opacity-15 rounded-lg blur-2xl"></div>
-								<div className="absolute bottom-0 right-40 w-48 h-48 bg-[#e3edfa] opacity-25 rounded-lg blur-2xl"></div>
+							{/* Placement Cloud */}
+							<div className="flex items-center justify-center">
+								<PlacementCloud />
 							</div>
 						</div>
 					</div>
@@ -383,13 +381,6 @@ export default function Home() {
 					}
 				`}</style>
 			</div>
-				<div className="mt-16 mb-16 flex flex-col justify-center items-center">
-						<div className="flex justify-center text-[#3576d3] text-2xl sm:text-2xl font-bold mb-4">Alumni Placements</div>
-					<div className="flex justify-center">
-				</div>
-				
-					<PlacementCloud />
-				</div>
-			</Layout>
+		</Layout>
 	);
 }
