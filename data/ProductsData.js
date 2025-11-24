@@ -344,7 +344,7 @@ const ProductData = [
 			["Egor Petrov", "#", "Business Analyst"],
 			["Kevin Wu", "wu-kevin", "Business Analyst"]
 		])
-		.setLogoDimensions({width: 90, height: 110})
+		.setLogoDimensions({width: 70, height: 86})
 		.setOverview("Shopping for yourself is a pain. So many trips, wasted food, planning, " +
 			"cooking - even though there's probably an easy solution to this. Collaboration with your " +
 			"housemates saves so much time & money, in an all-in-one app to manage everything at once")
@@ -552,7 +552,7 @@ const ProductData = [
 			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
-		.setLogoDimensions({width: 220, height: 80})
+		.setLogoDimensions({width: 154, height: 56})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
 			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
 			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
@@ -606,7 +606,7 @@ const ProductData = [
 			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
-		.setLogoDimensions({width: 220, height: 80})
+		.setLogoDimensions({width: 130, height: 120})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
 			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
 			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
@@ -629,7 +629,7 @@ const ProductData = [
 			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
-		.setLogoDimensions({width: 220, height: 80})
+		.setLogoDimensions({width: 140, height: 92})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
 			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
 			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
@@ -652,7 +652,7 @@ const ProductData = [
 			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
-		.setLogoDimensions({width: 220, height: 80})
+		.setLogoDimensions({width: 140, height: 113})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
 			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
 			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
@@ -675,7 +675,7 @@ const ProductData = [
 			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
-		.setLogoDimensions({width: 220, height: 80})
+		.setLogoDimensions({width: 200, height: 67})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
 			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
 			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +

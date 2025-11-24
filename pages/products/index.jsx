@@ -52,18 +52,21 @@ export default function Products() {
 					"Designers. Developers. Analysts. Building at Canada's premier product incubation club."
 				}
 			>
-					<FloatingBlobsStill />
-				<div id="Products" className="product-container2 product-page2 container relative z-10">
-					<h1 className="section-title text-[#3576d3] text-center text-3xl sm:text-4xl font-bold mb-8">Products</h1>
-					
-					{renderYear('2024-2025')}
-					{renderYear('2023-2024')}
-					{renderYear('2022-2023')}
-					{renderYear('2021-2022')}
-					{renderYear('2020-2021')}
-					{renderYear('2019-2020')}
-				</div>
-			</Layout>
+		<FloatingBlobsStill />
+		<div className="mx-auto w-full max-w-[2400px] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)] relative z-10">
+			<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-medium mb-6 sm:mb-8">
+				Products
+			</h1>
+			<div id="Products" className="product-container2 product-page2 container">
+				{renderYear('2024-2025')}
+				{renderYear('2023-2024')}
+				{renderYear('2022-2023')}
+				{renderYear('2021-2022')}
+				{renderYear('2020-2021')}
+				{renderYear('2019-2020')}
+			</div>
+		</div>
+		</Layout>
 			<Footer/>
 		</>
 	);

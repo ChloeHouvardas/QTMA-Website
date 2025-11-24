@@ -13,9 +13,9 @@ export default function Layout({children, background, home, isNav}) {
 					rel="stylesheet"
 				/>
 			</Head>
-			<div className={`layout-container ${isNav ? "nav-layout" : ""}`}>
-				<main style={{backgroundColor: background, borderBottomRightRadius: home ? "35rem" : ""}}>
-					{children}
+		<div className={`layout-container ${isNav ? "nav-layout" : ""}`}>
+			<main className="w-full overflow-x-hidden" style={{backgroundColor: background}}>
+				{children}
 				</main>
 			</div>
 		</>

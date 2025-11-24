@@ -77,8 +77,9 @@ export default function Nav() {
 									"/",
 									"/products",
 									"/team",
+									"/about",
 									// "/placements",
-									// "/contact",
+									"/contact",
 								].map((path) => {
 									const name =
 										path === "/"
@@ -143,8 +144,9 @@ export default function Nav() {
 							"/products",
 							// "/history",
 							"/team",
+							"/about",
 							// "/placements",
-							// "/contact",
+							"/contact",
 						].map((path) => {
 							const name =
 								path === "/"
