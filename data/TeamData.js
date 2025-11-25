@@ -7,7 +7,7 @@ import amandaCao from "../public/assets/Members/amandaCao.jpg";
 import amandaLi from "../public/assets/Members/amandaLi.jpg";
 import ameliaHalverson from "../public/assets/Members/ameliaHalverson.jpg";
 import aminahRizwan from "../public/assets/Members/aminahRizwan.jpg";
-import andreaCobzaru from "../public/assets/Members/andreaCobzaru.jpg";
+import andreeaCobzaru from "../public/assets/Members/andreaCobzaru.jpg";
 import anthonyQiu from "../public/assets/Members/anthonyQiu.jpg";
 import bethArmstrong from "../public/assets/Members/bethArmstrong.jpg";
 import brandonNguyen from "../public/assets/Members/brandonNguyen.jpg";
@@ -20,7 +20,7 @@ import danielYeung from "../public/assets/Members/danielYeung.jpg";
 import dylanAtwal from "../public/assets/Members/dylanAtwal.jpg";
 import erinZhang from "../public/assets/Members/erinZhang.jpg";
 import hanaBrissenden from "../public/assets/Members/hanaBrissenden.jpg";
-import ilianaMoshkovich from "../public/assets/Members/ilanaMoshkovich.jpg";
+import ilanaMoshkovich from "../public/assets/Members/ilanaMoshkovich.jpg";
 import isaacFung from "../public/assets/Members/isaacFung.jpg";
 import jacquelineHuang from "../public/assets/Members/jacquelineHuang.jpg";
 import janevraPier from "../public/assets/Members/janevraPier.jpg";
@@ -125,36 +125,36 @@ const generateMemberData = (
 
 const ClubMembers = [
   // Co-Chairs
-  generateMemberData(williamDu, "William Du", "Co-Chair", "william-du"),
+  generateMemberData(williamDu, "William Du", "Co-Chair", "williamdu853"),
   generateMemberData(
     chloeHouvardas,
     "Chloe Houvardas",
     "Co-Chair",
     "chloe-houvardas"
   ),
-  generateMemberData(claireHu, "Claire Hu", "Co-Chair", "claire-hu"),
-  generateMemberData(janevraPier, "Janevra Pier", "Co-Chair", "janevra-pier"),
+  generateMemberData(claireHu, "Claire Hu", "Co-Chair", "huclaire"),
+  generateMemberData(janevraPier, "Janevra Pier", "Co-Chair", "janevra-pier-687562277"),
 
   // Exec / Club Operations
   generateMemberData(
     amandaLi,
     "Amanda Li",
     "Club Operations",
-    "amanda-li",
+    "aamanda-li",
     "Marketing"
   ),
   generateMemberData(
     aminahRizwan,
     "Aminah Rizwan",
     "Club Operations",
-    "aminah-rizwan",
+    "aminahrizwan",
     "Sponsorships"
   ),
   generateMemberData(
     cynthiaChoi,
     "Cynthia Choi",
     "Club Operations",
-    "cynthia-choi",
+    "choicynthia",
     "People & Culture"
   ),
 
@@ -162,21 +162,21 @@ const ClubMembers = [
     michaelCurry,
     "Michael Curry",
     "Club Operations",
-    "michael-curry",
+    "michaelcurry-",
     "Director – PM"
   ),
   generateMemberData(
     kayneLee,
     "Kayne Lee",
     "Club Operations",
-    "kayne-lee",
+    "kaynelee",
     "Director – Dev"
   ),
   generateMemberData(
     nathanReynolds,
     "Nathan Reynolds",
     "Club Operations",
-    "nathan-reynolds",
+    "nathan-reynolds-78a47b290",
     "Director – BA"
   ),
 
@@ -191,7 +191,7 @@ const ClubMembers = [
     jasmineGao,
     "Jasmine Gao",
     "Club Operations",
-    "jasmine-gao",
+    "gao-jasmine",
     "Senior Advisor"
   ),
 
@@ -200,25 +200,25 @@ const ClubMembers = [
     connorLeung,
     "Connor Leung",
     "Product Manager",
-    "connor-leung"
+    "connorleung"
   ),
   generateMemberData(
     nicoleSteiner,
     "Nicole Steiner",
     "Product Manager",
-    "nicole-steiner"
+    "nicole-steinerqueens"
   ),
   generateMemberData(
     karinaVerma,
     "Karina Verma",
     "Product Manager",
-    "karina-verma"
+    "karina-verma-565027187"
   ),
   generateMemberData(
     erinZhang,
     "Erin Zhang",
     "Product Manager",
-    "erin-zhang"
+    "erin-r-zhang"
   ),
 
   // Sr. UI/UX Designers
@@ -226,28 +226,28 @@ const ClubMembers = [
     hanaBrissenden,
     "Hana Brissenden",
     "Senior UI/UX Designer",
-    "hana-brissenden",
+    "hana-brissenden-063b3a274",
     "Sr. UI/UX Designer"
   ),
   generateMemberData(
     matthewKim,
     "Matthew Kim",
     "Senior UI/UX Designer",
-    "matthew-kim",
+    "geonho-mattkim",
     "Sr. UI/UX Designer"
   ),
   generateMemberData(
     serenaSanchez,
     "Serena Sanchez",
     "Senior UI/UX Designer",
-    "serena-sanchez",
+    "serenasanchez2025",
     "Sr. UI/UX Designer"
   ),
   generateMemberData(
     noahYu,
     "Noah Yu",
     "Senior UI/UX Designer",
-    "noah-yu",
+    "noahyu",
     "Sr. UI/UX Designer"
   ),
 
@@ -256,14 +256,14 @@ const ClubMembers = [
     bethArmstrong,
     "Beth Armstrong",
     "UI/UX Designer",
-    "beth-armstrong"
+    "elizabethrosearmstrong"
   ),
   // TODO replace with high quality
   generateMemberData(
     amandaCao,
     "Amanda Cao",
     "UI/UX Designer",
-    "amanda-cao"
+    "amanda-cao-b214a2290"
   ),
   generateMemberData(
     ameliaHalverson,
@@ -271,30 +271,30 @@ const ClubMembers = [
     "UI/UX Designer",
     "amelia-halverson"
   ),
-  generateMemberData(jinaKim, "Jina Kim", "UI/UX Designer", "jina-kim"),
-  generateMemberData(reneeKim, "Renee Kim", "UI/UX Designer", "renee-kim"),
+  generateMemberData(jinaKim, "Jina Kim", "UI/UX Designer", "kimjina"),
+  generateMemberData(reneeKim, "Renee Kim", "UI/UX Designer", "reneehjkim"),
   generateMemberData(
     keenanYang,
     "Keenan Yang",
     "UI/UX Designer",
-    "keenan-yang"
+    "keenanyang1027"
   ),
-  generateMemberData(kevinYe, "Kevin Ye", "UI/UX Designer", "kevin-ye"),
+  generateMemberData(kevinYe, "Kevin Ye", "UI/UX Designer", "kevinye0525"),
 
   // Sr. Developers
   generateMemberData(
-    andreaCobzaru,
-    "Andrea Cobzaru",
+    andreeaCobzaru,
+    "Andreea Cobzaru",
     "Senior Developer",
-    "andrea-cobzaru"
+    "andreeacobzaru"
   ),
   generateMemberData(
     sinduMunasinghe,
     "Sindu Munasinghe",
     "Senior Developer",
-    "sindu-munasinghe"
+    "sindusara-munasinghe"
   ),
-  generateMemberData(anthonyQiu, "Anthony Qiu", "Senior Developer", "anthony-qiu"),
+  generateMemberData(anthonyQiu, "Anthony Qiu", "Senior Developer", "anthonyqiu3"),
   generateMemberData(simonRisk, "Simon Risk", "Senior Developer", "simon-risk"),
 
   // Developers
@@ -302,42 +302,43 @@ const ClubMembers = [
     zaneAlhamwy,
     "Zane Al-Hamwy",
     "Developer",
-    "zane-alhamwy"
+    "zanealhamwy"
   ),
-  generateMemberData(lucasChow, "Lucas Chow", "Developer", "lucas-chow"),
+  generateMemberData(lucasChow, "Lucas Chow", "Developer", "lucassnchow"),
   generateMemberData(kabeloDike, "Kabelo Dike", "Developer", "kabelo-dike"),
-  generateMemberData(isaacFung, "Isaac Fung", "Developer", "isaac-fung"),
-  generateMemberData(richardGuo, "Richard Guo", "Developer", "richard-guo"),
+  generateMemberData(isaacFung, "Isaac Fung", "Developer", "isaacfungg"),
+  generateMemberData(richardGuo, "Richard Guo", "Developer", "-richard-guo"),
   generateMemberData(joseKerketta, "Jose Kerketta", "Developer", "jose-kerketta"),
-  generateMemberData(kelvinNguyen, "Kelvin Nguyen", "Developer", "kelvin-nguyen"),
+  // TODO CONTINUE LINKEDIN UPDATES FROM HERE
+  generateMemberData(kelvinNguyen, "Kelvin Nguyen", "Developer", "nguyen-kelvin"),
   generateMemberData(
     miguelPereira,
     "Miguel Pereira",
     "Developer",
-    "miguel-pereira"
+    "miguel-pereira-canada"
   ),
   generateMemberData(
     kevinValencia,
     "Kevin Valencia",
     "Developer",
-    "kevin-valencia"
+    "kevin-valenciaa"
   ),
-  generateMemberData(sophiaWang, "Sophia Wang", "Developer", "sophia-wang"),
-  generateMemberData(jasonWu, "Jason Wu", "Developer", "jason-wu"),
+  generateMemberData(sophiaWang, "Sophia Wang", "Developer", "sophiawg"),
+  generateMemberData(jasonWu, "Jason Wu", "Developer", "29jason-wu"),
 
   // Sr. Business Analysts
   generateMemberData(
     thomasHuo,
     "Thomas Huo",
     "Senior Business Analyst",
-    "thomas-huo"
+    "thomashuo-"
   ),
-  generateMemberData(moonLe, "Moon Le", "Senior Business Analyst", "moon-le"),
+  generateMemberData(moonLe, "Moon Le", "Senior Business Analyst", "moonle--"),
   generateMemberData(
     sagePearl,
     "Sage Pearl",
     "Senior Business Analyst",
-    "sage-pearl"
+    "sage-pearl-364a61290"
   ),
   generateMemberData(
     brianYts,
@@ -364,26 +365,26 @@ const ClubMembers = [
     jessicaHoang,
     "Jessica Hoang",
     "Business Analyst",
-    "jessica-hoang"
+    "jessica-hoang-707639213"
   ),
   generateMemberData(
     jacquelineHuang,
     "Jacqueline Huang",
     "Business Analyst",
-    "jacqueline-huang"
+    "jacqueline-sq-huang"
   ),
   generateMemberData(
     vivianLee,
     "Vivian Lee",
     "Business Analyst",
-    "vivian-lee"
+    "leevvivian"
   ),
-  generateMemberData(jeremyLin, "Jeremy Lin", "Business Analyst", "jeremy-lin"),
+  generateMemberData(jeremyLin, "Jeremy Lin", "Business Analyst", "-jeremylin"),
   generateMemberData(
-    ilianaMoshkovich,
+    ilanaMoshkovich,
     "Ilana Moshkovich",
     "Business Analyst",
-    "ilana-moshkovich"
+    "ilana-moshkovich-596693232"
   ),
 
   // First-Year Reps
@@ -391,7 +392,7 @@ const ClubMembers = [
     jessicaTan,
     "Jessica Tan",
     "Frosh Rep",
-    "jessica-tan",
+    "jessica-tan-56213231a",
     "Jr. UI/UX Designer"
   ),
   generateMemberData(
@@ -405,14 +406,14 @@ const ClubMembers = [
     brandonNguyen,
     "Brandon Nguyen",
     "Frosh Rep",
-    "brandon-nguyen",
+    "brandon-nguyen200713",
     "Jr. Business Analyst"
   ),
   generateMemberData(
     danielYeung,
     "Daniel Yeung",
     "Frosh Rep",
-    "daniel-yeung",
+    "daniel-yeung-4498a92a4",
     "Jr. Business Analyst"
   ),
 ];
