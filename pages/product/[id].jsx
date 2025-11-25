@@ -5,6 +5,7 @@ import productData from "../../data/ProductsData";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Footer from "../../components/Footer";
+import FloatingBlobsStill from "../../components/FloatingBlobsStill";
 
 //
 // This file is used to dynamically render each product (e.g. <Link passHref href="/product/Eagle>">)
@@ -95,7 +96,8 @@ export default function Product() {
 	return (
 		<>
 			<Nav/>
-			<Layout>
+			<Layout background="linear-gradient(135deg, #e3edfa 0%, #f3f4fa 100%)">
+				<FloatingBlobsStill />
 				{product && (
 					<div className="product-container-id container">
 						<div className="product-header-container">

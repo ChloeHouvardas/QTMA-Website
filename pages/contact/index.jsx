@@ -28,12 +28,12 @@ export default function Contact() {
 						Get In Touch
 					</h1>
 					
-					<p className="text-gray-400 text-center text-lg sm:text-xl max-w-3xl mx-auto mb-12">
-						Have questions? Want to join our team? We'd love to hear from you.
-					</p>
+				<p className="text-gray-400 text-center text-lg sm:text-xl max-w-3xl mx-auto mb-24">
+					Have questions? Want to join our team? We'd love to hear from you.
+				</p>
 
-					{/* Main Contact Grid */}
-					<div className="grid md:grid-cols-2 gap-8 mb-12">
+				{/* Main Contact Grid */}
+				<div className="grid md:grid-cols-2 gap-8 my-24">
 						{/* Instagram Card */}
 						<div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
 							<div className="flex flex-col items-center text-center space-y-4">
