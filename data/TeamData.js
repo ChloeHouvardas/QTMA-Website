@@ -226,29 +226,25 @@ const ClubMembers = [
     hanaBrissenden,
     "Hana Brissenden",
     "Senior UI/UX Designer",
-    "hana-brissenden-063b3a274",
-    "Sr. UI/UX Designer"
+    "hana-brissenden-063b3a274"
   ),
   generateMemberData(
     matthewKim,
     "Matthew Kim",
     "Senior UI/UX Designer",
-    "geonho-mattkim",
-    "Sr. UI/UX Designer"
+    "geonho-mattkim"
   ),
   generateMemberData(
     serenaSanchez,
     "Serena Sanchez",
     "Senior UI/UX Designer",
-    "serenasanchez2025",
-    "Sr. UI/UX Designer"
+    "serenasanchez2025"
   ),
   generateMemberData(
     noahYu,
     "Noah Yu",
     "Senior UI/UX Designer",
-    "noahyu",
-    "Sr. UI/UX Designer"
+    "noahyu"
   ),
 
   // UI/UX Designers
@@ -309,7 +305,6 @@ const ClubMembers = [
   generateMemberData(isaacFung, "Isaac Fung", "Developer", "isaacfungg"),
   generateMemberData(richardGuo, "Richard Guo", "Developer", "-richard-guo"),
   generateMemberData(joseKerketta, "Jose Kerketta", "Developer", "jose-kerketta"),
-  // TODO CONTINUE LINKEDIN UPDATES FROM HERE
   generateMemberData(kelvinNguyen, "Kelvin Nguyen", "Developer", "nguyen-kelvin"),
   generateMemberData(
     miguelPereira,

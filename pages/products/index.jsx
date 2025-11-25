@@ -18,7 +18,6 @@ export default function Products() {
 	const renderYear = (year) => {
 		const products = productData.filter(product => product.year === year);
 		return <>
-            <p className="product-subheading2"><i>{year}:</i></p>
             <div className="products-container2">
 				{products.map(product => {
 					const name = product.productName;

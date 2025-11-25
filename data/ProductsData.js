@@ -495,16 +495,16 @@ const ProductData = [
 		.setYear("2023-2024")
 		.setSlogan("Find teammates to build your next side project")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Alex Lian", "alex-lian", "Product Manager"],
+			["Cain Sueko", "cain-s-8b5b36150", "Senior Developer"],
+			["Connor Leung", "connorleung", "Developer"],
+			["Daniel Joseph", "danieljoseph8", "Developer"],
+			["Sindusara Munasinghe", "sindusara-m-96a7a4296", "Developer"],
+			["Savannah Han", "savannah-han", "Developer"],
+			["Steven Vuong", "steven--vuong", "Senior Business Analyst"],
+			["Marcus Hui", "marcus-hui-0a7b9b334", "Business Analyst"],
+			["Cynthia Choi", "choicynthia", "Business Analyst"],
+			["Mike Nguyen", "mike-nguyen-5bab96269", "UI/UX Designer"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
@@ -595,16 +595,15 @@ const ProductData = [
 		.setYear("2024-2025")
 		.setSlogan("Stop procrastinating and start working")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Michael Curry", "michaelcurry-", "Product Manager"],
+			["Kayne Lee", "kaynelee", "Senior Developer"],
+			["Amanda Li", "aamanda-li", "Developer"],
+			["Matthew Kompel", "#", "Developer"],
+			["Chloe Houvardas", "chloe-houvardas", "Developer"],
+			["Vivian Lee", "vivianmlee", "Senior UI/UX Designer"],
+			["Will Du", "william-du-6aa25b256", "Senior Business Analyst"],
+			["Brian Yts", "brian-yts", "Business Analyst"],
+			["Moon Le", "moonle", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 130, height: 120})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
@@ -618,16 +617,17 @@ const ProductData = [
 		.setYear("2024-2025")
 		.setSlogan("Data-driven investment tool for retail investors")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Alison Xia", "alison-xia", "Product Manager"],
+			["Eric Lam", "eric-lam-0532322a5", "Senior Developer"],
+			["Gavin Yan", "gavin-yan", "Developer"],
+			["Joshua Gonzales", "joshua-gonzales-33a41b272", "Developer"],
+			["Richard Guo", "richard-guo-8b5b73217", "Developer"],
+			["Matthew Kim", "geonho-mattkim", "Senior Business Analyst"],
+			["Sage Pearl", "sage-pearl-6572b9268", "Business Analyst"],
+			["Emanuel Piccininni", "emanuel-piccininni", "Business Analyst"],
+			["Julia Bartman", "julia-bartman-50a4a42a5", "Business Analyst"],
+			["Mike Nguyen", "mike-nguyen-5bab96269", "Senior UI/UX Designer"],
+			["Serena Sanchez", "serenasanchez2025", "UI/UX Designer"],
 		])
 		.setLogoDimensions({width: 140, height: 92})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
@@ -641,16 +641,17 @@ const ProductData = [
 		.setYear("2024-2025")
 		.setSlogan("Your go-to kitchen companion")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Daniel Joseph", "danieljoseph8", "Product Manager"],
+			["Robbie Huang", "robbie-huang-a02196289", "Senior Developer"],
+			["Kabelo Dike", "kabelo-dike", "Developer"],
+			["Bartek Kowalski", "bartek-kowalski-software-developer", "Developer"],
+			["Aminah Rizwan", "aminahrizwan", "Senior Business Analyst"],
+			["Marucs Hui", "marcus-hui-0a7b9b334", "Business Analyst"],
+			["Dylan Atwal", "dylan-atwal-6b63a1252", "Business Analyst"],
+			["Nathan Reynolds", "nathan-reynolds-78a47b290", "Business Analyst"],
+			["Erin Zhang", "erin-r-zhang", "Senior UI/UX Designer"],
+			["Noah Yu", "noahyu", "UI/UX Designer"],
+			["Jennie Choi", "jennie-choi-2329132a9", "UI/UX Designer"],
 		])
 		.setLogoDimensions({width: 140, height: 113})
 		.setOverview("Everyone loves thinking about and starting side projects, but we " +
