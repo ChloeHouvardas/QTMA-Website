@@ -2,8 +2,6 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import Nav from "../Nav";
 import Link from "next/link";
-import Footer from "../../components/Footer";
-import FloatingBlobsStill from "../../components/FloatingBlobsStill";
 
 import products from './../../data/ProductsData';
 
