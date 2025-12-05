@@ -493,94 +493,82 @@ const ProductData = [
 	new ProductBuilder()
 		.setName("Dilliad")
 		.setYear("2023-2024")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Your AI-powered personal stylist")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Alex Lian", "alex-lian", "Product Manager"],
+			["Cain Sueko", "cain-s-8b5b36150", "Senior Developer"],
+			["Connor Leung", "connorleung", "Developer"],
+			["Daniel Joseph", "danieljoseph8", "Developer"],
+			["Savannah Han", "savannah-han", "Developer"],
+			["Sindusara Munasinghe", "sindusara-m-96a7a4296", "Developer"],
+			["Mike Nguyen", "mike-nguyen-5bab96269", "UI/UX Designer"],
+			["Steven Vuong", "steven--vuong", "Senior Business Analyst"],
+			["Marcus Hui", "marcus-hui-0a7b9b334", "Business Analyst"],
+			["Cynthia Choi", "choicynthia", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
-		.setOverview("Everyone loves thinking about and starting side projects, but we " +
-			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
-			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
-			"developers so you can focus & collaborate on making effective projects to beef up your " +
-			"portfolio!")
+		.setOverview("As building a personal style and managing a wardrobe becomes increasingly overwhelming, individuals struggle to create cohesive outfits that suit their occasion, style, and the weather. This daily decision leads to wasted time, underutilized clothing, and frustration. Dilliad solves that by simplifying daily dressing: an AI-powered stylist that integrates with your wardrobe to automatically generate and suggest personalized outfit combinations.")
 		.build(),
 		new ProductBuilder()
 		.setName("Pantree")
 		.setYear("2023-2024")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Never waste food again")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Manush Patel", "manushpatel", "Product Manager"],
+			["Yves Alikalfic", "yves-alikalfic", "Senior Developer"],
+			["Matt Dobaj", "#", "Developer"],
+			["Al-Barr Ajiboye", "#", "Developer"],
+			["Keely McSpurren", "#", "Developer"],
+			["Jasmine Gao", "#", "Senior UI/UX Designer"],
+			["Janevra Pier", "#", "UI/UX Designer"],
+			["Nick Archambault", "nickarchambault", "Senior Business Analyst"],
+			["Claire Hu", "#", "Business Analyst"],
+			["Manny Piccinni", "#", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
-		.setOverview("Everyone loves thinking about and starting side projects, but we " +
-			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
-			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
-			"developers so you can focus & collaborate on making effective projects to beef up your " +
-			"portfolio!")
+		.setOverview("As households strive to reduce food waste and manage groceries, it becomes increasingly difficult to track what's in your kitchen and when it expires. This lack of visibility leads to forgotten food, wasted money, and unnecessary grocery trips. Pantree solves that by creating a smarter kitchen: a browser extension that tracks your food purchases and proactively reminds you when items are nearing their expiration date.")
 		.build(),
 		new ProductBuilder()
 		.setName("Orah")
 		.setYear("2023-2024")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Reclaim your time, earn rewards")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["PLACEHOLDER", "ethan-bonnardeaux", "Product Manager"],
+			["Thomas Huang", "#", "Product Manager"],
+			["Aidan Brown", "#", "Senior Business Analyst"],
+			["Vasili Piliouras", "#", "Business Analyst"],
+			["Jennie Choi", "#", "Business Analyst"],
+			["Nathan Reynolds", "#", "Business Analyst"],
+			["Sriya Narra", "#", "Business Analyst"],
+			["Shabicha Sureshkumar", "#", "Senior UI/UX Designer"],
+			["Amanda Li", "#", "UI/UX Designer"],
+			["Jade Wei", "#", "Senior Developer"],
+			["Sophie Ellwood", "#", "Developer"],
+			["Michael Han", "#", "Developer"],
+			["Julian Brickman", "#", "Developer"],
+
 		])
 		.setLogoDimensions({width: 154, height: 56})
-		.setOverview("Everyone loves thinking about and starting side projects, but we " +
-			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
-			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
-			"developers so you can focus & collaborate on making effective projects to beef up your " +
-			"portfolio!")
+		.setOverview("As smartphone addiction becomes increasingly prevalent, students struggle to reduce their screen time despite a strong desire to do so. The lack of tangible incentives and engaging tools makes effective screen time management feel like a punishment. Orah solves that by helping students reclaim their time and money: a gamified app that rewards you with real-world discounts and coupons for meeting your screen time reduction goals.")
 		.build(),
 		new ProductBuilder()
 		.setName("Parki")
 		.setYear("2023-2024")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Finding parking, made easy")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Graham Carkener", "#", "Product Manager"],
+			["Beatrice Setiawan", "#", "Senior Business Analyst"],
+			["Lukas Cupsa", "#", "Business Analyst"],
+			["Hannah He", "#", "Business Analyst"],
+			["Aminah Rizwan", "#", "Business Analyst"],
+			["William Du", "#", "Business Analyst"],
+			["Erin Zhang", "#", "Senior UI/UX Designer"],
+			["Reid Moffat", "#", "Senior Developer"],
+			["Dharsan Ravindran", "#", "Senior Developer"],
+			["Connor Rewa", "#", "Developer"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
-		.setOverview("Everyone loves thinking about and starting side projects, but we " +
-			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
-			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
-			"developers so you can focus & collaborate on making effective projects to beef up your " +
-			"portfolio!")
+		.setOverview("As parking in dense urban and campus areas becomes increasingly scarce and expensive, drivers are forced to choose from limited, costly options. Simultaneously, property managers and individuals with unused parking spots lack a specialized platform to easily monetize their assets. Parki solves that by democratizing parking access: a streamlined, community-focused platform that makes it easy for anyone to list or find affordable and convenient parking spots.")
 		.build(),
 
 
@@ -593,94 +581,82 @@ const ProductData = [
 	new ProductBuilder()
 		.setName("Nucleus")
 		.setYear("2024-2025")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Stop procrastinating and start working")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Michael Curry", "michaelcurry-", "Product Manager"],
+			["Kayne Lee", "kaynelee", "Senior Developer"],
+			["Amanda Li", "aamanda-li", "Developer"],
+			["Matthew Kompel", "#", "Developer"],
+			["Chloe Houvardas", "chloe-houvardas", "Developer"],
+			["Vivian Lee", "vivianmlee", "Senior UI/UX Designer"],
+			["Will Du", "william-du-6aa25b256", "Senior Business Analyst"],
+			["Brian Yts", "brian-yts", "Business Analyst"],
+			["Moon Le", "moonle", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 130, height: 120})
-		.setOverview("Everyone loves thinking about and starting side projects, but we " +
-			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
-			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
-			"developers so you can focus & collaborate on making effective projects to beef up your " +
-			"portfolio!")
+		.setOverview("As academic workloads become increasingly complex, students struggle to synthesize critical information scattered across multiple syllabi, platforms, and calendars. This administrative chaos causes missed deadlines, unnecessary stress, and hinders academic performance. Nucleus solves that by centralizing academic life: an all-in-one hub that aggregates and streamlines all course information into a single, actionable, and personalized dashboard.")
 		.build(),
 	new ProductBuilder()
 		.setName("Inquiro")
 		.setYear("2024-2025")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Data-driven investment tool for retail investors")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Alison Xia", "alison-xia", "Product Manager"],
+			["Eric Lam", "eric-lam-0532322a5", "Senior Developer"],
+			["Gavin Yan", "gavin-yan", "Developer"],
+			["Joshua Gonzales", "joshua-gonzales-33a41b272", "Developer"],
+			["Richard Guo", "richard-guo-8b5b73217", "Developer"],
+			["Matthew Kim", "geonho-mattkim", "Senior Business Analyst"],
+			["Sage Pearl", "sage-pearl-6572b9268", "Business Analyst"],
+			["Emanuel Piccininni", "emanuel-piccininni", "Business Analyst"],
+			["Julia Bartman", "julia-bartman-50a4a42a5", "Business Analyst"],
+			["Mike Nguyen", "mike-nguyen-5bab96269", "Senior UI/UX Designer"],
+			["Serena Sanchez", "serenasanchez2025", "UI/UX Designer"],
 		])
 		.setLogoDimensions({width: 140, height: 92})
-		.setOverview("Everyone loves thinking about and starting side projects, but we " +
-			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
-			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
-			"developers so you can focus & collaborate on making effective projects to beef up your " +
-			"portfolio!")
+		.setOverview("As the amount of public company data grows increasingly vast and fragmented, retail investors struggle to find clear, timely, and relevant information to make informed decisions. Navigating through complex financial documents and news is time-consuming and intimidating. Inquiro solves that by democratizing financial research: a data-powered tool that allows users to search for and ask about companies using natural language, delivering immediate, synthesized answers.")
 		.build(),
 	new ProductBuilder()
 		.setName("Lilchef")
 		.setYear("2024-2025")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Your go-to kitchen companion")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Daniel Joseph", "danieljoseph8", "Product Manager"],
+			["Robbie Huang", "robbie-huang-a02196289", "Senior Developer"],
+			["Kabelo Dike", "kabelo-dike", "Developer"],
+			["Bartek Kowalski", "bartek-kowalski-software-developer", "Developer"],
+			["Aminah Rizwan", "aminahrizwan", "Senior Business Analyst"],
+			["Marucs Hui", "marcus-hui-0a7b9b334", "Business Analyst"],
+			["Dylan Atwal", "dylan-atwal-6b63a1252", "Business Analyst"],
+			["Nathan Reynolds", "nathan-reynolds-78a47b290", "Business Analyst"],
+			["Erin Zhang", "erin-r-zhang", "Senior UI/UX Designer"],
+			["Noah Yu", "noahyu", "UI/UX Designer"],
+			["Jennie Choi", "jennie-choi-2329132a9", "UI/UX Designer"],
 		])
 		.setLogoDimensions({width: 140, height: 113})
-		.setOverview("Everyone loves thinking about and starting side projects, but we " +
-			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
-			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
-			"developers so you can focus & collaborate on making effective projects to beef up your " +
-			"portfolio!")
+		.setOverview("As young adults begin living independently, cooking becomes increasingly daunting due to a lack of skills, time, and motivation. The overwhelming number of recipes and the burden of decision-making often lead to unhealthy takeout choices. Lil'Chef solves that by building confidence in the kitchen: a personalized, all-in-one cooking companion app that simplifies meal discovery, planning, and cooking with guided assistance tailored to your dietary needs and goals.")
 		.build(),
 	new ProductBuilder()
 		.setName("Fujiplans")
 		.setYear("2024-2025")
-		.setSlogan("Find teammates to build your next side project")
+		.setSlogan("Giving educators their time back")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Keely McSpurren", "keely-mcspurren", "Product Manager"],
+			["Connor Leung", "connorleung", "Senior Developer"],
+			["Isaac Fung", "isaacfungg", "Developer"],
+			["Anthony Qiu", "anthonyqiu3", "Developer"],
+			["Matt Dobaj", "mattdobaj", "Developer"],
+			["Janevra Pier", "/janevra-pier-687562277", "UI/UX Designer"],
+			["Hana Brissenden", "hana-brissenden-063b3a274", "UI/UX Designer"],
+			["Claire HU", "huclaire", "Senior Business Analyst"],
 			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Thomas Huo", "thomashuo-", "Business Analyst"],
+			["Ruby Wang", "ruby-wangg", "Business Analyst"],
+			["Lukas Cupsa", "lukas-cupsa", "Business Analyst"],
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 200, height: 67})
-		.setOverview("Everyone loves thinking about and starting side projects, but we " +
-			"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
-			"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
-			"developers so you can focus & collaborate on making effective projects to beef up your " +
-			"portfolio!")
+		.setOverview("As the demands on educators' time become increasingly burdensome, teachers struggle with the administrative load of creating, aligning, and collaborating on lesson plans. This tedious process takes valuable hours away from student engagement and instruction. FujiPlans solves that by empowering educators: an AI-powered, collaborative platform that streamlines lesson planning, ensures curriculum alignment, and gives teachers their time back.")
 		.build(),
 
 ]

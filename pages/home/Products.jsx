@@ -10,10 +10,24 @@ export default function Products() {
 
 	const renderProduct = (product) => {
 		const link = `/product/${product.productName}`;
+		const isWinterWinner = product.productName === 'Nucleus' || product.productName === 'Dilliad' || product.productName === 'Kartt';
+		const isFallWinner = product.productName === 'Pantree' || product.productName === 'Fujiplans';
 
 		return (
             <Link passHref href={link} legacyBehavior>
-				<div className="product">
+				<div className={`product ${isWinterWinner ? 'winner-product' : ''} ${isFallWinner ? 'fall-winner-product' : ''}`}>
+					{isWinterWinner && (
+						<div className="winner-badge">
+							<span className="winner-icon">🏆</span>
+							<span className="winner-text">Winter Demo Day Winner</span>
+						</div>
+					)}
+					{isFallWinner && (
+						<div className="fall-winner-badge">
+							<span className="winner-icon">🏆</span>
+							<span className="winner-text">Fall Demo Day</span>
+						</div>
+					)}
 					<div className="product-info">
 						<h3>{product.productName}</h3>
 						<p><i>'{product.slogan}'</i></p>

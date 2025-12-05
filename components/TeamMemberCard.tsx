@@ -51,6 +51,11 @@ export function TeamMemberCard({ name, image, subPosition, linkedIn }: Props) {
 					</span>
 				)}
 			</p>
+			{subPosition && (
+				<p className="text-sm text-gray-500 mt-1 italic">
+					{subPosition}
+				</p>
+			)}
 		</div>
 	);
 }

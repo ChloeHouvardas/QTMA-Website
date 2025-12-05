@@ -71,7 +71,7 @@ export default function About() {
 
 					{/* What is QTMA Section */}
 					<section className="mb-12 sm:mb-16">
-						<h2 className="text-2xl sm:text-3xl font-bold text-[#3576d3] mb-4 sm:mb-6">
+						<h2 className="text-2xl sm:text-3xl text-[#3576d3] mb-4 sm:mb-6">
 							What is QTMA?
 						</h2>
 						<div className="text-base sm:text-lg text-gray-700 space-y-4">
@@ -91,7 +91,7 @@ export default function About() {
 
 					{/* What do we do Section */}
 					<section className="mb-12 sm:mb-16">
-						<h2 className="text-2xl sm:text-3xl font-bold text-[#3576d3] mb-4 sm:mb-6">
+						<h2 className="text-2xl sm:text-3xl text-[#3576d3] mb-4 sm:mb-6">
 							What Do We Do?
 						</h2>
 						<div className="text-base sm:text-lg text-gray-700 space-y-4">

@@ -193,15 +193,15 @@ export default function Home() {
 										key={index}
 										className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
 									>
-										<div className="text-3xl mb-3 text-[#3576d3]">
-											{feature.icon}
-										</div>
+									<div className="text-3xl mb-3 text-[#3576d3]">
+										{feature.icon}
+									</div>
 									<h3 className="text-xl font-medium text-[#3576d3] mb-3">
 										{feature.title}
 									</h3>
-										<p className="text-gray-400">
-											{feature.desc}
-										</p>
+									<p className="text-gray-400">
+										{feature.desc}
+									</p>
 									</div>
 								))}
 							</div>
@@ -221,7 +221,7 @@ export default function Home() {
 					<div className="absolute bottom-0 right-0 w-[220px] h-[180px] bg-[#d1cfff] opacity-10 rounded-full blur-2xl z-0" />
 					<div className="max-w-6xl mx-auto relative z-10">
 						<div className="text-left max-w-[600px] mb-6 sm:mb-8">
-							<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
+							<h2 className="text-[#3576d3] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
 									Why Choose QTMA?
 								</h2>
 								<p className="text-gray-400 text-lg sm:text-xl mb-6">
@@ -255,7 +255,7 @@ export default function Home() {
 										<div className="text-3xl mb-3 text-[#3576d3]">
 											{feature.icon}
 										</div>
-										<h3 className="text-xl font-bold text-[#3576d3] mb-3">
+										<h3 className="text-xl font-medium text-[#3576d3] mb-3">
 											{feature.title}
 										</h3>
 										<p className="text-gray-400">
@@ -278,35 +278,35 @@ export default function Home() {
 					</p>
 					<div className="bg-white rounded-2xl shadow-lg p-8 sm:p-12">
 						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
-							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
+							<div className="w-full max-w-[140px] h-24 relative flex items-center justify-center">
 								<img
 									src="/assets/Club Data/Homepage/Sponsors/ComSoc.png"
 									alt="ComSoc"
 									className="max-w-full max-h-full object-contain"
 								/>
 							</div>
-							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
+							<div className="w-full max-w-[140px] h-24 relative flex items-center justify-center">
 								<img
 									src="/assets/Club Data/Homepage/Sponsors/McKinsey.png"
 									alt="McKinsey"
 									className="max-w-full max-h-full object-contain"
 								/>
 							</div>
-							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
+							<div className="w-full max-w-[140px] h-24 relative flex items-center justify-center">
 								<img
 									src="/assets/Club Data/Homepage/Sponsors/Queens_Artsci.png"
 									alt="Queen's Arts & Science"
 									className="max-w-full max-h-full object-contain"
 								/>
 							</div>
-							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center">
+							<div className="w-full max-w-[140px] h-24 relative flex items-center justify-center">
 								<img
 									src="/assets/Club Data/Homepage/Sponsors/Queens_Computing.png"
 									alt="Queen's Computing"
 									className="max-w-full max-h-full object-contain"
 								/>
 							</div>
-							<div className="w-full max-w-[140px] h-24 relative grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
+							<div className="w-full max-w-[140px] h-24 relative flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
 								<img
 									src="/assets/Club Data/Homepage/Sponsors/Trend_Micro.png"
 									alt="Trend Micro"

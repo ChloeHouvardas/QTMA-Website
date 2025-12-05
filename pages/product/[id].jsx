@@ -5,6 +5,7 @@ import productData from "../../data/ProductsData";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Footer from "../../components/Footer";
+import FloatingBlobsStill from "../../components/FloatingBlobsStill";
 
 //
 // This file is used to dynamically render each product (e.g. <Link passHref href="/product/Eagle>">)
@@ -42,16 +43,16 @@ export const getStaticPaths = async () => {
 			{params: {id: "Venato"}},
 
 			// 2023-2024
-			{params: {id: "Feastly"}},
-			{params: {id: "Kartt"}},
-			{params: {id: "Sift"}},
-			{params: {id: "Venato"}},
+			{params: {id: "Dilliad"}},
+			{params: {id: "Pantree"}},
+			{params: {id: "Orah"}},
+			{params: {id: "Parki"}},
 
 			// 2024-2025
 			{params: {id: "Nucleus"}},
-			{params: {id: "Fujiplans"}},
 			{params: {id: "Inquiro"}},
 			{params: {id: "Lilchef"}},
+			{params: {id: "Fujiplans"}},
 		],
 		fallback: false,
 	};
@@ -95,7 +96,8 @@ export default function Product() {
 	return (
 		<>
 			<Nav/>
-			<Layout>
+			<Layout background="linear-gradient(135deg, #e3edfa 0%, #f3f4fa 100%)">
+				<FloatingBlobsStill />
 				{product && (
 					<div className="product-container-id container">
 						<div className="product-header-container">
