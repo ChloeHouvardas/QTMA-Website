@@ -534,18 +534,19 @@ const ProductData = [
 		.setSlogan("Reclaim your time, earn rewards")
 		.setStudentData([
 			["PLACEHOLDER", "ethan-bonnardeaux", "Product Manager"],
-			// ["Thomas Huang", "thomas-huang-805958205", "Product Manager"],
-			// ["Jade Wei", "jade-wei", "Senior Developer"],
-			// ["Michael Han", "#", "Developer"],
-			// ["Julian Brickman", "#", "Developer"],
-			// ["Sophie Ellwood", "sophie-ellwood", "Developer"],
-			// ["Shabicha Sureshkumar", "shabicha-sureshkumar-0b7372200", "Senior UI/UX Designer"],
-			// ["Amanda Li", "aamanda-li", "UI/UX Designer"],
-			// ["Aidan Brown", "#", "Senior Business Analyst"],
-			// ["Vasili Piliouras", "#", "Business Analyst"],
-			// ["Jennie Choi", "jennie-choi-2329132a9", "Business Analyst"],
-			// ["Nathan Reynolds", "nathan-reynolds-78a47b290", "Business Analyst"],
-			// ["Sriya Narra", "#", "Business Analyst"],
+			["Thomas Huang", "#", "Product Manager"],
+			["Aidan Brown", "#", "Senior Business Analyst"],
+			["Vasili Piliouras", "#", "Business Analyst"],
+			["Jennie Choi", "#", "Business Analyst"],
+			["Nathan Reynolds", "#", "Business Analyst"],
+			["Sriya Narra", "#", "Business Analyst"],
+			["Shabicha Sureshkumar", "#", "Senior UI/UX Designer"],
+			["Amanda Li", "#", "UI/UX Designer"],
+			["Jade Wei", "#", "Senior Developer"],
+			["Sophie Ellwood", "#", "Developer"],
+			["Michael Han", "#", "Developer"],
+			["Julian Brickman", "#", "Developer"],
+
 		])
 		.setLogoDimensions({width: 154, height: 56})
 		.setOverview("As smartphone addiction becomes increasingly prevalent, students struggle to reduce their screen time despite a strong desire to do so. The lack of tangible incentives and engaging tools makes effective screen time management feel like a punishment. Orah solves that by helping students reclaim their time and money: a gamified app that rewards you with real-world discounts and coupons for meeting your screen time reduction goals.")
