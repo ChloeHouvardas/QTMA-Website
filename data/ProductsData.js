@@ -499,12 +499,12 @@ const ProductData = [
 			["Cain Sueko", "cain-s-8b5b36150", "Senior Developer"],
 			["Connor Leung", "connorleung", "Developer"],
 			["Daniel Joseph", "danieljoseph8", "Developer"],
-			["Sindusara Munasinghe", "sindusara-m-96a7a4296", "Developer"],
 			["Savannah Han", "savannah-han", "Developer"],
+			["Sindusara Munasinghe", "sindusara-m-96a7a4296", "Developer"],
+			["Mike Nguyen", "mike-nguyen-5bab96269", "UI/UX Designer"],
 			["Steven Vuong", "steven--vuong", "Senior Business Analyst"],
 			["Marcus Hui", "marcus-hui-0a7b9b334", "Business Analyst"],
 			["Cynthia Choi", "choicynthia", "Business Analyst"],
-			["Mike Nguyen", "mike-nguyen-5bab96269", "UI/UX Designer"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
 		.setOverview("As building a personal style and managing a wardrobe becomes increasingly overwhelming, individuals struggle to create cohesive outfits that suit their occasion, style, and the weather. This daily decision leads to wasted time, underutilized clothing, and frustration. Dilliad solves that by simplifying daily dressing: an AI-powered stylist that integrates with your wardrobe to automatically generate and suggest personalized outfit combinations.")
@@ -514,16 +514,16 @@ const ProductData = [
 		.setYear("2023-2024")
 		.setSlogan("Never waste food again")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Manush Patel", "manushpatel", "Product Manager"],
+			["Yves Alikalfic", "yves-alikalfic", "Senior Developer"],
+			["Matt Dobaj", "#", "Developer"],
+			["Al-Barr Ajiboye", "#", "Developer"],
+			["Keely McSpurren", "#", "Developer"],
+			["Jasmine Gao", "#", "Senior UI/UX Designer"],
+			["Janevra Pier", "#", "UI/UX Designer"],
+			["Nick Archambault", "nickarchambault", "Senior Business Analyst"],
+			["Claire Hu", "#", "Business Analyst"],
+			["Manny Piccinni", "#", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
 		.setOverview("As households strive to reduce food waste and manage groceries, it becomes increasingly difficult to track what's in your kitchen and when it expires. This lack of visibility leads to forgotten food, wasted money, and unnecessary grocery trips. Pantree solves that by creating a smarter kitchen: a browser extension that tracks your food purchases and proactively reminds you when items are nearing their expiration date.")
@@ -533,16 +533,19 @@ const ProductData = [
 		.setYear("2023-2024")
 		.setSlogan("Reclaim your time, earn rewards")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["PLACEHOLDER", "ethan-bonnardeaux", "Product Manager"],
+			// ["Thomas Huang", "thomas-huang-805958205", "Product Manager"],
+			// ["Jade Wei", "jade-wei", "Senior Developer"],
+			// ["Michael Han", "#", "Developer"],
+			// ["Julian Brickman", "#", "Developer"],
+			// ["Sophie Ellwood", "sophie-ellwood", "Developer"],
+			// ["Shabicha Sureshkumar", "shabicha-sureshkumar-0b7372200", "Senior UI/UX Designer"],
+			// ["Amanda Li", "aamanda-li", "UI/UX Designer"],
+			// ["Aidan Brown", "#", "Senior Business Analyst"],
+			// ["Vasili Piliouras", "#", "Business Analyst"],
+			// ["Jennie Choi", "jennie-choi-2329132a9", "Business Analyst"],
+			// ["Nathan Reynolds", "nathan-reynolds-78a47b290", "Business Analyst"],
+			// ["Sriya Narra", "#", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 154, height: 56})
 		.setOverview("As smartphone addiction becomes increasingly prevalent, students struggle to reduce their screen time despite a strong desire to do so. The lack of tangible incentives and engaging tools makes effective screen time management feel like a punishment. Orah solves that by helping students reclaim their time and money: a gamified app that rewards you with real-world discounts and coupons for meeting your screen time reduction goals.")
@@ -552,16 +555,16 @@ const ProductData = [
 		.setYear("2023-2024")
 		.setSlogan("Finding parking, made easy")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Graham Carkener", "#", "Product Manager"],
+			["Beatrice Setiawan", "#", "Senior Business Analyst"],
+			["Lukas Cupsa", "#", "Business Analyst"],
+			["Hannah He", "#", "Business Analyst"],
+			["Aminah Rizwan", "#", "Business Analyst"],
+			["William Du", "#", "Business Analyst"],
+			["Erin Zhang", "#", "Senior UI/UX Designer"],
+			["Reid Moffat", "#", "Senior Developer"],
+			["Dharsan Ravindran", "#", "Senior Developer"],
+			["Connor Rewa", "#", "Developer"],
 		])
 		.setLogoDimensions({width: 220, height: 80})
 		.setOverview("As parking in dense urban and campus areas becomes increasingly scarce and expensive, drivers are forced to choose from limited, costly options. Simultaneously, property managers and individuals with unused parking spots lack a specialized platform to easily monetize their assets. Parki solves that by democratizing parking access: a streamlined, community-focused platform that makes it easy for anyone to list or find affordable and convenient parking spots.")
@@ -637,15 +640,18 @@ const ProductData = [
 		.setYear("2024-2025")
 		.setSlogan("Giving educators their time back")
 		.setStudentData([
-			["Ethan Bonnardeaux", "ethan-bonnardeaux", "Product Manager"],
-			["Truman Be", "truman-be", "Senior Developer"],
-			["Jessica Li", "jessica-a-li", "Developer"],
-			["Kevin Subagaran", "#", "Developer"],
-			["Ronan Almeida", "#", "Developer"],
-			["Randy Shao", "randyshao", "UI/UX Designer"],
-			["Dylan Ratti", "dylan-ratti", "Senior Business Analyst"],
+			["Keely McSpurren", "keely-mcspurren", "Product Manager"],
+			["Connor Leung", "connorleung", "Senior Developer"],
+			["Isaac Fung", "isaacfungg", "Developer"],
+			["Anthony Qiu", "anthonyqiu3", "Developer"],
+			["Matt Dobaj", "mattdobaj", "Developer"],
+			["Janevra Pier", "/janevra-pier-687562277", "UI/UX Designer"],
+			["Hana Brissenden", "hana-brissenden-063b3a274", "UI/UX Designer"],
+			["Claire HU", "huclaire", "Senior Business Analyst"],
 			["Chris Power", "#", "Business Analyst"],
-			["Eesha Kohli", "eesha-kohli", "Business Analyst"],
+			["Thomas Huo", "thomashuo-", "Business Analyst"],
+			["Ruby Wang", "ruby-wangg", "Business Analyst"],
+			["Lukas Cupsa", "lukas-cupsa", "Business Analyst"],
 			["Manush Patel", "manushpatel", "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 200, height: 67})
