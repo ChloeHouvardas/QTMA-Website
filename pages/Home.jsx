@@ -100,7 +100,7 @@ export default function Home() {
 						linkBox={
 							<LinkBox
 								message="VIEW OUR PRODUCTS"
-								link="https://forms.gle/3b1d7Z5x6f8a2g4i9"
+								link="/products"
 								hasIcon
 							/>
 						}
@@ -118,7 +118,7 @@ export default function Home() {
 						linkBox={
 							<LinkBox
 								message="VIEW OUR PRODUCTS"
-								link="https://forms.gle/3b1d7Z5x6f8a2g4i9"
+								link="/products"
 								hasIcon
 							/>
 						}
@@ -136,7 +136,7 @@ export default function Home() {
 						linkBox={
 							<LinkBox
 								message="MEET OUR TEAM"
-								link="https://forms.gle/3b1d7Z5x6f8a2g4i9"
+								link="/team"
 								hasIcon
 							/>
 						}
