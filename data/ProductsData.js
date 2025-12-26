@@ -506,7 +506,7 @@ const ProductData = [
 			["Marcus Hui", "marcus-hui-0a7b9b334", "Business Analyst"],
 			["Cynthia Choi", "choicynthia", "Business Analyst"],
 		])
-		.setLogoDimensions({width: 400, height: 145})
+		.setLogoDimensions({width: 1200, height: 440})
 		.setOverview("As building a personal style and managing a wardrobe becomes increasingly overwhelming, individuals struggle to create cohesive outfits that suit their occasion, style, and the weather. This daily decision leads to wasted time, underutilized clothing, and frustration. Dilliad solves that by simplifying daily dressing: an AI-powered stylist that integrates with your wardrobe to automatically generate and suggest personalized outfit combinations.")
 		.build(),
 		new ProductBuilder()
