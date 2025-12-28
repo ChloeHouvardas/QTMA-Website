@@ -13,9 +13,10 @@ Dev team:
 * [Yves Alikalfic](https://github.com/yves-a): 2023 rework developer
 
 2025 Redesign Dev Team
-* [Chloe Houvardas] (https://github.com/ChloeHouvardas): Cochair 2025-2026
-* [Kayne Lee]:(https://github.com/kayne-lee) Director of Devs 2025-2026
-* [Simon Risk]:(https://github.com/SimonNRisk) Developer 2025-2026
+* [Chloe Houvardas](https://github.com/ChloeHouvardas): Cochair 2025-2026
+* [Kayne Lee](https://github.com/kayne-lee) Director of Devs 2025-2026
+* [Simon Risk](https://github.com/SimonNRisk) Sr. Developer 2025-2026
+* Janevra Pier (Figma Design): Cochair 2025-2026
 
 ## Running locally
 
