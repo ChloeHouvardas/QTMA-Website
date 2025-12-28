@@ -1,14 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import Home from "./Home";
-import Nav from "./Nav";
-import Product from "./home/Products";
-import WhatIsQTMA from "./home/WhatIsQTMA";
-import OurTeamStructure from "./home/OurTeamStructure";
-import MembersGain from "./home/MembersGain";
-import ProgramTimeline from "./home/ProgramTimeline";
-import Testimonials from "./home/Testimonials";
-import Sponsors from "./home/Sponsors";
 import Footer from "../components/Footer";
 
 export async function getStaticProps({ params }) {

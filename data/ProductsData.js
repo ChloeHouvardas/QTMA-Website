@@ -495,16 +495,16 @@ const ProductData = [
 		.setYear("2023-2024")
 		.setSlogan("Your AI-powered personal stylist")
 		.setStudentData([
-			["Alex Lian", "alex-lian", "Product Manager"],
-			["Cain Sueko", "cain-s-8b5b36150", "Senior Developer"],
-			["Connor Leung", "connorleung", "Developer"],
-			["Daniel Joseph", "danieljoseph8", "Developer"],
-			["Savannah Han", "savannah-han", "Developer"],
-			["Sindusara Munasinghe", "sindusara-m-96a7a4296", "Developer"],
-			["Mike Nguyen", "mike-nguyen-5bab96269", "UI/UX Designer"],
-			["Steven Vuong", "steven--vuong", "Senior Business Analyst"],
-			["Marcus Hui", "marcus-hui-0a7b9b334", "Business Analyst"],
-			["Cynthia Choi", "choicynthia", "Business Analyst"],
+			["Alex Lian", "#", "Product Manager"],
+			["Cain Sueko", "#", "Senior Developer"],
+			["Connor Leung", "#", "Developer"],
+			["Daniel Joseph", "#", "Developer"],
+			["Savannah Han", "#", "Developer"],
+			["Sindusara Munasinghe", "#", "Developer"],
+			["Mike Nguyen", "#", "UI/UX Designer"],
+			["Steven Vuong", "#", "Senior Business Analyst"],
+			["Marcus Hui", "#", "Business Analyst"],
+			["Cynthia Choi", "#", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 1200, height: 440})
 		.setOverview("As building a personal style and managing a wardrobe becomes increasingly overwhelming, individuals struggle to create cohesive outfits that suit their occasion, style, and the weather. This daily decision leads to wasted time, underutilized clothing, and frustration. Dilliad solves that by simplifying daily dressing: an AI-powered stylist that integrates with your wardrobe to automatically generate and suggest personalized outfit combinations.")
@@ -514,14 +514,14 @@ const ProductData = [
 		.setYear("2023-2024")
 		.setSlogan("Never waste food again")
 		.setStudentData([
-			["Manush Patel", "manushpatel", "Product Manager"],
-			["Yves Alikalfic", "yves-alikalfic", "Senior Developer"],
+			["Manush Patel", "#", "Product Manager"],
+			["Yves Alikalfic", "#", "Senior Developer"],
 			["Matt Dobaj", "#", "Developer"],
 			["Al-Barr Ajiboye", "#", "Developer"],
 			["Keely McSpurren", "#", "Developer"],
 			["Jasmine Gao", "#", "Senior UI/UX Designer"],
 			["Janevra Pier", "#", "UI/UX Designer"],
-			["Nick Archambault", "nickarchambault", "Senior Business Analyst"],
+			["Nick Archambault", "#", "Senior Business Analyst"],
 			["Claire Hu", "#", "Business Analyst"],
 			["Manny Piccinni", "#", "Business Analyst"],
 		])
@@ -533,7 +533,6 @@ const ProductData = [
 		.setYear("2023-2024")
 		.setSlogan("Reclaim your time, earn rewards")
 		.setStudentData([
-			["PLACEHOLDER", "ethan-bonnardeaux", "Product Manager"],
 			["Thomas Huang", "#", "Product Manager"],
 			["Aidan Brown", "#", "Senior Business Analyst"],
 			["Vasili Piliouras", "#", "Business Analyst"],
@@ -583,15 +582,15 @@ const ProductData = [
 		.setYear("2024-2025")
 		.setSlogan("Stop procrastinating and start working")
 		.setStudentData([
-			["Michael Curry", "michaelcurry-", "Product Manager"],
-			["Kayne Lee", "kaynelee", "Senior Developer"],
-			["Amanda Li", "aamanda-li", "Developer"],
+			["Michael Curry", "#", "Product Manager"],
+			["Kayne Lee", "#", "Senior Developer"],
+			["Amanda Li", "#", "Developer"],
 			["Matthew Kompel", "#", "Developer"],
-			["Chloe Houvardas", "chloe-houvardas", "Developer"],
-			["Vivian Lee", "vivianmlee", "Senior UI/UX Designer"],
-			["Will Du", "william-du-6aa25b256", "Senior Business Analyst"],
-			["Brian Yts", "brian-yts", "Business Analyst"],
-			["Moon Le", "moonle", "Business Analyst"],
+			["Chloe Houvardas", "#", "Developer"],
+			["Vivian Lee", "#", "Senior UI/UX Designer"],
+			["Will Du", "#", "Senior Business Analyst"],
+			["Brian Yts", "#", "Business Analyst"],
+			["Moon Le", "#", "Business Analyst"],
 		])
 		.setLogoDimensions({width: 130, height: 120})
 		.setOverview("As academic workloads become increasingly complex, students struggle to synthesize critical information scattered across multiple syllabi, platforms, and calendars. This administrative chaos causes missed deadlines, unnecessary stress, and hinders academic performance. Nucleus solves that by centralizing academic life: an all-in-one hub that aggregates and streamlines all course information into a single, actionable, and personalized dashboard.")
@@ -601,17 +600,17 @@ const ProductData = [
 		.setYear("2024-2025")
 		.setSlogan("Data-driven investment tool for retail investors")
 		.setStudentData([
-			["Alison Xia", "alison-xia", "Product Manager"],
-			["Eric Lam", "eric-lam-0532322a5", "Senior Developer"],
-			["Gavin Yan", "gavin-yan", "Developer"],
-			["Joshua Gonzales", "joshua-gonzales-33a41b272", "Developer"],
-			["Richard Guo", "richard-guo-8b5b73217", "Developer"],
-			["Matthew Kim", "geonho-mattkim", "Senior Business Analyst"],
-			["Sage Pearl", "sage-pearl-6572b9268", "Business Analyst"],
-			["Emanuel Piccininni", "emanuel-piccininni", "Business Analyst"],
-			["Julia Bartman", "julia-bartman-50a4a42a5", "Business Analyst"],
-			["Mike Nguyen", "mike-nguyen-5bab96269", "Senior UI/UX Designer"],
-			["Serena Sanchez", "serenasanchez2025", "UI/UX Designer"],
+			["Alison Xia", "#", "Product Manager"],
+			["Eric Lam", "#", "Senior Developer"],
+			["Gavin Yan", "#", "Developer"],
+			["Joshua Gonzales", "#", "Developer"],
+			["Richard Guo", "#", "Developer"],
+			["Matthew Kim", "#", "Senior Business Analyst"],
+			["Sage Pearl", "#", "Business Analyst"],
+			["Emanuel Piccininni", "#", "Business Analyst"],
+			["Julia Bartman", "#", "Business Analyst"],
+			["Mike Nguyen", "#", "Senior UI/UX Designer"],
+			["Serena Sanchez", "#", "UI/UX Designer"],
 		])
 		.setLogoDimensions({width: 140, height: 92})
 		.setOverview("As the amount of public company data grows increasingly vast and fragmented, retail investors struggle to find clear, timely, and relevant information to make informed decisions. Navigating through complex financial documents and news is time-consuming and intimidating. Inquiro solves that by democratizing financial research: a data-powered tool that allows users to search for and ask about companies using natural language, delivering immediate, synthesized answers.")
@@ -621,17 +620,17 @@ const ProductData = [
 		.setYear("2024-2025")
 		.setSlogan("Your go-to kitchen companion")
 		.setStudentData([
-			["Daniel Joseph", "danieljoseph8", "Product Manager"],
-			["Robbie Huang", "robbie-huang-a02196289", "Senior Developer"],
-			["Kabelo Dike", "kabelo-dike", "Developer"],
-			["Bartek Kowalski", "bartek-kowalski-software-developer", "Developer"],
-			["Aminah Rizwan", "aminahrizwan", "Senior Business Analyst"],
-			["Marucs Hui", "marcus-hui-0a7b9b334", "Business Analyst"],
-			["Dylan Atwal", "dylan-atwal-6b63a1252", "Business Analyst"],
-			["Nathan Reynolds", "nathan-reynolds-78a47b290", "Business Analyst"],
-			["Erin Zhang", "erin-r-zhang", "Senior UI/UX Designer"],
-			["Noah Yu", "noahyu", "UI/UX Designer"],
-			["Jennie Choi", "jennie-choi-2329132a9", "UI/UX Designer"],
+			["Daniel Joseph", "#", "Product Manager"],
+			["Robbie Huang", "#", "Senior Developer"],
+			["Kabelo Dike", "#", "Developer"],
+			["Bartek Kowalski", "#", "Developer"],
+			["Aminah Rizwan", "#", "Senior Business Analyst"],
+			["Marucs Hui", "#", "Business Analyst"],
+			["Dylan Atwal", "#", "Business Analyst"],
+			["Nathan Reynolds", "#", "Business Analyst"],
+			["Erin Zhang", "#", "Senior UI/UX Designer"],
+			["Noah Yu", "#", "UI/UX Designer"],
+			["Jennie Choi", "#", "UI/UX Designer"],
 		])
 		.setLogoDimensions({width: 140, height: 113})
 		.setOverview("As young adults begin living independently, cooking becomes increasingly daunting due to a lack of skills, time, and motivation. The overwhelming number of recipes and the burden of decision-making often lead to unhealthy takeout choices. Lil'Chef solves that by building confidence in the kitchen: a personalized, all-in-one cooking companion app that simplifies meal discovery, planning, and cooking with guided assistance tailored to your dietary needs and goals.")
@@ -641,19 +640,19 @@ const ProductData = [
 		.setYear("2024-2025")
 		.setSlogan("Giving educators their time back")
 		.setStudentData([
-			["Keely McSpurren", "keely-mcspurren", "Product Manager"],
-			["Connor Leung", "connorleung", "Senior Developer"],
-			["Isaac Fung", "isaacfungg", "Developer"],
-			["Anthony Qiu", "anthonyqiu3", "Developer"],
-			["Matt Dobaj", "mattdobaj", "Developer"],
-			["Janevra Pier", "/janevra-pier-687562277", "UI/UX Designer"],
-			["Hana Brissenden", "hana-brissenden-063b3a274", "UI/UX Designer"],
-			["Claire HU", "huclaire", "Senior Business Analyst"],
+			["Keely McSpurren", "#", "Product Manager"],
+			["Connor Leung", "#", "Senior Developer"],
+			["Isaac Fung", "#", "Developer"],
+			["Anthony Qiu", "#", "Developer"],
+			["Matt Dobaj", "#", "Developer"],
+			["Janevra Pier", "#", "UI/UX Designer"],
+			["Hana Brissenden", "#", "UI/UX Designer"],
+			["Claire HU", "#", "Senior Business Analyst"],
 			["Chris Power", "#", "Business Analyst"],
-			["Thomas Huo", "thomashuo-", "Business Analyst"],
-			["Ruby Wang", "ruby-wangg", "Business Analyst"],
-			["Lukas Cupsa", "lukas-cupsa", "Business Analyst"],
-			["Manush Patel", "manushpatel", "Frosh Rep"],
+			["Thomas Huo", "#", "Business Analyst"],
+			["Ruby Wang", "#", "Business Analyst"],
+			["Lukas Cupsa", "#", "Business Analyst"],
+			["Manush Patel", "#", "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 200, height: 67})
 		.setOverview("As the demands on educators' time become increasingly burdensome, teachers struggle with the administrative load of creating, aligning, and collaborating on lesson plans. This tedious process takes valuable hours away from student engagement and instruction. FujiPlans solves that by empowering educators: an AI-powered, collaborative platform that streamlines lesson planning, ensures curriculum alignment, and gives teachers their time back.")

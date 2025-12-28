@@ -116,6 +116,6 @@
 		"isolatedModules": true,
 		"jsx": "preserve"
 	},
-	"include": ["pages/**/*", "components/**/*"],
+	"include": ["pages/**/*", "components/**/*", "archive/home"],
 	"exclude": ["node_modules", ".next"]
 }
