@@ -31,7 +31,7 @@ export default function Products() {
 
 					return (
 						<Link passHref href={`/product/${name}`} legacyBehavior>
-							<div className={`product2 ${isWinterWinner ? 'winner-product' : ''} ${isFallWinner ? 'fall-winner-product' : ''}`}>
+							<div className={`product2 ${isWinterWinner ? 'winner-product' : ''} ${isFallWinner ? 'fall-winner-product' : ''} ${name === 'Dilliad' ? 'dilliad-product' : ''}`}>
 								{isWinterWinner && (
 									<div className="winner-badge">
 										<span className="winner-icon">🏆</span>

@@ -86,18 +86,22 @@
 
 		.product-logo-container {
 			width: 100%;
-			height: 80px;
+			height: 100px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 
 			img {
-				max-width: 90%;
-				max-height: 100%;
+				max-width: 95%;
+				max-height: 95%;
 				width: auto;
 				height: auto;
 				object-fit: contain;
 			}
+		}
+
+		&.dilliad-product .product-logo-container img {
+			max-height: 200%;
 		}
 
 		.product-info2 {
