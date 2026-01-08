@@ -591,6 +591,8 @@ const ProductData = [
 			["Will Du", "#", "Senior Business Analyst"],
 			["Brian Yts", "#", "Business Analyst"],
 			["Moon Le", "#", "Business Analyst"],
+			["Keenan Yang", "#", "Frosh Rep"],
+
 		])
 		.setLogoDimensions({width: 130, height: 120})
 		.setOverview("As academic workloads become increasingly complex, students struggle to synthesize critical information scattered across multiple syllabi, platforms, and calendars. This administrative chaos causes missed deadlines, unnecessary stress, and hinders academic performance. Nucleus solves that by centralizing academic life: an all-in-one hub that aggregates and streamlines all course information into a single, actionable, and personalized dashboard.")
@@ -621,16 +623,17 @@ const ProductData = [
 		.setSlogan("Your go-to kitchen companion")
 		.setStudentData([
 			["Daniel Joseph", "#", "Product Manager"],
-			["Robbie Huang", "#", "Senior Developer"],
-			["Kabelo Dike", "#", "Developer"],
-			["Bartek Kowalski", "#", "Developer"],
 			["Aminah Rizwan", "#", "Senior Business Analyst"],
-			["Marucs Hui", "#", "Business Analyst"],
-			["Dylan Atwal", "#", "Business Analyst"],
+			["Marcus Hui", "#", "Business Analyst"],
+			["Dylan Atwal", "#", "Frosh Rep"],
 			["Nathan Reynolds", "#", "Business Analyst"],
-			["Erin Zhang", "#", "Senior UI/UX Designer"],
-			["Noah Yu", "#", "UI/UX Designer"],
+			["Erin Zhang", "#", "Senior UI/UX Designer"],	
+			["Noah Yu", "#", "UI/UX Designer"],	
 			["Jennie Choi", "#", "UI/UX Designer"],
+			["Robbie Huang", "#", "Senior Developer"],
+			["Sindusara Munasinghe", "#", "Developer"],
+			["Kabelo Dikeledi", "#", "Developer"],	
+			["Bartek Kowalski", "#", "Developer"],		
 		])
 		.setLogoDimensions({width: 140, height: 113})
 		.setOverview("As young adults begin living independently, cooking becomes increasingly daunting due to a lack of skills, time, and motivation. The overwhelming number of recipes and the burden of decision-making often lead to unhealthy takeout choices. Lil'Chef solves that by building confidence in the kitchen: a personalized, all-in-one cooking companion app that simplifies meal discovery, planning, and cooking with guided assistance tailored to your dietary needs and goals.")
@@ -645,14 +648,12 @@ const ProductData = [
 			["Isaac Fung", "#", "Developer"],
 			["Anthony Qiu", "#", "Developer"],
 			["Matt Dobaj", "#", "Developer"],
-			["Janevra Pier", "#", "UI/UX Designer"],
+			["Janevra Pier", "#", "Senior UI/UX Designer"],
 			["Hana Brissenden", "#", "UI/UX Designer"],
-			["Claire HU", "#", "Senior Business Analyst"],
-			["Chris Power", "#", "Business Analyst"],
+			["Claire Hu", "#", "Senior Business Analyst"],
 			["Thomas Huo", "#", "Business Analyst"],
 			["Ruby Wang", "#", "Business Analyst"],
 			["Lukas Cupsa", "#", "Business Analyst"],
-			["Manush Patel", "#", "Frosh Rep"],
 		])
 		.setLogoDimensions({width: 200, height: 67})
 		.setOverview("As the demands on educators' time become increasingly burdensome, teachers struggle with the administrative load of creating, aligning, and collaborating on lesson plans. This tedious process takes valuable hours away from student engagement and instruction. FujiPlans solves that by empowering educators: an AI-powered, collaborative platform that streamlines lesson planning, ensures curriculum alignment, and gives teachers their time back.")
