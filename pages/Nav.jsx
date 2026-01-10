@@ -19,7 +19,7 @@ function getWindowDimensions() {
 
 export function useWindowDimensions() {
 	const [windowdimensions, setWindowDimensions] = useState(
-		getWindowDimensions()
+		getWindowDimensions(),
 	);
 
 	useEffect(() => {
@@ -88,7 +88,7 @@ export default function Nav() {
 													.replace("/", "")
 													.charAt(0)
 													.toUpperCase() +
-											  path.slice(2);
+												path.slice(2);
 									return (
 										<Link
 											key={path}
@@ -109,36 +109,39 @@ export default function Nav() {
 				</div>
 			</header>
 
-	{/* Mobile Hamburger */}
-	<div className={`${isTablet && !navOn ? "block" : "hidden"}`}>
-		<div
-			className="p-3 cursor-pointer hover:bg-white/10 transition-colors fixed top-4 right-6 z-50"
-			onClick={() => {
-				setNavOn(!navOn);
-			}}
-		>
-			<AiOutlineMenu size={24} className="text-[#2C3357] opacity-40" />
-		</div>
-	</div>
-
-	{/* Mobile Navigation Menu */}
-	<div
-		className={`${
-			isTablet ? "block" : "hidden"
-		} fixed top-0 right-0 h-full w-80 bg-white/70 backdrop-blur-md shadow-2xl transition-transform duration-300 ease-in-out ${
-			navOn ? "translate-x-0" : "translate-x-full"
-		} z-40`}
-	>
-		<div className="p-6">
-			<div className="flex justify-end mb-8">
-				<button
-					onClick={() => setNavOn(false)}
-					className="text-[#2C3357] opacity-40 hover:opacity-60 text-2xl"
+			{/* Mobile Hamburger */}
+			<div className={`${isTablet && !navOn ? "block" : "hidden"}`}>
+				<div
+					className="p-3 cursor-pointer hover:bg-white/10 transition-colors fixed top-4 right-6 z-50"
+					onClick={() => {
+						setNavOn(!navOn);
+					}}
 				>
-					×
-				</button>
+					<AiOutlineMenu
+						size={24}
+						className="text-[#2C3357] opacity-40"
+					/>
+				</div>
 			</div>
-			<div className="flex flex-col gap-6 text-[#2C3357] opacity-40 font-weight-600">
+
+			{/* Mobile Navigation Menu */}
+			<div
+				className={`${
+					isTablet ? "block" : "hidden"
+				} fixed top-0 right-0 h-full w-80 bg-white/70 backdrop-blur-md shadow-2xl transition-transform duration-300 ease-in-out ${
+					navOn ? "translate-x-0" : "translate-x-full"
+				} z-40`}
+			>
+				<div className="p-6">
+					<div className="flex justify-end mb-8">
+						<button
+							onClick={() => setNavOn(false)}
+							className="text-[#2C3357] opacity-40 hover:opacity-60 text-2xl"
+						>
+							×
+						</button>
+					</div>
+					<div className="flex flex-col gap-6 text-[#2C3357] opacity-40 font-weight-600">
 						{[
 							"/",
 							"/products",
@@ -165,7 +168,7 @@ export default function Nav() {
 											? "text-blue-600 font-semibold"
 											: ""
 									}`}
-									>
+								>
 									{name}
 								</Link>
 							);

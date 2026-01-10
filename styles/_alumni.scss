@@ -38,7 +38,9 @@
 		background-color: white;
 		width: 409px;
 		height: 500px;
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+		box-shadow:
+			rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+			rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 		@media only screen and (max-width: 1300px) {
 			width: 330px;
 			height: 480px;
@@ -64,14 +66,14 @@
 			.alumni-title {
 				font-size: 0.9rem;
 				font-weight: normal;
-				padding-top: .2rem;
+				padding-top: 0.2rem;
 				color: lightslategray;
 			}
 
 			.alumni-program {
 				font-size: 1rem;
 				font-weight: normal;
-				padding-top: .2rem;
+				padding-top: 0.2rem;
 				color: rgb(145, 160, 175);
 			}
 		}
@@ -81,7 +83,9 @@
 			top: -59px;
 
 			.alumni-image {
-				box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+				box-shadow:
+					rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+					rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 				border-radius: 50%;
 			}
 		}
@@ -104,7 +108,6 @@
 				color: rgb(108, 105, 105);
 				font-size: 30px;
 			}
-
 		}
 
 		&:nth-child(2) {
@@ -136,9 +139,9 @@
 	}
 	@media only screen and (max-width: 340px) {
 		font-size: 1rem;
-		padding: .7rem;
+		padding: 0.7rem;
 	}
-	transition: border .7s;
+	transition: border 0.7s;
 
 	&:hover:nth-child(1) {
 		border-color: #17a9fc;

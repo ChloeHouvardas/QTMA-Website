@@ -17,23 +17,24 @@ export default function Contact() {
 					content="Connect with QTMA on Instagram for inquiries and view our hiring package"
 				/>
 				<title>QTMA - Contact</title>
-				<meta name="og:title" content={"QTMA - Contact"}/>
+				<meta name="og:title" content={"QTMA - Contact"} />
 			</Head>
-			<Nav/>
+			<Nav />
 			<Layout background="linear-gradient(135deg, #e3edfa 0%, #f3f4fa 100%)">
 				<FloatingBlobsStill />
-				
+
 				<div className="mx-auto w-full max-w-[2400px] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)] relative z-10">
 					<h1 className="text-[#3576d3] text-center text-3xl sm:text-4xl font-medium mb-6 sm:mb-8">
 						Get In Touch
 					</h1>
-					
-				<p className="text-gray-400 text-center text-lg sm:text-xl max-w-3xl mx-auto mb-24">
-					Have questions? Want to join our team? We'd love to hear from you.
-				</p>
 
-				{/* Main Contact Grid */}
-				<div className="grid md:grid-cols-2 gap-8 my-24">
+					<p className="text-gray-400 text-center text-lg sm:text-xl max-w-3xl mx-auto mb-24">
+						Have questions? Want to join our team? We'd love to hear
+						from you.
+					</p>
+
+					{/* Main Contact Grid */}
+					<div className="grid md:grid-cols-2 gap-8 my-24">
 						{/* Instagram Card */}
 						<div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
 							<div className="flex flex-col items-center text-center space-y-4">
@@ -44,7 +45,9 @@ export default function Contact() {
 									Connect With Us
 								</h3>
 								<p className="text-gray-400 text-base">
-									Stay updated with our latest projects and events. For any inquiries please send us a DM
+									Stay updated with our latest projects and
+									events. For any inquiries please send us a
+									DM
 								</p>
 								<a
 									href="https://www.instagram.com/queenstechmedia"
@@ -82,7 +85,7 @@ export default function Contact() {
 					</div>
 				</div>
 			</Layout>
-			<Footer/>
+			<Footer />
 		</>
 	);
 }
