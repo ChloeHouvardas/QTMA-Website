@@ -52,18 +52,10 @@ const Team = () => {
 						/>
 					</div>{" "}
 					{Positions.map((role) => {
-						const members = ClubMembers.filter(
-							(m) => m.position === role,
-						);
+						const members = ClubMembers.filter((m) => m.position === role);
 						if (members.length === 0) return null;
 
-						return (
-							<TeamRoleSection
-								key={role}
-								role={role}
-								members={members}
-							/>
-						);
+						return <TeamRoleSection key={role} role={role} members={members} />;
 					})}
 				</div>
 			</Layout>

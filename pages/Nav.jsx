@@ -19,7 +19,7 @@ function getWindowDimensions() {
 
 export function useWindowDimensions() {
 	const [windowdimensions, setWindowDimensions] = useState(
-		getWindowDimensions(),
+		getWindowDimensions()
 	);
 
 	useEffect(() => {
@@ -84,10 +84,7 @@ export default function Nav() {
 									const name =
 										path === "/"
 											? "Home"
-											: path
-													.replace("/", "")
-													.charAt(0)
-													.toUpperCase() +
+											: path.replace("/", "").charAt(0).toUpperCase() +
 												path.slice(2);
 									return (
 										<Link
@@ -117,10 +114,7 @@ export default function Nav() {
 						setNavOn(!navOn);
 					}}
 				>
-					<AiOutlineMenu
-						size={24}
-						className="text-[#2C3357] opacity-40"
-					/>
+					<AiOutlineMenu size={24} className="text-[#2C3357] opacity-40" />
 				</div>
 			</div>
 
@@ -154,19 +148,15 @@ export default function Nav() {
 							const name =
 								path === "/"
 									? "Home"
-									: path
-											.replace("/", "")
-											.charAt(0)
-											.toUpperCase() + path.slice(2);
+									: path.replace("/", "").charAt(0).toUpperCase() +
+										path.slice(2);
 							return (
 								<Link
 									key={path}
 									href={path}
 									onClick={() => setNavOn(false)}
 									className={`nav-link hover:text-blue-600 transition-colors py-2 ${
-										currentPath === path
-											? "text-blue-600 font-semibold"
-											: ""
+										currentPath === path ? "text-blue-600 font-semibold" : ""
 									}`}
 								>
 									{name}

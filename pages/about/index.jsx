@@ -50,7 +50,7 @@ export default function About() {
 
 	const prevSlide = () => {
 		setCurrentSlide(
-			(prev) => (prev - 1 + historySlides.length) % historySlides.length,
+			(prev) => (prev - 1 + historySlides.length) % historySlides.length
 		);
 	};
 	return (
@@ -65,9 +65,7 @@ export default function About() {
 
 			<Layout
 				background="linear-gradient(135deg, #e3edfa 0%, #f3f4fa 100%)"
-				metaInfo={
-					"Learn more about Queen's Technology & Media Association"
-				}
+				metaInfo={"Learn more about Queen's Technology & Media Association"}
 			>
 				<FloatingBlobsStill />
 				<div className="mx-auto w-full max-w-[2400px] px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-4 max-[650px]:mt-[var(--nav-height-sm,80px)] relative z-10">
@@ -82,21 +80,18 @@ export default function About() {
 						</h2>
 						<div className="text-base sm:text-lg text-gray-700 space-y-4">
 							<p>
-								The Queen's Technology & Media Association
-								(QTMA) is Canada's premier product incubation
-								club, where students transform innovative ideas
-								into real-world applications. We bring together
-								talented designers, developers, and analysts to
-								collaborate on meaningful projects that solve
-								everyday problems.
+								The Queen's Technology & Media Association (QTMA) is Canada's
+								premier product incubation club, where students transform
+								innovative ideas into real-world applications. We bring together
+								talented designers, developers, and analysts to collaborate on
+								meaningful projects that solve everyday problems.
 							</p>
 							<p>
-								Founded at Queen's University, QTMA provides a
-								unique environment where students gain hands-on
-								experience in product development, from initial
-								concept to launch. Our club fosters creativity,
-								innovation, and professional growth in a
-								supportive community.
+								Founded at Queen's University, QTMA provides a unique
+								environment where students gain hands-on experience in product
+								development, from initial concept to launch. Our club fosters
+								creativity, innovation, and professional growth in a supportive
+								community.
 							</p>
 						</div>
 					</section>
@@ -108,10 +103,10 @@ export default function About() {
 						</h2>
 						<div className="text-base sm:text-lg text-gray-700 space-y-4">
 							<p>
-								At QTMA, we specialize in building innovative
-								digital products from the ground up. Each year,
-								our teams work on multiple projects that address
-								real student needs and market opportunities.
+								At QTMA, we specialize in building innovative digital products
+								from the ground up. Each year, our teams work on multiple
+								projects that address real student needs and market
+								opportunities.
 							</p>
 							<div className="grid md:grid-cols-2 gap-6 my-6">
 								<div className="bg-white rounded-lg p-6 shadow-sm">
@@ -119,11 +114,9 @@ export default function About() {
 										Product Development
 									</h3>
 									<p className="text-gray-600">
-										Our teams follow agile methodologies to
-										design, develop, and launch
-										full-featured applications, gaining
-										real-world product management
-										experience.
+										Our teams follow agile methodologies to design, develop, and
+										launch full-featured applications, gaining real-world
+										product management experience.
 									</p>
 								</div>
 								<div className="bg-white rounded-lg p-6 shadow-sm">
@@ -131,11 +124,9 @@ export default function About() {
 										Skill Building
 									</h3>
 									<p className="text-gray-600">
-										Members develop technical and
-										professional skills through workshops,
-										mentorship, and hands-on project work in
-										design, development, and business
-										analysis.
+										Members develop technical and professional skills through
+										workshops, mentorship, and hands-on project work in design,
+										development, and business analysis.
 									</p>
 								</div>
 								<div className="bg-white rounded-lg p-6 shadow-sm">
@@ -143,9 +134,8 @@ export default function About() {
 										Networking
 									</h3>
 									<p className="text-gray-600">
-										Connect with like-minded students,
-										alumni, and industry professionals who
-										share your passion for technology and
+										Connect with like-minded students, alumni, and industry
+										professionals who share your passion for technology and
 										innovation.
 									</p>
 								</div>
@@ -154,10 +144,9 @@ export default function About() {
 										Portfolio Building
 									</h3>
 									<p className="text-gray-600">
-										Work on tangible projects that you can
-										showcase to future employers,
-										demonstrating your ability to deliver
-										real products.
+										Work on tangible projects that you can showcase to future
+										employers, demonstrating your ability to deliver real
+										products.
 									</p>
 								</div>
 							</div>
@@ -178,9 +167,7 @@ export default function About() {
 										<div className="text-blue-100 text-xs font-semibold mb-1 tracking-wider">
 											PRODUCT MANAGER
 										</div>
-										<div className="text-3xl font-bold">
-											PM
-										</div>
+										<div className="text-3xl font-bold">PM</div>
 									</div>
 								</div>
 
@@ -195,9 +182,7 @@ export default function About() {
 												SENIOR
 											</div>
 											<div className="flex items-center justify-center gap-2">
-												<span className="text-[#3576d3] text-xl">
-													📊
-												</span>
+												<span className="text-[#3576d3] text-xl">📊</span>
 												<div className="text-lg font-medium text-gray-800">
 													Business Analyst
 												</div>
@@ -225,9 +210,7 @@ export default function About() {
 												SENIOR
 											</div>
 											<div className="flex items-center justify-center gap-2">
-												<span className="text-[#3576d3] text-xl">
-													🎨
-												</span>
+												<span className="text-[#3576d3] text-xl">🎨</span>
 												<div className="text-lg font-medium text-gray-800">
 													UI/UX Designer
 												</div>
@@ -255,9 +238,7 @@ export default function About() {
 									<div className="space-y-3">
 										<div className="bg-gradient-to-br from-blue-50 to-white border border-[#3576d3] rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow">
 											<div className="flex items-center gap-2 text-sm">
-												<span className="text-[#3576d3]">
-													📊
-												</span>
+												<span className="text-[#3576d3]">📊</span>
 												<span className="font-semibold text-gray-700">
 													Junior BA
 												</span>
@@ -265,9 +246,7 @@ export default function About() {
 										</div>
 										<div className="bg-gradient-to-br from-blue-50 to-white border border-[#3576d3] rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow">
 											<div className="flex items-center gap-2 text-sm">
-												<span className="text-[#3576d3]">
-													📊
-												</span>
+												<span className="text-[#3576d3]">📊</span>
 												<span className="font-semibold text-gray-700">
 													Junior BA
 												</span>
@@ -279,9 +258,7 @@ export default function About() {
 									<div className="space-y-3">
 										<div className="bg-gradient-to-br from-blue-50 to-white border border-[#3576d3] rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow">
 											<div className="flex items-center gap-2 text-sm">
-												<span className="text-[#3576d3]">
-													&lt;/&gt;
-												</span>
+												<span className="text-[#3576d3]">&lt;/&gt;</span>
 												<span className="font-semibold text-gray-700">
 													Junior Dev
 												</span>
@@ -289,9 +266,7 @@ export default function About() {
 										</div>
 										<div className="bg-gradient-to-br from-blue-50 to-white border border-[#3576d3] rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow">
 											<div className="flex items-center gap-2 text-sm">
-												<span className="text-[#3576d3]">
-													&lt;/&gt;
-												</span>
+												<span className="text-[#3576d3]">&lt;/&gt;</span>
 												<span className="font-semibold text-gray-700">
 													Junior Dev
 												</span>
@@ -299,9 +274,7 @@ export default function About() {
 										</div>
 										<div className="bg-gradient-to-br from-blue-50 to-white border border-[#3576d3] rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow">
 											<div className="flex items-center gap-2 text-sm">
-												<span className="text-[#3576d3]">
-													&lt;/&gt;
-												</span>
+												<span className="text-[#3576d3]">&lt;/&gt;</span>
 												<span className="font-semibold text-gray-700">
 													Junior Dev
 												</span>
@@ -313,9 +286,7 @@ export default function About() {
 									<div className="space-y-3">
 										<div className="bg-gradient-to-br from-blue-50 to-white border border-[#3576d3] rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow">
 											<div className="flex items-center gap-2 text-sm">
-												<span className="text-[#3576d3]">
-													🎨
-												</span>
+												<span className="text-[#3576d3]">🎨</span>
 												<span className="font-semibold text-gray-700">
 													Junior UI/UX
 												</span>
@@ -323,9 +294,7 @@ export default function About() {
 										</div>
 										<div className="bg-gradient-to-br from-blue-50 to-white border border-[#3576d3] rounded-lg px-4 py-3 shadow-sm hover:shadow-md transition-shadow">
 											<div className="flex items-center gap-2 text-sm">
-												<span className="text-[#3576d3]">
-													🎨
-												</span>
+												<span className="text-[#3576d3]">🎨</span>
 												<span className="font-semibold text-gray-700">
 													Junior UI/UX
 												</span>
@@ -351,8 +320,7 @@ export default function About() {
 											</h4>
 										</div>
 										<p className="text-sm text-gray-600 leading-relaxed">
-											Team lead, product vision, product
-											execution
+											Team lead, product vision, product execution
 										</p>
 									</div>
 									<div className="space-y-2">
@@ -365,8 +333,7 @@ export default function About() {
 											</h4>
 										</div>
 										<p className="text-sm text-gray-600 leading-relaxed">
-											Marketing strategy, partnerships,
-											financial model
+											Marketing strategy, partnerships, financial model
 										</p>
 									</div>
 									<div className="space-y-2">
@@ -374,13 +341,10 @@ export default function About() {
 											<div className="w-8 h-8 rounded-full bg-[#3576d3] flex items-center justify-center text-white text-xs">
 												&lt;/&gt;
 											</div>
-											<h4 className="font-medium text-gray-800">
-												Developer
-											</h4>
+											<h4 className="font-medium text-gray-800">Developer</h4>
 										</div>
 										<p className="text-sm text-gray-600 leading-relaxed">
-											Architecting and building the
-											product
+											Architecting and building the product
 										</p>
 									</div>
 									<div className="space-y-2">

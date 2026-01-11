@@ -22,7 +22,7 @@ const ProductBuilder = function () {
 		setName: function (productName) {
 			if (typeof productName != "string" || !productName) {
 				throw new Error(
-					`Name ${productName} is invalid, must be a non-empty string`,
+					`Name ${productName} is invalid, must be a non-empty string`
 				);
 			}
 			this.productName = productName;
@@ -31,8 +31,7 @@ const ProductBuilder = function () {
 		setYear: function (year) {
 			if (
 				year.match(/^20(19|20|21|22|23|24|25)-202[0-5]$/) == null ||
-				Number(year.substring(0, 4)) + 1 !==
-					Number(year.substring(5, 9))
+				Number(year.substring(0, 4)) + 1 !== Number(year.substring(5, 9))
 			) {
 				throw new Error(`Year ${year} is invalid, see regex`);
 			}
@@ -42,7 +41,7 @@ const ProductBuilder = function () {
 		setSlogan: function (slogan) {
 			if (typeof slogan != "string" || !slogan) {
 				throw new Error(
-					`Slogan ${slogan} is invalid, must be a non-empty string`,
+					`Slogan ${slogan} is invalid, must be a non-empty string`
 				);
 			}
 			this.slogan = slogan;
@@ -55,7 +54,7 @@ const ProductBuilder = function () {
 				studentInfo.length === 0
 			) {
 				throw new Error(
-					`Students ${studentInfo} is invalid (for product ${this.productName}), must be a non-empty array`,
+					`Students ${studentInfo} is invalid (for product ${this.productName}), must be a non-empty array`
 				);
 			}
 
@@ -64,7 +63,7 @@ const ProductBuilder = function () {
 				const student = studentInfo[i];
 				if (!Array.isArray(student) || student.length !== 3) {
 					throw new Error(
-						`Student ${student} is invalid, must be an array with a student name, their linkedin id and position`,
+						`Student ${student} is invalid, must be an array with a student name, their linkedin id and position`
 					);
 				}
 				if (
@@ -77,7 +76,7 @@ const ProductBuilder = function () {
 					!Positions.includes(student[2])
 				) {
 					throw new Error(
-						`Student ${student} need a valid name, linkedin id (# if they don't have one) and position`,
+						`Student ${student} need a valid name, linkedin id (# if they don't have one) and position`
 					);
 				}
 
@@ -102,7 +101,7 @@ const ProductBuilder = function () {
 		setOverview: function (overview) {
 			if (typeof overview !== "string" || !overview) {
 				throw new Error(
-					`Overview ${overview} is invalid, must be a non-empty string`,
+					`Overview ${overview} is invalid, must be a non-empty string`
 				);
 			}
 			this.overview = overview;
@@ -111,12 +110,10 @@ const ProductBuilder = function () {
 
 		setDemo: function (demo) {
 			if (
-				!demo.match(
-					/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/,
-				)
+				!demo.match(/^https:\/\/www\.youtube\.com\/embed\/[a-zA-Z0-9_-]{11}$/)
 			) {
 				throw new Error(
-					`Demo ${demo} is invalid, must be a valid youtube embedded link`,
+					`Demo ${demo} is invalid, must be a valid youtube embedded link`
 				);
 			}
 			this.demo = demo;
@@ -124,9 +121,7 @@ const ProductBuilder = function () {
 		},
 		setLink: function (link) {
 			if (typeof link !== "string" || !link) {
-				throw new Error(
-					`Link ${link} is invalid, must be a non-empty string`,
-				);
+				throw new Error(`Link ${link} is invalid, must be a non-empty string`);
 			}
 			this.link = link;
 			return this;
@@ -144,7 +139,7 @@ const ProductBuilder = function () {
 			) {
 				throw new Error(
 					"The fields productName, year, slogan and members must be defined. " +
-						`productName: ${this.productName} year: ${this.year} slogan: ${this.slogan} studentDate: ${this.members}`,
+						`productName: ${this.productName} year: ${this.year} slogan: ${this.slogan} studentDate: ${this.members}`
 				);
 			}
 
@@ -194,7 +189,7 @@ const ProductData = [
 				"mixture of different question types for the Host to judge at the end. The Host decides on a punishment " +
 				"(e.g. take a shot), a winner, and a loser. The loser must take the punishment while the winner can give " +
 				"the punishment to another player. The loser is then the new host for the subsequent round. Let Hangover " +
-				"be the perfect addition to your night!",
+				"be the perfect addition to your night!"
 		)
 		.setDemo("https://www.youtube.com/embed/xOm3xY2QCik")
 		.build(),
@@ -205,11 +200,7 @@ const ProductData = [
 		.setSlogan("Academic collaboration at your fingertips")
 		.setStudentData([
 			["Shwetha Sivakumar", "shwethasivakumar", "Product Manager"],
-			[
-				"Patrick Lenover",
-				"patrick-lenover-ab2ab5178",
-				"Senior Developer",
-			],
+			["Patrick Lenover", "patrick-lenover-ab2ab5178", "Senior Developer"],
 			["Max Eisen", "maxeisen", "Developer"],
 			["Ross Hill", "rosslh", "Developer"],
 			["Carolyn Day", "carolyn155", "UI/UX Designer"],
@@ -221,7 +212,7 @@ const ProductData = [
 		.setOverview(
 			"Studii offers a collaborative forum that provides both peer support and expert advice " +
 				"for a student’s course questions. Our vision is to harness the knowledge of students and academic experts " +
-				"on a nationwide study platform to improve the performance of Canadian university students",
+				"on a nationwide study platform to improve the performance of Canadian university students"
 		)
 		.setDemo("https://www.youtube.com/embed/WvmwBEX_7iU")
 		.build(),
@@ -243,7 +234,7 @@ const ProductData = [
 		.setLogoDimensions({ width: 151.4, height: 90 })
 		.setOverview(
 			"A geo-based, anti-harassment conscious anonymous messaging and content platform meant " +
-				"to strengthen relationships in local communities.",
+				"to strengthen relationships in local communities."
 		)
 		.setDemo("https://www.youtube.com/embed/6dHJOGqdT8M")
 		.build(),
@@ -266,7 +257,7 @@ const ProductData = [
 		.setOverview(
 			"As a mobile app for both iOS and Android, Stocked is a dynamic meal generator which " +
 				"minimizes the shopping you need to do by suggesting recipes based on the ingredients already in your " +
-				"fridge. Other features include a receipt scanner and expiration tracker that helps save time and money.",
+				"fridge. Other features include a receipt scanner and expiration tracker that helps save time and money."
 		)
 		.setDemo("https://www.youtube.com/embed/JghgqwDF0NU")
 		.build(),
@@ -295,7 +286,7 @@ const ProductData = [
 			"Food delivery apps are expensive and time-consuming - either we quickly choose a deal " +
 				"from one app and waste money, or spend plenty of time switching though different apps to find the best " +
 				"deal, defeating the purpose of convenience apps in the first place. What if you could aggregate all " +
-				"this data into one convenient app? Well, you can; that's Eagle!",
+				"this data into one convenient app? Well, you can; that's Eagle!"
 		)
 		.build(),
 
@@ -320,7 +311,7 @@ const ProductData = [
 				"sit in your garage for years? Some tools and devices you need, but only occasionally and " +
 				"the cost is too much to justify buying this stuff all the time. Well, Pronto has you " +
 				"covered. Plenty of people already have these tools and doesn't cost them anything to " +
-				"help out, and Pronto helps you build the community",
+				"help out, and Pronto helps you build the community"
 		)
 		.build(),
 
@@ -344,7 +335,7 @@ const ProductData = [
 				"tough. Who to donate to? Who is reputable? Where is the money going? How do I donate? " +
 				"Voluntera solves all this with an all-in-one spot to find the best charities to donate " +
 				"to, with a super simple donation mechanism so you can focus on helping out your " +
-				"community",
+				"community"
 		)
 		.build(),
 
@@ -367,7 +358,7 @@ const ProductData = [
 			"Many social media platforms lack real connectedness - too " +
 				"many public figures, influences, etc leads to a not genuine experience. Loop, " +
 				"on the other hand, focuses on bringing together you and only your good friends " +
-				"so you can have genuine, fun interactions among friends",
+				"so you can have genuine, fun interactions among friends"
 		)
 		.build(),
 
@@ -395,7 +386,7 @@ const ProductData = [
 			"When looking for roommates, traditionally convenience and basic info " +
 				"are only considered, and you could be left living with people you don't really vibe with. " +
 				"Casa adds a fun swiping mechanism to your detailed choices where you can find roommates " +
-				"based on interests so you'll never have a bad house again!",
+				"based on interests so you'll never have a bad house again!"
 		)
 		.setLink("https://www.homiis.com/")
 		.build(),
@@ -418,7 +409,7 @@ const ProductData = [
 		.setOverview(
 			"Shopping for yourself is a pain. So many trips, wasted food, planning, " +
 				"cooking - even though there's probably an easy solution to this. Collaboration with your " +
-				"housemates saves so much time & money, in an all-in-one app to manage everything at once",
+				"housemates saves so much time & money, in an all-in-one app to manage everything at once"
 		)
 		.build(),
 
@@ -444,7 +435,7 @@ const ProductData = [
 				"Tourist trap after tourist trap. Sure, climbing the CN tower or the Empire State building " +
 				"is fun once, but there's so much more genuine local experiences that you miss. Small " +
 				"delicious restaurants? Cool thrift shops? Local artists? You deserve more when you travel, " +
-				"Loco finds you the best local places for you to enjoy",
+				"Loco finds you the best local places for you to enjoy"
 		)
 		.build(),
 
@@ -470,7 +461,7 @@ const ProductData = [
 				"all know what happens next - motivation plummets, and we get stuck with 20 unfinished " +
 				"side projects, and nothing to show for it. Soar pairs you up with other like-minded " +
 				"developers so you can focus & collaborate on making effective projects to beef up your " +
-				"portfolio!",
+				"portfolio!"
 		)
 		.build(),
 
@@ -493,7 +484,7 @@ const ProductData = [
 		.setOverview(
 			"Students miss home-cooked meals and the feeling of home; hyper-" +
 				"consumerist delivery apps with unnatural fast foods just aren't good. What if you could " +
-				"support local businesses and get quality & affordable meals? Well, Feastly has you back",
+				"support local businesses and get quality & affordable meals? Well, Feastly has you back"
 		)
 		.build(),
 
@@ -514,7 +505,7 @@ const ProductData = [
 			"Oh sick, a cool sweater I want for only $30! Wait, $23 shipping? " +
 				"$5 tax? $4 'online fee'? This isn't even good at all... If only there was a way you " +
 				"could see the true cost of online shopping every time, without any surprises. We'll " +
-				"you're in luck with Kartt!",
+				"you're in luck with Kartt!"
 		)
 		.build(),
 
@@ -540,7 +531,7 @@ const ProductData = [
 				"know what to get. Sure, you know their hobbies & interests, but they probably " +
 				"already have most of the potential things you might get them. Paint for artists? " +
 				"Sports cards for sports enthusiasts? How about an easier, more accurate and " +
-				"fun way to get gifts so it's not a pain anymore, but an experience.",
+				"fun way to get gifts so it's not a pain anymore, but an experience."
 		)
 		.build(),
 
@@ -569,7 +560,7 @@ const ProductData = [
 				"every opportunity. Students’ lack of job application tools further cause " +
 				"unnecessary stress and worry. Venato solves that by Helping students " +
 				"reach their full potential: a one-stop, simple, easy-to-use internship hub to " +
-				"organize your job application processes.",
+				"organize your job application processes."
 		)
 		.setLink("https://venatoapp.ca/")
 		.build(),
@@ -596,7 +587,7 @@ const ProductData = [
 		])
 		.setLogoDimensions({ width: 1200, height: 440 })
 		.setOverview(
-			"As building a personal style and managing a wardrobe becomes increasingly overwhelming, individuals struggle to create cohesive outfits that suit their occasion, style, and the weather. This daily decision leads to wasted time, underutilized clothing, and frustration. Dilliad solves that by simplifying daily dressing: an AI-powered stylist that integrates with your wardrobe to automatically generate and suggest personalized outfit combinations.",
+			"As building a personal style and managing a wardrobe becomes increasingly overwhelming, individuals struggle to create cohesive outfits that suit their occasion, style, and the weather. This daily decision leads to wasted time, underutilized clothing, and frustration. Dilliad solves that by simplifying daily dressing: an AI-powered stylist that integrates with your wardrobe to automatically generate and suggest personalized outfit combinations."
 		)
 		.build(),
 	new ProductBuilder()
@@ -617,7 +608,7 @@ const ProductData = [
 		])
 		.setLogoDimensions({ width: 220, height: 80 })
 		.setOverview(
-			"As households strive to reduce food waste and manage groceries, it becomes increasingly difficult to track what's in your kitchen and when it expires. This lack of visibility leads to forgotten food, wasted money, and unnecessary grocery trips. Pantree solves that by creating a smarter kitchen: a browser extension that tracks your food purchases and proactively reminds you when items are nearing their expiration date.",
+			"As households strive to reduce food waste and manage groceries, it becomes increasingly difficult to track what's in your kitchen and when it expires. This lack of visibility leads to forgotten food, wasted money, and unnecessary grocery trips. Pantree solves that by creating a smarter kitchen: a browser extension that tracks your food purchases and proactively reminds you when items are nearing their expiration date."
 		)
 		.build(),
 	new ProductBuilder()
@@ -640,7 +631,7 @@ const ProductData = [
 		])
 		.setLogoDimensions({ width: 154, height: 56 })
 		.setOverview(
-			"As smartphone addiction becomes increasingly prevalent, students struggle to reduce their screen time despite a strong desire to do so. The lack of tangible incentives and engaging tools makes effective screen time management feel like a punishment. Orah solves that by helping students reclaim their time and money: a gamified app that rewards you with real-world discounts and coupons for meeting your screen time reduction goals.",
+			"As smartphone addiction becomes increasingly prevalent, students struggle to reduce their screen time despite a strong desire to do so. The lack of tangible incentives and engaging tools makes effective screen time management feel like a punishment. Orah solves that by helping students reclaim their time and money: a gamified app that rewards you with real-world discounts and coupons for meeting your screen time reduction goals."
 		)
 		.build(),
 	new ProductBuilder()
@@ -661,7 +652,7 @@ const ProductData = [
 		])
 		.setLogoDimensions({ width: 220, height: 80 })
 		.setOverview(
-			"As parking in dense urban and campus areas becomes increasingly scarce and expensive, drivers are forced to choose from limited, costly options. Simultaneously, property managers and individuals with unused parking spots lack a specialized platform to easily monetize their assets. Parki solves that by democratizing parking access: a streamlined, community-focused platform that makes it easy for anyone to list or find affordable and convenient parking spots.",
+			"As parking in dense urban and campus areas becomes increasingly scarce and expensive, drivers are forced to choose from limited, costly options. Simultaneously, property managers and individuals with unused parking spots lack a specialized platform to easily monetize their assets. Parki solves that by democratizing parking access: a streamlined, community-focused platform that makes it easy for anyone to list or find affordable and convenient parking spots."
 		)
 		.build(),
 
@@ -687,7 +678,7 @@ const ProductData = [
 		])
 		.setLogoDimensions({ width: 130, height: 120 })
 		.setOverview(
-			"As academic workloads become increasingly complex, students struggle to synthesize critical information scattered across multiple syllabi, platforms, and calendars. This administrative chaos causes missed deadlines, unnecessary stress, and hinders academic performance. Nucleus solves that by centralizing academic life: an all-in-one hub that aggregates and streamlines all course information into a single, actionable, and personalized dashboard.",
+			"As academic workloads become increasingly complex, students struggle to synthesize critical information scattered across multiple syllabi, platforms, and calendars. This administrative chaos causes missed deadlines, unnecessary stress, and hinders academic performance. Nucleus solves that by centralizing academic life: an all-in-one hub that aggregates and streamlines all course information into a single, actionable, and personalized dashboard."
 		)
 		.build(),
 	new ProductBuilder()
@@ -709,7 +700,7 @@ const ProductData = [
 		])
 		.setLogoDimensions({ width: 140, height: 92 })
 		.setOverview(
-			"As the amount of public company data grows increasingly vast and fragmented, retail investors struggle to find clear, timely, and relevant information to make informed decisions. Navigating through complex financial documents and news is time-consuming and intimidating. Inquiro solves that by democratizing financial research: a data-powered tool that allows users to search for and ask about companies using natural language, delivering immediate, synthesized answers.",
+			"As the amount of public company data grows increasingly vast and fragmented, retail investors struggle to find clear, timely, and relevant information to make informed decisions. Navigating through complex financial documents and news is time-consuming and intimidating. Inquiro solves that by democratizing financial research: a data-powered tool that allows users to search for and ask about companies using natural language, delivering immediate, synthesized answers."
 		)
 		.build(),
 	new ProductBuilder()
@@ -732,7 +723,7 @@ const ProductData = [
 		])
 		.setLogoDimensions({ width: 140, height: 113 })
 		.setOverview(
-			"As young adults begin living independently, cooking becomes increasingly daunting due to a lack of skills, time, and motivation. The overwhelming number of recipes and the burden of decision-making often lead to unhealthy takeout choices. Lil'Chef solves that by building confidence in the kitchen: a personalized, all-in-one cooking companion app that simplifies meal discovery, planning, and cooking with guided assistance tailored to your dietary needs and goals.",
+			"As young adults begin living independently, cooking becomes increasingly daunting due to a lack of skills, time, and motivation. The overwhelming number of recipes and the burden of decision-making often lead to unhealthy takeout choices. Lil'Chef solves that by building confidence in the kitchen: a personalized, all-in-one cooking companion app that simplifies meal discovery, planning, and cooking with guided assistance tailored to your dietary needs and goals."
 		)
 		.build(),
 	new ProductBuilder()
@@ -754,7 +745,7 @@ const ProductData = [
 		])
 		.setLogoDimensions({ width: 200, height: 67 })
 		.setOverview(
-			"As the demands on educators' time become increasingly burdensome, teachers struggle with the administrative load of creating, aligning, and collaborating on lesson plans. This tedious process takes valuable hours away from student engagement and instruction. FujiPlans solves that by empowering educators: an AI-powered, collaborative platform that streamlines lesson planning, ensures curriculum alignment, and gives teachers their time back.",
+			"As the demands on educators' time become increasingly burdensome, teachers struggle with the administrative load of creating, aligning, and collaborating on lesson plans. This tedious process takes valuable hours away from student engagement and instruction. FujiPlans solves that by empowering educators: an AI-powered, collaborative platform that streamlines lesson planning, ensures curriculum alignment, and gives teachers their time back."
 		)
 		.build(),
 ];

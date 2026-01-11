@@ -65,7 +65,7 @@ export default function Product() {
 
 	useEffect(() => {
 		const details = productData.filter(
-			(productObj) => productObj.productName === queryId,
+			(productObj) => productObj.productName === queryId
 		);
 		setProduct(details[0]);
 	}, [queryId]);
@@ -118,18 +118,14 @@ export default function Product() {
 				{product && (
 					<div className="product-container-id container">
 						<div className="product-header-container">
-							<h1 className="product-name">
-								{renderProductName(product)}
-							</h1>
+							<h1 className="product-name">{renderProductName(product)}</h1>
 							<p className="product-slogan">{product.slogan}</p>
 						</div>
 
 						<div className="team-container">
 							<h2 className="team-heading">The Team</h2>
 							<div className="team-names">
-								{product.members.map((member) =>
-									renderTeamMemberName(member),
-								)}
+								{product.members.map((member) => renderTeamMemberName(member))}
 							</div>
 
 							{/* 2020-2021 was the covid year, so no team photos were taken. All other years have them */}
@@ -146,18 +142,13 @@ export default function Product() {
 						</div>
 
 						<div className="overview-container">
-							<h2 className="overview-heading">
-								Product Overview
-							</h2>
+							<h2 className="overview-heading">Product Overview</h2>
 							<p className="product-desc">{product.overview}</p>
 						</div>
 
 						<div className="pitch-container">
 							<h2 className="pitch-heading">Product Pitch</h2>
-							<iframe
-								className="product-pdf"
-								src={product.pitch}
-							></iframe>
+							<iframe className="product-pdf" src={product.pitch}></iframe>
 						</div>
 
 						{product.demo !== "" && (

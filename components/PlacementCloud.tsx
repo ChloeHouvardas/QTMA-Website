@@ -59,12 +59,7 @@ export default function PlacementCloud() {
 				}}
 			>
 				{logos.map(({ src, alt }, i) => (
-					<a
-						key={i}
-						href="#"
-						title={alt}
-						onClick={(e) => e.preventDefault()}
-					>
+					<a key={i} href="#" title={alt} onClick={(e) => e.preventDefault()}>
 						<img
 							src={src}
 							alt={alt}

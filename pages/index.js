@@ -30,10 +30,7 @@ export default function Main() {
 					type="image/png"
 					href="/assets/Club Data/QTMA_logo.png"
 				/>
-				<link
-					rel="apple-touch-icon"
-					href="/assets/Club Data/QTMA_logo.png"
-				/>
+				<link rel="apple-touch-icon" href="/assets/Club Data/QTMA_logo.png" />
 				<title>QTMA</title>
 				<meta name="og:title" content={"QTMA"} />
 			</Head>

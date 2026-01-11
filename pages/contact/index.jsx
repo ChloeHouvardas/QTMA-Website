@@ -29,8 +29,7 @@ export default function Contact() {
 					</h1>
 
 					<p className="text-gray-400 text-center text-lg sm:text-xl max-w-3xl mx-auto mb-24">
-						Have questions? Want to join our team? We'd love to hear
-						from you.
+						Have questions? Want to join our team? We'd love to hear from you.
 					</p>
 
 					{/* Main Contact Grid */}
@@ -41,13 +40,10 @@ export default function Contact() {
 								<div className="w-16 h-16 bg-gradient-to-br from-[#3576d3] to-[#2563b8] rounded-full flex items-center justify-center mb-2">
 									<FaInstagram className="text-3xl text-white" />
 								</div>
-								<h3 className="text-xl text-[#3576d3]">
-									Connect With Us
-								</h3>
+								<h3 className="text-xl text-[#3576d3]">Connect With Us</h3>
 								<p className="text-gray-400 text-base">
-									Stay updated with our latest projects and
-									events. For any inquiries please send us a
-									DM
+									Stay updated with our latest projects and events. For any
+									inquiries please send us a DM
 								</p>
 								<a
 									href="https://www.instagram.com/queenstechmedia"
@@ -66,9 +62,7 @@ export default function Contact() {
 								<div className="w-16 h-16 bg-gradient-to-br from-[#3576d3] to-[#2563b8] rounded-full flex items-center justify-center mb-2">
 									<FaFileDownload className="text-3xl text-white" />
 								</div>
-								<h3 className="text-xl text-[#3576d3]">
-									Join Our Team
-								</h3>
+								<h3 className="text-xl text-[#3576d3]">Join Our Team</h3>
 								<p className="text-gray-400 text-base">
 									Download our comprehensive hiring package
 								</p>

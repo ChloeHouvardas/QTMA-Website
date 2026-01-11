@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 
 export default function Products() {
 	const years = [...new Set(productData.map((product) => product.year))].sort(
-		(a, b) => b.localeCompare(a),
+		(a, b) => b.localeCompare(a)
 	);
 	const [selectedYear, setSelectedYear] = useState(years[0]);
 
@@ -29,11 +29,8 @@ export default function Products() {
 				{products.map((product) => {
 					const name = product.productName;
 					const isWinterWinner =
-						name === "Nucleus" ||
-						name === "Dilliad" ||
-						name === "Kartt";
-					const isFallWinner =
-						name === "Pantree" || name === "Fujiplans";
+						name === "Nucleus" || name === "Dilliad" || name === "Kartt";
+					const isFallWinner = name === "Pantree" || name === "Fujiplans";
 
 					return (
 						<Link
@@ -48,17 +45,13 @@ export default function Products() {
 								{isWinterWinner && (
 									<div className="winner-badge">
 										<span className="winner-icon">🏆</span>
-										<span className="winner-text">
-											Winter Demo Day Winner
-										</span>
+										<span className="winner-text">Winter Demo Day Winner</span>
 									</div>
 								)}
 								{isFallWinner && (
 									<div className="fall-winner-badge">
 										<span className="winner-icon">🏆</span>
-										<span className="winner-text">
-											Fall Demo Day Winner
-										</span>
+										<span className="winner-text">Fall Demo Day Winner</span>
 									</div>
 								)}
 								<div className="product-info2">

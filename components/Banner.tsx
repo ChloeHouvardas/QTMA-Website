@@ -12,7 +12,7 @@ type BannerProps = {
 };
 
 function isClassNameElement(
-	element: any,
+	element: any
 ): element is React.ReactElement<{ className?: string }> {
 	return (
 		element &&
@@ -120,8 +120,7 @@ export function Banner({ title, message, linkBox, images = [] }: BannerProps) {
 							{message}
 						</p>
 						{/* Only clone if className is a valid prop */}
-						{React.isValidElement(linkBox) &&
-						isClassNameElement(linkBox)
+						{React.isValidElement(linkBox) && isClassNameElement(linkBox)
 							? React.cloneElement(linkBox, {
 									className:
 										"border-[#3576d3] text-[#3576d3] hover:bg-[#e3edfa] focus:ring-[#3576d3]",

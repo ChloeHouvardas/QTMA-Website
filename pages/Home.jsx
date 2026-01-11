@@ -26,7 +26,7 @@ function getWindowDimensions() {
 
 export function useWindowDimensions() {
 	const [windowdimensions, setWindowDimensions] = useState(
-		getWindowDimensions(),
+		getWindowDimensions()
 	);
 
 	useEffect(() => {
@@ -96,11 +96,7 @@ export default function Home() {
 							title="Launch the next big thing."
 							message="Designers. Developers. Analysts. Building at Canada's premier product incubation club."
 							linkBox={
-								<LinkBox
-									message="VIEW OUR PRODUCTS"
-									link="/products"
-									hasIcon
-								/>
+								<LinkBox message="VIEW OUR PRODUCTS" link="/products" hasIcon />
 							}
 							images={[
 								"/assets/2025/Home/curious-mahir.jpg",
@@ -114,11 +110,7 @@ export default function Home() {
 							title="Launch the next big thing."
 							message="Designers. Developers. Analysts. Building at Canada's premier product incubation club."
 							linkBox={
-								<LinkBox
-									message="VIEW OUR PRODUCTS"
-									link="/products"
-									hasIcon
-								/>
+								<LinkBox message="VIEW OUR PRODUCTS" link="/products" hasIcon />
 							}
 							images={[
 								"/assets/2025/Home/curious-mahir.jpg",
@@ -131,13 +123,7 @@ export default function Home() {
 					<Banner
 						title="Meet the next generation of leaders and innovators."
 						message="Teams consist of highly motivated and vision-oriented students across all faculties."
-						linkBox={
-							<LinkBox
-								message="MEET OUR TEAM"
-								link="/team"
-								hasIcon
-							/>
-						}
+						linkBox={<LinkBox message="MEET OUR TEAM" link="/team" hasIcon />}
 						images={[
 							"/assets/2025/Home/qtma-on-3.jpg",
 							"/assets/2025/Home/thinking.jpg",
@@ -150,8 +136,7 @@ export default function Home() {
 							style={{
 								background:
 									"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
-								boxShadow:
-									"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
+								boxShadow: "0 8px 32px 0 rgba(53, 118, 211, 0.08)",
 							}}
 						>
 							<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
@@ -162,9 +147,8 @@ export default function Home() {
 										Why Choose QTMA?
 									</h2>
 									<p className="text-gray-400 text-lg sm:text-xl mb-6">
-										We're more than just a club - we're a
-										community of innovators, creators, and
-										future leaders.
+										We're more than just a club - we're a community of
+										innovators, creators, and future leaders.
 									</p>
 								</div>
 								<div className="grid md:grid-cols-3 gap-8">
@@ -195,9 +179,7 @@ export default function Home() {
 											<h3 className="text-xl font-medium text-[#3576d3] mb-3">
 												{feature.title}
 											</h3>
-											<p className="text-gray-400">
-												{feature.desc}
-											</p>
+											<p className="text-gray-400">{feature.desc}</p>
 										</div>
 									))}
 								</div>
@@ -209,8 +191,7 @@ export default function Home() {
 							style={{
 								background:
 									"radial-gradient(ellipse at 60% 40%, #e3edfa 60%, #f3f4fa 100%)",
-								boxShadow:
-									"0 8px 32px 0 rgba(53, 118, 211, 0.08)",
+								boxShadow: "0 8px 32px 0 rgba(53, 118, 211, 0.08)",
 							}}
 						>
 							<div className="absolute -top-24 -left-24 w-[300px] h-[300px] bg-[#b3cfff] opacity-20 rounded-full blur-3xl z-0" />
@@ -221,9 +202,8 @@ export default function Home() {
 										Why Choose QTMA?
 									</h2>
 									<p className="text-gray-400 text-lg sm:text-xl mb-6">
-										We're more than just a club - we're a
-										community of innovators, creators, and
-										future leaders.
+										We're more than just a club - we're a community of
+										innovators, creators, and future leaders.
 									</p>
 								</div>
 								<div className="grid md:grid-cols-3 gap-8">
@@ -254,9 +234,7 @@ export default function Home() {
 											<h3 className="text-xl font-medium text-[#3576d3] mb-3">
 												{feature.title}
 											</h3>
-											<p className="text-gray-400">
-												{feature.desc}
-											</p>
+											<p className="text-gray-400">{feature.desc}</p>
 										</div>
 									))}
 								</div>
@@ -270,9 +248,8 @@ export default function Home() {
 							Our Partners & Sponsors
 						</h2>
 						<p className="text-gray-400 text-lg text-center mb-10 max-w-2xl mx-auto">
-							We're proud to work with industry-leading
-							organizations that support innovation and student
-							development.
+							We're proud to work with industry-leading organizations that
+							support innovation and student development.
 						</p>
 						<div className="bg-white rounded-2xl shadow-lg p-8 sm:p-12">
 							<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
@@ -331,9 +308,9 @@ export default function Home() {
 									Ready to Build the Future?
 								</h2>
 								<p className="text-gray-400 text-base sm:text-lg md:text-xl mb-4 sm:mb-6">
-									Join QTMA today and be part of Queen's most
-									innovative student organization with Alumni
-									in the World's most Impactful Companies.
+									Join QTMA today and be part of Queen's most innovative student
+									organization with Alumni in the World's most Impactful
+									Companies.
 								</p>
 								<div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
 									<LinkBox
