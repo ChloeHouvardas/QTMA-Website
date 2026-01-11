@@ -12,47 +12,47 @@ import FloatingBlobsStill from "../../components/FloatingBlobsStill";
 //
 
 export const getStaticProps = async () => {
-	return {props: {}};
+	return { props: {} };
 };
 
 export const getStaticPaths = async () => {
 	return {
 		paths: [
 			// 2019-2020
-			{params: {id: "Studii"}},
-			{params: {id: "Hungover"}},
-			{params: {id: "Wob"}},
-			{params: {id: "Stocked"}},
+			{ params: { id: "Studii" } },
+			{ params: { id: "Hungover" } },
+			{ params: { id: "Wob" } },
+			{ params: { id: "Stocked" } },
 
 			// 2020-2021
-			{params: {id: "Eagle"}},
-			{params: {id: "Pronto"}},
-			{params: {id: "Voluntera"}},
-			{params: {id: "Loop"}},
+			{ params: { id: "Eagle" } },
+			{ params: { id: "Pronto" } },
+			{ params: { id: "Voluntera" } },
+			{ params: { id: "Loop" } },
 
 			// 2021-2022
-			{params: {id: "Casa"}},
-			{params: {id: "Haus"}},
-			{params: {id: "Loco"}},
-			{params: {id: "Soar"}},
+			{ params: { id: "Casa" } },
+			{ params: { id: "Haus" } },
+			{ params: { id: "Loco" } },
+			{ params: { id: "Soar" } },
 
 			// 2022-2023
-			{params: {id: "Feastly"}},
-			{params: {id: "Kartt"}},
-			{params: {id: "Sift"}},
-			{params: {id: "Venato"}},
+			{ params: { id: "Feastly" } },
+			{ params: { id: "Kartt" } },
+			{ params: { id: "Sift" } },
+			{ params: { id: "Venato" } },
 
 			// 2023-2024
-			{params: {id: "Dilliad"}},
-			{params: {id: "Pantree"}},
-			{params: {id: "Orah"}},
-			{params: {id: "Parki"}},
+			{ params: { id: "Dilliad" } },
+			{ params: { id: "Pantree" } },
+			{ params: { id: "Orah" } },
+			{ params: { id: "Parki" } },
 
 			// 2024-2025
-			{params: {id: "Nucleus"}},
-			{params: {id: "Inquiro"}},
-			{params: {id: "Lilchef"}},
-			{params: {id: "Fujiplans"}},
+			{ params: { id: "Nucleus" } },
+			{ params: { id: "Inquiro" } },
+			{ params: { id: "Lilchef" } },
+			{ params: { id: "Fujiplans" } },
 		],
 		fallback: false,
 	};
@@ -64,38 +64,55 @@ export default function Product() {
 	const [product, setProduct] = useState();
 
 	useEffect(() => {
-		const details = productData.filter((productObj) => productObj.productName === queryId);
+		const details = productData.filter(
+			(productObj) => productObj.productName === queryId
+		);
 		setProduct(details[0]);
 	}, [queryId]);
 
 	const renderTeamMemberName = (member) => {
 		if (member.linkedin !== "#") {
 			return (
-				<a className="member-name"
-				   href={member.linkedin}
-				   target="_blank" rel="noreferrer">
-					{member.studentName}<br/><small><i>{member.position}</i></small>
+				<a
+					className="member-name"
+					href={member.linkedin}
+					target="_blank"
+					rel="noreferrer"
+				>
+					{member.studentName}
+					<br />
+					<small>
+						<i>{member.position}</i>
+					</small>
 				</a>
 			);
 		}
 
 		return (
 			<div className="member-name-no-linkedin">
-				{member.studentName}<br/><small><i>{member.position}</i></small>
+				{member.studentName}
+				<br />
+				<small>
+					<i>{member.position}</i>
+				</small>
 			</div>
 		);
-	}
+	};
 
 	const renderProductName = (product) => {
-		if (product.link !== '') {
-			return <a href={product.link} target="_blank">{product.productName}</a>;
+		if (product.link !== "") {
+			return (
+				<a href={product.link} target="_blank">
+					{product.productName}
+				</a>
+			);
 		}
 		return product.productName;
-	}
+	};
 
 	return (
 		<>
-			<Nav/>
+			<Nav />
 			<Layout background="linear-gradient(135deg, #e3edfa 0%, #f3f4fa 100%)">
 				<FloatingBlobsStill />
 				{product && (
@@ -150,7 +167,7 @@ export default function Product() {
 					</div>
 				)}
 			</Layout>
-			<Footer/>
+			<Footer />
 		</>
 	);
 }
