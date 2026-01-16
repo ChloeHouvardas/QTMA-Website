@@ -1,6 +1,4 @@
 import Layout from "../../components/layout";
-import Image from "next/image";
-import Instagram from "../../public/assets/Visuals/instagram.png";
 import Nav from "../Nav";
 import React from "react";
 import Head from "next/head";
