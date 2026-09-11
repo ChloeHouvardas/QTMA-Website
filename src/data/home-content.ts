@@ -13,24 +13,27 @@ export type ValueItem = {
 export const products: ProductSummary[] = [
 	{
 		name: "Astro",
-		description: "Product description coming soon.",
-		imageAlt: "Placeholder artwork for the Astro student planning product",
+		description:
+			"Astro is a cost-effective content management platform that streamlines the content creation process for early-stage founders and creators.",
+		imageAlt: "Astro",
 	},
 	{
 		name: "Trevo",
-		description: "Product description coming soon.",
-		imageAlt: "Placeholder artwork for the Trevo social travel product",
+		description:
+			"Trevo re-imagines the way you travel by combining Exploring, Planning, and Sharing into one loop.",
+		imageAlt: "Trevo",
 	},
 	{
 		name: "Plotd",
-		description: "Product description coming soon.",
-		imageAlt: "Placeholder artwork for the Plotd social planning product",
+		description:
+			"A social challenge app turning open ended planning into side quests, helping people go out, and logging real experiences.",
+		imageAlt: "Plotd",
 	},
 	{
 		name: "bons.ai",
-		description: "Product description coming soon.",
-		imageAlt:
-			"Placeholder artwork for the bons.ai personalized guidance product",
+		description:
+			"Offering a better way to learn languages through AI-powered personalized lessons grounded in real world scenarios.",
+		imageAlt: "bons.ai",
 	},
 ];
 
