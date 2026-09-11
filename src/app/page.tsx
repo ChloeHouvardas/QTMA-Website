@@ -43,46 +43,69 @@ export default function HomePage() {
 		<main id="top">
 			<Header />
 
-			<section className="hero" aria-labelledby="hero-title">
-				<div className="hero__bands hero__bands--left" aria-hidden="true">
+			<section
+				className="relative flex min-h-[560px] items-center overflow-hidden bg-white text-qtmaInk md:min-h-[590px] lg:min-h-[655px]"
+				aria-labelledby="hero-title"
+			>
+				<div
+					className="pointer-events-none absolute left-0 top-[-15%] flex h-[115%] w-[min(82vw,1064px)] flex-col gap-[3px] opacity-45 sm:w-[min(78vw,1064px)] sm:opacity-70 md:w-[min(73vw,1064px)] md:opacity-100"
+					aria-hidden="true"
+				>
 					{heroBands.map((band, index) => (
 						<span
+							className="min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
 							key={index}
 							style={{ opacity: band.opacity, width: `${band.left}%` }}
 						/>
 					))}
 				</div>
-				<div className="hero__bands hero__bands--right" aria-hidden="true">
+				<div
+					className="pointer-events-none absolute right-0 top-[-15%] flex h-[115%] w-[min(82vw,1064px)] scale-x-[-1] flex-col gap-[3px] opacity-45 sm:w-[min(78vw,1064px)] sm:opacity-70 md:w-[min(73vw,1064px)] md:opacity-100"
+					aria-hidden="true"
+				>
 					{heroBands.map((band, index) => (
 						<span
+							className="min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
 							key={index}
 							style={{ opacity: band.opacity, width: `${band.right}%` }}
 						/>
 					))}
 				</div>
-				<div className="site-container hero__content">
-					<p className="hero__eyebrow">WELCOME TO QTMA</p>
-					<h1 id="hero-title">
+				<div className="relative z-[2] mx-auto w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] px-5 py-[76px] text-center md:px-[clamp(20px,4vw,48px)] lg:py-[82px]">
+					<p className="mb-4 mt-0 text-[15px] font-bold leading-[1.2] text-qtmaBlue sm:mb-5 sm:text-[22px]">
+						WELCOME TO QTMA
+					</p>
+					<h1
+						id="hero-title"
+						className="mx-auto my-0 max-w-[850px] text-[clamp(2.35rem,11vw,3.3rem)] font-bold uppercase leading-[1.07] tracking-[0.055em] sm:text-[clamp(3rem,8vw,4.25rem)] md:tracking-[0.1em] lg:text-[clamp(3.75rem,5.15vw,4.6875rem)]"
+					>
 						Launch the
 						<br />
-						Next <span>big thing</span>
+						Next <span className="text-qtmaBlue">big thing</span>
 					</h1>
-					<p className="hero__description">
+					<p className="mx-auto mb-0 mt-5 max-w-[350px] text-base leading-[1.25] text-[#999999] sm:max-w-[470px] sm:text-lg md:max-w-[500px] md:text-xl md:leading-[1.05]">
 						Queen&apos;s University&apos;s largest product incubator, taking
 						products from idea to launch.
 					</p>
-					<div className="hero__actions">
-						<Link className="hero__button hero__button--primary" href="/about">
+					<div className="mx-auto mt-[26px] flex max-w-[280px] flex-col items-stretch gap-3.5 sm:mt-[22px] sm:max-w-none sm:flex-row sm:justify-center sm:gap-8">
+						<Link
+							className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-[15px] border-[1.5px] border-qtmaBlue bg-qtmaBlue text-[11px] font-normal uppercase text-white shadow-[0_2px_3px_#6b9aff,3px_5px_5px_rgba(0,0,0,0.22)] transition-transform hover:-translate-y-0.5 sm:w-[175px]"
+							href="/about"
+						>
 							Learn more
 							<Image
 								alt=""
 								aria-hidden="true"
+								className="h-[11px] w-[13px]"
 								height={11}
 								src="/assets/figma/hero-arrow.svg"
 								width={13}
 							/>
 						</Link>
-						<Link className="hero__button hero__button--secondary" href="/team">
+						<Link
+							className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-[15px] border-[1.5px] border-qtmaBlue bg-white text-[11px] font-normal uppercase text-qtmaBlue shadow-[3px_5px_5px_rgba(0,0,0,0.22)] transition-transform hover:-translate-y-0.5 sm:w-[175px]"
+							href="/team"
+						>
 							Meet the team
 						</Link>
 					</div>
@@ -94,40 +117,55 @@ export default function HomePage() {
 			<Values values={values} />
 
 			<section
-				className="section contact"
+				className="scroll-mt-5 bg-qtmaOffWhite py-[clamp(90px,10vw,150px)]"
 				id="contact"
 				aria-labelledby="contact-title"
 			>
-				<div className="site-container">
-					<div className="section-heading contact__heading">
-						<p className="eyebrow eyebrow--blue">STAY IN THE LOOP</p>
-						<h2 id="contact-title">LET&apos;S KEEP IN TOUCH.</h2>
+				<div className="mx-auto w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] px-[clamp(20px,4vw,48px)] max-md:px-5">
+					<div className="mb-[clamp(42px,5vw,68px)] text-center">
+						<p className="mb-[18px] mt-0 text-[0.73rem] font-bold uppercase leading-[1.4] tracking-[0.15em] text-qtmaBlue">
+							STAY IN THE LOOP
+						</p>
+						<h2
+							id="contact-title"
+							className="m-0 text-[clamp(2.45rem,5vw,4.75rem)] font-medium leading-[0.98] tracking-[-0.055em]"
+						>
+							LET&apos;S KEEP IN TOUCH.
+						</h2>
 					</div>
 
-					<div className="contact__grid">
+					<div className="grid grid-cols-1 gap-[22px] lg:grid-cols-[0.92fr_1.08fr]">
 						<a
-							className="social-card"
+							className="relative flex min-h-[430px] flex-col justify-between overflow-hidden rounded-[3px] bg-qtmaBlue p-[clamp(25px,3vw,40px)] text-white shadow-qtma md:min-h-[460px] lg:min-h-[520px]"
 							href={instagramUrl}
 							rel="noreferrer"
 							target="_blank"
 						>
-							<div className="social-card__topline">
-								<span className="social-card__icon">
+							<div className="relative z-[2] flex items-center justify-between [&>svg]:h-[23px] [&>svg]:w-[23px]">
+								<span className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-qtmaBlue [&_svg]:h-[22px] [&_svg]:w-[22px]">
 									<Instagram aria-hidden="true" />
 								</span>
 								<ArrowUpRight aria-hidden="true" />
 							</div>
-							<div className="social-card__art" aria-hidden="true">
+							<div
+								className="absolute bottom-0 right-0 top-0 w-[63%] opacity-25 [clip-path:polygon(35%_0,100%_0,100%_100%,0_100%)]"
+								aria-hidden="true"
+							>
 								<Image
+									className="object-cover"
 									fill
 									sizes="(max-width: 900px) 100vw, 50vw"
 									src="/assets/content-placeholder.svg"
 									alt=""
 								/>
 							</div>
-							<div>
-								<p>Follow the journey</p>
-								<h3>@queenstechmedia</h3>
+							<div className="relative z-[2]">
+								<p className="mb-3 mt-0 text-[0.83rem] font-semibold tracking-[0.04em] opacity-80">
+									Follow the journey
+								</p>
+								<h3 className="m-0 text-[clamp(1.75rem,3.5vw,3.25rem)] font-medium leading-none tracking-[-0.055em]">
+									@queenstechmedia
+								</h3>
 							</div>
 						</a>
 
@@ -136,20 +174,24 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			<footer className="footer">
-				<div className="site-container footer__inner">
-					<a className="footer__brand" href="#top" aria-label="QTMA home">
+			<footer className="bg-qtmaInk py-[72px] pb-7 text-white">
+				<div className="mx-auto flex w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] items-start justify-between gap-[42px] px-[clamp(20px,4vw,48px)] pb-[58px] max-sm:flex-col max-sm:px-5 sm:items-end">
+					<a className="grid gap-[19px]" href="#top" aria-label="QTMA home">
 						<Image
 							alt="QTMA"
+							className="h-auto w-[clamp(170px,20vw,246px)] brightness-0 invert"
 							height={67}
 							src="/assets/Visuals/QTMALogo.png"
 							width={246}
 						/>
-						<span>Queen&apos;s Technology &amp; Media Association</span>
+						<span className="text-[0.82rem] text-[#a9abb0]">
+							Queen&apos;s Technology &amp; Media Association
+						</span>
 					</a>
 
-					<div className="footer__socials" aria-label="Social links">
+					<div className="flex gap-2.5" aria-label="Social links">
 						<a
+							className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#3b3d41] transition hover:bg-white hover:text-qtmaInk [&_svg]:h-[19px] [&_svg]:w-[19px]"
 							href={instagramUrl}
 							rel="noreferrer"
 							target="_blank"
@@ -158,6 +200,7 @@ export default function HomePage() {
 							<Instagram aria-hidden="true" />
 						</a>
 						<a
+							className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#3b3d41] transition hover:bg-white hover:text-qtmaInk [&_svg]:h-[19px] [&_svg]:w-[19px]"
 							href={linkedInUrl}
 							rel="noreferrer"
 							target="_blank"
@@ -165,12 +208,16 @@ export default function HomePage() {
 						>
 							<Linkedin aria-hidden="true" />
 						</a>
-						<a href="#contact" aria-label="Contact QTMA">
+						<a
+							className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#3b3d41] transition hover:bg-white hover:text-qtmaInk [&_svg]:h-[19px] [&_svg]:w-[19px]"
+							href="#contact"
+							aria-label="Contact QTMA"
+						>
 							<Mail aria-hidden="true" />
 						</a>
 					</div>
 				</div>
-				<div className="site-container footer__bottom">
+				<div className="mx-auto flex w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] justify-between gap-2 border-t border-[#303236] px-[clamp(20px,4vw,48px)] pt-[26px] text-[0.7rem] tracking-[0.03em] text-[#86888d] max-sm:flex-col max-sm:px-5">
 					<span>© {new Date().getFullYear()} QTMA</span>
 					<span>Made at Queen&apos;s University</span>
 				</div>
