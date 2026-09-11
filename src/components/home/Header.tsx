@@ -25,7 +25,7 @@ export function Header() {
 	}, []);
 
 	return (
-		<header className="relative z-30 bg-white shadow-[0_2.18px_6.55px_rgba(0,0,0,0.25)]">
+		<header className="sticky top-0 z-30 bg-white shadow-[0_2.18px_6.55px_rgba(0,0,0,0.25)]">
 			<div className="relative mx-auto flex h-14 w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] items-center px-[25px] md:px-[clamp(20px,4vw,48px)]">
 				<a className="block leading-none" href="#top" aria-label="QTMA home">
 					<Image
@@ -39,7 +39,7 @@ export function Header() {
 				</a>
 
 				<nav
-					className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-[74px] whitespace-nowrap text-base font-medium uppercase md:flex"
+					className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-[74px] whitespace-nowrap text-base font-light uppercase md:flex"
 					aria-label="Main navigation"
 				>
 					{links.map((link) => (

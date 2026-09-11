@@ -46,7 +46,7 @@ export function Products({ products }: ProductsProps) {
 			<div className="mx-auto w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] px-[clamp(20px,4vw,48px)] max-md:px-5">
 				<div className="mb-[50px] flex flex-col items-start gap-[15px]">
 					<p className="m-0 text-[22px] font-normal uppercase leading-none text-black/50 max-sm:text-lg">
-						2026-2027 Products
+						2025-2026 Products
 					</p>
 					<h2
 						id="products-title"
