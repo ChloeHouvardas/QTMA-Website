@@ -9,7 +9,7 @@ import { Values } from "@/components/home/Values";
 import { products, values } from "@/data/home-content";
 
 const instagramUrl = "https://www.instagram.com/queenstechmedia/?hl=en";
-const linkedInUrl = "https://ca.linkedin.com/company/qtma";
+const linkedInUrl = "https://www.linkedin.com/company/qtma/posts/?feedView=all";
 
 const heroBands = [
 	{ left: 100, opacity: 0.02, right: 100 },
@@ -171,52 +171,49 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			<footer className="bg-qtmaInk py-[72px] pb-7 text-white">
-				<div className="mx-auto flex w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] items-start justify-between gap-[42px] px-[clamp(20px,4vw,48px)] pb-[58px] max-sm:flex-col max-sm:px-5 sm:items-end">
-					<a className="grid gap-[19px]" href="#top" aria-label="QTMA home">
-						<Image
-							alt="QTMA"
-							className="h-auto w-[clamp(170px,20vw,246px)] brightness-0 invert"
-							height={67}
-							src="/assets/Visuals/QTMALogo.png"
-							width={246}
-						/>
-						<span className="text-[0.82rem] text-[#a9abb0]">
-							Queen&apos;s Technology &amp; Media Association
-						</span>
-					</a>
+			<footer className="bg-white px-2 pb-1.5 pt-2 text-white">
+				<div className="min-h-[108px] rounded-t-[64px] bg-[#3960ce] sm:min-h-[136px] sm:rounded-t-[88px]">
+					<div className="mx-auto flex min-h-[108px] w-full max-w-[1194px] items-center justify-between px-6 sm:min-h-[136px] sm:px-10 xl:px-0">
+						<a href="#top" aria-label="QTMA home">
+							<Image
+								alt="QTMA"
+								className="h-auto w-[120px] brightness-0 invert sm:w-[180px]"
+								height={67}
+								src="/assets/Visuals/QTMALogo.png"
+								width={246}
+							/>
+						</a>
 
-					<div className="flex gap-2.5" aria-label="Social links">
-						<a
-							className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#3b3d41] transition hover:bg-white hover:text-qtmaInk [&_svg]:h-[19px] [&_svg]:w-[19px]"
-							href={instagramUrl}
-							rel="noreferrer"
-							target="_blank"
-							aria-label="QTMA on Instagram"
+						<nav
+							aria-label="QTMA social links"
+							className="flex items-center gap-3 sm:gap-5"
 						>
-							<Instagram aria-hidden="true" />
-						</a>
-						<a
-							className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#3b3d41] transition hover:bg-white hover:text-qtmaInk [&_svg]:h-[19px] [&_svg]:w-[19px]"
-							href={linkedInUrl}
-							rel="noreferrer"
-							target="_blank"
-							aria-label="QTMA on LinkedIn"
-						>
-							<Linkedin aria-hidden="true" />
-						</a>
-						<a
-							className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#3b3d41] transition hover:bg-white hover:text-qtmaInk [&_svg]:h-[19px] [&_svg]:w-[19px]"
-							href="#contact"
-							aria-label="Contact QTMA"
-						>
-							<Mail aria-hidden="true" />
-						</a>
+							<a
+								aria-label="QTMA on Instagram"
+								className="flex h-[30px] w-[30px] items-center justify-center transition-opacity hover:opacity-75 sm:h-10 sm:w-10 [&_svg]:h-full [&_svg]:w-full"
+								href={instagramUrl}
+								rel="noreferrer"
+								target="_blank"
+							>
+								<Instagram aria-hidden="true" strokeWidth={2} />
+							</a>
+							<a
+								aria-label="QTMA on LinkedIn"
+								className="flex h-[30px] w-[30px] items-center justify-center transition-opacity hover:opacity-75 sm:h-10 sm:w-10 [&_svg]:h-full [&_svg]:w-full"
+								href={linkedInUrl}
+								rel="noreferrer"
+								target="_blank"
+							>
+								<Linkedin aria-hidden="true" strokeWidth={2} />
+							</a>
+							<span
+								aria-hidden="true"
+								className="flex h-[30px] w-[30px] items-center justify-center sm:h-10 sm:w-10 [&_svg]:h-full [&_svg]:w-full"
+							>
+								<Mail strokeWidth={2} />
+							</span>
+						</nav>
 					</div>
-				</div>
-				<div className="mx-auto flex w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] justify-between gap-2 border-t border-[#303236] px-[clamp(20px,4vw,48px)] pt-[26px] text-[0.7rem] tracking-[0.03em] text-[#86888d] max-sm:flex-col max-sm:px-5">
-					<span>© {new Date().getFullYear()} QTMA</span>
-					<span>Made at Queen&apos;s University</span>
 				</div>
 			</footer>
 		</main>
