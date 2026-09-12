@@ -171,7 +171,7 @@ export default function HomePage() {
 				</div>
 			</section>
 
-			<footer className="bg-white px-2 pb-1.5 pt-2 text-white">
+			<footer className="bg-white pt-2 text-white">
 				<div className="min-h-[108px] rounded-t-[64px] bg-[#3960ce] sm:min-h-[136px] sm:rounded-t-[88px]">
 					<div className="mx-auto flex min-h-[108px] w-full max-w-[1194px] items-center justify-between px-6 sm:min-h-[136px] sm:px-10 xl:px-0">
 						<a href="#top" aria-label="QTMA home">
