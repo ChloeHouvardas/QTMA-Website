@@ -8,6 +8,8 @@ export type ValueItem = {
 	number: string;
 	title: string;
 	description: string;
+	imageSrc: string;
+	imageAlt: string;
 };
 
 export const products: ProductSummary[] = [
@@ -40,26 +42,34 @@ export const products: ProductSummary[] = [
 export const values: ValueItem[] = [
 	{
 		number: ".01",
-		title: "Be curious.",
+		title: "Real World Experience",
 		description:
-			"We ask better questions, stay open to unfamiliar ideas, and never stop looking for a more thoughtful way forward.",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		imageSrc: "/assets/content-placeholder.svg",
+		imageAlt: "",
 	},
 	{
 		number: ".02",
-		title: "Build boldly.",
+		title: "Mentorship & Growth",
 		description:
-			"We turn ambitious thinking into tangible work, learning quickly and treating every challenge as a chance to improve.",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		imageSrc: "/assets/content-placeholder.svg",
+		imageAlt: "",
 	},
 	{
 		number: ".03",
-		title: "Grow together.",
+		title: "Cross-Functional Teams",
 		description:
-			"Our best work crosses disciplines. We listen generously, share what we know, and make the people around us better.",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		imageSrc: "/assets/content-placeholder.svg",
+		imageAlt: "",
 	},
 	{
 		number: ".04",
-		title: "Create impact.",
+		title: "Ownership & Impact",
 		description:
-			"We measure ideas by the people they serve and build with intention, care, and the courage to make a meaningful difference.",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		imageSrc: "/assets/content-placeholder.svg",
+		imageAlt: "",
 	},
 ];

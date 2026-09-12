@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import type { ValueItem } from "@/data/home-content";
 
@@ -11,85 +11,125 @@ type ValuesProps = {
 
 export function Values({ values }: ValuesProps) {
 	const [activeIndex, setActiveIndex] = useState(0);
+	const hoverTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+	const clearHoverTimer = () => {
+		if (hoverTimer.current !== null) {
+			clearTimeout(hoverTimer.current);
+			hoverTimer.current = null;
+		}
+	};
+
+	const activate = (index: number) => {
+		clearHoverTimer();
+		setActiveIndex(index);
+	};
+
+	useEffect(
+		() => () => {
+			if (hoverTimer.current !== null) {
+				clearTimeout(hoverTimer.current);
+			}
+		},
+		[]
+	);
 
 	return (
 		<section
-			className="scroll-mt-5 bg-[#0d0f13] py-[clamp(90px,10vw,150px)] text-white"
-			id="values"
 			aria-labelledby="values-title"
+			className="scroll-mt-5 bg-white py-[clamp(80px,9vw,128px)]"
+			id="values"
 		>
-			<div className="mx-auto w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] px-[clamp(20px,4vw,48px)] max-md:px-5">
-				<div className="mb-[clamp(42px,5vw,68px)] flex items-end justify-between max-md:flex-col max-md:items-start max-md:gap-6">
-					<div>
-						<p className="mb-[18px] mt-0 text-[0.73rem] font-bold uppercase leading-[1.4] tracking-[0.15em] text-[#aac3ff]">
-							HOW WE SHOW UP
-						</p>
-						<h2
-							id="values-title"
-							className="m-0 text-[clamp(2.45rem,5vw,4.75rem)] font-medium leading-[0.98] tracking-[-0.055em]"
-						>
-							OUR VALUES
-						</h2>
-					</div>
-					<p className="mb-[3px] mt-0 max-w-[410px] text-base leading-[1.65] text-[#a8aeb9] max-md:max-w-[520px]">
-						Principles that shape how we think, collaborate, and build.
+			<div className="mx-auto w-full max-w-[1344px] px-5 sm:px-8 lg:px-12">
+				<header className="mb-10 sm:mb-12">
+					<p className="mb-3 mt-0 text-xs font-semibold uppercase leading-none tracking-[0.16em] text-qtmaInk sm:text-sm">
+						OUR VALUE
 					</p>
-				</div>
+					<h2
+						className="m-0 text-[clamp(2.75rem,5.4vw,4.875rem)] font-medium leading-none tracking-[-0.055em] text-qtmaBlue"
+						id="values-title"
+					>
+						Why QTMA?
+					</h2>
+				</header>
 
-				<div className="grid gap-2 md:flex md:min-h-[490px]">
+				<div className="flex flex-col gap-[22px] xl:h-[446px] xl:flex-row">
 					{values.map((value, index) => {
 						const active = activeIndex === index;
+
 						return (
 							<button
 								aria-expanded={active}
-								className={`relative grid w-full cursor-pointer overflow-hidden rounded-[2px] border p-[22px] text-left text-white transition-[min-height,background-color,flex] duration-300 md:min-w-[88px] md:grid-cols-1 md:grid-rows-[auto_1fr] lg:min-w-[108px] lg:p-[27px] ${
+								className={`group relative flex w-full cursor-pointer flex-col overflow-hidden rounded-[30px] border border-[#d7d7d7] bg-white p-6 text-left text-qtmaInk transition-[min-height,flex-basis,border-color,box-shadow] duration-500 ease-out motion-reduce:transition-none sm:p-7 xl:h-[446px] xl:min-w-0 xl:p-[30px] ${
 									active
-										? "min-h-[210px] border-qtmaBlue bg-qtmaBlue md:flex-[1_1_600px] lg:grid-cols-[minmax(230px,0.9fr)_minmax(210px,1.1fr)]"
-										: "min-h-[82px] border-[#2b2e34] bg-[#171a20] md:flex-[0_1_0]"
-								} grid-cols-[auto_1fr]`}
+										? "min-h-[446px] border-[#c7c7c7] shadow-[0_12px_36px_rgba(30,55,105,0.08)] xl:flex-[0_0_445px]"
+										: "min-h-[132px] hover:border-[#aebfe8] xl:flex-[0_0_calc((100%_-_511px)_/_3)]"
+								}`}
 								key={value.number}
-								onClick={() => setActiveIndex(index)}
-								onFocus={() => setActiveIndex(index)}
-								onMouseEnter={() => setActiveIndex(index)}
+								onClick={() => activate(index)}
+								onFocus={() => activate(index)}
+								onPointerLeave={clearHoverTimer}
+								onPointerMove={(event) => {
+									if (
+										event.pointerType !== "mouse" ||
+										active ||
+										hoverTimer.current !== null
+									) {
+										return;
+									}
+
+									hoverTimer.current = setTimeout(() => {
+										hoverTimer.current = null;
+										setActiveIndex(index);
+									}, 15);
+								}}
 								type="button"
 							>
-								<span className="relative z-[1] pt-1 text-[0.78rem] font-bold tracking-[0.08em] md:pt-0">
-									{value.number}
-								</span>
+								<h3 className="relative z-10 m-0 max-w-[190px] text-[clamp(1.35rem,2vw,1.75rem)] font-medium leading-[1.08] tracking-[-0.035em] sm:max-w-[315px]">
+									{value.title}
+								</h3>
+
 								<div
-									className={`relative z-[1] min-w-0 pl-3.5 md:self-end md:pl-0 ${
+									aria-hidden={!active}
+									className={`relative z-10 mt-4 max-w-[350px] text-sm leading-[1.5] text-[#666666] transition-[opacity,transform] duration-300 motion-reduce:transition-none sm:text-[15px] ${
 										active
-											? ""
-											: "md:absolute md:bottom-7 md:left-[25px] md:origin-bottom-left md:-rotate-90"
+											? "translate-y-0 opacity-100 delay-150 motion-reduce:delay-0"
+											: "pointer-events-none translate-y-2 opacity-0"
 									}`}
 								>
-									<h3 className="m-0 text-[1.75rem] font-medium leading-[0.96] tracking-[-0.06em] md:whitespace-nowrap md:text-[clamp(2.25rem,4vw,4.2rem)]">
-										{value.title}
-									</h3>
-									<p
-										className={`mr-5 mt-4 max-w-[390px] text-[0.95rem] leading-[1.65] transition md:mt-[22px] ${
-											active
-												? "block translate-y-0 opacity-[0.88]"
-												: "hidden translate-y-2 opacity-0 md:block"
-										}`}
-									>
-										{value.description}
-									</p>
+									{value.description}
 								</div>
+
 								<div
-									className={`relative col-start-2 row-span-2 ml-[22px] hidden self-stretch overflow-hidden rounded-[2px] lg:block ${
-										active ? "" : "lg:hidden"
+									aria-hidden={!active}
+									className={`absolute bottom-[18px] left-[18px] right-[18px] h-[210px] overflow-hidden rounded-[20px] transition-[opacity,transform] duration-500 ease-out motion-reduce:transition-none sm:bottom-5 sm:left-5 sm:right-5 ${
+										active
+											? "scale-100 opacity-100 delay-100 motion-reduce:delay-0"
+											: "pointer-events-none scale-[0.97] opacity-0"
 									}`}
-									aria-hidden="true"
 								>
 									<Image
-										alt=""
+										alt={value.imageAlt}
 										className="object-cover"
 										fill
-										sizes="(max-width: 767px) 100vw, 34vw"
-										src="/assets/content-placeholder.svg"
+										sizes="(min-width: 1280px) 405px, (min-width: 640px) calc(100vw - 104px), calc(100vw - 76px)"
+										src={value.imageSrc}
 									/>
+									<span className="absolute bottom-3 right-4 z-10 text-[4.5rem] font-medium leading-none tracking-[-0.075em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)] sm:bottom-4 sm:right-5 sm:text-[5.25rem]">
+										{value.number}
+									</span>
 								</div>
+
+								<span
+									aria-hidden="true"
+									className={`absolute bottom-5 right-6 text-[4.5rem] font-medium leading-none tracking-[-0.075em] text-qtmaBlue transition-[opacity,transform] duration-300 motion-reduce:transition-none sm:bottom-6 sm:right-7 sm:text-[5.25rem] xl:bottom-7 xl:left-[30px] xl:right-auto ${
+										active
+											? "pointer-events-none translate-y-2 opacity-0"
+											: "translate-y-0 opacity-100 delay-150 motion-reduce:delay-0"
+									}`}
+								>
+									{value.number}
+								</span>
 							</button>
 						);
 					})}
