@@ -8,7 +8,7 @@ import { Products } from "@/components/home/Products";
 import { Values } from "@/components/home/Values";
 import { products, values } from "@/data/home-content";
 
-const instagramUrl = "https://www.instagram.com/queenstechmedia/";
+const instagramUrl = "https://www.instagram.com/queenstechmedia/?hl=en";
 const linkedInUrl = "https://ca.linkedin.com/company/qtma";
 
 const heroBands = [
@@ -117,57 +117,54 @@ export default function HomePage() {
 			<Values values={values} />
 
 			<section
-				className="scroll-mt-5 bg-qtmaOffWhite py-[clamp(90px,10vw,150px)]"
+				className="scroll-mt-5 bg-white pb-[clamp(80px,9vw,128px)]"
 				id="contact"
 				aria-labelledby="contact-title"
 			>
 				<div className="mx-auto w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] px-[clamp(20px,4vw,48px)] max-md:px-5">
-					<div className="mb-[clamp(42px,5vw,68px)] text-center">
-						<p className="mb-[18px] mt-0 text-[0.73rem] font-bold uppercase leading-[1.4] tracking-[0.15em] text-qtmaBlue">
-							STAY IN THE LOOP
+					<div className="mb-[50px] flex flex-col items-start gap-[15px]">
+						<p className="m-0 text-[22px] font-normal uppercase leading-none text-black/50 max-sm:text-lg">
+							OUR CONTACT
 						</p>
 						<h2
 							id="contact-title"
-							className="m-0 text-[clamp(2.45rem,5vw,4.75rem)] font-medium leading-[0.98] tracking-[-0.055em]"
+							className="m-0 max-w-[832px] text-[48px] font-normal leading-none text-qtmaBlue max-sm:text-[36px]"
 						>
-							LET&apos;S KEEP IN TOUCH.
+							Let&apos;s build the future!
 						</h2>
 					</div>
 
-					<div className="grid grid-cols-1 gap-[22px] lg:grid-cols-[0.92fr_1.08fr]">
-						<a
-							className="relative flex min-h-[430px] flex-col justify-between overflow-hidden rounded-[3px] bg-qtmaBlue p-[clamp(25px,3vw,40px)] text-white shadow-qtma md:min-h-[460px] lg:min-h-[520px]"
-							href={instagramUrl}
-							rel="noreferrer"
-							target="_blank"
-						>
-							<div className="relative z-[2] flex items-center justify-between [&>svg]:h-[23px] [&>svg]:w-[23px]">
-								<span className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-qtmaBlue [&_svg]:h-[22px] [&_svg]:w-[22px]">
-									<Instagram aria-hidden="true" />
-								</span>
-								<ArrowUpRight aria-hidden="true" />
+					<div className="grid max-w-[1201px] grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-[47px]">
+						<article className="rounded-[10px] border border-qtmaBorder bg-white p-[30px] lg:h-[379px]">
+							<div className="flex h-full flex-col gap-6">
+								<div className="flex flex-col gap-1.5">
+									<h3 className="m-0 text-[20px] font-normal leading-none">
+										Follow @queenstechmedia on Instagram
+									</h3>
+									<p className="m-0 text-[22px] font-normal leading-none text-black/50">
+										Stay in the loop!
+									</p>
+								</div>
+
+								<div
+									aria-label="instagram image"
+									className="flex h-[173px] w-full items-center justify-center rounded-[10px] border border-qtmaBorder text-[15px] text-black/50"
+									role="img"
+								>
+									instagram image
+								</div>
+
+								<a
+									className="inline-flex h-[41px] w-fit items-center justify-center gap-1 rounded-[7px] border border-[#d0d0d0] bg-white px-[10px] text-[15px] font-normal leading-none shadow-[inset_1px_1px_4px_rgba(255,255,255,0.93),0_4px_2px_rgba(121,121,121,0.22)] transition-transform hover:-translate-y-px [&_svg]:h-3 [&_svg]:w-3"
+									href={instagramUrl}
+									rel="noreferrer"
+									target="_blank"
+								>
+									Follow Us
+									<ArrowUpRight aria-hidden="true" />
+								</a>
 							</div>
-							<div
-								className="absolute bottom-0 right-0 top-0 w-[63%] opacity-25 [clip-path:polygon(35%_0,100%_0,100%_100%,0_100%)]"
-								aria-hidden="true"
-							>
-								<Image
-									className="object-cover"
-									fill
-									sizes="(max-width: 900px) 100vw, 50vw"
-									src="/assets/content-placeholder.svg"
-									alt=""
-								/>
-							</div>
-							<div className="relative z-[2]">
-								<p className="mb-3 mt-0 text-[0.83rem] font-semibold tracking-[0.04em] opacity-80">
-									Follow the journey
-								</p>
-								<h3 className="m-0 text-[clamp(1.75rem,3.5vw,3.25rem)] font-medium leading-none tracking-[-0.055em]">
-									@queenstechmedia
-								</h3>
-							</div>
-						</a>
+						</article>
 
 						<ContactForm />
 					</div>

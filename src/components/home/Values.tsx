@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import type { ValueItem } from "@/data/home-content";
@@ -37,16 +36,16 @@ export function Values({ values }: ValuesProps) {
 	return (
 		<section
 			aria-labelledby="values-title"
-			className="scroll-mt-5 bg-white py-[clamp(80px,9vw,128px)]"
+			className="scroll-mt-5 bg-white pb-[clamp(80px,9vw,128px)]"
 			id="values"
 		>
 			<div className="mx-auto w-full max-w-[1344px] px-5 sm:px-8 lg:px-12">
-				<header className="mb-10 sm:mb-12">
-					<p className="mb-3 mt-0 text-xs font-semibold uppercase leading-none tracking-[0.16em] text-qtmaInk sm:text-sm">
+				<header className="mb-[50px] flex flex-col items-start gap-[15px]">
+					<p className="m-0 text-[22px] font-normal uppercase leading-none text-black/50 max-sm:text-lg">
 						OUR VALUE
 					</p>
 					<h2
-						className="m-0 text-[clamp(2.75rem,5.4vw,4.875rem)] font-medium leading-none tracking-[-0.055em] text-qtmaBlue"
+						className="m-0 text-[48px] font-normal leading-none text-qtmaBlue max-sm:text-[36px]"
 						id="values-title"
 					>
 						Why QTMA?
@@ -108,13 +107,13 @@ export function Values({ values }: ValuesProps) {
 											: "pointer-events-none scale-[0.97] opacity-0"
 									}`}
 								>
-									<Image
-										alt={value.imageAlt}
-										className="object-cover"
-										fill
-										sizes="(min-width: 1280px) 405px, (min-width: 640px) calc(100vw - 104px), calc(100vw - 76px)"
-										src={value.imageSrc}
-									/>
+									<div
+										aria-label={value.imageAlt || `${value.title} image`}
+										className="flex h-full w-full items-center justify-center bg-[#edf2fc] px-6 text-center text-[15px] text-black/50"
+										role="img"
+									>
+										{value.imageAlt || `${value.title} image`}
+									</div>
 									<span className="absolute bottom-3 right-4 z-10 text-[4.5rem] font-medium leading-none tracking-[-0.075em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)] sm:bottom-4 sm:right-5 sm:text-[5.25rem]">
 										{value.number}
 									</span>
