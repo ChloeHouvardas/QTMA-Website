@@ -64,8 +64,10 @@ export function Faq({ items }: FaqProps) {
 								role="region"
 							>
 								<p
-									className={`m-0 min-h-0 pr-12 text-[15px] leading-[1.35] text-qtmaMuted transition-opacity duration-200 ease-out ${
-										isOpen ? "pb-6 opacity-100 sm:pb-7" : "pb-0 opacity-0"
+									className={`m-0 min-h-0 pr-12 text-[17px] font-light leading-[1.4] text-gray-400 transition-opacity duration-200 ease-out sm:text-[18px] ${
+										isOpen
+											? "pb-6 pt-4 opacity-100 sm:pb-7 sm:pt-5"
+											: "pb-0 pt-0 opacity-0"
 									}`}
 								>
 									{item.answer}
