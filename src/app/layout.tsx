@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
 import "./globals.scss";
 
+const inter = Inter({
+	display: "swap",
+	subsets: ["latin"],
+	variable: "--font-inter",
+});
+
 export const metadata: Metadata = {
-	title: "QTMA | Website Refresh",
+	title: "QTMA | Building products and people",
 	description:
-		"The 2026 website refresh for Queen's Technology & Media Association.",
+		"Queen's Technology & Media Association is Canada's premier student-run product incubator.",
 	icons: {
 		icon: "/favicon.ico",
 	},
@@ -18,7 +25,7 @@ type RootLayoutProps = Readonly<{
 
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
-		<html lang="en">
+		<html className={inter.variable} lang="en">
 			<body>{children}</body>
 		</html>
 	);
