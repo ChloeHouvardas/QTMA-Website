@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { archiveProducts, productYears } from "@/data/product-archive";
+import { archiveProducts, productYears } from "@/data/products";
 
 import ProductArchiveGrid from "./ProductArchiveGrid";
 import ProductYearNav from "./ProductYearNav";

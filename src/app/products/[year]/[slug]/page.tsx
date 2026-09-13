@@ -4,10 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Header } from "@/components/Header";
-import {
-	archiveProducts,
-	getProduct,
-} from "@/data/product-archive";
+import { archiveProducts, getProduct } from "@/data/products";
 
 type ProductPageProps = {
 	params: {
@@ -76,7 +73,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 
 				<section className="mx-auto max-w-[850px] py-16">
 					<h2 className="text-3xl font-semibold text-qtmaBlue">
-						About {product.name}
+						{product.overviewHeading ?? `About ${product.name}`}
 					</h2>
 					<p className="mt-5 text-lg font-light leading-8 text-[#555]">
 						{product.overview ?? product.slogan}
@@ -97,11 +94,11 @@ export default function ProductPage({ params }: ProductPageProps) {
 							Meet the team
 						</h2>
 						<Image
-							alt={`${product.name} team`}
+							alt={product.teamPhoto.alt}
 							className="h-auto w-full rounded-[24px]"
 							height={1333}
 							sizes="(max-width: 900px) 100vw, 850px"
-							src={product.teamPhoto}
+							src={product.teamPhoto.src}
 							width={2000}
 						/>
 					</section>
