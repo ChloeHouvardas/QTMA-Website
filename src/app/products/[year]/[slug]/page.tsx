@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Header } from "@/components/Header";
-import {
-	archiveProducts,
-	getProduct,
-} from "@/data/product-archive";
+import ProductHero from "@/components/products/detail/ProductHero";
+import ProductOverview from "@/components/products/detail/ProductOverview";
+import ProductTeam from "@/components/products/detail/ProductTeam";
+import { archiveProducts, getProduct } from "@/data/products";
 
 type ProductPageProps = {
 	params: {
@@ -42,69 +41,36 @@ export default function ProductPage({ params }: ProductPageProps) {
 	return (
 		<div id="top">
 			<Header />
-			<main className="mx-auto w-full max-w-[1120px] px-5 pb-24 pt-12 sm:px-8 sm:pt-16">
-				<Link
-					className="inline-flex text-sm text-[#777] transition-colors hover:text-qtmaBlue"
-					href="/products"
-				>
-					&larr; All products
-				</Link>
-
-				<section className="mt-10 grid items-center gap-10 rounded-[28px] bg-white p-8 shadow-[0_7px_28px_rgba(0,0,0,0.13)] md:grid-cols-[220px_minmax(0,1fr)] md:p-12">
-					<div className="relative mx-auto h-[180px] w-full max-w-[210px]">
-						<Image
-							alt={`${product.name} logo`}
-							className="object-contain"
-							fill
-							priority
-							sizes="210px"
-							src={product.logo}
-						/>
-					</div>
-					<div>
-						<p className="m-0 text-sm font-medium text-qtmaBlue">
-							{product.year}
-						</p>
-						<h1 className="mb-0 mt-2 text-5xl font-semibold leading-tight text-black sm:text-6xl">
-							{product.name}
-						</h1>
-						<p className="mb-0 mt-4 text-xl font-light text-[#777]">
-							{product.slogan}
-						</p>
-					</div>
-				</section>
-
-				<section className="mx-auto max-w-[850px] py-16">
-					<h2 className="text-3xl font-semibold text-qtmaBlue">
-						About {product.name}
-					</h2>
-					<p className="mt-5 text-lg font-light leading-8 text-[#555]">
-						{product.overview ?? product.slogan}
-					</p>
-					<a
-						className="mt-7 inline-flex rounded-full bg-qtmaBlue px-6 py-3 font-medium text-white transition-colors hover:bg-qtmaBlueDark"
-						href={product.pitch}
-						rel="noreferrer"
-						target="_blank"
+			<main>
+				<div className="mx-auto w-full max-w-[1120px] px-5 pt-8 sm:px-8 sm:pt-10">
+					<Link
+						className="inline-flex text-sm text-[#777] transition-colors hover:text-qtmaBlue focus-visible:text-qtmaBlue"
+						href="/products"
 					>
-						View pitch deck
-					</a>
-				</section>
+						<span aria-hidden="true" className="mr-2">
+							←
+						</span>
+						All products
+					</Link>
+				</div>
 
-				{product.teamPhoto ? (
-					<section className="mx-auto max-w-[850px]">
-						<h2 className="mb-6 text-3xl font-semibold text-qtmaBlue">
-							Meet the team
-						</h2>
-						<Image
-							alt={`${product.name} team`}
-							className="h-auto w-full rounded-[24px]"
-							height={1333}
-							sizes="(max-width: 900px) 100vw, 850px"
-							src={product.teamPhoto}
-							width={2000}
-						/>
-					</section>
+				<ProductHero product={product} />
+
+				{product.overview || product.pitch ? (
+					<ProductOverview
+						heading={product.overviewHeading}
+						name={product.name}
+						overview={product.overview ?? product.slogan}
+						pitch={product.pitch}
+					/>
+				) : null}
+
+				{product.members?.length || product.teamPhoto ? (
+					<ProductTeam
+						members={product.members}
+						name={product.name}
+						teamPhoto={product.teamPhoto}
+					/>
 				) : null}
 			</main>
 		</div>
