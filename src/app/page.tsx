@@ -117,7 +117,7 @@ export default function HomePage() {
 			<Values values={values} />
 
 			<section
-				className="scroll-mt-5 bg-white pb-[clamp(80px,9vw,128px)]"
+				className="scroll-mt-20 bg-white pb-[clamp(80px,9vw,128px)]"
 				id="contact"
 				aria-labelledby="contact-title"
 			>
