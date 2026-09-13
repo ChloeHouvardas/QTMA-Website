@@ -1,4 +1,4 @@
-import { productYears } from "@/data/product-archive";
+import { productYears } from "@/data/products";
 
 type ProductYearNavProps = {
 	selectedYear: string;
