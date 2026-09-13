@@ -1,15 +1,4 @@
-import type { Product, ProductMember } from "./types";
-
-const mockTeamMembers: ProductMember[] = [
-	{ name: "Person 1", role: "Team Member" },
-	{ name: "Person 2", role: "Team Member" },
-	{ name: "Person 3", role: "Team Member" },
-	{ name: "Person 4", role: "Team Member" },
-	{ name: "Person 5", role: "Team Member" },
-	{ name: "Person 6", role: "Team Member" },
-	{ name: "Person 7", role: "Team Member" },
-	{ name: "Person 8", role: "Team Member" },
-];
+import type { Product } from "./types";
 
 type ProductDetails = Omit<Product, "logo" | "pitch" | "slug" | "teamPhoto"> & {
 	assetName?: string;
@@ -30,7 +19,6 @@ export function createProduct({
 
 	return {
 		...product,
-		members: product.members ?? mockTeamMembers,
 		slug: slug ?? product.name.toLowerCase(),
 		logo: `${assetPath}_Logo.png`,
 		pitch: hasPitch ? `${assetPath}_Pitch.pdf` : undefined,

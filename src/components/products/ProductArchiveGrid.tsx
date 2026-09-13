@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import type { ProductArchiveItem } from "@/data/product-archive";
+import type { Product } from "@/data/products";
 
 type ProductArchiveGridProps = {
-	products: ProductArchiveItem[];
+	products: Product[];
 	year: string;
 };
 
-function ProductCard({ product }: { product: ProductArchiveItem }) {
+function ProductCard({ product }: { product: Product }) {
 	return (
 		<Link
 			className="group flex min-h-[210px] items-center gap-7 rounded-[26px] border-2 border-transparent bg-white px-8 py-8 shadow-[0_7px_22px_rgba(0,0,0,0.17)] transition duration-200 hover:-translate-y-1 hover:border-qtmaBlue/35 hover:shadow-[0_12px_28px_rgba(0,0,0,0.19)] focus-visible:border-qtmaBlue max-lg:flex-col max-lg:justify-center max-lg:text-center sm:min-h-[230px] lg:px-10"
