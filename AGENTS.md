@@ -32,6 +32,7 @@ Use pnpm 9 (the `preinstall` script rejects other package managers).
   components that require browser APIs, state, or effects.
 
 - For all images, instead of use a placeholder image just put an alt text of the section name.
+- When writing tailwind code, always use build in tailwind classes instead of writing custom css. If you need to write custom css, please use the `src/app/globals.scss` file. (eg. never write 'className="text-[20px]"', instead use 'className="text-lg"')
 
 ## Testing Guidelines
 
