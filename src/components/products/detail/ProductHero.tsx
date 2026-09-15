@@ -1,0 +1,44 @@
+import Image from "next/image";
+
+import type { Product } from "@/data/products";
+
+type ProductHeroProps = {
+	product: Product;
+};
+
+export default function ProductHero({ product }: ProductHeroProps) {
+	return (
+		<section
+			aria-labelledby="product-title"
+			className="mx-auto w-full max-w-[1120px] px-5 pb-8 pt-12 text-center sm:px-8 sm:pb-10 sm:pt-16 lg:pb-14 lg:pt-20"
+		>
+			<div>
+				<p className="m-0 text-xl font-semibold text-qtmaBlue sm:text-2xl">
+					{product.year}
+				</p>
+
+				<div className="mt-6 flex flex-wrap items-center justify-center gap-5 sm:mt-8 sm:gap-7">
+					<h1
+						className="m-0 text-[clamp(3.5rem,8vw,6.75rem)] font-semibold leading-[0.95] tracking-[-0.055em] text-black"
+						id="product-title"
+					>
+						{product.name}
+					</h1>
+					<div className="relative h-20 w-20 shrink-0 sm:h-24 sm:w-24">
+						<Image
+							alt={`${product.name} logo`}
+							className="object-contain"
+							fill
+							priority
+							sizes="96px"
+							src={product.logo}
+						/>
+					</div>
+				</div>
+				<p className="mb-0 mt-6 text-xl font-light leading-relaxed text-[#9b9b9b] sm:mt-7 sm:text-2xl">
+					&ldquo;{product.slogan}&rdquo;
+				</p>
+			</div>
+		</section>
+	);
+}

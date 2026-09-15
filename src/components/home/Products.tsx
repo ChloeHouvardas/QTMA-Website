@@ -52,7 +52,7 @@ export function Products({ products }: ProductsProps) {
 						id="products-title"
 						className="m-0 max-w-[832px] text-[48px] font-normal leading-none text-qtmaBlue max-sm:text-[36px]"
 					>
-						Here&apos;s some cool things we built :&#41;
+						Here are some cool things we built :&#41;
 					</h2>
 				</div>
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight, Instagram, Linkedin, Mail } from "lucide-react";
 
 import { ContactForm } from "@/components/home/ContactForm";
-import { Header } from "@/components/home/Header";
+import { Header } from "@/components/Header";
 import { Products } from "@/components/home/Products";
 import { Values } from "@/components/home/Values";
 import { products, values } from "@/data/home-content";
