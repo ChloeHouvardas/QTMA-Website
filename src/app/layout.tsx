@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
+import { Footer } from "@/components/Footer";
+
 import "./globals.scss";
 
 const inter = Inter({
@@ -26,7 +28,10 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html className={inter.variable} lang="en">
-			<body>{children}</body>
+			<body>
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
