@@ -1,5 +1,5 @@
 import { MemberCard } from "@/components/team/MemberCard";
-import type { TeamPortfolio } from "@/data/team-content";
+import type { TeamPortfolio } from "@/data/25-26-members/team-content";
 
 export default function PortfolioSection({
 	id,

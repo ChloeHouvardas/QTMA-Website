@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import PortfolioSection from "@/components/team/PortfolioSection";
-import { teamPortfolios } from "@/data/team-content";
+import { teamPortfolios } from "@/data/25-26-members/team-content";
 
 export default function TeamPage() {
 	return (

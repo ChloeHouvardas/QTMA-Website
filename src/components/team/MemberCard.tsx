@@ -85,7 +85,11 @@ export function MemberCard({
 				)}
 				{hasDetails && (
 					<div className="absolute inset-x-0 bottom-0 z-10 translate-y-3 p-5 text-white opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:translate-y-0 group-focus-within:opacity-100 motion-reduce:transition-none">
-						<dl className="space-y-1 text-xs leading-tight font-thin">
+						<dl
+							className={`space-y-1 leading-tight font-thin ${
+								isCoChair ? "text-sm" : "text-xs"
+							}`}
+						>
 							{program && (
 								<div>
 									<dt className="sr-only">Program</dt>
