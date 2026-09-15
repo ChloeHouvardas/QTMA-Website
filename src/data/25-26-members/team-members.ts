@@ -78,6 +78,7 @@ const roster = [
 	},
 	{
 		name: "Michelle Chen",
+		image: "michelleChen.jpeg",
 		role: "Marketing Director",
 		group: "operations",
 		email: "23nnrd@queensu.ca",
@@ -88,10 +89,21 @@ const roster = [
 		askMeAbout: "GTA food recommendations",
 	},
 	{
+		name: "Jason Wu",
+		image: "jasonWu.jpg",
+		role: "Technical Director",
+		group: "operations",
+		email: "jason.wu@queensu.ca",
+		program: "CS ‘28",
+		years: "2",
+		linkedin: "https://www.linkedin.com/in/29jason-wu/",
+		askMeAbout: "blank",
+	},
+	{
 		name: "William Du",
 		role: "Senior Advisor",
 		group: "operations",
-		image: "williamDu.jpg",
+		image: "William-Du_Updated_Headshot - William Du.jpg",
 		email: "william.du@queensu.ca",
 		program: "COMM '27",
 		years: "4",
@@ -155,6 +167,7 @@ const roster = [
 	},
 	{
 		name: "Amanda Xu",
+		image: "amandaXu.jpg",
 		role: "Business Analyst",
 		group: "business-analysts",
 		email: "amanda.xu@queensu.ca",
@@ -165,6 +178,7 @@ const roster = [
 	},
 	{
 		name: "Ashika Akilan",
+		image: "ashikaAkilan.jpg",
 		role: "Business Analyst",
 		group: "business-analysts",
 		email: "ashika.akilan@queensu.ca",
@@ -175,6 +189,7 @@ const roster = [
 	},
 	{
 		name: "Billy Wang",
+		image: "billyWang.jpg",
 		role: "Business Analyst",
 		group: "business-analysts",
 		email: "billywang104@gmail.com",
@@ -197,6 +212,7 @@ const roster = [
 	},
 	{
 		name: "Dante Nicastro",
+		image: "danteNicastro.jpg",
 		role: "Business Analyst",
 		group: "business-analysts",
 		email: "dante.nicastro@queensu.ca",
@@ -219,6 +235,7 @@ const roster = [
 	},
 	{
 		name: "Emily Zhou",
+		image: "emilyZhou.jpg",
 		role: "Business Analyst",
 		group: "business-analysts",
 		email: "emily.zhou@queensu.ca",
@@ -240,6 +257,7 @@ const roster = [
 	},
 	{
 		name: "Jonathan Mei",
+		image: "jonathanMei.jpg",
 		role: "Business Analyst",
 		group: "business-analysts",
 		email: "jonathan.mei@queensu.ca",
@@ -250,6 +268,7 @@ const roster = [
 	},
 	{
 		name: "Krish Shah",
+		image: "krishShah.jpeg",
 		role: "Business Analyst",
 		group: "business-analysts",
 		email: "krish.shah@queensu.ca",
@@ -260,6 +279,7 @@ const roster = [
 	},
 	{
 		name: "Lindsay Liu",
+		image: "lindsayLiu.jpg",
 		role: "Business Analyst",
 		group: "business-analysts",
 		email: "lindsay.liu@queensu.ca",
@@ -270,6 +290,7 @@ const roster = [
 	},
 	{
 		name: "Daniel Cheah",
+		image: "danielCheah.jpg",
 		role: "Developer",
 		group: "developers",
 		email: "daniel.cheah@queensu.ca",
@@ -280,6 +301,7 @@ const roster = [
 	},
 	{
 		name: "Harish (Karikaran) Kandavell",
+		image: "harishKandavell.jpg",
 		role: "Developer",
 		group: "developers",
 		email: "harish.kandavell@queensu.ca",
@@ -301,6 +323,7 @@ const roster = [
 	},
 	{
 		name: "Jamison Huang",
+		image: "jamisonHuang.jpg",
 		role: "Developer",
 		group: "developers",
 		email: "24snb@queensu.ca",
@@ -355,6 +378,7 @@ const roster = [
 	},
 	{
 		name: "Manreet Gill",
+		image: "manreetGill.JPG",
 		role: "Developer",
 		group: "developers",
 		email: "manreet.gill@queensu.ca",
@@ -376,6 +400,7 @@ const roster = [
 	},
 	{
 		name: "Nigel Groen",
+		image: "nigelGroen.jpg",
 		role: "Developer",
 		group: "developers",
 		email: "nigel.groen@queensu.ca",
@@ -386,6 +411,7 @@ const roster = [
 	},
 	{
 		name: "Patrick Rivett",
+		image: "patrickRivett.jpg",
 		role: "Developer",
 		group: "developers",
 		email: "rivett.patrick@queensu.ca",
@@ -431,6 +457,7 @@ const roster = [
 	},
 	{
 		name: "Austin Chen",
+		image: "austinChen.jpeg",
 		role: "UI/UX",
 		group: "ui-ux",
 		email: "austin.chen@queens.ca",
@@ -441,6 +468,7 @@ const roster = [
 	},
 	{
 		name: "Elisabeth Feng",
+		image: "elisabethFeng.jpeg",
 		role: "UI/UX",
 		group: "ui-ux",
 		email: "elisabeth.feng@queensu.ca",
@@ -474,6 +502,7 @@ const roster = [
 	},
 	{
 		name: "Layla Do",
+		image: "laylaDo.jpg",
 		role: "UI/UX",
 		group: "ui-ux",
 		email: "layla.do@queensu.ca",
@@ -484,6 +513,7 @@ const roster = [
 	},
 	{
 		name: "Nyla Wang",
+		image: "nylaWang.jpg",
 		role: "UI/UX",
 		group: "ui-ux",
 		email: "nyla.wang@queensu.ca",
@@ -495,6 +525,7 @@ const roster = [
 	},
 	{
 		name: "Selena Li",
+		image: "selenaLi.jpg",
 		role: "UI/UX",
 		group: "ui-ux",
 		email: "li.selena@queensu.ca",
