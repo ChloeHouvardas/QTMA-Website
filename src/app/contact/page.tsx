@@ -9,7 +9,7 @@ const linkedInUrl = "https://www.linkedin.com/company/qtma/posts/?feedView=all";
 
 export default function ContactPage() {
 	return (
-		<main id="top">
+		<div id="top">
 			<Header />
 
 			<section className="bg-white pb-28 pt-[54px] sm:pb-32 sm:pt-[62px] lg:pb-32 lg:pt-[58px]">

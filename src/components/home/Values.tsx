@@ -55,18 +55,17 @@ export function Values({ values }: ValuesProps) {
 				<div className="flex flex-col gap-[22px] xl:h-[446px] xl:flex-row">
 					{values.map((value, index) => {
 						const active = activeIndex === index;
+						const contentId = `value-content-${value.number}`;
+						const headingId = `value-heading-${value.number}`;
 
 						return (
-							<button
-								aria-expanded={active}
+							<div
 								className={`group relative flex w-full cursor-pointer flex-col overflow-hidden rounded-[30px] border border-[#d7d7d7] bg-white p-6 text-left text-qtmaInk transition-[min-height,flex-basis,border-color,box-shadow] duration-500 ease-out motion-reduce:transition-none sm:p-7 xl:h-[446px] xl:min-w-0 xl:p-[30px] ${
 									active
 										? "min-h-[446px] border-[#c7c7c7] shadow-[0_12px_36px_rgba(30,55,105,0.08)] xl:flex-[0_0_445px]"
 										: "min-h-[132px] hover:border-[#aebfe8] xl:flex-[0_0_calc((100%_-_511px)_/_3)]"
 								}`}
 								key={value.number}
-								onClick={() => activate(index)}
-								onFocus={() => activate(index)}
 								onPointerLeave={clearHoverTimer}
 								onPointerMove={(event) => {
 									if (
@@ -82,9 +81,21 @@ export function Values({ values }: ValuesProps) {
 										setActiveIndex(index);
 									}, 15);
 								}}
-								type="button"
 							>
-								<h3 className="relative z-10 m-0 max-w-[190px] text-[clamp(1.35rem,2vw,1.75rem)] font-medium leading-[1.08] tracking-[-0.035em] sm:max-w-[315px]">
+								<button
+									aria-controls={contentId}
+									aria-expanded={active}
+									aria-labelledby={headingId}
+									className="absolute inset-0 z-20 cursor-pointer rounded-[30px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-qtmaBlue"
+									onClick={() => activate(index)}
+									onFocus={() => activate(index)}
+									type="button"
+								/>
+
+								<h3
+									className="relative z-10 m-0 max-w-[190px] text-[clamp(1.35rem,2vw,1.75rem)] font-medium leading-[1.08] tracking-[-0.035em] sm:max-w-[315px]"
+									id={headingId}
+								>
 									{value.title}
 								</h3>
 
@@ -95,6 +106,7 @@ export function Values({ values }: ValuesProps) {
 											? "translate-y-0 opacity-100 delay-150 motion-reduce:delay-0"
 											: "pointer-events-none translate-y-2 opacity-0"
 									}`}
+									id={contentId}
 								>
 									{value.description}
 								</div>
@@ -129,7 +141,7 @@ export function Values({ values }: ValuesProps) {
 								>
 									{value.number}
 								</span>
-							</button>
+							</div>
 						);
 					})}
 				</div>
