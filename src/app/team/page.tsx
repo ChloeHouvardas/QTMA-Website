@@ -15,8 +15,9 @@ export default function TeamPage() {
 						Meet the next generation of leaders and innovators
 					</p>
 				</section>
-				<div className="mx-auto mt-20 w-full max-w-[1000px] space-y-20 px-6 pb-24 sm:px-8 md:mt-24 md:space-y-28 md:pb-32">
-					{teamPortfolios.map((portfolio) => (
+				<PortfolioSection {...teamPortfolios[0]} />
+				<div className="mx-auto mt-20 w-full max-w-[1100px] space-y-20 px-6 pb-24 sm:px-8 md:mt-24 md:space-y-28 md:pb-32">
+					{teamPortfolios.slice(1).map((portfolio) => (
 						<PortfolioSection key={portfolio.id} {...portfolio} />
 					))}
 				</div>

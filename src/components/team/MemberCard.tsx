@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Linkedin, Mail } from "lucide-react";
 
 export type MemberCardProps = {
+	isCoChair?: boolean;
 	name: string;
 	role: string;
 	image?: string;
@@ -15,6 +16,7 @@ export type MemberCardProps = {
 };
 
 export function MemberCard({
+	isCoChair = false,
 	name,
 	role,
 	image,
@@ -31,7 +33,11 @@ export function MemberCard({
 
 	return (
 		<article className="w-full max-w-[320px]">
-			<div className="group relative aspect-[4/5] overflow-hidden rounded-[28px] bg-qtmaInk">
+			<div
+				className={`group relative overflow-hidden rounded-[28px] bg-qtmaInk ${
+					isCoChair ? "aspect-[3/4]" : "aspect-[4/5]"
+				}`}
+			>
 				{image ? (
 					<Image
 						alt={imageAlt ?? `${name} headshot`}
@@ -79,7 +85,7 @@ export function MemberCard({
 				)}
 				{hasDetails && (
 					<div className="absolute inset-x-0 bottom-0 z-10 translate-y-3 p-5 text-white opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:translate-y-0 group-focus-within:opacity-100 motion-reduce:transition-none">
-						<dl className="space-y-3 text-sm leading-tight">
+						<dl className="space-y-1 text-xs leading-tight font-thin">
 							{program && (
 								<div>
 									<dt className="sr-only">Program</dt>
@@ -109,10 +115,10 @@ export function MemberCard({
 				)}
 			</div>
 			<div className="pt-5 text-center">
-				<h3 className="text-2xl font-semibold leading-none text-qtmaInk">
+				<h3 className="text-xl font-normal leading-none text-qtmaInk">
 					{name}
 				</h3>
-				<p className="mt-1 text-base font-light uppercase text-[#999999]">
+				<p className="mt-1 text-sm font-light uppercase text-[#999999]">
 					{role}
 				</p>
 			</div>

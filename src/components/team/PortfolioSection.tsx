@@ -13,7 +13,7 @@ export default function PortfolioSection({
 			aria-labelledby={headingId}
 			className={
 				isCoChairs
-					? "mx-auto mt-16 max-w-[1140px] px-6 sm:px-8 md:mt-24"
+					? "mx-auto mt-16 max-w-[1296px] px-6 sm:px-8 md:mt-24"
 					: undefined
 			}
 		>
@@ -25,13 +25,14 @@ export default function PortfolioSection({
 			</h2>
 			<div
 				className={`grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 md:grid-cols-4 md:gap-x-8 md:gap-y-10 ${
-					isCoChairs ? "lg:gap-x-10" : ""
+					isCoChairs ? "md:gap-x-10 md:gap-y-12 md:[&>article]:max-w-none" : ""
 				}`}
 			>
 				{members.map((member) => (
 					<MemberCard
 						image={member.imageSrc}
 						imageAlt={member.imageAlt}
+						isCoChair={isCoChairs}
 						key={member.id}
 						name={member.name}
 						askMeAbout={member.askMeAbout}
