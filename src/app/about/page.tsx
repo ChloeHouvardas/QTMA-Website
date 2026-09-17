@@ -112,6 +112,43 @@ export default function AboutPage() {
 					))}
 				</div>
 			</section>
+
+			<section
+				aria-labelledby="team-structure-title"
+				className="mx-auto w-full max-w-[1350px] px-5 pb-20 sm:px-12 sm:pb-28 lg:px-[76px] lg:pb-32"
+			>
+				<div className="mx-auto max-w-[760px] text-center">
+					<p className="m-0 text-lg font-light uppercase leading-none text-black/40 sm:text-xl">
+						Our Team Structure
+					</p>
+					<h2
+						className="mb-0 mt-6 text-4xl font-light leading-none tracking-[-0.035em] text-qtmaBlue sm:mt-7 sm:text-5xl lg:text-6xl"
+						id="team-structure-title"
+					>
+						4 Teams. 4 Functions.
+					</h2>
+					<p className="mb-0 mt-8 text-lg text-left font-light leading-[1.2] text-qtmaInk sm:mt-9 sm:text-xl">
+						Since 2014, QTMA has been building products that address real
+						student needs and market opportunities. Members work within one of
+						four product teams, each made up of
+						<span className="italic">
+							{" "}
+							Product Managers, Business Analysts, Developers, and UI/UX
+							Designers
+						</span>{" "}
+						who collaborate to take ideas from concept to launch.
+					</p>
+				</div>
+
+				<Image
+					alt="Our Team Structure"
+					className="mt-12 h-auto w-full sm:mt-16"
+					height={474}
+					sizes="(min-width: 1350px) 1198px, (min-width: 640px) calc(100vw - 96px), calc(100vw - 40px)"
+					src="/assets/Visuals/club-structure.svg"
+					width={1250}
+				/>
+			</section>
 		</main>
 	);
 }
