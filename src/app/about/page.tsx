@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Header } from "@/components/Header";
+import { Network } from "@/components/home/Network";
 
 const valueCards = [
 	{
@@ -88,7 +89,7 @@ export default function AboutPage() {
 					</h2>
 				</header>
 
-				<div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-x-11 md:gap-y-11">
+				<div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-x-16 md:gap-y-11">
 					{valueCards.map((card) => (
 						<article
 							className="relative min-h-[320px] overflow-hidden rounded-[30px] bg-qtmaBlue px-10 pt-14 pb-10 text-white sm:min-h-[375px] sm:px-12 sm:py-14"
@@ -149,6 +150,8 @@ export default function AboutPage() {
 					width={1250}
 				/>
 			</section>
+
+			<Network />
 		</main>
 	);
 }
