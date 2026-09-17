@@ -17,6 +17,8 @@ const links = [
 export function Header() {
 	const [open, setOpen] = useState(false);
 	const pathname = usePathname();
+	const isCurrentPage = (href: string) =>
+		pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
 
 	const handleNavigation = (
 		event: MouseEvent<HTMLAnchorElement>,
@@ -63,7 +65,12 @@ export function Header() {
 				>
 					{links.map((link) => (
 						<Link
-							className="relative py-2 text-[#999999] opacity-50 transition after:absolute after:bottom-[3px] after:left-0 after:h-[1.5px] after:w-full after:origin-right after:scale-x-0 after:bg-qtmaBlue after:transition-transform hover:text-qtmaBlue hover:opacity-100 hover:after:origin-left hover:after:scale-x-100 focus-visible:text-qtmaBlue focus-visible:opacity-100 focus-visible:after:origin-left focus-visible:after:scale-x-100"
+							aria-current={isCurrentPage(link.href) ? "page" : undefined}
+							className={`relative py-2 transition-colors duration-200 after:absolute after:bottom-[3px] after:left-0 after:h-[1.5px] after:w-full after:origin-left after:bg-qtmaBlue after:transition-transform after:duration-300 ${
+								isCurrentPage(link.href)
+									? "text-qtmaBlue opacity-100 after:scale-x-100"
+									: "text-[#999999] opacity-50 after:scale-x-0 hover:text-qtmaBlue hover:opacity-100 hover:after:scale-x-100 focus-visible:text-qtmaBlue focus-visible:opacity-100 focus-visible:after:scale-x-100"
+							}`}
 							href={link.href}
 							key={link.href}
 							onClick={(event) => handleNavigation(event, link.href)}
@@ -95,7 +102,12 @@ export function Header() {
 				<div className="mx-auto flex min-h-0 w-full max-w-[calc(1250px+(2*20px))] flex-col overflow-hidden px-5">
 					{links.map((link) => (
 						<Link
-							className="border-b border-qtmaBorder py-[18px] text-[1.05rem] font-medium"
+							aria-current={isCurrentPage(link.href) ? "page" : undefined}
+							className={`border-b border-qtmaBorder py-[18px] text-[1.05rem] font-medium transition-colors duration-200 ${
+								isCurrentPage(link.href)
+									? "text-qtmaBlue underline decoration-1 underline-offset-4"
+									: "text-qtmaInk"
+							}`}
 							href={link.href}
 							key={link.href}
 							onClick={(event) => handleNavigation(event, link.href)}
