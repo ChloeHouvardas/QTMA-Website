@@ -91,6 +91,6 @@ export default function ContactPage() {
 					<Faq items={applicantFaqItems} />
 				</div>
 			</section>
-		</main>
+		</div>
 	);
 }
