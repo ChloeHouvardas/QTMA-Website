@@ -34,6 +34,13 @@ a {
 	-webkit-tap-highlight-color: transparent;
 }
 
+.portfolio-visual {
+	transform: rotate(7deg) scaleX(-1);
+}
+
+.chain-visual {
+	transform: rotate(85deg) scaleX(-1);
+}
 :focus-visible {
 	outline: 3px solid #ffbf47;
 	outline-offset: 4px;

@@ -42,34 +42,34 @@ export const products: ProductSummary[] = [
 export const values: ValueItem[] = [
 	{
 		number: ".01",
-		title: "Real World Experience",
+		title: "Product Development",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		imageSrc: "/assets/content-placeholder.svg",
-		imageAlt: "",
+			"Work on products beyond the classroom. Collaborate with fellow student designers, developers, and product managers to bring ideas to life and create solutions used by real people.",
+		imageSrc: "/assets/Visuals/gear.svg",
+		imageAlt: "Product Development",
 	},
 	{
 		number: ".02",
-		title: "Mentorship & Growth",
+		title: "Networking",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		imageSrc: "/assets/content-placeholder.svg",
-		imageAlt: "",
+			"Connect with students, alumni, and industry professionals passionate about technology and innovation. Build meaningful relationships and learn from experienced mentors.",
+		imageSrc: "/assets/Visuals/chain.svg",
+		imageAlt: "Networking",
 	},
 	{
 		number: ".03",
-		title: "Cross-Functional Teams",
+		title: "Skill Enhancement",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		imageSrc: "/assets/content-placeholder.svg",
-		imageAlt: "",
+			"Develop technical and professional skills through training, workshops, mentorship, and hands-on project work. Gain practical experience in design, development, and business analysis.",
+		imageSrc: "/assets/Visuals/dartboard.svg",
+		imageAlt: "Skill Enhancement",
 	},
 	{
 		number: ".04",
-		title: "Ownership & Impact",
+		title: "Portfolio Building",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		imageSrc: "/assets/content-placeholder.svg",
-		imageAlt: "",
+			"Build a portfolio of real products that showcases your skills, collaboration, and impact. Graduate with tangible work you can confidently share with future employers.",
+		imageSrc: "/assets/Visuals/portfolio.svg",
+		imageAlt: "Portfolio Building",
 	},
 ];
