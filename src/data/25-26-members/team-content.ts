@@ -24,9 +24,12 @@ export type TeamPortfolio = {
 type PortfolioId =
 	| "co-chairs"
 	| "developers"
+	| "sr-developers"
 	| "product-managers"
 	| "ui-ux"
+	| "sr-ui-ux"
 	| "business-analysts"
+	| "sr-business-analysts"
 	| "operations";
 
 type RosterMember = {
@@ -69,9 +72,12 @@ const portfolioDefinitions: Array<Omit<TeamPortfolio, "members">> = [
 	{ id: "co-chairs", isCoChairs: true, name: "Co-Chairs" },
 	{ id: "operations", name: "Club Operations" },
 	{ id: "product-managers", name: "Product Managers" },
+	{ id: "sr-business-analysts", name: "Senior Business Analysts" },
+	{ id: "sr-developers", name: "Senior Developers" },
+	{ id: "sr-ui-ux", name: "Senior UI/UX Designers" },
 	{ id: "business-analysts", name: "Business Analysts" },
 	{ id: "developers", name: "Developers" },
-	{ id: "ui-ux", name: "UI/UX" },
+	{ id: "ui-ux", name: "UI/UX Designers" },
 ];
 
 export const teamPortfolios: TeamPortfolio[] = portfolioDefinitions.map(
