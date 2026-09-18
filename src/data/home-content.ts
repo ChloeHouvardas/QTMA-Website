@@ -1,6 +1,7 @@
 export type ProductSummary = {
 	name: string;
 	description: string;
+	imageSrc: string;
 	imageAlt: string;
 };
 
@@ -17,24 +18,28 @@ export const products: ProductSummary[] = [
 		name: "Astro",
 		description:
 			"Astro is a cost-effective content management platform that streamlines the content creation process for early-stage founders and creators.",
+		imageSrc: "/assets/Products/2025-2026/astro.png",
 		imageAlt: "Astro",
 	},
 	{
 		name: "Trevo",
 		description:
 			"Trevo re-imagines the way you travel by combining Exploring, Planning, and Sharing into one loop.",
+		imageSrc: "/assets/Products/2025-2026/trevo.png",
 		imageAlt: "Trevo",
 	},
 	{
 		name: "Plotd",
 		description:
 			"A social challenge app turning open ended planning into side quests, helping people go out, and logging real experiences.",
+		imageSrc: "/assets/Products/2025-2026/plotd.png",
 		imageAlt: "Plotd",
 	},
 	{
 		name: "bons.ai",
 		description:
 			"Offering a better way to learn languages through AI-powered personalized lessons grounded in real world scenarios.",
+		imageSrc: "/assets/Products/2025-2026/bonsai.png",
 		imageAlt: "bons.ai",
 	},
 ];

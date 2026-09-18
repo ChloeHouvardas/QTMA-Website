@@ -13,8 +13,14 @@ type ProductsProps = {
 export function ProductCard({ product }: ProductCardProps) {
 	return (
 		<article className="group min-w-0">
-			<div className="flex aspect-[4/5] items-center justify-center overflow-hidden rounded-[10px] bg-[#edf2fc] p-6 text-center text-sm text-black/50 shadow-[0_5px_8.5px_rgba(0,0,0,0.25)]">
-				{product.imageAlt}
+			<div className="relative aspect-[4/5] overflow-hidden rounded-[10px] shadow-[0_5px_8.5px_rgba(0,0,0,0.25)]">
+				<Image
+					alt={product.imageAlt}
+					className="object-cover"
+					fill
+					sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
+					src={product.imageSrc}
+				/>
 			</div>
 			<div className="mt-[25px]">
 				<h3 className="m-0 inline-flex cursor-pointer items-center gap-1.5 text-[22px] font-normal leading-none">
