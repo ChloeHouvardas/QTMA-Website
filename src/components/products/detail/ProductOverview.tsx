@@ -1,7 +1,7 @@
 type ProductOverviewProps = {
 	name: string;
 	heading?: string;
-	overview: string;
+	overview?: string;
 	pitch?: string;
 };
 
@@ -18,18 +18,22 @@ export default function ProductOverview({
 		>
 			<div className="mx-auto w-full max-w-[960px] px-5 py-16 text-left sm:px-8 sm:py-24">
 				<div className="mx-auto max-w-[680px]">
-					<p className="m-0 text-sm font-light tracking-[0.18em] text-gray-400 uppercase">
-						Overview
-					</p>
-					<h2
-						className="mb-0 mt-5 text-4xl font-light leading-tight tracking-[-0.035em] text-qtmaBlue sm:text-5xl"
-						id="product-overview-heading"
-					>
-						{heading ?? `About ${name}`}
-					</h2>
-					<p className="mb-0 mt-7 text-lg font-light leading-8 text-[#555] sm:text-xl sm:leading-9">
-						{overview}
-					</p>
+					{overview ? (
+						<>
+							<p className="m-0 text-sm font-light tracking-[0.18em] text-gray-400 uppercase">
+								Overview
+							</p>
+							<h2
+								className="mb-0 mt-5 text-4xl font-light leading-tight tracking-[-0.035em] text-qtmaBlue sm:text-5xl"
+								id="product-overview-heading"
+							>
+								{heading ?? `About ${name}`}
+							</h2>
+							<p className="mb-0 mt-7 text-lg font-light leading-8 text-[#555] sm:text-xl sm:leading-9">
+								{overview}
+							</p>
+						</>
+					) : null}
 
 					{pitch ? (
 						<div className="mt-10 text-left sm:mt-12">

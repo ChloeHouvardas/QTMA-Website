@@ -29,7 +29,7 @@ export function generateMetadata({ params }: ProductPageProps): Metadata {
 
 	return {
 		title: `${product.name} | QTMA Products`,
-		description: product.overview ?? product.slogan,
+		description: product.overview ?? product.slogan ?? product.name,
 	};
 }
 
@@ -54,9 +54,9 @@ export default function ProductPage({ params }: ProductPageProps) {
 					</Link>
 				</div>
 
-				<ProductHero product={product} />
+				{product.showHero !== false ? <ProductHero product={product} /> : null}
 
-				{product.overview || product.pitch ? (
+				{product.pitch || product.overview ? (
 					<ProductOverview
 						heading={product.overviewHeading}
 						name={product.name}
