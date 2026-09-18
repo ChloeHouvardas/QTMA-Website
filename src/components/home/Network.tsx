@@ -92,7 +92,7 @@ export function Network() {
 		>
 			<div className="mx-auto w-full max-w-[1344px] px-5 sm:px-8 lg:px-12">
 				<header className="mb-12 flex flex-col items-start gap-4 sm:mb-14">
-					<p className="m-0 text-lg font-normal uppercase leading-none text-black/50 sm:text-xl">
+					<p className="m-0 text-lg font-light uppercase leading-none text-black/50 sm:text-xl">
 						Our Network
 					</p>
 					<h2
@@ -101,7 +101,7 @@ export function Network() {
 					>
 						Where it leads you
 					</h2>
-					<p className="m-0 max-w-5xl text-base font-normal leading-tight text-qtmaInk sm:text-lg">
+					<p className="m-0 max-w-5xl text-base font-light leading-tight text-qtmaInk sm:text-lg">
 						From global technology firms to fast-growing startups, QTMA alumni
 						have built careers at some of the world&apos;s most impactful
 						companies.

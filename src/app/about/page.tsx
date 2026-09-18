@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 import { Header } from "@/components/Header";
+import { HistorySection } from "@/components/about/HistorySection";
+import { ProcessSection } from "@/components/about/ProcessSection";
 import { Network } from "@/components/home/Network";
 
 const valueCards = [
@@ -72,6 +74,8 @@ export default function AboutPage() {
 					</div>
 				</div>
 			</section>
+
+			<ProcessSection />
 
 			<section
 				aria-labelledby="value-title"
@@ -152,6 +156,8 @@ export default function AboutPage() {
 			</section>
 
 			<Network />
+
+			<HistorySection />
 		</main>
 	);
 }

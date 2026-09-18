@@ -41,6 +41,25 @@ a {
 .chain-visual {
 	transform: rotate(85deg) scaleX(-1);
 }
+
+.process-wave-bar-active {
+	animation: process-wave-pulse 1.8s ease-in-out infinite;
+	transform-origin: bottom;
+}
+
+@keyframes process-wave-pulse {
+	0%,
+	100% {
+		opacity: 0.8;
+		transform: scaleY(0.94);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scaleY(1.05);
+	}
+}
+
 :focus-visible {
 	outline: 3px solid #ffbf47;
 	outline-offset: 4px;
@@ -54,6 +73,8 @@ a {
 	*,
 	*::before,
 	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
 		scroll-behavior: auto !important;
 		transition-duration: 0.01ms !important;
 	}
