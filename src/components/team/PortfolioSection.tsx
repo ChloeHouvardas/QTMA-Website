@@ -25,7 +25,11 @@ export default function PortfolioSection({
 			</h2>
 			<div
 				className={`grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 md:grid-cols-4 md:gap-x-8 md:gap-y-10 ${
-					isCoChairs ? "md:gap-x-10 md:gap-y-12 md:[&>article]:max-w-none" : ""
+					isCoChairs
+						? "md:gap-x-10 md:gap-y-12 md:[&>article]:max-w-none"
+						: id === "sr-business-analysts"
+							? "md:flex md:justify-center md:gap-x-8 md:[&>article]:w-1/4"
+							: ""
 				}`}
 			>
 				{members.map((member) => (

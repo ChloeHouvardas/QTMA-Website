@@ -1,5 +1,16 @@
 const roster = [
 	{
+		name: "Brian Yau Tam Sang",
+		role: "Co-Chair",
+		group: "co-chairs",
+		image: "brianYts.jpg",
+		email: "brian.yautamsang@queensu.ca",
+		program: "COMM ‘27",
+		years: "4",
+		linkedin: "https://www.linkedin.com/in/brian-yts/",
+		askMeAbout: "exchange in Prague",
+	},
+	{
 		name: "Sage Pearl",
 		role: "Co-Chair",
 		group: "co-chairs",
@@ -31,17 +42,6 @@ const roster = [
 		years: "3",
 		linkedin: "https://www.linkedin.com/in/leevvivian",
 		askMeAbout: "New Jersey",
-	},
-	{
-		name: "Brian Yau Tam Sang",
-		role: "Co-Chair",
-		group: "co-chairs",
-		image: "brianYts.jpg",
-		email: "brian.yautamsang@queensu.ca",
-		program: "COMM ‘27",
-		years: "4",
-		linkedin: "https://www.linkedin.com/in/brian-yts/",
-		askMeAbout: "exchange in Prague",
 	},
 	{
 		name: "William Du",
