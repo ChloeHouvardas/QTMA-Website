@@ -3,6 +3,7 @@ import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const instagramUrl = "https://www.instagram.com/queenstechmedia/?hl=en";
 const linkedInUrl = "https://www.linkedin.com/company/qtma/posts/?feedView=all";
+const emailUrl = "mailto:queenstechandmedia@gmail.com";
 
 export function Footer() {
 	return (
@@ -41,12 +42,13 @@ export function Footer() {
 						>
 							<Linkedin aria-hidden="true" strokeWidth={2} />
 						</a>
-						<span
-							aria-hidden="true"
-							className="flex h-[30px] w-[30px] items-center justify-center sm:h-10 sm:w-10 [&_svg]:h-full [&_svg]:w-full"
+						<a
+							aria-label="Email QTMA"
+							className="flex h-[30px] w-[30px] items-center justify-center transition-opacity hover:opacity-75 sm:h-10 sm:w-10 [&_svg]:h-full [&_svg]:w-full"
+							href={emailUrl}
 						>
-							<Mail strokeWidth={2} />
-						</span>
+							<Mail aria-hidden="true" strokeWidth={2} />
+						</a>
 					</nav>
 				</div>
 			</div>

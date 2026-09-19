@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 
 import { Header } from "@/components/Header";
@@ -6,6 +7,7 @@ import { applicantFaqItems } from "@/data/contact-content";
 
 const instagramUrl = "https://www.instagram.com/queenstechmedia/?hl=en";
 const linkedInUrl = "https://www.linkedin.com/company/qtma/posts/?feedView=all";
+const emailUrl = "mailto:queenstechandmedia@gmail.com";
 
 export default function ContactPage() {
 	return (
@@ -52,19 +54,23 @@ export default function ContactPage() {
 							>
 								<Linkedin aria-hidden="true" strokeWidth={2.25} />
 							</a>
-							<span aria-label="Email coming soon">
+							<a
+								aria-label="Email QTMA"
+								href={emailUrl}
+							>
 								<Mail aria-hidden="true" strokeWidth={2.25} />
-							</span>
+							</a>
 						</nav>
 					</div>
 
-					<div
-						aria-label="Contact"
-						className="mt-[31px] flex aspect-[1.33] w-full items-center justify-center rounded-[20px] bg-qtmaOffWhite text-[15px] text-black/45 sm:mt-[30px] sm:rounded-[22px]"
-						role="img"
-					>
-						Contact
-					</div>
+					<Image
+						alt="QTMA members visiting Amazon Web Services"
+						className="mt-[31px] h-auto w-full rounded-[20px] object-cover sm:mt-[30px] sm:rounded-[22px]"
+						height={942}
+						priority
+						src="/assets/visuals/contact/qtma-aws.jpg"
+						width={1250}
+					/>
 					<div className="py-10">
 						<p className="m-0 pb-5 text-2xl font-light uppercase leading-none text-gray-400">
 							HIRING
@@ -80,13 +86,13 @@ export default function ContactPage() {
 							@queenstechmedia on Instagram to be notified of the latest hiring
 							updates.
 						</p>
-						<div
-							aria-label="Contact"
-							className="mt-[31px] flex aspect-[1.33] w-full items-center justify-center rounded-[20px] bg-qtmaOffWhite text-[15px] text-black/45 sm:mt-[30px] sm:rounded-[22px]"
-							role="img"
-						>
-							image
-						</div>
+						<Image
+							alt="QTMA team taking a group selfie"
+							className="mt-[31px] h-auto w-full rounded-[20px] object-cover sm:mt-[30px] sm:rounded-[22px]"
+							height={834}
+							src="/assets/visuals/contact/qtma-selfie.png"
+							width={1250}
+						/>
 					</div>
 					<Faq items={applicantFaqItems} />
 				</div>
