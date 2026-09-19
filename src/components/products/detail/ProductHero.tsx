@@ -19,18 +19,18 @@ export default function ProductHero({ product }: ProductHeroProps) {
 
 				<div className="mt-6 flex flex-wrap items-center justify-center gap-5 sm:mt-8 sm:gap-7">
 					<h1
-						className="m-0 text-[clamp(3.5rem,8vw,6.75rem)] font-semibold leading-[0.95] tracking-[-0.055em] text-black"
+						className="m-0 text-4xl font-semibold leading-none tracking-tight text-black sm:text-5xl lg:text-6xl"
 						id="product-title"
 					>
 						{product.name}
 					</h1>
-					<div className="relative h-28 w-28 shrink-0 sm:h-46 sm:w-46">
+					<div className="relative h-36 w-36 shrink-0 sm:h-48 sm:w-48">
 						<Image
 							alt={`${product.name} logo`}
 							className="object-contain"
 							fill
 							priority
-							sizes="(min-width: 640px) 144px, 112px"
+							sizes="(min-width: 640px) 192px, 144px"
 							src={product.logo}
 						/>
 					</div>
