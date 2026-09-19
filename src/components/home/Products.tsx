@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import type { ProductSummary } from "@/data/home-content";
 
@@ -13,31 +14,36 @@ type ProductsProps = {
 export function ProductCard({ product }: ProductCardProps) {
 	return (
 		<article className="group min-w-0">
-			<div className="relative aspect-[4/5] overflow-hidden rounded-[10px] shadow-[0_5px_8.5px_rgba(0,0,0,0.25)]">
-				<Image
-					alt={product.imageAlt}
-					className={`object-cover ${product.zoomImage ? "scale-110" : ""}`}
-					fill
-					sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
-					src={product.imageSrc}
-				/>
-			</div>
-			<div className="mt-[25px]">
-				<h3 className="m-0 inline-flex cursor-pointer items-center gap-1.5 text-[22px] font-normal leading-none">
-					{product.name}
+			<Link
+				className="block rounded-xl text-inherit no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-qtmaBlue"
+				href={product.href}
+			>
+				<div className="relative aspect-[4/5] overflow-hidden rounded-[10px] shadow-[0_5px_8.5px_rgba(0,0,0,0.25)]">
 					<Image
-						alt=""
-						aria-hidden="true"
-						className="h-[15px] w-[20px] -rotate-[57deg] cursor-pointer"
-						height={15}
-						src="/assets/figma/products-arrow.svg"
-						width={20}
+						alt={product.imageAlt}
+						className={`object-cover ${product.zoomImage ? "scale-110" : ""}`}
+						fill
+						sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
+						src={product.imageSrc}
 					/>
-				</h3>
-				<p className="mb-0 mt-[10px] text-[20px] font-light leading-none text-black/50">
-					{product.description}
-				</p>
-			</div>
+				</div>
+				<div className="mt-[25px]">
+					<h3 className="m-0 inline-flex items-center gap-1.5 text-[22px] font-normal leading-none">
+						{product.name}
+						<Image
+							alt=""
+							aria-hidden="true"
+							className="h-[15px] w-[20px] -rotate-[57deg]"
+							height={15}
+							src="/assets/figma/products-arrow.svg"
+							width={20}
+						/>
+					</h3>
+					<p className="mb-0 mt-[10px] text-[20px] font-light leading-none text-black/50">
+						{product.description}
+					</p>
+				</div>
+			</Link>
 		</article>
 	);
 }

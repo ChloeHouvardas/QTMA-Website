@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-import { ContactForm } from "@/components/home/ContactForm";
 import { Header } from "@/components/Header";
 import { Products } from "@/components/home/Products";
 import { Values } from "@/components/home/Values";
@@ -121,7 +120,7 @@ export default function HomePage() {
 				aria-labelledby="contact-title"
 			>
 				<div className="mx-auto w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] px-[clamp(20px,4vw,48px)] max-md:px-5">
-					<div className="mb-[50px] flex flex-col items-start gap-[15px]">
+					<div className="mx-auto mb-[50px] flex w-full max-w-xl flex-col items-start gap-[15px]">
 						<p className="m-0 text-[22px] font-normal uppercase leading-none text-black/50 max-sm:text-lg">
 							OUR CONTACT
 						</p>
@@ -133,7 +132,7 @@ export default function HomePage() {
 						</h2>
 					</div>
 
-					<div className="grid max-w-[1201px] grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-[47px]">
+					<div className="mx-auto w-full max-w-xl">
 						<article className="rounded-[10px] border border-qtmaBorder bg-white p-[30px] lg:h-[379px]">
 							<div className="flex h-full flex-col gap-6">
 								<div className="flex flex-col gap-1.5">
@@ -145,13 +144,13 @@ export default function HomePage() {
 									</p>
 								</div>
 
-								<div
-									aria-label="instagram image"
-									className="flex h-[173px] w-full items-center justify-center rounded-[10px] border border-qtmaBorder text-[15px] text-black/50"
-									role="img"
-								>
-									instagram image
-								</div>
+								<Image
+									alt="Queen's Tech and Media Association Instagram profile"
+									className="h-[173px] w-full rounded-[10px] object-cover"
+									height={173}
+									src="/assets/Visuals/home/instagram-mockup.png"
+									width={513}
+								/>
 
 								<a
 									className="inline-flex h-[41px] w-fit items-center justify-center gap-1 rounded-[7px] border border-[#d0d0d0] bg-white px-[10px] text-[15px] font-normal leading-none shadow-[inset_1px_1px_4px_rgba(255,255,255,0.93),0_4px_2px_rgba(121,121,121,0.22)] transition-transform hover:-translate-y-px [&_svg]:h-3 [&_svg]:w-3"
@@ -164,8 +163,6 @@ export default function HomePage() {
 								</a>
 							</div>
 						</article>
-
-						<ContactForm />
 					</div>
 				</div>
 			</section>

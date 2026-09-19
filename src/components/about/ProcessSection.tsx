@@ -1,10 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 type ProcessStage = {
 	description: string;
 	imageAlt: string;
+	imageSrc?: string;
 	monthRange: string;
 	title: string;
 };
@@ -14,14 +16,14 @@ const processStages: ProcessStage[] = [
 		description:
 			"Turning opportunities into ideas. Each summer, teams explore emerging trends, unmet needs, and market opportunities to identify promising product concepts. Through planning sessions, workshops, and product discovery, ideas are refined into clear directions for the year ahead.",
 		imageAlt: "Ideation process image",
-		monthRange: "Jun–Aug",
+		monthRange: "May–Jul",
 		title: "Ideation",
 	},
 	{
 		description:
 			"Validating before building. In the fall, teams conduct user interviews, gather feedback, and analyze the market to better understand the problem they’re solving. Every assumption is challenged and tested to ensure the product is grounded in real user needs.",
 		imageAlt: "Validation process image",
-		monthRange: "Sep–Nov",
+		monthRange: "Aug–Oct",
 		title: "Validation",
 	},
 	{
@@ -35,7 +37,8 @@ const processStages: ProcessStage[] = [
 		description:
 			"Bringing products to launch. Throughout the year, teams showcase their progress at Demo Days, presenting their products to industry professionals, company representatives, and experienced judges. These milestones celebrate months of research, design, development, and iteration.",
 		imageAlt: "Launch process image",
-		monthRange: "Feb–Mar",
+		imageSrc: "/assets/Visuals/about/launch-process.JPG",
+		monthRange: "Feb–Apr",
 		title: "Launch",
 	},
 ];
@@ -107,14 +110,22 @@ export function ProcessSection() {
 						return (
 							<div
 								aria-hidden={!active}
-								aria-label={stage.imageAlt}
 								className={`absolute inset-0 flex items-center justify-center px-6 text-center text-lg text-black/50 transition-opacity duration-500 motion-reduce:transition-none ${
 									active ? "opacity-100" : "pointer-events-none opacity-0"
 								}`}
 								key={stage.title}
-								role="img"
 							>
-								{stage.imageAlt}
+								{stage.imageSrc ? (
+									<Image
+										alt={stage.imageAlt}
+										className="object-cover"
+										fill
+										sizes="(min-width: 1024px) 50vw, 100vw"
+										src={stage.imageSrc}
+									/>
+								) : (
+									stage.imageAlt
+								)}
 							</div>
 						);
 					})}
