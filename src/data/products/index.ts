@@ -4,11 +4,13 @@ import { products2021To2022 } from "./2021-2022";
 import { products2022To2023 } from "./2022-2023";
 import { products2023To2024 } from "./2023-2024";
 import { products2024To2025 } from "./2024-2025";
+import { products2025To2026 } from "./2025-2026";
 import type { Product } from "./types";
 
 export type { Product, ProductImage, ProductMember } from "./types";
 
 export const productYears = [
+	"2025-2026",
 	"2024-2025",
 	"2023-2024",
 	"2022-2023",
@@ -18,6 +20,7 @@ export const productYears = [
 ] as const;
 
 export const archiveProducts: Product[] = [
+	...products2025To2026,
 	...products2024To2025,
 	...products2023To2024,
 	...products2022To2023,

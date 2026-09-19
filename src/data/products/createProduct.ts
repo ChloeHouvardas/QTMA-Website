@@ -4,6 +4,7 @@ type ProductDetails = Omit<Product, "logo" | "pitch" | "slug" | "teamPhoto"> & {
 	assetName?: string;
 	hasPitch?: boolean;
 	hasTeamPhoto?: boolean;
+	logo?: string;
 	slug?: string;
 };
 
@@ -11,6 +12,7 @@ export function createProduct({
 	assetName,
 	hasPitch = true,
 	hasTeamPhoto = true,
+	logo,
 	slug,
 	...product
 }: ProductDetails): Product {
@@ -20,7 +22,7 @@ export function createProduct({
 	return {
 		...product,
 		slug: slug ?? product.name.toLowerCase(),
-		logo: `${assetPath}_Logo.png`,
+		logo: logo ?? `${assetPath}_Logo.png`,
 		pitch: hasPitch ? `${assetPath}_Pitch.pdf` : undefined,
 		teamPhoto: hasTeamPhoto
 			? {

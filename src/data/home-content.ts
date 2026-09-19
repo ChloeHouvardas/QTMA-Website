@@ -3,6 +3,7 @@ export type ProductSummary = {
 	description: string;
 	imageSrc: string;
 	imageAlt: string;
+	zoomImage?: boolean;
 };
 
 export type ValueItem = {
@@ -20,6 +21,7 @@ export const products: ProductSummary[] = [
 			"Astro is a cost-effective content management platform that streamlines the content creation process for early-stage founders and creators.",
 		imageSrc: "/assets/Products/2025-2026/astro.png",
 		imageAlt: "Astro",
+		zoomImage: true,
 	},
 	{
 		name: "Trevo",
@@ -47,34 +49,34 @@ export const products: ProductSummary[] = [
 export const values: ValueItem[] = [
 	{
 		number: ".01",
-		title: "Product Development",
+		title: "Real World Experience",
 		description:
 			"Work on products beyond the classroom. Collaborate with fellow student designers, developers, and product managers to bring ideas to life and create solutions used by real people.",
-		imageSrc: "/assets/Visuals/gear.svg",
+		imageSrc: "/assets/Visuals/home/real-world-experience.svg",
 		imageAlt: "Product Development",
 	},
 	{
 		number: ".02",
-		title: "Networking",
+		title: "Mentorship & Growth",
 		description:
 			"Connect with students, alumni, and industry professionals passionate about technology and innovation. Build meaningful relationships and learn from experienced mentors.",
-		imageSrc: "/assets/Visuals/chain.svg",
+		imageSrc: "/assets/Visuals/home/mentorship-and-growth.svg",
 		imageAlt: "Networking",
 	},
 	{
 		number: ".03",
-		title: "Skill Enhancement",
+		title: "Cross Functional Teams",
 		description:
 			"Develop technical and professional skills through training, workshops, mentorship, and hands-on project work. Gain practical experience in design, development, and business analysis.",
-		imageSrc: "/assets/Visuals/dartboard.svg",
+		imageSrc: "/assets/Visuals/home/cross-functional-teams.svg",
 		imageAlt: "Skill Enhancement",
 	},
 	{
 		number: ".04",
-		title: "Portfolio Building",
+		title: "Ownership & Impact",
 		description:
 			"Build a portfolio of real products that showcases your skills, collaboration, and impact. Graduate with tangible work you can confidently share with future employers.",
-		imageSrc: "/assets/Visuals/portfolio.svg",
-		imageAlt: "Portfolio Building",
+		imageSrc: "/assets/Visuals/home/ownership-and-impact.svg",
+		imageAlt: "Ownership and Impact",
 	},
 ];

@@ -16,7 +16,7 @@ export function ProductCard({ product }: ProductCardProps) {
 			<div className="relative aspect-[4/5] overflow-hidden rounded-[10px] shadow-[0_5px_8.5px_rgba(0,0,0,0.25)]">
 				<Image
 					alt={product.imageAlt}
-					className="object-cover"
+					className={`object-cover ${product.zoomImage ? "scale-110" : ""}`}
 					fill
 					sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
 					src={product.imageSrc}

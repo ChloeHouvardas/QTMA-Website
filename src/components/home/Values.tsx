@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import type { ValueItem } from "@/data/home-content";
@@ -119,13 +120,13 @@ export function Values({ values }: ValuesProps) {
 											: "pointer-events-none scale-[0.97] opacity-0"
 									}`}
 								>
-									<div
-										aria-label={value.imageAlt || `${value.title} image`}
-										className="flex h-full w-full items-center justify-center bg-[#edf2fc] px-6 text-center text-[15px] text-black/50"
-										role="img"
-									>
-										{value.imageAlt || `${value.title} image`}
-									</div>
+									<Image
+										alt={value.imageAlt || `${value.title} image`}
+										className="object-cover"
+										fill
+										sizes="(min-width: 1280px) 405px, calc(100vw - 76px)"
+										src={value.imageSrc}
+									/>
 									<span className="absolute bottom-3 right-4 z-10 text-[4.5rem] font-medium leading-none tracking-[-0.075em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.18)] sm:bottom-4 sm:right-5 sm:text-[5.25rem]">
 										{value.number}
 									</span>
