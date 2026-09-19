@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import type { Product } from "@/data/products";
 
 type ProductHeroProps = {
@@ -17,24 +15,12 @@ export default function ProductHero({ product }: ProductHeroProps) {
 					{product.year}
 				</p>
 
-				<div className="mt-6 flex flex-wrap items-center justify-center gap-5 sm:mt-8 sm:gap-7">
-					<h1
-						className="m-0 text-4xl font-semibold leading-none tracking-tight text-black sm:text-5xl lg:text-6xl"
-						id="product-title"
-					>
-						{product.name}
-					</h1>
-					<div className="relative h-36 w-36 shrink-0 sm:h-48 sm:w-48">
-						<Image
-							alt={`${product.name} logo`}
-							className="object-contain"
-							fill
-							priority
-							sizes="(min-width: 640px) 192px, 144px"
-							src={product.logo}
-						/>
-					</div>
-				</div>
+				<h1
+					className="mb-0 mt-6 text-4xl font-semibold leading-none tracking-tight text-black sm:mt-8 sm:text-5xl lg:text-6xl"
+					id="product-title"
+				>
+					{product.name}
+				</h1>
 				<p className="mb-0 mt-6 text-xl font-light leading-relaxed text-[#9b9b9b] sm:mt-7 sm:text-2xl">
 					&ldquo;{product.slogan}&rdquo;
 				</p>

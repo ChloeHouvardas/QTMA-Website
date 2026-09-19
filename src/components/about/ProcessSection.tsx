@@ -135,7 +135,7 @@ export function ProcessSection() {
 				</div>
 			</div>
 
-			<div aria-hidden="true" className="relative mt-14 pt-12 sm:mt-16">
+			<div aria-hidden="true" className="relative mt-8 pt-12 sm:mt-10">
 				<div
 					className="absolute top-0 z-10 -translate-x-1/2 rounded-lg bg-[#e8efff] px-3 py-2 text-center text-qtmaBlue shadow-sm transition-[left] duration-500 motion-reduce:transition-none"
 					style={{

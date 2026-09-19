@@ -57,7 +57,7 @@ export const values: ValueItem[] = [
 		title: "Real World Experience",
 		description:
 			"Work on products beyond the classroom. Collaborate with fellow student designers, developers, and product managers to bring ideas to life and create solutions used by real people.",
-		imageSrc: "/assets/Visuals/home/real-world-experience.svg",
+		imageSrc: "/assets/Visuals/home/real-world-experience.png",
 		imageAlt: "Product Development",
 	},
 	{
@@ -65,7 +65,7 @@ export const values: ValueItem[] = [
 		title: "Mentorship & Growth",
 		description:
 			"Connect with students, alumni, and industry professionals passionate about technology and innovation. Build meaningful relationships and learn from experienced mentors.",
-		imageSrc: "/assets/Visuals/home/mentorship-and-growth.svg",
+		imageSrc: "/assets/Visuals/home/mentorship-and-growth.png",
 		imageAlt: "Networking",
 	},
 	{
@@ -73,7 +73,7 @@ export const values: ValueItem[] = [
 		title: "Cross Functional Teams",
 		description:
 			"Develop technical and professional skills through training, workshops, mentorship, and hands-on project work. Gain practical experience in design, development, and business analysis.",
-		imageSrc: "/assets/Visuals/home/cross-functional-teams.svg",
+		imageSrc: "/assets/Visuals/home/cross-functional-teams.png",
 		imageAlt: "Skill Enhancement",
 	},
 	{
@@ -81,7 +81,7 @@ export const values: ValueItem[] = [
 		title: "Ownership & Impact",
 		description:
 			"Build a portfolio of real products that showcases your skills, collaboration, and impact. Graduate with tangible work you can confidently share with future employers.",
-		imageSrc: "/assets/Visuals/home/ownership-and-impact.svg",
+		imageSrc: "/assets/Visuals/home/ownership-and-impact.png",
 		imageAlt: "Ownership and Impact",
 	},
 ];
