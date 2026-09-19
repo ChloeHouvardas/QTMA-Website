@@ -64,14 +64,15 @@ export default function AboutPage() {
 					</p>
 				</div>
 
-				<div className="mt-20 aspect-[3407/1898] overflow-hidden rounded-[24px] sm:mt-24 sm:rounded-[27px] lg:mt-20">
-					<div
-						aria-label="image"
-						className="flex h-full w-full items-center justify-center bg-[#f3f5f8] text-lg text-black/50"
-						role="img"
-					>
-						image
-					</div>
+				<div className="relative mt-20 aspect-[3407/1898] overflow-hidden rounded-[24px] sm:mt-24 sm:rounded-[27px] lg:mt-20">
+					<Image
+						alt="Turning ideas into products"
+						className="object-cover"
+						fill
+						priority
+						sizes="(min-width: 1350px) 1198px, (min-width: 640px) calc(100vw - 96px), calc(100vw - 40px)"
+						src="/assets/Visuals/about/qtma-team.png"
+					/>
 				</div>
 			</section>
 
