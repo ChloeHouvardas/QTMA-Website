@@ -82,9 +82,16 @@ export default function ContactPage() {
 							QTMA brings together talented designers, developers, and analysts
 							to collaborate on meaningful projects that solve everyday
 							problems. Stay tuned for our hiring package to learn about
-							available roles and the application process. Follow
-							@queenstechmedia on Instagram to be notified of the latest hiring
-							updates.
+							available roles and the application process. Follow{" "}
+							<a
+								className="font-normal text-qtmaBlue underline underline-offset-4 transition-colors hover:text-qtmaBlueDark"
+								href={instagramUrl}
+								rel="noreferrer"
+								target="_blank"
+							>
+								@queenstechmedia
+							</a>{" "}
+							on Instagram to be notified of the latest hiring updates.
 						</p>
 						<Image
 							alt="QTMA team taking a group selfie"
