@@ -1,6 +1,10 @@
 export type FaqItem = {
 	question: string;
 	answer: string;
+	link?: {
+		href: string;
+		label: string;
+	};
 };
 
 export const applicantFaqItems: FaqItem[] = [
@@ -13,6 +17,10 @@ export const applicantFaqItems: FaqItem[] = [
 		question: "How can I get involved outside of being on the club?",
 		answer:
 			"Follow @queenstechmedia on Instagram and QTMA on LinkedIn for public workshops, panels, product showcases, and other community events. These are great opportunities to meet the team, learn from our partners and alumni, and stay up to date on future applications.",
+		link: {
+			href: "https://www.instagram.com/queenstechmedia/?hl=en",
+			label: "@queenstechmedia",
+		},
 	},
 	{
 		question: "Do you only take computer science and commerce students?",

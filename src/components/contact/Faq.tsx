@@ -30,6 +30,9 @@ export function Faq({ items }: FaqProps) {
 					const isOpen = openItem === index;
 					const buttonId = `${idPrefix}-button-${index}`;
 					const answerId = `${idPrefix}-answer-${index}`;
+					const [answerBeforeLink, answerAfterLink] = item.link
+						? item.answer.split(item.link.label)
+						: [item.answer];
 
 					return (
 						<div className="border-b border-qtmaBorder" key={item.question}>
@@ -70,7 +73,18 @@ export function Faq({ items }: FaqProps) {
 											: "pb-0 pt-0 opacity-0"
 									}`}
 								>
-									{item.answer}
+									{answerBeforeLink}
+									{item.link && (
+										<a
+											className="font-normal text-qtmaBlue underline underline-offset-4 transition-colors hover:text-qtmaBlueDark"
+											href={item.link.href}
+											rel="noreferrer"
+											target="_blank"
+										>
+											{item.link.label}
+										</a>
+									)}
+									{answerAfterLink}
 								</p>
 							</div>
 						</div>

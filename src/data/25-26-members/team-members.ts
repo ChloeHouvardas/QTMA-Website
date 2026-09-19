@@ -75,7 +75,7 @@ const roster = [
 		program: "COMM 27",
 		years: "3",
 		linkedin: "https://www.linkedin.com/in/brian-yts/",
-		askMeAbout: "Something",
+		askMeAbout: "Pikachu Onet",
 	},
 	{
 		name: "Chloe Houvardas",
