@@ -4,7 +4,7 @@ export const astro = createProduct({
 	year: "2025-2026",
 	name: "Astro",
 	slogan: "Content creation, streamlined",
-	logo: "/assets/Products/2025-2026/astro.png",
+	logo: "/assets/Products/2025-2026/astro-logo.svg",
 	hasPitch: false,
 	hasTeamPhoto: false,
 	overview:

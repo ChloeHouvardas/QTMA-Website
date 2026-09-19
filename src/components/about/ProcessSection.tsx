@@ -16,6 +16,7 @@ const processStages: ProcessStage[] = [
 		description:
 			"Turning opportunities into ideas. Each summer, teams explore emerging trends, unmet needs, and market opportunities to identify promising product concepts. Through planning sessions, workshops, and product discovery, ideas are refined into clear directions for the year ahead.",
 		imageAlt: "Ideation process image",
+		imageSrc: "/assets/Visuals/about/ideation.JPG",
 		monthRange: "May–Jul",
 		title: "Ideation",
 	},
@@ -23,6 +24,7 @@ const processStages: ProcessStage[] = [
 		description:
 			"Validating before building. In the fall, teams conduct user interviews, gather feedback, and analyze the market to better understand the problem they’re solving. Every assumption is challenged and tested to ensure the product is grounded in real user needs.",
 		imageAlt: "Validation process image",
+		imageSrc: "/assets/Visuals/about/validation.JPG",
 		monthRange: "Aug–Oct",
 		title: "Validation",
 	},
@@ -30,6 +32,7 @@ const processStages: ProcessStage[] = [
 		description:
 			"Building through iteration. With a validated concept in place, teams move into design and development. Through weekly sprints, prototyping, testing, and continuous refinement, ideas gradually evolve into polished digital products.",
 		imageAlt: "Prototyping process image",
+		imageSrc: "/assets/Visuals/about/prototyping.JPG",
 		monthRange: "Nov–Jan",
 		title: "Prototyping",
 	},

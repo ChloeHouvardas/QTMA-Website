@@ -5,7 +5,7 @@ export const bonsai = createProduct({
 	name: "bons.ai",
 	slug: "bons-ai",
 	slogan: "Language learning for real life",
-	logo: "/assets/Products/2025-2026/bonsai.png",
+	logo: "/assets/Products/2025-2026/bonsai-logo.svg",
 	hasPitch: false,
 	hasTeamPhoto: false,
 	overview:

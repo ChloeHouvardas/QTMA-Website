@@ -24,13 +24,13 @@ export default function ProductHero({ product }: ProductHeroProps) {
 					>
 						{product.name}
 					</h1>
-					<div className="relative h-20 w-20 shrink-0 sm:h-24 sm:w-24">
+					<div className="relative h-28 w-28 shrink-0 sm:h-46 sm:w-46">
 						<Image
 							alt={`${product.name} logo`}
 							className="object-contain"
 							fill
 							priority
-							sizes="96px"
+							sizes="(min-width: 640px) 144px, 112px"
 							src={product.logo}
 						/>
 					</div>
