@@ -3,6 +3,7 @@ import { createProduct } from "../createProduct";
 export const nucleus = createProduct({
 	year: "2024-2025",
 	name: "Nucleus",
+	slogan: "Stop procrastinating and start working",
 	showHero: false,
 	overviewHeading: "Centralize your academic life",
 	overview:
