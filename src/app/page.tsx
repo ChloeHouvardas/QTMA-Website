@@ -120,7 +120,7 @@ export default function HomePage() {
 				aria-labelledby="contact-title"
 			>
 				<div className="mx-auto w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] px-[clamp(20px,4vw,48px)] max-md:px-5">
-					<div className="mx-auto mb-[50px] flex w-full max-w-xl flex-col items-start gap-[15px]">
+					<div className="mb-12 flex w-full flex-col items-start gap-4 text-left">
 						<p className="m-0 text-[22px] font-normal uppercase leading-none text-black/50 max-sm:text-lg">
 							OUR CONTACT
 						</p>
@@ -132,28 +132,20 @@ export default function HomePage() {
 						</h2>
 					</div>
 
-					<div className="mx-auto w-full max-w-xl">
-						<article className="rounded-[10px] border border-qtmaBorder bg-white p-[30px] lg:h-[379px]">
-							<div className="flex h-full flex-col gap-6">
-								<div className="flex flex-col gap-1.5">
-									<h3 className="m-0 text-[20px] font-normal leading-none">
+					<div className="w-full">
+						<article className="grid gap-2 rounded-xl border border-qtmaBorder bg-white p-6 md:grid-cols-2 md:items-stretch md:p-8">
+							<div className="flex flex-col items-start justify-center">
+								<div className="flex flex-col gap-2">
+									<h3 className="m-0 text-2xl font-normal leading-tight">
 										Follow @queenstechmedia on Instagram
 									</h3>
-									<p className="m-0 text-[22px] font-normal leading-none text-black/50">
+									<p className="m-0 text-xl font-normal leading-none text-black/50 md:text-2xl">
 										Stay in the loop!
 									</p>
 								</div>
 
-								<Image
-									alt="Queen's Tech and Media Association Instagram profile"
-									className="h-[173px] w-full rounded-[10px] object-cover"
-									height={173}
-									src="/assets/Visuals/home/instagram-mockup.png"
-									width={513}
-								/>
-
 								<a
-									className="inline-flex h-[41px] w-fit items-center justify-center gap-1 rounded-[7px] border border-[#d0d0d0] bg-white px-[10px] text-[15px] font-normal leading-none shadow-[inset_1px_1px_4px_rgba(255,255,255,0.93),0_4px_2px_rgba(121,121,121,0.22)] transition-transform hover:-translate-y-px [&_svg]:h-3 [&_svg]:w-3"
+									className="mt-6 inline-flex h-10 w-fit items-center justify-center gap-1 rounded-lg border border-gray-300 bg-white px-3 text-sm font-normal leading-none shadow-sm transition-transform hover:-translate-y-px [&_svg]:h-3 [&_svg]:w-3"
 									href={instagramUrl}
 									rel="noreferrer"
 									target="_blank"
@@ -162,6 +154,14 @@ export default function HomePage() {
 									<ArrowUpRight aria-hidden="true" />
 								</a>
 							</div>
+
+							<Image
+								alt="Queen's Tech and Media Association Instagram profile"
+								className="h-44 w-full self-center rounded-lg object-cover"
+								height={220}
+								src="/assets/Visuals/home/instagram-mockup.png"
+								width={600}
+							/>
 						</article>
 					</div>
 				</div>
