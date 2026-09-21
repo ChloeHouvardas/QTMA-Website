@@ -7,7 +7,7 @@ TypeScript, Tailwind CSS, and Sass. Put new application code in `src/`:
 `src/app/` contains App Router pages and global styles, `src/components/` holds
 reusable UI grouped by feature, and `src/data/` stores typed content. Static
 images, PDFs, icons, and `sitemap.xml` live in `public/`; reference datasets and
-archived content remain in `data/`. Treat root-level `pages/`, `components/`, and
+archived content remain in `archive/`. Treat root-level `pages/`, `components/`, and
 `styles/` as legacy unless a task explicitly targets them.
 
 ## Build, Test, and Development Commands

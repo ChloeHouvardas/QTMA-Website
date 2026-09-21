@@ -1,6 +1,6 @@
 import type { Product } from "./types";
 
-type ProductDetails = Omit<Product, "logo" | "pitch" | "slug" | "teamPhoto"> & {
+type ProductDetails = Omit<Product, "logo" | "slug"> & {
 	assetName?: string;
 	hasPitch?: boolean;
 	hasTeamPhoto?: boolean;
@@ -13,7 +13,9 @@ export function createProduct({
 	hasPitch = true,
 	hasTeamPhoto = true,
 	logo,
+	pitch,
 	slug,
+	teamPhoto,
 	...product
 }: ProductDetails): Product {
 	const productAssetName = assetName ?? product.name;
@@ -23,12 +25,14 @@ export function createProduct({
 		...product,
 		slug: slug ?? product.name.toLowerCase(),
 		logo: logo ?? `${assetPath}_Logo.png`,
-		pitch: hasPitch ? `${assetPath}_Pitch.pdf` : undefined,
-		teamPhoto: hasTeamPhoto
-			? {
-					src: `${assetPath}_Team.png`,
-					alt: `${product.name} team`,
-				}
-			: undefined,
+		pitch: pitch ?? (hasPitch ? `${assetPath}_Pitch.pdf` : undefined),
+		teamPhoto:
+			teamPhoto ??
+			(hasTeamPhoto
+				? {
+						src: `${assetPath}_Team.png`,
+						alt: `${product.name} team`,
+					}
+				: undefined),
 	};
 }
