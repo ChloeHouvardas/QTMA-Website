@@ -68,7 +68,7 @@ export default function ContactPage() {
 						className="mt-[31px] h-auto w-full rounded-[20px] object-cover sm:mt-[30px] sm:rounded-[22px]"
 						height={942}
 						priority
-						src="/assets/visuals/contact/qtma-aws.jpg"
+						src="/assets/Visuals/contact/qtma-aws.jpg"
 						width={1250}
 					/>
 					<div className="py-10">
@@ -97,7 +97,7 @@ export default function ContactPage() {
 							alt="QTMA team taking a group selfie"
 							className="mt-[31px] h-auto w-full rounded-[20px] object-cover sm:mt-[30px] sm:rounded-[22px]"
 							height={834}
-							src="/assets/visuals/contact/qtma-selfie.png"
+							src="/assets/Visuals/contact/qtma-selfie.png"
 							width={1250}
 						/>
 					</div>
