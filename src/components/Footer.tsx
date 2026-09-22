@@ -9,7 +9,7 @@ export function Footer() {
 	return (
 		<footer className="bg-white pt-2 text-white">
 			<div className="rounded-t-3xl bg-[#3960ce]">
-				<div className="mx-auto flex min-h-20 w-full max-w-[1194px] items-center justify-between px-6 sm:min-h-24 sm:px-10 xl:px-0">
+				<div className="mx-auto flex min-h-20 w-full max-w-[1194px] items-center justify-between px-6 sm:min-h-16 sm:px-10 xl:px-0">
 					<a
 						aria-label="QTMA home"
 						className="flex h-11 items-center"
