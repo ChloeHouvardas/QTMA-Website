@@ -121,7 +121,7 @@ export default function AboutPage() {
 
 			<section
 				aria-labelledby="team-structure-title"
-				className="mx-auto w-full max-w-[1350px] px-5 pb-20 sm:px-12 sm:pb-28 lg:px-[76px] lg:pb-32"
+				className="mx-auto w-full max-w-[1350px] px-5 pb-12 sm:px-12 sm:pb-14 lg:px-[76px] lg:pb-16"
 			>
 				<div className="mx-auto max-w-[760px] text-center">
 					<p className="m-0 text-lg font-light uppercase leading-none text-black/40 sm:text-xl">

@@ -22,7 +22,7 @@ export default function ContactPage() {
 				<div className="mx-auto w-full max-w-[calc(1200px+(2*20px))] px-5">
 					<div className="mt-[54px] sm:mt-[62px] lg:mt-[58px]">
 						<p className="mb-0 pb-5 text-2xl font-light uppercase leading-none text-gray-400">
-							CONTACT
+							CONNECT
 						</p>
 						<h2 className="mb-0 mt-4xl text-[clamp(3.25rem,4.2vw,2.25rem)] font-light leading-none text-qtmaBlue">
 							Let&apos;s get in touch!
@@ -54,10 +54,7 @@ export default function ContactPage() {
 							>
 								<Linkedin aria-hidden="true" strokeWidth={2.25} />
 							</a>
-							<a
-								aria-label="Email QTMA"
-								href={emailUrl}
-							>
+							<a aria-label="Email QTMA" href={emailUrl}>
 								<Mail aria-hidden="true" strokeWidth={2.25} />
 							</a>
 						</nav>

@@ -80,11 +80,25 @@ const portfolioDefinitions: Array<Omit<TeamPortfolio, "members">> = [
 	{ id: "ui-ux", name: "UI/UX Designers" },
 ];
 
+const alphabeticalPortfolioIds = new Set<string>([
+	"sr-business-analysts",
+	"sr-developers",
+	"sr-ui-ux",
+	"business-analysts",
+	"developers",
+	"ui-ux",
+]);
+
 export const teamPortfolios: TeamPortfolio[] = portfolioDefinitions.map(
 	(portfolio) => ({
 		...portfolio,
 		members: teamMembers
 			.filter((member) => member.group === portfolio.id)
+			.sort((a, b) =>
+				alphabeticalPortfolioIds.has(portfolio.id)
+					? a.name.localeCompare(b.name, "en", { sensitivity: "base" })
+					: 0
+			)
 			.map(({ group: _, ...member }) => member),
 	})
 );

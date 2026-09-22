@@ -6,7 +6,7 @@ const roster = [
 		image: "brianYts.jpg",
 		email: "brian.yautamsang@queensu.ca",
 		program: "COMM ‘27",
-		years: "4",
+		years: "3",
 		linkedin: "https://www.linkedin.com/in/brian-yts/",
 		askMeAbout: "exchange in Prague",
 	},
@@ -17,7 +17,7 @@ const roster = [
 		image: "sagePearl.jpg",
 		email: "sage.pearl@queensu.ca",
 		program: "COMM '27",
-		years: "4",
+		years: "3",
 		linkedin: "https://www.linkedin.com/in/sage-pearl-364a61290/",
 		askMeAbout: "exchange",
 	},
@@ -252,7 +252,7 @@ const roster = [
 		program: "CS '28",
 		years: "2",
 		linkedin: "https://www.linkedin.com/in/sophiawg/",
-		askMeAbout: "beli",
+		askMeAbout: "Beli",
 	},
 	{
 		name: "Amelia Halverson",
@@ -308,7 +308,7 @@ const roster = [
 		program: "COMM '29",
 		years: "1",
 		linkedin: "https://www.linkedin.com/in/amanda-xu1",
-		askMeAbout: "chiikawa lore",
+		askMeAbout: "Chiikawa lore",
 	},
 	{
 		name: "Ashika Akilan",
@@ -342,7 +342,7 @@ const roster = [
 		program: "COMM ‘29",
 		years: "1",
 		linkedin: "https://www.linkedin.com/in/brandonnguyen13",
-		askMeAbout: "Basketball",
+		askMeAbout: "basketball",
 	},
 	{
 		name: "Dante Nicastro",
@@ -432,7 +432,7 @@ const roster = [
 		program: "CS ‘29",
 		years: "1",
 		linkedin: "https://www.linkedin.com/in/harish-kandavell/",
-		askMeAbout: "Video Games",
+		askMeAbout: "video games",
 	},
 	{
 		name: "Jamison Huang",
@@ -498,7 +498,7 @@ const roster = [
 		program: "CS '28",
 		years: "1",
 		linkedin: "https://www.linkedin.com/in/nigel-groen/",
-		askMeAbout: "Sports",
+		askMeAbout: "sports",
 	},
 	{
 		name: "Patrick Rivett",
@@ -544,7 +544,7 @@ const roster = [
 		years: "1",
 		linkedin:
 			"https://www.linkedin.com/in/elisabeth-feng-93125528b?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
-		askMeAbout: "chipotle",
+		askMeAbout: "Chipotle",
 	},
 	{
 		name: "Layla Do",

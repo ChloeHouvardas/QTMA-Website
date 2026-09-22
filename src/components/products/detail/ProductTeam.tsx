@@ -20,7 +20,7 @@ export default function ProductTeam({
 			aria-labelledby="product-team-heading"
 			className="bg-white text-qtmaInk"
 		>
-			<div className="mx-auto w-full max-w-[1250px] px-5 py-16 sm:px-8 sm:py-20 lg:px-0 lg:py-24">
+			<div className="mx-auto w-full max-w-5xl px-5 py-10 sm:px-8 sm:py-12 lg:px-0">
 				<p className="m-0 text-[15px] font-normal uppercase leading-none text-black/50">
 					The team
 				</p>
@@ -32,14 +32,26 @@ export default function ProductTeam({
 				</h2>
 
 				<div
-					className={`mt-8 grid items-start gap-8 lg:mt-10 ${
+					className={`mt-6 grid items-start gap-8 ${
 						hasMembers && teamPhoto
 							? "lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-7"
 							: ""
 					}`}
 				>
+					{teamPhoto ? (
+						<div className="relative aspect-video w-full max-w-6xl lg:order-last">
+							<Image
+								alt={teamPhoto.alt}
+								className="object-contain"
+								fill
+								sizes="(max-width: 767px) 100vw, 768px"
+								src={teamPhoto.src}
+							/>
+						</div>
+					) : null}
+
 					{hasMembers ? (
-						<ul className="m-0 grid list-none gap-2 p-0 sm:grid-cols-2 lg:grid-cols-1 lg:pt-9">
+						<ul className="m-0 grid list-none gap-2 p-0 sm:grid-cols-2 lg:order-first lg:grid-cols-1 lg:pt-9">
 							{members?.map((member) => (
 								<li key={`${member.name}-${member.role}`}>
 									{member.linkedinUrl ? (
@@ -70,22 +82,6 @@ export default function ProductTeam({
 								</li>
 							))}
 						</ul>
-					) : null}
-
-					{teamPhoto ? (
-						<div className="relative aspect-[1.68/1] overflow-visible bg-[#f4f4f4] shadow-[0_4px_7px_rgba(0,0,0,0.25)]">
-							<Image
-								alt={teamPhoto.alt}
-								className="object-cover"
-								fill
-								sizes={
-									hasMembers
-										? "(max-width: 1023px) 100vw, 700px"
-										: "(max-width: 1120px) 100vw, 1060px"
-								}
-								src={teamPhoto.src}
-							/>
-						</div>
 					) : null}
 				</div>
 			</div>
