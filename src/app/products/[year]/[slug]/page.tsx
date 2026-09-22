@@ -45,7 +45,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 				<div className="mx-auto w-full max-w-[1120px] px-5 pt-8 sm:px-8 sm:pt-10">
 					<Link
 						className="inline-flex text-sm text-[#777] transition-colors hover:text-qtmaBlue focus-visible:text-qtmaBlue"
-						href="/products"
+						href={`/products?year=${product.year}`}
 					>
 						<span aria-hidden="true" className="mr-2">
 							←

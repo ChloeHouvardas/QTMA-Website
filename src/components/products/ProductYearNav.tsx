@@ -1,14 +1,12 @@
+import Link from "next/link";
+
 import { productYears } from "@/data/products";
 
 type ProductYearNavProps = {
 	selectedYear: string;
-	onYearChange: (year: string) => void;
 };
 
-export default function ProductYearNav({
-	selectedYear,
-	onYearChange,
-}: ProductYearNavProps) {
+export default function ProductYearNav({ selectedYear }: ProductYearNavProps) {
 	return (
 		<nav
 			aria-label="Product archive years"
@@ -18,19 +16,19 @@ export default function ProductYearNav({
 				const isSelected = year === selectedYear;
 
 				return (
-					<button
-						aria-pressed={isSelected}
+					<Link
+						aria-current={isSelected ? "page" : undefined}
 						className={`shrink-0 rounded-full px-3 py-2 text-left text-xs transition-colors ${
 							isSelected
 								? "bg-[#f2f2f2] text-[#606060]"
 								: "text-[#a4a4a4] hover:bg-[#f7f7f7] hover:text-[#606060]"
 						}`}
+						href={`/products?year=${year}`}
 						key={year}
-						onClick={() => onYearChange(year)}
-						type="button"
+						scroll={false}
 					>
 						{year}
-					</button>
+					</Link>
 				);
 			})}
 		</nav>

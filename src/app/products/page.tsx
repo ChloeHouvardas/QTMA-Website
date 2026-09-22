@@ -1,7 +1,17 @@
 import { Header } from "@/components/Header";
 import ProductArchive from "@/components/products/ProductArchive";
+import { productYears } from "@/data/products";
 
-export default function ProductsPage() {
+type ProductsPageProps = {
+	searchParams?: {
+		year?: string | string[];
+	};
+};
+
+export default function ProductsPage({ searchParams }: ProductsPageProps) {
+	const selectedYear =
+		productYears.find((year) => year === searchParams?.year) ?? productYears[0];
+
 	return (
 		<div id="top">
 			<Header />
@@ -11,7 +21,7 @@ export default function ProductsPage() {
 						Products
 					</h1>
 				</div>
-				<ProductArchive />
+				<ProductArchive selectedYear={selectedYear} />
 			</main>
 		</div>
 	);
