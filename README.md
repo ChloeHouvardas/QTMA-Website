@@ -1,41 +1,34 @@
-## QTMA website
+# QTMA website refresh
 
-The official website for [Queen's Tech and Media Association](https://qtma.ca) (QTMA)!
+This branch is the shared foundation for the 2026 rebuild of the Queen's
+Technology & Media Association website. It uses Next.js App Router, React,
+TypeScript, Tailwind CSS, and Sass.
 
-QTMA is a product development club & tech incubator at [Queen's University](https://www.queensu.ca/)
-devoted to helping tech & business students successfully plan, design, build and launch software
-products which are judged by industry specialists at the end of each school term.
-
-Dev team:
-
-- [Kevin Yu](https://github.com/KevinYuCode): Initial design & implementation
-- [Reid Moffat](https://github.com/reid-moffat): 2023 rework lead
-- [Yves Alikalfic](https://github.com/yves-a): 2023 rework developer
-
-2025 Redesign Dev Team
-
-- [Chloe Houvardas](https://github.com/ChloeHouvardas): Cochair 2025-2026
-- [Kayne Lee](https://github.com/kayne-lee) Director of Devs 2025-2026
-- [Simon Risk](https://github.com/SimonNRisk) Sr. Developer 2025-2026
-- Janevra Pier (Figma Design): Cochair 2025-2026
+The existing images, PDFs, and content data are retained for reference. New
+application code belongs in `src` and must be written in TypeScript.
 
 ## Running locally
 
-<i>This site is built with [Next.js](https://nextjs.org/) and hosted with [Vercel](https://vercel.com/)</i>
-
-First, install dependencies:
+Install dependencies and start the development server:
 
 ```bash
-pnpm i # pnpm installs the same packages as npm but in a more efficient way
+pnpm install
+pnpm dev
 ```
 
-Then run in development mode (detailed errors, hot reloading, etc):
+Open [http://localhost:3000](http://localhost:3000).
+
+Before opening a pull request, run:
 
 ```bash
-next dev
+pnpm lint
+pnpm build
 ```
 
-Then open the site at http://localhost:3000
+Use `pnpm format` to format the project.
 
-_Note: you can also view a preview deployment [here](https://qtma-website-git-staging-reid-moffat.vercel.app/)
-(this is for staging, but you can update the git branch in th URL)_
+## Branch workflow
+
+Create feature branches from `refresh-2026` and target pull requests back to
+`refresh-2026`. The branch will be merged into `main` when the rebuilt website
+is ready to replace the current production site.
