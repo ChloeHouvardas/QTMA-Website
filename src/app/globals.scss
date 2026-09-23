@@ -61,7 +61,7 @@ a {
 }
 
 .hero-band-wave {
-	animation: hero-band-ripple 3.2s ease-in-out infinite;
+	animation: hero-band-ripple 3.2s linear infinite;
 	will-change: transform;
 }
 
@@ -71,12 +71,32 @@ a {
 		transform: translateY(0);
 	}
 
+	12.5% {
+		transform: translateY(-6.4px);
+	}
+
 	25% {
 		transform: translateY(-9px);
 	}
 
+	37.5% {
+		transform: translateY(-6.4px);
+	}
+
+	50% {
+		transform: translateY(0);
+	}
+
+	62.5% {
+		transform: translateY(6.4px);
+	}
+
 	75% {
 		transform: translateY(9px);
+	}
+
+	87.5% {
+		transform: translateY(6.4px);
 	}
 }
 
