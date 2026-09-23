@@ -87,7 +87,10 @@ export default function HomePage() {
 					>
 						Launch the
 						<br />
-						Next <span className="text-qtmaBlue">big thing</span>
+						Next{" "}
+						<span className="inline-block cursor-default text-qtmaBlue transition-transform duration-300 ease-out hover:scale-110">
+							big thing
+						</span>
 					</h1>
 					<p className="mx-auto mb-0 mt-5 max-w-[350px] text-base leading-[1.25] text-[#999999] sm:max-w-[470px] sm:text-lg md:max-w-[500px] md:text-xl md:leading-[1.05]">
 						Queen&apos;s University&apos;s largest product incubator, taking
