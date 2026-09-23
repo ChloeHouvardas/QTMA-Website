@@ -412,18 +412,6 @@ const roster = [
 		askMeAbout: "knives, anime, B2C AI startups, and vibe coding",
 	},
 	{
-		name: "Udula Abeykoon",
-		image: "udulaAbeykoon.jpg",
-		role: "Developer",
-		group: "developers",
-		email: "udula.abeykoon@queensu.ca",
-		program: "ENG '29",
-		years: "2",
-		linkedin:
-			"https://www.linkedin.com/in/udula-abeykoon?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-		askMeAbout: "cameras",
-	},
-	{
 		name: "Harish (Karikaran) Kandavell",
 		image: "harishKandavell.jpg",
 		role: "Developer",
@@ -510,6 +498,18 @@ const roster = [
 		years: "1",
 		linkedin: "https://www.linkedin.com/in/patrick-rivett-200b48332",
 		askMeAbout: "tennis",
+	},
+	{
+		name: "Udula Abeykoon",
+		image: "udulaAbeykoon.jpg",
+		role: "Developer",
+		group: "developers",
+		email: "udula.abeykoon@queensu.ca",
+		program: "ENG '29",
+		years: "2",
+		linkedin:
+			"https://www.linkedin.com/in/udula-abeykoon?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+		askMeAbout: "cameras",
 	},
 	{
 		name: "Zane Al-Hamwy",
