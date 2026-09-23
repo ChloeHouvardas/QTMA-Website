@@ -39,7 +39,7 @@ export default function ProductTeam({
 					}`}
 				>
 					{teamPhoto ? (
-						<div className="relative aspect-video w-full max-w-6xl lg:order-last">
+						<div className="relative aspect-video max-h-[420px] w-full max-w-6xl lg:order-last">
 							<Image
 								alt={teamPhoto.alt}
 								className="object-contain"

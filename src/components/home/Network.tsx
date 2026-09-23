@@ -4,10 +4,10 @@ export function Network() {
 	return (
 		<section
 			aria-labelledby="network-title"
-			className="bg-white pt-10 sm:pt-12"
+			className="bg-white pt-4 sm:pt-6"
 		>
 			<div className="mx-auto w-full max-w-[1344px] px-5 sm:px-8 lg:px-12">
-				<header className="mb-12 flex flex-col items-start gap-4 sm:mb-14">
+				<header className="mb-6 flex flex-col items-start gap-4 sm:mb-7">
 					<p className="m-0 text-lg font-light uppercase leading-none text-black/50 sm:text-xl">
 						Our Network
 					</p>
@@ -25,7 +25,7 @@ export function Network() {
 				</header>
 			</div>
 
-			<div className="bg-qtmaOffWhite py-6 sm:py-8 lg:py-10">
+			<div className="bg-qtmaOffWhite py-3 sm:py-4 lg:py-5 mb-10 sm:mb-14">
 				<div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 					<Image
 						alt="Companies and institutions where QTMA alumni have worked and studied"
