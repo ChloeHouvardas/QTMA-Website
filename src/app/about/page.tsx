@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Header } from "@/components/Header";
 import { HistorySection } from "@/components/about/HistorySection";
 import { ProcessSection } from "@/components/about/ProcessSection";
+import { TeamStructureChart } from "@/components/about/TeamStructureChart";
 import { Network } from "@/components/home/Network";
 
 const valueCards = [
@@ -146,14 +147,7 @@ export default function AboutPage() {
 					</p>
 				</div>
 
-				<Image
-					alt="Our Team Structure"
-					className="mt-12 h-auto w-full sm:mt-16"
-					height={474}
-					sizes="(min-width: 1350px) 1198px, (min-width: 640px) calc(100vw - 96px), calc(100vw - 40px)"
-					src="/assets/Visuals/club-structure.svg"
-					width={1250}
-				/>
+				<TeamStructureChart />
 			</section>
 
 			<Network />
