@@ -54,7 +54,7 @@ export default function HomePage() {
 							className="hero-band-wave min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
 							key={index}
 							style={{
-								animationDelay: `${index * 90}ms`,
+								animationDelay: `${index * 130}ms`,
 								opacity: band.opacity,
 								width: `${band.left}%`,
 							}}
@@ -70,7 +70,7 @@ export default function HomePage() {
 							className="hero-band-wave min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
 							key={index}
 							style={{
-								animationDelay: `${index * 90}ms`,
+								animationDelay: `${index * 130}ms`,
 								opacity: band.opacity,
 								width: `${band.right}%`,
 							}}
