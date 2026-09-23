@@ -65,6 +65,7 @@ export default function ContactPage() {
 						className="mt-[31px] h-auto w-full rounded-[20px] object-cover sm:mt-[30px] sm:rounded-[22px]"
 						height={942}
 						priority
+						sizes="100vw"
 						src="/assets/Visuals/contact/qtma-aws.jpg"
 						width={1250}
 					/>
@@ -94,6 +95,7 @@ export default function ContactPage() {
 							alt="QTMA team taking a group selfie"
 							className="mt-[31px] h-auto w-full rounded-[20px] object-cover sm:mt-[30px] sm:rounded-[22px]"
 							height={834}
+							sizes="100vw"
 							src="/assets/Visuals/contact/qtma-selfie.png"
 							width={1250}
 						/>
