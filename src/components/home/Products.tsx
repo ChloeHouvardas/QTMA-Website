@@ -15,13 +15,17 @@ export function ProductCard({ product }: ProductCardProps) {
 	return (
 		<article className="group min-w-0">
 			<Link
-				className="block rounded-xl text-inherit no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-qtmaBlue"
+				className="block rounded-xl text-inherit no-underline transition-transform duration-300 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-qtmaBlue group-hover:-translate-y-1 group-focus-within:-translate-y-1 motion-reduce:transition-none"
 				href={product.href}
 			>
-				<div className="relative aspect-[4/5] overflow-hidden rounded-[10px] shadow-[0_5px_8.5px_rgba(0,0,0,0.25)]">
+				<div className="relative aspect-[4/5] overflow-hidden rounded-[10px] shadow-[0_5px_8.5px_rgba(0,0,0,0.25)] transition-shadow duration-300 group-hover:shadow-[0_14px_24px_rgba(0,0,0,0.3)] group-focus-within:shadow-[0_14px_24px_rgba(0,0,0,0.3)]">
 					<Image
 						alt={product.imageAlt}
-						className={`object-cover ${product.zoomImage ? "scale-110" : ""}`}
+						className={`object-cover transition-transform duration-300 ease-out motion-reduce:transition-none ${
+							product.zoomImage
+								? "scale-110 group-hover:scale-125 group-focus-within:scale-125"
+								: "group-hover:scale-105 group-focus-within:scale-105"
+						}`}
 						fill
 						sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
 						src={product.imageSrc}
@@ -33,7 +37,7 @@ export function ProductCard({ product }: ProductCardProps) {
 						<Image
 							alt=""
 							aria-hidden="true"
-							className="h-[15px] w-[20px] -rotate-[57deg]"
+							className="h-[15px] w-[20px] -rotate-[57deg] transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1 group-focus-within:translate-x-1 group-focus-within:-translate-y-1 motion-reduce:transition-none"
 							height={15}
 							src="/assets/figma/products-arrow.svg"
 							width={20}
