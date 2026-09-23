@@ -168,7 +168,7 @@ export default function HomePage() {
 
 							<Image
 								alt="Queen's Tech and Media Association Instagram profile"
-								className="h-44 w-full self-center rounded-lg object-cover"
+								className="h-44 w-full self-center rounded-lg object-contain"
 								height={220}
 								src="/assets/Visuals/home/instagram-mockup.png"
 								width={600}
