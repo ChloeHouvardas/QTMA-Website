@@ -166,13 +166,12 @@ export function HistorySection() {
 					{historySlides.map((slide, index) => {
 						const active = index === activeIndex;
 
+						if (!active) return null;
+
 						return (
 							<Image
-								alt={active ? slide.imageAlt : ""}
-								aria-hidden={!active}
-								className={`object-cover transition-opacity duration-500 motion-reduce:transition-none ${
-									active ? "opacity-100" : "opacity-0"
-								}`}
+								alt={slide.imageAlt}
+								className="object-cover"
 								fill
 								key={slide.imageSrc}
 								priority={index === 0}
