@@ -241,15 +241,50 @@ export function ProcessSection() {
 
 					<div
 						aria-label="Process stages"
-						className="mt-10 grid grid-cols-1 items-start gap-8 sm:mt-12 sm:grid-cols-2 sm:gap-x-12 sm:gap-y-10 lg:grid-cols-4 lg:gap-10"
+						className="mt-10 hidden items-start gap-10 lg:mt-12 lg:grid lg:grid-cols-4"
 					>
 						{processStages.map((stage, index) => {
 							const active = index === activeIndex;
 
 							return (
 								<p
-									className={`m-0 w-full origin-top-left text-lg font-light leading-snug transition-[color,transform] duration-300 motion-reduce:transition-none sm:text-xl ${
+									className={`m-0 w-full origin-top-left text-xl font-light leading-snug transition-[color,transform] duration-300 motion-reduce:transition-none ${
 										active ? "scale-[1.03] text-qtmaInk" : "text-black/25"
+									}`}
+									key={stage.title}
+								>
+									{stage.description}
+								</p>
+							);
+						})}
+					</div>
+
+					{/*
+						Below lg there isn't room to show every description at once
+						without burying the relevant one among unrelated gray text
+						(a single column on mobile, only 2 of 4 visible at a time on
+						tablet), so instead show only the active stage's text and
+						crossfade between stages — same technique as the image swap
+						above. A sr-only list keeps all 4 stages' content available
+						to screen readers even though only one is visually shown at
+						a time.
+					*/}
+					<div className="relative mt-10 min-h-[16rem] lg:hidden">
+						<ul className="sr-only">
+							{processStages.map((stage) => (
+								<li key={stage.title}>
+									{stage.title} ({stage.monthRange}): {stage.description}
+								</li>
+							))}
+						</ul>
+						{processStages.map((stage, index) => {
+							const active = index === activeIndex;
+
+							return (
+								<p
+									aria-hidden="true"
+									className={`absolute inset-x-0 top-0 m-0 text-lg font-light leading-snug text-qtmaInk transition-opacity duration-500 motion-reduce:transition-none sm:text-xl ${
+										active ? "opacity-100" : "pointer-events-none opacity-0"
 									}`}
 									key={stage.title}
 								>
