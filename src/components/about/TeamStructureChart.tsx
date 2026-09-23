@@ -70,11 +70,34 @@ function TeamNodeCard({ node, tier }: { node: TeamNode; tier: 1 | 2 | 3 }) {
 	);
 }
 
-function HorizontalConnectorRow({ childCount }: { childCount: number }) {
-	const offsets = Array.from(
-		{ length: childCount },
-		(_, index) => ((index + 0.5) / childCount) * 100
-	);
+// Tier-3 nodes render at a fixed width/gap (matches the w-28/gap-3 classes
+// used for the leaf row below sm+, the only breakpoint this row appears at),
+// so connector stubs can be computed to land exactly on each leaf's center
+// instead of assuming the leaves are evenly spread across the full column.
+const LEAF_WIDTH_PX = 112;
+const LEAF_GAP_PX = 12;
+
+function HorizontalConnectorRow({
+	childCount,
+	compact = false,
+}: {
+	childCount: number;
+	compact?: boolean;
+}) {
+	const offsets = compact
+		? (() => {
+				const totalWidth =
+					childCount * LEAF_WIDTH_PX + (childCount - 1) * LEAF_GAP_PX;
+				return Array.from({ length: childCount }, (_, index) => {
+					const centerFromStart =
+						index * (LEAF_WIDTH_PX + LEAF_GAP_PX) + LEAF_WIDTH_PX / 2;
+					return `calc(50% + ${centerFromStart - totalWidth / 2}px)`;
+				});
+			})()
+		: Array.from(
+				{ length: childCount },
+				(_, index) => `${((index + 0.5) / childCount) * 100}%`
+			);
 	const first = offsets[0];
 	const last = offsets[offsets.length - 1];
 
@@ -84,14 +107,14 @@ function HorizontalConnectorRow({ childCount }: { childCount: number }) {
 			{childCount > 1 ? (
 				<div
 					className="absolute top-3 h-px bg-qtmaBlue/40 sm:top-4"
-					style={{ left: `${first}%`, right: `${100 - last}%` }}
+					style={{ left: first, right: `calc(100% - (${last}))` }}
 				/>
 			) : null}
 			{offsets.map((offset, index) => (
 				<div
 					className="absolute top-3 h-3 w-px -translate-x-1/2 bg-qtmaBlue/40 sm:top-4 sm:h-4"
 					key={index}
-					style={{ left: `${offset}%` }}
+					style={{ left: offset }}
 				/>
 			))}
 		</div>
@@ -121,7 +144,10 @@ function DesktopChart() {
 						<TeamNodeCard node={branch} tier={2} />
 						{branch.children ? (
 							<>
-								<HorizontalConnectorRow childCount={branch.children.length} />
+								<HorizontalConnectorRow
+									childCount={branch.children.length}
+									compact
+								/>
 								<div className="flex flex-wrap items-start justify-center gap-2 sm:gap-3">
 									{branch.children.map((child, index) => (
 										<TeamNodeCard key={index} node={child} tier={3} />
