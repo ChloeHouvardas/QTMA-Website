@@ -42,7 +42,7 @@ export function Header() {
 
 	return (
 		<header className="sticky top-0 z-30 bg-white shadow-[0_2.18px_6.55px_rgba(0,0,0,0.25)]">
-			<div className="relative mx-auto flex h-14 w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] items-center px-[25px] md:px-[clamp(20px,4vw,48px)]">
+			<div className="mx-auto flex h-14 w-full max-w-[calc(1250px+(2*clamp(20px,4vw,48px)))] items-center justify-between px-[25px] md:px-[clamp(20px,4vw,48px)]">
 				<Link
 					aria-label="QTMA home"
 					className="block leading-none"
@@ -60,7 +60,7 @@ export function Header() {
 				</Link>
 
 				<nav
-					className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-[74px] whitespace-nowrap text-base font-light uppercase md:flex"
+					className="mx-auto hidden items-center gap-6 whitespace-nowrap text-base font-light uppercase md:flex lg:gap-[74px]"
 					aria-label="Main navigation"
 				>
 					{links.map((link) => (
