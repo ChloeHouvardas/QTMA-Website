@@ -28,8 +28,8 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
 	return (
 		<html className={inter.variable} lang="en">
-			<body>
-				{children}
+			<body className="flex min-h-screen flex-col">
+				<div className="flex flex-1 flex-col">{children}</div>
 				<Footer />
 			</body>
 		</html>
