@@ -51,9 +51,13 @@ export default function HomePage() {
 				>
 					{heroBands.map((band, index) => (
 						<span
-							className="min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
+							className="hero-band-wave min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
 							key={index}
-							style={{ opacity: band.opacity, width: `${band.left}%` }}
+							style={{
+								animationDelay: `${index * 90}ms`,
+								opacity: band.opacity,
+								width: `${band.left}%`,
+							}}
 						/>
 					))}
 				</div>
@@ -63,9 +67,13 @@ export default function HomePage() {
 				>
 					{heroBands.map((band, index) => (
 						<span
-							className="min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
+							className="hero-band-wave min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
 							key={index}
-							style={{ opacity: band.opacity, width: `${band.right}%` }}
+							style={{
+								animationDelay: `${index * 90}ms`,
+								opacity: band.opacity,
+								width: `${band.right}%`,
+							}}
 						/>
 					))}
 				</div>

@@ -60,6 +60,26 @@ a {
 	}
 }
 
+.hero-band-wave {
+	animation: hero-band-ripple 4s ease-in-out infinite;
+	will-change: transform;
+}
+
+@keyframes hero-band-ripple {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	25% {
+		transform: translateY(-6px);
+	}
+
+	75% {
+		transform: translateY(6px);
+	}
+}
+
 :focus-visible {
 	outline: 3px solid #ffbf47;
 	outline-offset: 4px;
