@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type ProcessStage = {
 	description: string;
@@ -55,6 +55,7 @@ const peakVariations = [
 	-4, 7, -1, 3, -6, 5, -2, 6, -3,
 ];
 const waveBarCount = 128;
+const stageViewportHeight = 50;
 
 function getBarHeight(barIndex: number, activeIndex: number) {
 	const barsPerStage = waveBarCount / processStages.length;
@@ -78,127 +79,186 @@ function getBarHeight(barIndex: number, activeIndex: number) {
 	return Math.max(baseHeight, waveHeight);
 }
 
+function StageImageSwapper({ activeIndex }: { activeIndex: number }) {
+	return (
+		<div className="relative aspect-[3407/1898] overflow-hidden rounded-[24px] bg-[#f3f5f8] sm:mx-auto sm:max-w-[700px] sm:rounded-[27px]">
+			{processStages.map((stage, index) => {
+				const active = index === activeIndex;
+
+				return (
+					<div
+						aria-hidden={!active}
+						className={`absolute inset-0 flex items-center justify-center px-6 text-center text-lg text-black/50 transition-opacity duration-500 motion-reduce:transition-none ${
+							active ? "opacity-100" : "pointer-events-none opacity-0"
+						}`}
+						key={stage.title}
+					>
+						{stage.imageSrc ? (
+							<Image
+								alt={stage.imageAlt}
+								className="object-cover"
+								fill
+								sizes="(min-width: 1024px) 50vw, 100vw"
+								src={stage.imageSrc}
+							/>
+						) : (
+							stage.imageAlt
+						)}
+					</div>
+				);
+			})}
+		</div>
+	);
+}
+
+function StageWaveBar({ activeIndex }: { activeIndex: number }) {
+	const activeStage = processStages[activeIndex];
+
+	return (
+		<div aria-hidden="true" className="relative mt-8 pt-12 sm:mt-10">
+			<div
+				className="absolute top-0 z-10 -translate-x-1/2 rounded-lg bg-[#e8efff] px-3 py-2 text-center text-qtmaBlue shadow-sm transition-[left] duration-500 motion-reduce:transition-none"
+				style={{
+					left: `${((activeIndex + 0.5) / processStages.length) * 100}%`,
+				}}
+			>
+				<p className="m-0 text-sm font-medium leading-none">
+					{activeStage.title}
+				</p>
+				<p className="mb-0 mt-1 text-xs font-light leading-none">
+					{activeStage.monthRange}
+				</p>
+			</div>
+
+			<div className="relative flex h-16 w-full items-end justify-between ">
+				{Array.from({ length: waveBarCount }, (_, index) => {
+					const stageIndex = Math.floor(
+						index / (waveBarCount / processStages.length)
+					);
+					const active = stageIndex === activeIndex;
+
+					return (
+						<span
+							className={`w-px shrink-0 bg-black/25 transition-[height,background-color] duration-500 ease-out motion-reduce:transition-none ${
+								active
+									? "process-wave-bar-active bg-qtmaBlue"
+									: "process-wave-bar"
+							}`}
+							key={index}
+							style={{
+								animationDelay: `${(index % 12) * 70}ms`,
+								height: `${getBarHeight(index, activeIndex)}px`,
+							}}
+						/>
+					);
+				})}
+			</div>
+		</div>
+	);
+}
+
 export function ProcessSection() {
 	const [activeIndex, setActiveIndex] = useState(0);
-	const activeStage = processStages[activeIndex];
+	const spacerRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		let rafId: number | null = null;
+
+		const clamp = (value: number) => Math.min(1, Math.max(0, value));
+
+		const getProgress = () => {
+			const el = spacerRef.current;
+			if (!el) return 0;
+			const rect = el.getBoundingClientRect();
+			const scrollable = rect.height - window.innerHeight;
+			if (scrollable <= 0) return 0;
+			return clamp(-rect.top / scrollable);
+		};
+
+		const update = () => {
+			rafId = null;
+			const progress = getProgress();
+			const index = Math.min(
+				processStages.length - 1,
+				Math.floor(progress * processStages.length)
+			);
+			setActiveIndex(index);
+		};
+
+		const onScroll = () => {
+			if (rafId === null) rafId = requestAnimationFrame(update);
+		};
+
+		window.addEventListener("scroll", onScroll, { passive: true });
+		window.addEventListener("resize", onScroll);
+		update();
+
+		return () => {
+			window.removeEventListener("scroll", onScroll);
+			window.removeEventListener("resize", onScroll);
+			if (rafId !== null) cancelAnimationFrame(rafId);
+		};
+	}, []);
 
 	return (
 		<section
 			aria-labelledby="process-title"
 			className="mx-auto w-full max-w-[1350px] px-5 pb-20 sm:px-12 sm:pb-28 lg:px-[76px] lg:pb-32"
 		>
-			<div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
-				<div>
-					<p className="m-0 text-lg font-light uppercase leading-none text-black/40 sm:text-xl">
-						Our Process
-					</p>
-					<h2
-						className="mb-0 mt-6 text-4xl font-light leading-none tracking-[-0.035em] text-qtmaBlue sm:mt-7 sm:text-5xl lg:text-6xl"
-						id="process-title"
-					>
-						What it looks like
-					</h2>
-					<p className="mb-0 mt-8 max-w-[620px] text-lg font-light leading-snug text-qtmaInk sm:mt-9 sm:text-xl">
-						Every year, QTMA brings four innovative digital products to life.
-						Through a process of ideation, research, development, and launch,
-						our teams transform promising ideas into products with real-world
-						impact.
-					</p>
-				</div>
-
-				<div className="relative aspect-[3407/1898] overflow-hidden rounded-[24px] bg-[#f3f5f8] sm:rounded-[27px]">
-					{processStages.map((stage, index) => {
-						const active = index === activeIndex;
-
-						return (
-							<div
-								aria-hidden={!active}
-								className={`absolute inset-0 flex items-center justify-center px-6 text-center text-lg text-black/50 transition-opacity duration-500 motion-reduce:transition-none ${
-									active ? "opacity-100" : "pointer-events-none opacity-0"
-								}`}
-								key={stage.title}
-							>
-								{stage.imageSrc ? (
-									<Image
-										alt={stage.imageAlt}
-										className="object-cover"
-										fill
-										sizes="(min-width: 1024px) 50vw, 100vw"
-										src={stage.imageSrc}
-									/>
-								) : (
-									stage.imageAlt
-								)}
-							</div>
-						);
-					})}
-				</div>
-			</div>
-
-			<div aria-hidden="true" className="relative mt-8 pt-12 sm:mt-10">
-				<div
-					className="absolute top-0 z-10 -translate-x-1/2 rounded-lg bg-[#e8efff] px-3 py-2 text-center text-qtmaBlue shadow-sm transition-[left] duration-500 motion-reduce:transition-none"
-					style={{
-						left: `${((activeIndex + 0.5) / processStages.length) * 100}%`,
-					}}
+			<div>
+				<p className="m-0 text-lg font-light uppercase leading-none text-black/40 sm:text-xl">
+					Our Process
+				</p>
+				<h2
+					className="mb-0 mt-6 text-4xl font-light leading-none tracking-[-0.035em] text-qtmaBlue sm:mt-7 sm:text-5xl lg:text-6xl"
+					id="process-title"
 				>
-					<p className="m-0 text-sm font-medium leading-none">
-						{activeStage.title}
-					</p>
-					<p className="mb-0 mt-1 text-xs font-light leading-none">
-						{activeStage.monthRange}
-					</p>
-				</div>
-
-				<div className="relative flex h-16 w-full items-end justify-between ">
-					{Array.from({ length: waveBarCount }, (_, index) => {
-						const stageIndex = Math.floor(
-							index / (waveBarCount / processStages.length)
-						);
-						const active = stageIndex === activeIndex;
-
-						return (
-							<span
-								className={`w-px shrink-0 bg-black/25 transition-[height,background-color] duration-500 ease-out motion-reduce:transition-none ${
-									active
-										? "process-wave-bar-active bg-qtmaBlue"
-										: "process-wave-bar"
-								}`}
-								key={index}
-								style={{
-									animationDelay: `${(index % 12) * 70}ms`,
-									height: `${getBarHeight(index, activeIndex)}px`,
-								}}
-							/>
-						);
-					})}
-				</div>
+					What it looks like
+				</h2>
+				<p className="mb-0 mt-8 max-w-[620px] text-lg font-light leading-snug text-qtmaInk sm:mt-9 sm:text-xl">
+					Every year, QTMA brings four innovative digital products to life.
+					Through a process of ideation, research, development, and launch, our
+					teams transform promising ideas into products with real-world impact.
+				</p>
 			</div>
 
+			{/*
+				The image, wave bar, and description row pin in place together
+				(via a tall spacer + sticky inner panel) while the user scrolls
+				through all 4 stages, then releases — so the highlighted stage
+				stays visible the whole time it's changing, instead of scrolling
+				out of view. The image is sized so the whole group fits on screen
+				together while frozen.
+			*/}
 			<div
-				aria-label="Process stages"
-				className="mt-10 grid grid-cols-1 items-start gap-8 sm:mt-12 sm:grid-cols-2 sm:gap-x-12 sm:gap-y-10 lg:grid-cols-4 lg:gap-10"
-				role="group"
+				className="relative mt-10 sm:mt-14"
+				ref={spacerRef}
+				style={{ height: `${processStages.length * stageViewportHeight}vh` }}
 			>
-				{processStages.map((stage, index) => {
-					const active = index === activeIndex;
+				<div className="sticky top-14 pt-4 sm:pt-6">
+					<StageImageSwapper activeIndex={activeIndex} />
+					<StageWaveBar activeIndex={activeIndex} />
 
-					return (
-						<button
-							aria-pressed={active}
-							className={`w-full origin-top-left border-0 bg-transparent p-0 text-left text-lg font-light leading-snug transition-[color,transform] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-qtmaBlue motion-reduce:transition-none sm:text-xl ${
-								active ? "scale-[1.03] text-qtmaInk" : "text-black/25"
-							}`}
-							key={stage.title}
-							onClick={() => setActiveIndex(index)}
-							onFocus={() => setActiveIndex(index)}
-							onMouseEnter={() => setActiveIndex(index)}
-							type="button"
-						>
-							{stage.description}
-						</button>
-					);
-				})}
+					<div
+						aria-label="Process stages"
+						className="mt-10 grid grid-cols-1 items-start gap-8 sm:mt-12 sm:grid-cols-2 sm:gap-x-12 sm:gap-y-10 lg:grid-cols-4 lg:gap-10"
+					>
+						{processStages.map((stage, index) => {
+							const active = index === activeIndex;
+
+							return (
+								<p
+									className={`m-0 w-full origin-top-left text-lg font-light leading-snug transition-[color,transform] duration-300 motion-reduce:transition-none sm:text-xl ${
+										active ? "scale-[1.03] text-qtmaInk" : "text-black/25"
+									}`}
+									key={stage.title}
+								>
+									{stage.description}
+								</p>
+							);
+						})}
+					</div>
+				</div>
 			</div>
 		</section>
 	);
