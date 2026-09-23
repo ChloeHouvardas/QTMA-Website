@@ -51,9 +51,13 @@ export default function HomePage() {
 				>
 					{heroBands.map((band, index) => (
 						<span
-							className="min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
+							className="hero-band-wave min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
 							key={index}
-							style={{ opacity: band.opacity, width: `${band.left}%` }}
+							style={{
+								animationDelay: `${index * 90}ms`,
+								opacity: band.opacity,
+								width: `${band.left}%`,
+							}}
 						/>
 					))}
 				</div>
@@ -63,9 +67,13 @@ export default function HomePage() {
 				>
 					{heroBands.map((band, index) => (
 						<span
-							className="min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
+							className="hero-band-wave min-h-px flex-1 bg-[linear-gradient(90deg,rgba(124,200,255,0.05)_0%,rgba(124,200,255,0.6)_51%,rgba(193,183,255,0.3)_75%,rgba(255,255,255,0.3)_100%)] blur-[1px]"
 							key={index}
-							style={{ opacity: band.opacity, width: `${band.right}%` }}
+							style={{
+								animationDelay: `${index * 90}ms`,
+								opacity: band.opacity,
+								width: `${band.right}%`,
+							}}
 						/>
 					))}
 				</div>
@@ -79,7 +87,10 @@ export default function HomePage() {
 					>
 						Launch the
 						<br />
-						Next <span className="text-qtmaBlue">big thing</span>
+						Next{" "}
+						<span className="inline-block cursor-default text-qtmaBlue transition-transform duration-300 ease-out hover:scale-110">
+							big thing
+						</span>
 					</h1>
 					<p className="mx-auto mb-0 mt-5 max-w-[350px] text-base leading-[1.25] text-[#999999] sm:max-w-[470px] sm:text-lg md:max-w-[500px] md:text-xl md:leading-[1.05]">
 						Queen&apos;s University&apos;s largest product incubator, taking
@@ -157,7 +168,7 @@ export default function HomePage() {
 
 							<Image
 								alt="Queen's Tech and Media Association Instagram profile"
-								className="h-44 w-full self-center rounded-lg object-cover"
+								className="h-44 w-full self-center rounded-lg object-contain"
 								height={220}
 								src="/assets/Visuals/home/instagram-mockup.png"
 								width={600}
