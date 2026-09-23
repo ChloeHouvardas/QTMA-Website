@@ -135,7 +135,7 @@ export function HistorySection() {
 	return (
 		<section
 			aria-labelledby="history-heading"
-			className="mb-16 mt-16 bg-gray-100 py-16 sm:mb-20 sm:mt-20 sm:py-20 lg:py-24"
+			className="mb-10 mt-16 bg-gray-100 py-16 sm:mb-10 sm:mt-20 sm:py-20 lg:py-24"
 		>
 			<h2 className="sr-only" id="history-heading">
 				Our History
