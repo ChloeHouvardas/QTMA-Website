@@ -60,7 +60,7 @@ export function Header() {
 				</Link>
 
 				<nav
-					className="mx-auto hidden items-center gap-6 whitespace-nowrap text-base font-light uppercase md:flex lg:gap-[74px]"
+					className="mx-auto hidden items-center gap-6 whitespace-nowrap text-base font-light uppercase md:-translate-x-[40px] md:flex lg:gap-[74px]"
 					aria-label="Main navigation"
 				>
 					{links.map((link) => (
