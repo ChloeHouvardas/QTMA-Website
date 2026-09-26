@@ -2,10 +2,7 @@ import Image from "next/image";
 
 export function Network() {
 	return (
-		<section
-			aria-labelledby="network-title"
-			className="bg-white pt-4 sm:pt-6"
-		>
+		<section aria-labelledby="network-title" className="bg-white pt-4 sm:pt-6">
 			<div className="mx-auto w-full max-w-[1344px] px-5 sm:px-8 lg:px-12">
 				<header className="mb-6 flex flex-col items-start gap-4 sm:mb-7">
 					<p className="m-0 text-lg font-light uppercase leading-none text-black/50 sm:text-xl">

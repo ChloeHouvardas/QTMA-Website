@@ -100,24 +100,25 @@ function HorizontalConnectorRow({
 	leafWidthPx?: number;
 	rowWidthPx?: number;
 }) {
-	const offsets = columnCentersPx && rowWidthPx
-		? columnCentersPx.map(
-				(center) => `calc(50% + ${center - rowWidthPx / 2}px)`
-			)
-		: compact
-			? (() => {
-					const totalWidth =
-						childCount * leafWidthPx + (childCount - 1) * leafGapPx;
-					return Array.from({ length: childCount }, (_, index) => {
-						const centerFromStart =
-							index * (leafWidthPx + leafGapPx) + leafWidthPx / 2;
-						return `calc(50% + ${centerFromStart - totalWidth / 2}px)`;
-					});
-				})()
-			: Array.from(
-					{ length: childCount },
-					(_, index) => `${((index + 0.5) / childCount) * 100}%`
-				);
+	const offsets =
+		columnCentersPx && rowWidthPx
+			? columnCentersPx.map(
+					(center) => `calc(50% + ${center - rowWidthPx / 2}px)`
+				)
+			: compact
+				? (() => {
+						const totalWidth =
+							childCount * leafWidthPx + (childCount - 1) * leafGapPx;
+						return Array.from({ length: childCount }, (_, index) => {
+							const centerFromStart =
+								index * (leafWidthPx + leafGapPx) + leafWidthPx / 2;
+							return `calc(50% + ${centerFromStart - totalWidth / 2}px)`;
+						});
+					})()
+				: Array.from(
+						{ length: childCount },
+						(_, index) => `${((index + 0.5) / childCount) * 100}%`
+					);
 	const first = offsets[0];
 	const last = offsets[offsets.length - 1];
 

@@ -22,7 +22,7 @@ export function Header() {
 
 	const handleNavigation = (
 		event: MouseEvent<HTMLAnchorElement>,
-		href: string,
+		href: string
 	) => {
 		if (pathname === href) {
 			event.preventDefault();
