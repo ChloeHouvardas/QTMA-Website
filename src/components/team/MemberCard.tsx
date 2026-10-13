@@ -41,7 +41,7 @@ export function MemberCard({
 				{image ? (
 					<Image
 						alt={imageAlt ?? `${name} headshot`}
-						className="object-cover transition duration-300 ease-out group-hover:scale-105 group-hover:blur-md group-focus-within:scale-105 group-focus-within:blur-md motion-reduce:transition-none"
+						className="object-cover transition duration-300 ease-out group-hover:scale-105 group-hover:blur-md group-has-[:focus-visible]:scale-105 group-has-[:focus-visible]:blur-md motion-reduce:transition-none"
 						fill
 						sizes="(max-width: 640px) 100vw, (max-width: 1024px) 45vw, 320px"
 						src={image}
@@ -57,10 +57,10 @@ export function MemberCard({
 				)}
 				<div
 					aria-hidden="true"
-					className="absolute inset-0 bg-qtmaInk/10 opacity-0 transition duration-300 group-hover:opacity-100 group-focus-within:opacity-100 motion-reduce:transition-none"
+					className="absolute inset-0 bg-qtmaInk/10 opacity-0 transition duration-300 group-hover:opacity-100 group-has-[:focus-visible]:opacity-100 motion-reduce:transition-none"
 				/>
 				{(linkedinUrl || email) && (
-					<div className="absolute right-4 top-4 z-10 flex flex-col gap-2 opacity-0 transition duration-300 group-hover:opacity-100 group-focus-within:opacity-100 motion-reduce:transition-none">
+					<div className="absolute right-4 top-4 z-10 flex flex-col gap-2 opacity-0 transition duration-300 group-hover:opacity-100 group-has-[:focus-visible]:opacity-100 motion-reduce:transition-none">
 						{linkedinUrl && (
 							<a
 								aria-label={`${name}'s LinkedIn profile`}
@@ -84,7 +84,7 @@ export function MemberCard({
 					</div>
 				)}
 				{hasDetails && (
-					<div className="absolute inset-x-0 bottom-0 z-10 translate-y-3 p-5 text-white opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:translate-y-0 group-focus-within:opacity-100 motion-reduce:transition-none">
+					<div className="absolute inset-x-0 bottom-0 z-10 translate-y-3 p-5 text-white opacity-0 transition duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-has-[:focus-visible]:translate-y-0 group-has-[:focus-visible]:opacity-100 motion-reduce:transition-none">
 						<dl
 							className={`space-y-1 leading-tight font-thin ${
 								isCoChair ? "text-sm" : "text-xs"
