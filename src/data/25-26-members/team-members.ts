@@ -594,7 +594,7 @@ const roster = [
 		role: "Frosh Rep",
 		group: "frosh-reps",
 		image: "neilstAmor.jpeg",
-		program: "Direct-Entry Computer Engineering '30",
+		program: "ENG '30",
 		years: "1",
 		askMeAbout: "hockey",
 	},
@@ -614,7 +614,7 @@ const roster = [
 		image: "melodySu.jpeg",
 		program: "COMM '30",
 		years: "1",
-		askMeAbout: "TBD",
+		askMeAbout: "scrapbooking",
 	},
 ];
 
