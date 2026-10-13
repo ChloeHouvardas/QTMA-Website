@@ -580,6 +580,42 @@ const roster = [
 		linkedin: "https://www.linkedin.com/in/li-selena/",
 		askMeAbout: "cameras!",
 	},
+	{
+		name: "Armon Fathollahi",
+		role: "Frosh Rep",
+		group: "frosh-reps",
+		image: "armonFathollahi.jpg",
+		program: "COMM '30",
+		years: "1",
+		askMeAbout: "soccer",
+	},
+	{
+		name: "Neil St. Amor",
+		role: "Frosh Rep",
+		group: "frosh-reps",
+		image: "neilstAmor.jpeg",
+		program: "ENG '30",
+		years: "1",
+		askMeAbout: "hockey",
+	},
+	{
+		name: "Ashley Zhong",
+		role: "Frosh Rep",
+		group: "frosh-reps",
+		image: "ashleyZhong.png",
+		program: "COMM '30",
+		years: "1",
+		askMeAbout: "IKEA plushies",
+	},
+	{
+		name: "Melody Su",
+		role: "Frosh Rep",
+		group: "frosh-reps",
+		image: "melodySu.jpeg",
+		program: "COMM '30",
+		years: "1",
+		askMeAbout: "scrapbooking",
+	},
 ];
 
 export default roster;

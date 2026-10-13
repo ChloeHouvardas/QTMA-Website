@@ -30,17 +30,18 @@ type PortfolioId =
 	| "sr-ui-ux"
 	| "business-analysts"
 	| "sr-business-analysts"
-	| "operations";
+	| "operations"
+	| "frosh-reps";
 
 type RosterMember = {
 	name: string;
 	role: string;
 	group: PortfolioId;
 	image?: string;
-	email: string;
+	email?: string;
 	program: string;
 	years: string;
-	linkedin: string;
+	linkedin?: string;
 	askMeAbout: string;
 };
 
@@ -78,6 +79,7 @@ const portfolioDefinitions: Array<Omit<TeamPortfolio, "members">> = [
 	{ id: "business-analysts", name: "Business Analysts" },
 	{ id: "developers", name: "Developers" },
 	{ id: "ui-ux", name: "UI/UX Designers" },
+	{ id: "frosh-reps", name: "FROSH REPS" },
 ];
 
 const alphabeticalPortfolioIds = new Set<string>([
@@ -87,6 +89,7 @@ const alphabeticalPortfolioIds = new Set<string>([
 	"business-analysts",
 	"developers",
 	"ui-ux",
+	"frosh-reps",
 ]);
 
 export const teamPortfolios: TeamPortfolio[] = portfolioDefinitions.map(
