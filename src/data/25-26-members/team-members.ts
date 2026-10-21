@@ -582,7 +582,7 @@ const roster = [
 	},
 	{
 		name: "Armon Fathollahi",
-		role: "Frosh Rep",
+		role: "Junior Business Analyst",
 		email: "armon.fathollahi@queensu.ca",
 		group: "frosh-reps",
 		image: "armonFathollahi.jpg",
@@ -593,7 +593,7 @@ const roster = [
 	},
 	{
 		name: "Neil St. Amor",
-		role: "Frosh Rep",
+		role: "Junior Developer",
 		email: "24wtfv@queensu.ca",
 		group: "frosh-reps",
 		image: "neilstAmor.jpeg",
@@ -604,7 +604,7 @@ const roster = [
 	},
 	{
 		name: "Ashley Zhong",
-		role: "Frosh Rep",
+		role: "Junior UI/UX Designer",
 		email: "25fmw@queensu.ca",
 		group: "frosh-reps",
 		image: "ashleyZhong.png",
@@ -615,7 +615,7 @@ const roster = [
 	},
 	{
 		name: "Melody Su",
-		role: "Frosh Rep",
+		role: "Junior UI/UX Designer",
 		email: "25brx4@queensu.ca",
 		group: "frosh-reps",
 		image: "melodySu.jpeg",
