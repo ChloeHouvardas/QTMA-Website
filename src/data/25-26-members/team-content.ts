@@ -79,7 +79,7 @@ const portfolioDefinitions: Array<Omit<TeamPortfolio, "members">> = [
 	{ id: "business-analysts", name: "Business Analysts" },
 	{ id: "developers", name: "Developers" },
 	{ id: "ui-ux", name: "UI/UX Designers" },
-	{ id: "frosh-reps", name: "FROSH REPS" },
+	{ id: "frosh-reps", name: "First Year Reps" },
 ];
 
 const alphabeticalPortfolioIds = new Set<string>([
