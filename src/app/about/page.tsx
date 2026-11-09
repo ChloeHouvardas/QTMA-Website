@@ -57,11 +57,11 @@ export default function AboutPage() {
 						Turning ideas into products
 					</h1>
 					<p className="mb-0 mt-8 max-w-[660px] text-lg text-wrap font-light leading-[1.18] text-qtmaInk sm:mt-9 sm:text-sm lg:text-lg">
-						Building from Queen&apos;s university, QTMA is Canada&apos;s premier
+						Building from Queen&apos;s University, QTMA is Canada&apos;s premier
 						student product incubation club, where ambitious students design,
 						build, and launch products that solve real problems. We create an
 						environment where designers, developers, and analysts learn by
-						shipping—not just studying.
+						shipping.
 					</p>
 				</div>
 
