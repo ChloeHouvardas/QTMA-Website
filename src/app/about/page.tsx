@@ -72,7 +72,7 @@ export default function AboutPage() {
 						fill
 						priority
 						sizes="(min-width: 1350px) 1198px, (min-width: 640px) calc(100vw - 96px), calc(100vw - 40px)"
-						src="/assets/Visuals/about/qtma-team.png"
+						src="/assets/Visuals/about/qtma-team.png?v=20261111"
 					/>
 				</div>
 			</section>
